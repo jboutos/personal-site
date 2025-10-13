@@ -1,0 +1,214 @@
+@import '../css/meyer-reset.css';
+@import '../css/setup.css';
+
+body {
+	height: 100vh;
+}
+
+section {
+	height: 1100px;
+}
+
+.loud-voice {
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-align: center;
+	padding: 0.2em 0;
+}
+
+.attention-voice {
+	font-family: sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 1.5em 0;
+}
+
+.subtle-voice {
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.container-2 .subtle-voice {
+	padding-top: 1.5em;
+}
+
+.info-2 .subtle-voice {
+	color: black;
+}
+
+.info-1 {
+	background-color: #357abc;
+}
+
+.info-2 {
+	background-color: #d9bda0;
+}
+
+.info-3 {
+	background-color: #4593ae;
+}
+
+.info-4 {
+	background-color: #484848;
+}
+
+.card-1 {
+	margin: 30px 0 20px 0;
+}
+
+.card-2 {
+	margin-bottom: 20px;
+}
+
+.info-3, .info-4 {
+	margin: 0 15px 20px 15px;
+}
+
+.info-1, .info-2 {
+	padding: 20px;
+}
+
+.info-3, .info-4 {
+	padding: 20px 40px 20px 15px;
+}
+
+.info-1 .button, .info-3 .button, .info-4 .button {
+	display: inline-block;
+	color: black;
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+
+.info-2 .button {
+	display: inline-block;
+	color: white;
+	background-color: black;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+
+.info-1 p, .info-3 p, .info-4 p {
+	color: white;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+a > h3:hover {
+	text-decoration: underline;
+}
+
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-2 {
+	display: flex; 
+	flex-direction: column;
+	flex-grow: 1;
+ }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+ }
+
+ .card-1, .card-2 {
+ 	flex-grow: 1;
+ }
+
+ .info-3, .info-4 {
+ 	flex-grow: 0;
+ }
+
+ img {
+	min-height: 60vw;
+	object-fit: cover;
+}
+
+@media (min-width: 600px) {
+	.inner-column {
+		width: 85%;
+		min-height: 100%; 
+	}
+
+	.info-3, .info-4 {
+		margin: 0 0px 20px 0px;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	.container-2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-1, .card-2 {
+		display: flex; 
+		flex-direction: column;
+	}
+
+	 img {
+		min-height: 40vw;
+		object-fit: cover;
+	}
+}
+
+@media (min-width: 800px) {
+	.card-1, .card-2 {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.card-1 {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.card-2 {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.card-1 .picture, .card-2 .picture {
+        width: 65%;
+    }
+
+    .info-1, .info-2 {
+        width: 35%; 
+    }
+
+    img {
+		min-height: 30vw;
+		object-fit: cover;
+	}
+}
+
+@media (min-width: 1400px) {
+	.inner-column {
+		width: 75%;
+	}
+
+	img {
+		min-height: 25vw;
+		object-fit: cover;
+	}
+}

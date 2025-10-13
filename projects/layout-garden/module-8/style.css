@@ -1,0 +1,199 @@
+@import '../css/meyer-reset.css';
+@import '../css/setup.css';
+
+.attention-voice {
+	font-family: sans-serif;
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.subtle-voice {
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding-bottom: 0.7em;
+}
+
+.calm-voice {
+	font-family: serif;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	margin: 2em 0;
+	max-width: 50ch;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.miniscule-voice {
+	font-size: 0.9rem;
+}
+
+section {
+	background-color: #f2f1e5;
+	color: #414042;
+}
+
+img {
+	width: 25vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+h1, h3, h4, a, p {
+	text-align: center;
+}
+
+a {
+	padding-bottom: 0.7em;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
+.brand {
+	margin-bottom: 3em;
+}
+
+.socials {
+	margin-bottom: 3em;
+}
+
+.contact {
+	margin-bottom: 3em;
+}
+
+.policies {
+	margin-bottom: 1.5em;
+}
+
+.mega-container {
+	width: 100%;
+}
+
+.hyper-container {
+	position: relative;
+	min-width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		max-width: 50%;
+	}
+
+	.mega-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.socials {
+		flex-grow: 1;
+	}
+
+	.contact {
+		flex-grow: 0.5;
+	}
+
+	.socials a, .contact a {
+		text-align: start;
+	}
+
+	h3 {
+		text-align: start;
+	}
+
+	img {
+		width: 10vw;
+	}
+
+	.policies a {
+		text-align: end;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mega-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 50%;
+	}
+
+	.container {
+		max-width: 100%;
+		justify-content: space-between;
+	}
+
+	.contact {
+		flex-grow: 0.1;
+	}
+
+	.hyper-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.brand {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		align-items: flex-start;
+		width: 50%;
+	}
+
+	h1, .brand p {
+		text-align: start;
+	}
+
+	.brand p {
+		margin-left: 0;
+	}
+
+	img {
+		width: 6vw;
+	}
+
+	.policies {
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+		gap: 3px;
+		margin-bottom: 0;
+	}
+
+	.policies a {
+		text-align: start;
+	}
+
+	.hidden{
+		display: flex;
+	}
+
+	.copyright {
+		width: 50%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.copyright h4 {
+		text-align: start;
+	}
+}

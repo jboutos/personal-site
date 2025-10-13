@@ -1,0 +1,188 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Avenir next', Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #fcfcf5;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: clamp(35px, 5vw, 45px);
+	padding-top: 50px;
+}
+
+h2 {
+	padding-top: 40px;
+	margin-top: 0;
+	font-size: clamp(30px, 5vw, 40px);
+}
+
+h3 {
+	margin-top: 0px;
+	font-size: clamp(20px, 5vw, 28px);
+}
+
+h1, h2, h3 {
+	font-weight: 500;
+}
+
+p {
+	line-height: 2;
+	font-size: 18px;
+	max-width: 78ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+details {
+	font-size: 18px;
+	margin: 20px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	font-size: 18px;
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+button {
+	font-size: 18px;
+}
+
+a {
+	color: black;
+	font-size: 18px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+p + img {
+	padding-top: 50px;
+}
+
+p + h2 {
+	padding-top: 20px;
+}
+
+footer {
+	padding-top: 50px;
+}
+
+.footer-first {
+	float: left;
+}
+
+.footer-logo {
+	padding-left: 50px;
+}
+
+.footer-p {
+	margin: 10px 65px;
+}
+
+.footer-1 {
+	float: right;
+	margin: 0 30px;
+}
+
+.footer-end {
+	padding-right: 50px;
+}
+
+
+.faq {
+	background-color: beige;
+	padding-bottom: 50px;
+}
+
+
+.navigation {
+	text-align: right;
+}
+
+.rest-1 {
+	padding-right: 50px;
+}
+
+.header-logo {
+	padding-left: 50px;
+	float: left;
+}
+
+
+.main-2 {
+	background-color: #fcfcf5;
+}
+
+.main-3 {
+	background-color: beige;
+}
+
+.main-4 {
+	background-color: #fcfcf5;
+}
+
+.joy {
+	padding-bottom: 50px;
+}
+
+.gallery {
+	background-color: #fcfcf5;
+}
+
+.comercial-button {
+	padding-bottom: 50px;
+}
+
+.rest {
+	margin: 15px;
+}
+
+.eco {
+	padding-bottom: 50px;
+}
+
+.commercial {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.products {
+	padding-top: 50px;
+}
+
+.images {
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.inner {
+	text-align: center;
+}
+
+.main-1 {
+	background-color: beige;
+}
+
+.main-1, .main-2, .main-3, .main-4, .faq {
+	text-align: center;
+}
+
+button {
+	padding: 15px;
+	border: 2px solid lightblue;
+	border-radius: 10px;
+	background-color: lightblue;
+}
+
+html {
+	scroll-behavior: smooth;
+}

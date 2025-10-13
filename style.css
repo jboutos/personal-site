@@ -1,0 +1,77 @@
+@import 'projects/super-layout-challenge-1/css/meyer-reset.css';
+
+body {
+	padding-top: 5em;
+	padding-left: 1.3em;
+	font-family: Verdana, sans-serif;
+	box-sizing: border-box;
+	max-width: 900px;
+}
+
+h1 {
+	font-family: arial;
+	padding: 1.3em 0;
+}
+
+h1 + p {
+	padding-bottom: 15px;
+}
+
+h2 {
+	padding: 0.6em 0;
+}
+
+ul + h2 {
+	padding-top: 0.8em;
+}
+
+a + h2 {
+	padding-top: 0.8em;
+}
+
+h1 + h2 {
+	padding-top: 0.4em;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(89, 89, 89);
+	font-size: 20px;
+}
+
+nav a {
+	margin: 10px;
+}
+
+
+li {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.column {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.loud-voice {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.attention-voice {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.calm-voice {
+	font-size: 1rem;
+}

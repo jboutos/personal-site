@@ -1,0 +1,135 @@
+@import '../css/meyer-reset.css';
+@import '../css/setup.css';
+
+.attention-voice {
+	font-family: sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.subtle-voice {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 25px;
+	margin-top: 35px;
+	color: white;
+}
+
+.calm-voice {
+	font-family: serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 40px;
+}
+
+.container img {
+	max-width: 100%;
+}
+
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px 20px;
+	background-color: #1b2436;
+}
+
+.socials {
+	display: flex;
+	gap: 10px;
+}
+
+.container {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+p, .info {
+	margin-bottom: 15px;
+}
+
+p, a {
+	color: #8b92a1;
+}
+
+a:hover {
+  color: white;
+}
+
+@media (min-width: 700px) {
+
+	.inner-column {
+		padding: 50px 10px;
+	}
+
+	.container-2 {
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 30px;
+		width: 100%;
+	}
+
+	.contact {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	.choices {
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+
+	.services {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	.our-work {
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+
+	.container img {
+		max-width: 100px;
+	}
+
+	.container {
+		width: 320px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.container-2 {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.inner-column {
+		display: flex;
+		flex-direction: row;
+		gap: 150px;
+	}
+
+	.container img {
+		max-width: 60px;
+	}
+
+	.container {
+		width: 200px;
+	}
+
+}
+
+

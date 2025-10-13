@@ -1,0 +1,350 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/* MODULE */
+.site-header .inner-column {
+	display: flex;
+	align-items: center;
+}
+
+.page-header .inner-column div {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 700px) {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+	}
+
+	@media (min-width: 1200px) {
+		align-items: flex-start;
+	}
+}
+
+.footer-1, .footer-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.information {
+	@media (min-width: 700px) {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	@media (min-width: 1200px) {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+/* STRUCTURE */
+body {
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.inner-column {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.site-footer .inner-column {
+	display: flex;
+}
+
+header .inner-column div {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+footer .inner-column {
+	display: flex;
+}
+
+.page-content {
+	flex-grow: 1;
+}
+
+.about {
+	flex-grow: 1;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+a {
+	margin: auto;
+}
+
+.about a {
+	margin: 20px 0 20px 0;
+	padding: 5px 7px 5px 7px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+h2 {
+	padding-left: 7px;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.about p {
+	padding-left: 7px;
+}
+
+.logo {
+	max-width: 70px;
+}
+
+.page-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.about .information img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid black;
+	object-fit: cover;
+}
+
+.about picture {
+	margin-top: 20px;
+}
+
+.footer-2 {
+	margin-left: 30px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.site-header p {
+	font-size: 20px;
+}
+
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p {
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+picture + h2 {
+	margin-top: 20px;
+}
+
+h2 + p {
+	margin-top: 15px;
+}
+
+/* THEME */
+body {
+	background-color: rgba(60, 120, 71, 0.4);
+}
+
+.site-header {
+	background-color: rgba(60, 120, 71, 0.4);
+}
+
+.page-header {
+	background-color: rgba(60, 120, 71, 0.7);
+}
+
+.about {
+	background-color: rgba(60, 120, 71, 0.4);
+}
+
+footer {
+	background-color: rgba(60, 120, 71, 1);
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+}
+
+.page-header {
+	position: relative;
+	overflow: hidden;
+}
+
+.about {
+	position: relative;
+}
+
+.about .cog {
+	display: none;
+}
+
+.page-header .cog {
+	display: none;
+}
+
+.wrench {
+	display: none;
+}
+
+@media (min-width: 700px) {
+
+	.inner-column {
+		padding: 20px 40px 20px 40px;
+	}
+
+	p, a {
+		max-width: 72ch;
+		text-align: left;
+	}
+
+	.page-header div picture {
+		width: 50%;
+		flex-basis: 50%;
+		padding-bottom: 20px;
+	}
+
+	h1 {
+		width: 50%;
+		flex-basis: 50%;
+		padding-left: 20px;
+	}
+
+	h2 {
+		margin-top: 40px;
+	}
+
+	.about .cog {
+		display: block;
+		position: absolute;
+		bottom: -20px;
+		right: -40px;
+		width: 10%;
+	}
+
+	.about .information img {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+	}
+
+	.about a {
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.about {
+		overflow: hidden;
+	}
+
+	.inner-column {
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about p, .about a {
+		max-width: 72ch;
+		text-align: center;
+	}
+
+	h2 .test-3 {
+		margin-top: 0;
+		padding-left: 0;
+	}
+
+	.page-header div picture {
+		flex-basis: 40%;
+	}
+
+	h1 {
+		flex-basis: 55%;
+		max-width: 60ch;
+		text-align: left;
+		font-size: 40px;
+	}
+
+	.about .inner-column {
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+	}
+
+	.space-1 {
+		margin-top: 0;
+	}
+
+	.page-header .cog {
+		display: block;
+		opacity: 0.7;
+		position: absolute;
+		bottom: 0;
+		left: -60px;
+		width: 10%;
+	}
+
+	.wrench {
+		display: block;
+		opacity: 0.2;
+		position: absolute;
+		bottom: -10px;
+		right: 200px;
+		width: 10%;
+	}
+
+	.about .information img {
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+	}
+
+	.about a {
+		background-color: black;
+		color: white;
+		border-radius: 15px;
+	}
+
+	h2 {
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.about a {
+		margin-bottom: 300px;
+	}
+}
