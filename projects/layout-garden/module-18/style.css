@@ -98,10 +98,55 @@ a {
 .container > div {
 	display: flex;
 	align-items: center;
+	flkex-grow: 1;
 }
 
 .hidden-3 img {
 	margin-left: 0.5em;
+}
+
+button img {
+	width: 10px;
+}
+
+.search button {
+	position: absolute;
+	right: 10px;
+	top: 30%;
+	background-color: white;
+	border: 0;
+}
+
+.search-2 {
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+}
+
+.search-2 input {
+	height: 30px;
+}
+
+.search-2 button {
+	position: absolute;
+	right: 10px;
+	top: 30%;
+	background-color: white;
+	border: 0;
+}
+
+.search {
+	display: flex;
+	position: relative;
+	flex-grow: 1;
+}
+
+.search button {
+	display: none;
+}
+
+input::placeholder {
+	padding-left: 0.5em;
 }
 
 @media (min-width: 900px) {
@@ -165,5 +210,18 @@ a {
 
 	.container {
 		gap: 40px;
+	}
+
+	.search button {
+		display: flex;
+	}
+
+	.search-2 button {
+		position: absolute;
+		right: 10px;
+		top: 30%;
+		background-color: white;
+		border: 0;
+		display: none;
 	}
 }
