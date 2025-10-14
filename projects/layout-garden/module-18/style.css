@@ -39,15 +39,21 @@ img {
 }
 
 .logo {
-	width: 120px;
+	width: 150px;
+	padding: 0.5em;
 }
 
 .hidden {
 	display: none;
 }
 
+.hidden-2 {
+	display: none;
+}
+
 .container {
 	display: flex;
+	justify-content: space-between;
 }
 
 .container-2 {
@@ -58,5 +64,106 @@ img {
 .inner-column {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	width: 95%;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1em;
+	gap:3px;
+}
+
+.icons {
+	display: flex;
+	gap: 25px;
+}
+
+.container-2 input {
+	flex-grow: 1; 
+}
+
+input {
+	border-radius: 15px;
+	border: 2px solid dodgerblue;
+}
+
+a:hover {
+	background-color: lightgray;
+}
+
+a {
+	border-radius: 7px;
+	padding: 0.4em;
+}
+
+.container > div {
+	display: flex;
+	align-items: center;
+}
+
+.hidden-3 img {
+	margin-left: 0.5em;
+}
+
+@media (min-width: 900px) {
+	.hidden-2 {
+		display: flex;
+	}
+
+	.icons div {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+@media (min-width: 1100px) {
+	.hidden {
+		display: flex;
+	}
+
+	.hidden-3 {
+		display: none
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.e-shop div {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.hidden {
+		display: flex;
+		gap: 8px;
+	}
+
+	.container-2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.container > div {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+	}
+
+	.container input {
+		flex-grow: 1;
+		height: 30px;
+	}
+
+	.container > div:first-child {
+		flex-grow: 1;
+	}
+
+	.container {
+		gap: 40px;
+	}
 }
