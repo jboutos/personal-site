@@ -1,56 +1,7 @@
 @import '../css/meyer-reset.css';
 @import '../css/setup.css';
 
-body {
-	height: 100vh;
-}
-
-.loud-voice {
-	font-family: sans-serif;
-	font-size: 2.5rem;
-	font-weight: 500;
-	text-align: center;
-	padding: 0.2em 0;
-}
-
-.attention-voice {
-	font-family: sans-serif;
-	font-size: 1.6rem;
-	font-weight: 500;
-	padding: 1.5em 0 0.5em 0;
-}
-
-.subtle-voice {
-	font-family: sans-serif;
-	font-size: 1.3rem;
-	font-weight: 500;
-	padding: 0.7em 0;
-	color: #ab9479;
-}
-
-.calm-voice {
-	font-family: serif;
-	font-size: 1.3rem;
-	line-height: 1.5;
-}
-
-img {
-	width: 30px;
-}
-
-.logo {
-	width: 150px;
-	padding: 0.5em;
-}
-
-.hidden {
-	display: none;
-}
-
-.hidden-2 {
-	display: none;
-}
-
+/*MODULES*/
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -77,32 +28,71 @@ img {
 	gap: 25px;
 }
 
+.container > div {
+	display: flex;
+	align-items: center;
+}
+
+.search-2 {
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+}
+
+.search {
+	display: flex;
+	position: relative;
+	flex-grow: 1;
+}
+
+/*STRUCTURE*/
+body {
+	height: 100vh;
+}
+
+.loud-voice {
+	padding: 0.2em 0;
+}
+
+.attention-voice {
+	padding: 1.5em 0 0.5em 0;
+}
+
+.subtle-voice {
+	padding: 0.7em 0;
+}
+
+.calm-voice {
+	font-family: serif;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+img {
+	width: 30px;
+}
+
+.logo {
+	width: 70px;
+	padding: 0.5em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden-2 {
+	display: none;
+}
+
 .container-2 input {
 	flex-grow: 1; 
 }
 
-input {
-	border-radius: 15px;
-	border: 2px solid dodgerblue;
-}
-
-a:hover {
-	background-color: lightgray;
-}
-
 a {
-	border-radius: 7px;
 	padding: 0.4em;
-}
-
-.container > div {
-	display: flex;
-	align-items: center;
-	flkex-grow: 1;
-}
-
-.hidden-3 img {
-	margin-left: 0.5em;
 }
 
 button img {
@@ -113,14 +103,6 @@ button img {
 	position: absolute;
 	right: 10px;
 	top: 30%;
-	background-color: white;
-	border: 0;
-}
-
-.search-2 {
-	display: flex;
-	flex-grow: 1;
-	position: relative;
 }
 
 .search-2 input {
@@ -131,14 +113,6 @@ button img {
 	position: absolute;
 	right: 10px;
 	top: 30%;
-	background-color: white;
-	border: 0;
-}
-
-.search {
-	display: flex;
-	position: relative;
-	flex-grow: 1;
 }
 
 .search button {
@@ -149,42 +123,81 @@ input::placeholder {
 	padding-left: 0.5em;
 }
 
-@media (min-width: 900px) {
-	.hidden-2 {
-		display: flex;
-	}
+/*TYPOGRAPHY*/
+.loud-voice {
+	font-family: sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-align: center;
+}
 
+.attention-voice {
+	font-family: sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.subtle-voice {
+	font-family: sans-serif;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.calm-voice {
+	font-family: serif;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+
+/*STYLE*/
+.subtle-voice {
+	color: #ab9479;
+}
+
+input {
+	border-radius: 15px;
+	border: 2px solid black;
+}
+
+a:hover {
+	background-color: lightgray;
+}
+
+a {
+	border-radius: 7px;
+}
+
+.search button {
+	background-color: white;
+	border: 0;
+}
+
+.search-2 button {
+	background-color: white;
+	border: 0;
+}
+
+@media (min-width: 900px) {
+	/*MODULES*/
 	.icons div {
 		display: flex;
 		align-items: center;
 		gap: 8px;
 	}
+
+	/*STRUCTURE*/
+	.hidden-2 {
+		display: flex;
+	}
 }
 
 @media (min-width: 1100px) {
-	.hidden {
-		display: flex;
-	}
-
-	.hidden-3 {
-		display: none
-	}
-
+	/*MODULES*/
 	.links {
 		display: flex;
 		align-items: center;
 		gap: 20px;
-	}
-
-	.e-shop div {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-	}
-
-	.hidden {
-		display: flex;
-		gap: 8px;
 	}
 
 	.container-2 {
@@ -197,6 +210,26 @@ input::placeholder {
 		display: flex;
 		gap: 30px;
 		align-items: center;
+	}
+
+	.e-shop div {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	/*STRUCTURE*/
+	.hidden {
+		display: flex;
+	}
+
+	.hidden-3 {
+		display: none
+	}
+
+	.hidden {
+		display: flex;
+		gap: 8px;
 	}
 
 	.container input {
@@ -223,5 +256,9 @@ input::placeholder {
 		background-color: white;
 		border: 0;
 		display: none;
+	}
+
+	.e-shop a {
+		padding-left: 0;
 	}
 }

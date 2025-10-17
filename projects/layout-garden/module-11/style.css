@@ -1,29 +1,41 @@
 @import '../css/meyer-reset.css';
 @import '../css/setup.css';
 
+/*MODULES*/
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+
+.book {
+	@media (min-width: 700px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 25px;
+	}
+}
+
+.book-2 {
+	@media (min-width: 700px) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+/*STRUCTURE*/
 body {
 	height: 100vh;
 }
 
-.loud-voice {
-	font-family: sans-serif;
-	font-size: 3rem;
-	font-weight: 500;
-	text-align: center;
-	padding: 0.2em 0;
-}
-
-.attention-voice {
-	font-family: sans-serif;
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
 .subtle-voice {
-	font-family: sans-serif;
-	font-size: 1.2rem;
-	font-weight: 500;
 	padding: 15px 0 0 7px;
+}
+
+.loud-voice {
+	padding: 0.2em 0;
 }
 
 p {
@@ -32,10 +44,6 @@ p {
 
 p + p {
 	padding-top: 30px;
-}
-
-h4 {
-	font-size: 1.2rem;
 }
 
 .introductory-2 {
@@ -59,24 +67,23 @@ h4, .introductory, .introductory-2, .introductory-3 {
 	padding-top: 0;
 }
 
-.calm-voice {
-	font-family: serif;
-	font-size: 1rem;
-	line-height: 1.6;
-}
-
 .picture {
 	display: none;
+
+	@media (min-width: 700px) {
+		display: block;
+		width: 100%;
+	}
 }
 
 .background {
 	position: relative;
 	width: 100%;
 	height: 150px;
-	background-image: url(../images/3222650_Lagavulin_Distillery_4Y7Z1144.jpg);
-	background-size: cover; 
-	background-position: center;
-	background-repeat: no-repeat;
+
+	@media (min-width: 700px) {
+		display: none;
+	}
 }
 
 .bottom-right {
@@ -84,7 +91,6 @@ h4, .introductory, .introductory-2, .introductory-3 {
 	font-size: 10px;
 	bottom: 30px;
 	right: 5px;
-	color: white;
 }
 
 .bottom-right-2 {
@@ -92,17 +98,16 @@ h4, .introductory, .introductory-2, .introductory-3 {
 	font-size: 20px;
 	bottom: 5px;
 	right: 5px;
-	color: white;
 }
 
 .background-2 {
 	position: relative;
 	width: 100%;
 	height: 150px;
-	background-image: url(../images/resized_4.jpg);
-	background-size: cover; 
-	background-position: center;
-	background-repeat: no-repeat;
+
+	@media (min-width: 700px) {
+		display: none;
+	}
 }
 
 .bottom-right-3 {
@@ -110,7 +115,6 @@ h4, .introductory, .introductory-2, .introductory-3 {
 	font-size: 10px;
 	bottom: 30px;
 	right: 5px;
-	color: white;
 }
 
 .bottom-right-4 {
@@ -118,21 +122,141 @@ h4, .introductory, .introductory-2, .introductory-3 {
 	font-size: 20px;
 	bottom: 5px;
 	right: 5px;
-	color: white;
 }
 
 .card {
 	width: 250px;
 	height: 100%;
 	margin-bottom: 30px;
-	border: 1px solid lightgray;
+
+	@media (min-width: 700px) {
+		display: flex;
+		width: 90%;
+		max-width: 800px;
+		padding: 15px;
+		gap: 20px;
+	}
 }
 
-.inner-column {
+a {
+	text-align: center;
+	margin-top: 7px;
+	padding: 10px 0;
+
+	@media (min-width: 700px) {
+		display: inline-block;
+		padding: 10px 20px;
+		flex-grow: 0.3;
+	}
+}
+
+.extra-info {
+	display: none;
+
+	@media (min-width: 700px) {
+		display: block;
+	}
+}
+
+.hidden {
+	display: none;
+
+	@media (min-width: 700px) {
+		display: block;
+	}
+}
+
+.calendar picture {
+	width: 20px;
+	margin-left: 7px;
+}
+
+.calendar {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	padding: 40px 0;
+	margin-bottom: 7px;
+}
+
+.container-1 {
+	@media (min-width: 700px) {
+		min-width: 220px;
+	}
+
+	@media (min-width: 800px) {
+		min-width: 260px;
+	}
+}
+
+/*TYPOGRAPHY*/
+.loud-voice {
+	font-family: sans-serif;
+	font-size: 3rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.attention-voice {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.subtle-voice {
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.calm-voice {
+	font-family: serif;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+.bold {
+	@media (min-width: 700px) {
+		font-weight: 550;
+		font-size: 18px;
+	}
+}
+
+/*STYLE*/
+.background {
+	background-image: url(../images/rectangle-landscape-affinity.png);
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom-right {
+	color: white;
+}
+
+.bottom-right-2 {
+	color: white;
+}
+
+.background-2 {
+	background-image: url(../images/rectangle-landscape-affinity.png);
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom-right-3 {
+	color: white;
+}
+
+.bottom-right-4 {
+	color: white;
+}
+
+.card {
+	border: 1px solid lightgray;
 }
 
 p, h5 {
@@ -142,90 +266,4 @@ p, h5 {
 a {
 	color: white;
 	background-color: #223e36;
-	text-align: center;
-	margin-top: 7px;
-	padding: 10px 0;
-}
-
-.extra-info {
-	display: none;
-}
-
-.hidden {
-	display: none;
-}
-
-.calendar {
-	display: flex;
-	align-items: center;
-	margin-bottom: 7px;
-}
-
-.calendar picture {
-	width: 20px;
-	margin-left: 7px;
-}
-
-@media (min-width: 700px) {
-	.background {
-		display: none;
-	}
-
-	.background-2 {
-		display: none;
-	}
-
-	.picture {
-		display: block;
-		width: 100%;
-	}
-
-	.card {
-		display: flex;
-		width: 90%;
-		max-width: 800px;
-		padding: 15px;
-		gap: 20px;
-	}
-
-	.extra-info {
-		display: block;
-	}
-
-	a {
-		display: inline-block;
-		padding: 10px 20px;
-		flex-grow: 0.3;
-	}
-
-	.book {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: 25px;
-	}
-
-	.container-1 {
-		min-width: 220px;
-	}
-
-	.book-2 {
-		display: flex;
-		align-items: center;
-	}
-
-	.hidden {
-		display: block;
-	}
-
-	.bold {
-		font-weight: 550;
-		font-size: 18px;
-	}
-}
-
-@media (min-width: 800px) {
-	.container-1 {
-		min-width: 260px;
-	}
 }

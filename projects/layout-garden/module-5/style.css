@@ -1,6 +1,58 @@
 @import '../css/meyer-reset.css';
 @import '../css/setup.css';
+/*MODULES*/
+/*STRUCTURE*/
+/*TYPOGRAPHY*/
+/*STYLE*/
 
+/*MODULES*/
+.stories {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 1000px) {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		width: 80%;
+	}
+}
+
+/*STRUCTURE*/
+h2 {
+	margin: 70px 0 50px 0;
+}
+
+p {
+	max-width: 50ch;
+}
+
+.more-stories {
+	margin-top: 40px;
+	padding-bottom: 50px;
+}
+
+h2, .more-stories {
+	text-align: center;
+}
+
+img {
+	width: 50px;
+	object-fit: cover;
+}
+
+/*TYPOGRAPHY*/
 .attention-voice {
 	font-family: sans-serif;
 	font-size: 2rem;
@@ -13,57 +65,11 @@
 	line-height: 1.5;
 }
 
-img {
-	width: 50px;
-	border-radius: 50%;
-	object-fit: cover;
-}
-
-.inner-column {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-p {
-	max-width: 50ch;
-	line-height: 1.5;
-}
-
-.stories {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-}
-
-h2, .more-stories {
-	text-align: center;
-}
-
-.more-stories {
-	margin-top: 40px;
-	padding-bottom: 50px;
-}
-
-
-h2 {
-	margin: 70px 0 50px 0;
-}
-
+/*STYLE*/
 a {
 	text-decoration: underline;
 }
 
-@media (min-width: 1000px) {
-	.inner-column {
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 1fr 1fr;
-		gap: 40px;
-
-		width: 80%;
-	}
+img {
+	border-radius: 50%;
 }
