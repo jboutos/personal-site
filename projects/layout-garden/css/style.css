@@ -133,3 +133,98 @@
 .module-1 .hero-2 a {
 	border: 2px solid black;
 }
+
+
+
+/*MODULES*/
+.module-2 .inner-column {
+	@media (min-width: 700px) {
+		display: grid;
+		gap: 20px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (min-width: 900px) {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+/*STRUCTURE*/
+.module-2 .inner-column {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.module-2 .info {
+	margin-bottom: 20px;
+	@media (min-width: 900px) {
+		margin: 40px 0;
+	}
+}
+
+.module-2 h2, p, a {
+	padding: 0 30px;
+}
+
+.module-2 h2 {
+	padding-top: 40px;
+}
+
+.module-2 p {
+	padding-top: 20px;
+}
+
+.module-2 a {
+	padding: 25px 30px;
+}
+
+.module-2 .info:first-child {
+	margin-top: 40px;
+	@media (min-width: 700px) {
+		margin-top: 40px;
+	}
+}
+
+.module-2 .info:last-child {
+	margin-bottom: 40px;
+}
+
+.module-2 .info:nth-of-type(2) {
+	@media (min-width: 700px) {
+		margin-top: 40px;
+	}
+}
+
+.module-2 .info:nth-of-type(3) {
+	@media (min-width: 700px) {
+		margin-bottom: 40px;
+	}
+}
+
+/*TYPOGRAPHY*/
+.module-2 .attention-voice {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.module-2 .calm-voice {
+	font-family: serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/*STYLE*/
+.module-2 .info {
+	border: 2px solid lightgray;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px lightgray;
+}
+
+.module-2 img {
+	border-radius: 10px 10px 0 0;
+}
