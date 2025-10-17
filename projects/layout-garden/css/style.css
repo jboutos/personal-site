@@ -1,6 +1,13 @@
 @import 'meyer-reset.css';
 @import 'setup.css';
+html {
+	color: red;
+	border: 5px solid red;
+}
 
+body {
+	color: red;
+}
 /*MODULES*/
 .module-1 .hero-1 {
 	@media (min-width: 600px) {
