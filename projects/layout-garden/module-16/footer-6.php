@@ -1,69 +1,67 @@
-<section class='module-16'>
-	<div class='inner-column'>
-		<div class='mega-container-1'>
-			<div class='info left'>
-				<h3  class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info right'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info left'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info right'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
+<footer-6 >
+	<div class='mega-container-1'>
+		<div class='info left'>
+			<h3  class='subtle-voice'>Heading level 3</h3>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
 		</div>
-		<hr class='hidden'>
-		<div class='mega-container-2'>
-			<h2 class='attention-voice'>NEWSLETTER</h2>
-			<p>Short paragraph about offers, products and services</p>
-			<div class='input'>
-				<input class='input-1' type="email" id="email" name="email" placeholder="Enter your email">
-				<input class='input-2' type="submit" value="SUBSCRIBE">
-			</div>
-			<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
-			<h2 class='attention-voice'>SOCIAL MEDIA</h2>
-			<div class='social'>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-				<picture>
-					<img src='images/circle.png'>
-				</picture>
-			</div>
-			<hr>
-			<p>for phone orders</p>
-			<p>phone number</p>
+		<div class='info right'>
+			<h3 class='subtle-voice'>Heading level 3</h3>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+		</div>
+		<div class='info left'>
+			<h3 class='subtle-voice'>Heading level 3</h3>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+		</div>
+		<div class='info right'>
+			<h3 class='subtle-voice'>Heading level 3</h3>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
+			<a href='#'>Content</a>
 		</div>
 	</div>
-</section>
+	<hr class='hidden'>
+	<div class='mega-container-2'>
+		<h2 class='attention-voice'>NEWSLETTER</h2>
+		<p>Short paragraph about offers, products and services</p>
+		<div class='input'>
+			<input class='input-1' type="email" id="email" name="email" placeholder="Enter your email">
+			<input class='input-2' type="submit" value="SUBSCRIBE">
+		</div>
+		<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
+		<h2 class='attention-voice'>SOCIAL MEDIA</h2>
+		<div class='social'>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+			<picture>
+				<img src='images/circle.png'>
+			</picture>
+		</div>
+		<hr>
+		<p>for phone orders</p>
+		<p>phone number</p>
+	</div>
+</footer-6>

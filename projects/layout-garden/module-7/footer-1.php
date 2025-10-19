@@ -1,106 +1,104 @@
-<section class='module-7'>
-	<div class='inner-column'>
-		<div class='container-2'>
-			<div class='contact'>
-				<h3 class='subtle-voice'>Contact</h3>
-				<p class='calm-voice'>address line 1<br>address line 2</p>
-				<p class='calm-voice'>e-mail</p>
-				<p class='calm-voice'>phone</p>
-				<div class='socials'>
+<footer-1>
+	<div class='container-2'>
+		<div class='contact'>
+			<h3 class='subtle-voice'>Contact</h3>
+			<p class='calm-voice'>address line 1<br>address line 2</p>
+			<p class='calm-voice'>e-mail</p>
+			<p class='calm-voice'>phone</p>
+			<div class='socials'>
+				<a href='#'>
+					<picture>
+						<img src='images/square.png'>
+					</picture>
+				</a>
+				<a>
+					<picture>
+						<img src='images/square.png'>
+					</picture>
+				</a>
+			</div>
+		</div>
+		<div class='choices'>
+			<h3 class='subtle-voice'>Choices</h3>
+			<a href='#' class='info'>Company</a>
+			<a href='#' class='info'>Services</a>
+			<a href='#' class='info'>Customers</a>
+			<a href='#' class='info'>Contact</a>
+		</div>
+		<div class='services'>
+			<h3 class='subtle-voice'>Services</h3>
+			<a href='#' class='info'>Something</a>
+			<a href='#' class='info'>Something</a>
+			<a href='#' class='info'>Something</a>
+			<a href='#' class='info'>Something</a>
+		</div>
+		<div class='our-work'>
+			<h3 class='subtle-voice'>Our work</h3>
+			<div class='container'>
+				<div>
 					<a href='#'>
 						<picture>
 							<img src='images/square.png'>
 						</picture>
 					</a>
-					<a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
+						<picture>
+							<img src='images/square.png'>
+						</picture>
+					</a>
+				</div>
+				<div>
+					<a href='#'>
 						<picture>
 							<img src='images/square.png'>
 						</picture>
 					</a>
 				</div>
 			</div>
-			<div class='choices'>
-				<h3 class='subtle-voice'>Choices</h3>
-				<a href='#' class='info'>Company</a>
-				<a href='#' class='info'>Services</a>
-				<a href='#' class='info'>Customers</a>
-				<a href='#' class='info'>Contact</a>
-			</div>
-			<div class='services'>
-				<h3 class='subtle-voice'>Services</h3>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-			</div>
-			<div class='our-work'>
-				<h3 class='subtle-voice'>Our work</h3>
-				<div class='container'>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
-</section>
+</footer-1>

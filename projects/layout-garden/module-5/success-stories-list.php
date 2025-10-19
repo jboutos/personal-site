@@ -1,6 +1,6 @@
-<section class='module-5'>
+<success-stories-list>
 	<h2 class='attention-voice'>Success Stories</h2>
-	<div class='inner-column'>
+	<div class='container'>
 		<div class='stories'>
 			<div>
 				<picture>
@@ -59,4 +59,4 @@
 		</div>
 	</div>
 	<a href='#' class='more-stories'>Read more success stories</a>
-</section>
+</success-stories-list>

@@ -1,6 +1,6 @@
-<section class='module-10'>
-	<div class='mega-container'>
-		<div class='inner-column'>
+<footer-3>
+	<div class='hyper-container'>
+		<div class='mega-container'>
 			<div class='container'>
 				<div class='contact'>
 					<a href='#'>Contact</a>
@@ -24,4 +24,4 @@
 			<h5 class='mini-voice'>© Copyright</h5>
 		</div>
 	</div>
-</section>
+</footer-3>
