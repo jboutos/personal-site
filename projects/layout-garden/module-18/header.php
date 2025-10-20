@@ -2,7 +2,7 @@
 	<div class='container'>
 		<div>
 			<picture>
-				<img class='logo' src='images/circle.png'>
+				<img class='logo' src='images/square.png'>
 			</picture>
 			<div class='search'>
 				<input class='hidden' type="search" id="site-search" name="q" placeholder='Search for items'>
@@ -39,7 +39,7 @@
 				<a href='#'>
 					<div class='hidden'>
 						<picture>
-							<img src='images/circle.png'>
+							<img src='images/square.png'>
 						</picture>
 						<p>EShop</p>
 					</div>

@@ -76,3 +76,7 @@ a {
 a:hover {
 	color: gray;
 }
+
+.info{
+		background: linear-gradient(to right, #88bc42, #a6d85d);
+	}

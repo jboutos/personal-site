@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<div class='copyright'>
-			<h4 class='miniscule-voice'>2016-2025 © Ifantis<br>Developed by eproductions</h4>
+			<h4 class='miniscule-voice'>2016-2025 © Something<br>Developed by someone</h4>
 		</div>
 	</div>
 </footer-2>
