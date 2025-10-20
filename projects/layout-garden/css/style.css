@@ -1,6 +1,10 @@
 @import 'meyer-reset.css';
 @import 'setup.css';
 
+body{
+
+}
+
 inner-column {
 	display: flex;
 	flex-direction: column;
