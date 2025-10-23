@@ -16,10 +16,38 @@ inner-column {
 	margin-right: auto;
 }
 
+.loud-voice {
+	font-family: sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+}
 
 .attention-voice {
+	font-family: sans-serif;
 	font-size: 2rem;
 	font-weight: 600;
+}
+
+.subtle-voice {
+ font-family: sans-serif;
+ font-size: 1.5 rem;
+ font-weight: 500;
+}
+
+.calm-voice {
+ font-family: serif;
+ font-size: 1rem;
+}
+
+.miniscule-voice {
+	font-family: sans-serif;
+	font-size: 0.7rem;
+}
+
+.mini-voice {
+	font-family: sans-serif;
+	font-size: 0.6rem;
+	font-weight: 200;
 }
 
 
@@ -217,15 +245,7 @@ info-cards {
 
 /*TYPOGRAPHY*/
 info-cards {
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.5rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.5;
 	}
 }
@@ -289,27 +309,7 @@ feature-tiles {
 
 /*TYPOGRAPHY*/
 feature-tiles {
-	.loud-voice {
-		font-family: sans-serif;
-		font-size: 2.2rem;
-		font-weight: 700;
-	}
-
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.9rem;
-		font-weight: 600;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1rem;
-		font-weight: 550;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.5;
 	}
 }
@@ -478,27 +478,7 @@ content-split {
 
 /*TYPOGRAPHY*/
 content-split {
-	.loud-voice {
-		font-family: sans-serif;
-		font-size: 3rem;
-		font-weight: 500;
-	}
-
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 2rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.1rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.8;
 	}
 }
@@ -590,15 +570,7 @@ success-stories-list {
 
 /*TYPOGRAPHY*/
 success-stories-list {
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 2rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.5;
 	}
 }
@@ -713,22 +685,10 @@ feature-overview {
 
 
 /*TYPOGRAPHY*/
-.attention-voice {
-	font-family: sans-serif;
-	font-size: 2rem;
-	font-weight: 500;
-}
-
-.subtle-voice {
-	font-family: sans-serif;
-	font-size: 1.5rem;
-	font-weight: 500;
-}
-
-.calm-voice {
-	font-family: serif;
-	font-size: 1rem;
-	line-height: 1.5;
+feature-overview {
+	.calm-voice {
+		line-height: 1.5;
+	}
 }
 
 /*STYLE*/
@@ -863,21 +823,7 @@ footer-1 {
 
 /*TYPOGRAPHY*/
 footer-1 {
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 2rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.5rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.5;
 	}
 }
@@ -1112,26 +1058,8 @@ footer-2 {
 
 /*TYPOGRAPHY*/
 footer-2 {
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 3rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1.1rem;
 		line-height: 1.5;
-	}
-
-	.miniscule-voice {
-		font-size: 0.9rem;
 	}
 
 	a {
@@ -1235,18 +1163,9 @@ stat-highlight {
 		@media (min-width: 1800px) {
 			font-size: 2vw;
 		}
-
-	}
-
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.5rem;
-		font-weight: 500;
 	}
 
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.6;
 	}
 
@@ -1383,14 +1302,7 @@ footer-3 {
 /*TYPOGRAPHY*/
 footer-3 {
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.6;
-	}
-
-	.mini-voice {
-		font-size: 0.7rem;
-		font-weight: 200;
 	}
 
 	a {
@@ -1636,27 +1548,10 @@ tour-booking {
 /*TYPOGRAPHY*/
 tour-booking {
 	.loud-voice {
-		font-family: sans-serif;
-		font-size: 3rem;
-		font-weight: 500;
 		text-align: center;
 	}
 
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.5rem;
-		font-weight: 600;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
-		font-size: 1rem;
 		line-height: 1.6;
 	}
 
@@ -1818,24 +1713,15 @@ card-list {
 /*TYPOGRAPHY*/
 card-list {
 	.loud-voice {
-		font-family: sans-serif;
-		font-size: 3rem;
-		font-weight: 500;
 		text-align: center;
 		padding: 0.2em 0;
 	}
 
 	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.7rem;
-		font-weight: 500;
 		padding-bottom: 1em;
 	}
 
 	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 500;
 		padding: 15px 0 0 7px;
 	}
 
@@ -1967,22 +1853,7 @@ footer-4 {
 /*TYPOGRAPHY*/
 footer-4 {
 	.loud-voice {
-		font-family: sans-serif;
-		font-size: 3rem;
-		font-weight: 500;
 		text-align: center;
-	}
-
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.7rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 500;
 	}
 
 	p, a {
@@ -2208,18 +2079,6 @@ footer-5 {
 		text-align: center;
 	}
 
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.1rem;
-		font-weight: 600;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 500;
-	}
-
 	a {
 		font-size: 18px;
 	}
@@ -2420,7 +2279,6 @@ featured-content {
 /*TYPOGRAPHY*/
 featured-content {
 	.loud-voice {
-		font-family: sans-serif;
 		font-size: 1.1rem;
 		font-weight: 500;
 		text-align: center;
@@ -2428,16 +2286,10 @@ featured-content {
 	}
 
 	.attention-voice {
-		font-family: sans-serif;
-		font-size: 2rem;
-		font-weight: 600;
 		padding: 1.5em 0;
 	}
 
 	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.2rem;
-		font-weight: 600;
 		margin-bottom: 15px;
 	}
 
@@ -2760,26 +2612,12 @@ footer-6 {
 
 /*TYPOGRAPHY*/
 footer-6 {
-	.loud-voice {
-		font-family: sans-serif;
-		font-size: 1.3rem;
-		font-weight: 500;
-	}
-
 	.attention-voice {
-		font-family: sans-serif;
 		font-size: 1.6rem;
-		font-weight: 500;
 	}
 
 	.subtle-voice {
-		font-family: sans-serif;
 		font-size: 1.2rem;
-		font-weight: 500;
-	}
-
-	.miniscule-voice {
-		font-size: 14px;
 	}
 
 	.mega-container-2 p:nth-of-type(2) {
@@ -2955,26 +2793,10 @@ article-showcase {
 /*TYPOGRAPHY*/
 article-showcase {
 	.loud-voice {
-		font-family: sans-serif;
-		font-size: 2.5rem;
-		font-weight: 500;
 		text-align: center;
 	}
 
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.6rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.3rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
 		font-size: 1.3rem;
 		line-height: 1.5;
 		max-width: 60ch;
@@ -3241,26 +3063,10 @@ header {
 /*TYPOGRAPHY*/
 header {
 	.loud-voice {
-		font-family: sans-serif;
-		font-size: 2.5rem;
-		font-weight: 500;
 		text-align: center;
 	}
 
-	.attention-voice {
-		font-family: sans-serif;
-		font-size: 1.6rem;
-		font-weight: 500;
-	}
-
-	.subtle-voice {
-		font-family: sans-serif;
-		font-size: 1.3rem;
-		font-weight: 500;
-	}
-
 	.calm-voice {
-		font-family: serif;
 		font-size: 1.3rem;
 		line-height: 1.5;
 	}
