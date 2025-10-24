@@ -1,6 +1,11 @@
 @import 'meyer-reset.css';
 @import 'setup.css';
 
+body {
+	--passionate: red;
+	--space: 1.5;
+}
+
 partials {
 	display: flex;
 	flex-direction: column;
@@ -63,13 +68,6 @@ split-hero {
 	text-align: center;
 
 	inner-column {
-		display: flex; 
-	   flex-direction: column;
-		max-width: 1400px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-
 		gap: 20px;
 	}
 	
@@ -161,8 +159,6 @@ split-hero {
 info-cards {
 	display: block;
 
-	
-
 	inner-column {
 		@media (min-width: 700px) {
 			display: grid;
@@ -170,10 +166,7 @@ info-cards {
 			grid-template-rows: 1fr 1fr;
 			grid-template-columns: 1fr 1fr;
 		}
-	}
 
-	
-	inner-column {
 		@media (min-width: 1000px) {
 			display: flex;
 			flex-direction: row;
@@ -192,7 +185,7 @@ info-cards {
 		margin-bottom: 20px;
 
 		@media (min-width: 1000px) {
-			min-width: 200px;
+			min-width: 250px;
 		}
 	}
 
@@ -254,7 +247,7 @@ info-cards {
 /*TYPOGRAPHY*/
 info-cards {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -318,7 +311,7 @@ feature-tiles {
 /*TYPOGRAPHY*/
 feature-tiles {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -495,7 +488,7 @@ content-split {
 /*STYLE*/
 content-split {
 	.attention-voice {
-		color: #ec6031;
+		color: var(--passionate);
 	}
 
 	ul {
@@ -579,7 +572,7 @@ success-stories-list {
 /*TYPOGRAPHY*/
 success-stories-list {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -695,7 +688,7 @@ feature-overview {
 /*TYPOGRAPHY*/
 feature-overview {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -832,7 +825,7 @@ footer-1 {
 /*TYPOGRAPHY*/
 footer-1 {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -1067,12 +1060,12 @@ footer-2 {
 /*TYPOGRAPHY*/
 footer-2 {
 	.calm-voice {
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 
 	a {
 		font-size: 1.1rem;
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
@@ -1314,7 +1307,7 @@ footer-3 {
 	}
 
 	a {
-		line-height: 1.5;
+		line-height: var(--space);
 		font-weight: 600;
 
 		@media (min-width: 1200px) {
@@ -2032,7 +2025,7 @@ footer-5 {
 	}
 
 	.subtle-voice {
-		padding: 15px 0 0 7px;
+		padding-bottom: 1.5em;
 	}
 
 	.logo picture {
@@ -2739,7 +2732,7 @@ article-showcase {
 	.calm-voice {
 		font-family: serif;
 		font-size: 1.3rem;
-		line-height: 1.5;
+		line-height: var(--space);
 		max-width: 60ch;
 	}
 
@@ -2803,7 +2796,7 @@ article-showcase {
 
 	.calm-voice {
 		font-size: 1.3rem;
-		line-height: 1.5;
+		line-height: var(--space);
 		max-width: 60ch;
 	}
 
@@ -3006,7 +2999,7 @@ header {
 	.calm-voice {
 		font-family: serif;
 		font-size: 1.3rem;
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 
 	img {
@@ -3073,7 +3066,7 @@ header {
 
 	.calm-voice {
 		font-size: 1.3rem;
-		line-height: 1.5;
+		line-height: var(--space);
 	}
 }
 
