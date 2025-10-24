@@ -4,6 +4,8 @@
 body {
 	--passionate: red;
 	--space: 1.5;
+	--color: black;
+	--bakground-color: white;
 }
 
 partials {
@@ -167,7 +169,7 @@ info-cards {
 			grid-template-columns: 1fr 1fr;
 		}
 
-		@media (min-width: 1000px) {
+		@media (min-width: 1200px) {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -184,7 +186,7 @@ info-cards {
 	.info {
 		margin-bottom: 20px;
 
-		@media (min-width: 1000px) {
+		@media (min-width: 1200px) {
 			min-width: 250px;
 		}
 	}
@@ -203,44 +205,6 @@ info-cards {
 
 	a {
 		padding: 25px 30px;
-	}
-
-	.info:first-child {
-		margin-top: 40px;
-		@media (min-width: 700px) {
-			margin-top: 40px;
-		}
-
-		@media (min-width: 1000px) {
-			margin: 0;
-		}
-	}
-
-	.info:last-child {
-		margin-bottom: 40px;
-
-		@media (min-width: 1000px) {
-			margin: 0;
-		}
-	}
-
-	.info:nth-of-type(2) {
-		@media (min-width: 700px) {
-			margin-top: 40px;
-		}
-
-		@media (min-width: 1000px) {
-			margin: 0;
-		}
-	}
-
-	.info:nth-of-type(3) {
-		@media (min-width: 700px) {
-			margin-bottom: 40px;
-		}
-		@media (min-width: 1000px) {
-			margin: 0;
-		}
 	}
 }
 
@@ -912,7 +876,6 @@ footer-2 {
 			justify-content: flex-end;
 			align-items: baseline;
 			gap: 3px;
-			margin-bottom: 0;
 		}
 	}
 }
@@ -975,12 +938,17 @@ footer-2 {
 		}
 
 		@media (min-width: 1200px) {
-			flex-grow: 0.1;
+
+			flex-grow: 0.001;
 		}
 	}
 
 	.policies {
 		margin-bottom: 1.5em;
+
+		@media (min-width: 1200px) {
+			margin-bottom: 0;
+		}
 	}
 
 	.mega-container {
@@ -1002,6 +970,10 @@ footer-2 {
 
 	a {
 		padding-bottom: 0.7em;
+	}
+
+	a.legal {
+		padding-bottom: 0;
 	}
 
 	.socials a, .contact a {
