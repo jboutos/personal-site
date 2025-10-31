@@ -1,5 +1,5 @@
-<grid-layout-4>
-  <grid-4>
+<grid-4>
+  <inner-column>
     <h3 class='subtle-voice'>How To<br> Kill a City</h3>
     <h4 class='focus-voice'>Volume 01</h4>
     <p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -32,5 +32,5 @@
     <h2 class='loud-voice'>07</h2>
     <h2 class='loud-voice'>08</h2>
     <h2 class='loud-voice'>09</h2>
-  </grid-4>
-</grid-layout-4>
+  </inner-column>
+</grid-4>

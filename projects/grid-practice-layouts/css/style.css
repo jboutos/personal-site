@@ -18,7 +18,20 @@ grid-1 {
 		max-width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
+
+		@media (max-width: 1200px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto auto auto auto;
+		}
+
+		@media (max-width: 900px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto auto auto auto auto auto auto auto auto;
+			padding: 0 0.5em 2em 0.5em;
+		}
 	}
+
 	/*STRUCTURE*/
 
 	display: block;
@@ -80,7 +93,6 @@ grid-1 {
 
 	picture:nth-of-type(1) {
 		grid-area: 3 / 1 / 5 / 3 ;
-
 	}
 
 	.one {
@@ -127,11 +139,7 @@ grid-1 {
 
 	@media (max-width: 1200px) {
 
-		inner-column {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto auto auto auto;
-		}
+		/*STRUCTURE*/
 		
 		.one {
 			display: none;
@@ -151,14 +159,6 @@ grid-1 {
 	}
 
 	@media (max-width: 900px) {
-
-		/*MODULES*/
-
-		inner-column {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto auto auto auto auto auto;
-		}
 
 		/*STRUCTURE*/
 
@@ -237,14 +237,6 @@ grid-1 {
 	}
 
 	@media (max-width: 500px) {
-
-		/*MODULES*/
-
-		inner-column {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto auto auto auto auto auto auto auto auto;
-			padding: 0 0.5em 2em 0.5em;
-		}
 
 		/*STRUCTURE*/
 
@@ -353,7 +345,23 @@ grid-2 {
 		max-width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
+
+		@media (max-width: 800px) {
+			display: grid;
+			grid-template-rows: auto auto 0.5fr auto auto;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		@media (max-width: 650px) {
+			display: grid;
+			grid-template-rows: auto auto 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr auto auto auto auto;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			min-height: 100vh;
+
+			padding: 1em;
+		}
 	}
+
 	/*STRUCTURE*/
 
 	display: block;
@@ -440,11 +448,6 @@ grid-2 {
 	
 	background-color: #ccdee2;
 
-	
-
-	
-
-	
 
 	@media (max-width: 1300px) {
 
@@ -540,18 +543,10 @@ grid-2 {
 			justify-self: center;
 			padding-bottom: 4em;
 		}
-
 	}
 
 	@media (max-width: 800px) {
 
-		/*MODULES*/
-
-		inner-column {
-			display: grid;
-			grid-template-rows: auto auto 0.5fr auto auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		}
 		/*STRUCTURE*/
 
 		h2 {
@@ -606,16 +601,6 @@ grid-2 {
 
 	@media (max-width: 650px) {
 
-		/*MODULES*/
-
-		inner-column {
-			display: grid;
-			grid-template-rows: auto auto 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr auto auto auto auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-			min-height: 100vh;
-
-			padding: 1em;
-		}
 		/*STRUCTURE*/
 
 		h1 {
@@ -710,8 +695,23 @@ grid-3 {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 2em;
+
+		@media (max-width: 1350px) {
+			display: grid;
+			grid-template-rows: 1fr 1.5fr 1.5fr 2fr 0.5fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
+		}
+
+		@media (max-width: 900px) {
+			display: grid;
+			grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
+		
+			min-height: 100vh;
+			padding: 1em;
+		}
 	}
-	
+
 	/*STRUCTURE*/
 
 	display: block;
@@ -804,14 +804,6 @@ grid-3 {
 
 	@media (max-width: 1350px) {
 
-		/*MODULES*/
-
-		inner-column {
-			display: grid;
-			grid-template-rows: 1fr 1.5fr 1.5fr 2fr 0.5fr;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
-		}
-
 		/*STRUCTURE*/
 
 		picture:nth-of-type(1) img {
@@ -864,16 +856,6 @@ grid-3 {
 
 	@media (max-width: 900px) {
 
-		/*MODULES*/
-
-		inner-column {
-			display: grid;
-			grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
-		
-			min-height: 100vh;
-			padding: 1em;
-		}
 		/*STRUCTURE*/
 
 		picture:nth-of-type(1) img {
@@ -968,11 +950,11 @@ grid-3 {
 
 /*layout-4*/
 
-grid-layout-4 {
+grid-4 {
 
 	/*MODULES*/
 
-	grid-4 {
+	inner-column {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-columns: auto auto auto;
@@ -981,7 +963,18 @@ grid-layout-4 {
 		max-width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
+
+		@media (max-width: 900px) {
+			display: grid;
+			grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: auto auto;
+			gap: 1em;
+
+			padding: 1em;
+			min-height: 100vh;
+		}
 	}
+
 	/*STRUCTURE*/
 
 	display: block;
@@ -1091,17 +1084,6 @@ grid-layout-4 {
 
 	@media (max-width: 900px) {
 
-		/*MODULES*/
-
-		grid-4 {
-			display: grid;
-			grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-columns: auto auto;
-			gap: 1em;
-
-			padding: 1em;
-			min-height: 100vh;
-		}
 		/*STRUCTURE*/
 
 		h4 {
@@ -1200,6 +1182,7 @@ grid-layout-4 {
 		.calm-voice {
 			max-width: 90vw;
 		}
+
 		/*TYPOGRAPHY*/
 
 		.loud-voice {
