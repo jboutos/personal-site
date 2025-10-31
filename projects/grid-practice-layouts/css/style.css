@@ -2,7 +2,7 @@
 @import 'setup.css';
 
 
-/*layout-1*/
+/*layout-1!*/
 
 grid-1 {
 
@@ -10,7 +10,7 @@ grid-1 {
 
 	inner-column {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(7, 1fr);
 		grid-template-rows: auto 1fr auto auto;
 		gap: 1em;
 
@@ -21,13 +21,13 @@ grid-1 {
 
 		@media (max-width: 1200px) {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: repeat(7, 1fr);
 			grid-template-rows: auto auto auto auto;
 		}
 
 		@media (max-width: 900px) {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto auto auto auto auto auto auto auto auto;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(9, auto);
 			padding: 0 0.5em 2em 0.5em;
 		}
 	}
@@ -337,7 +337,7 @@ grid-2 {
 	inner-column {
 		display: grid;
 		grid-template-rows: auto 0.5fr auto auto;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(8, 1fr);
 		gap: 1em;
 
 		padding: 2em;
@@ -349,13 +349,13 @@ grid-2 {
 		@media (max-width: 800px) {
 			display: grid;
 			grid-template-rows: auto auto 0.5fr auto auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1repeat(8, 1fr);
 		}
 
 		@media (max-width: 650px) {
 			display: grid;
 			grid-template-rows: auto auto 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr auto auto auto auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: repeat(8, 1fr);
 			min-height: 100vh;
 
 			padding: 1em;
@@ -704,7 +704,7 @@ grid-3 {
 
 		@media (max-width: 900px) {
 			display: grid;
-			grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+			grid-template-rows: repeat(11, auto);
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
 		
 			min-height: 100vh;
@@ -956,7 +956,7 @@ grid-4 {
 
 	inner-column {
 		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(9, 1fr);
 		grid-template-columns: auto auto auto;
 
 		padding: 2em;
