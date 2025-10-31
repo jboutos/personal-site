@@ -215,6 +215,12 @@ info-cards {
 	.calm-voice {
 		line-height: var(--space);
 	}
+
+	.attention-voice {
+		@media (max-width: 312px) {
+			font-size: 1.5rem;
+		}
+	}
 }
 
 
@@ -272,6 +278,12 @@ feature-tiles {
 		max-width: 50px;
 		border-radius: 15px;
 		object-fit: cover;
+	}
+
+	.calm-voice {
+		@media (max-width: 316px) {
+			padding: 0;
+		}
 	}
 }
 
@@ -456,7 +468,7 @@ content-split {
 content-split {
 
 	background-image: url('../images/test.jpg');
-	background-size: 100vw 100vh;
+	background-size: cover;
 	background-repeat: no-repeat;
 
 	.attention-voice {
