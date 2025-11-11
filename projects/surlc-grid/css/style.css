@@ -373,6 +373,10 @@ footer {
 	h2 {
 		margin-top: 20px;
 	}
+
+	h2, .about p {
+		padding-left: 0;
+	}
 }
 
 @media (min-width: 1400px) {
