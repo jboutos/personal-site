@@ -27,6 +27,7 @@
 				@media (min-width: 1150px) {
 					display: grid;
 					grid-template-columns: repeat(4, 1fr);
+					align-items: stretch;
 				}
 			}
 
@@ -68,8 +69,10 @@
 				background-color: #eadeb8;
 				border-radius: 2em;
 				max-width: 270px;
+				height: 100%;
 
 				@media (min-width: 530px) {
+					justify-content: space-between;
 					max-width: 300px;
 				}
 			}
@@ -125,7 +128,8 @@
 			}
 
 			.status {
-				align-self: start;   
+				align-self: start; 
+				justify-self: end;  
 				text-decoration: none;
 				color: black;
 				padding: 0.6em;
@@ -192,8 +196,7 @@
 										"<img src='" . $portrait . "' width='200'>" .
 									"</picture>" .
 								   "<h2 class='name'>" . $name . "</h2>" .
-									"<p class='story'>" . $story . "</p>" .
-									"<p class='story2'>" . $story2 . "</p>" .
+									"<p class='story'>" . $story . " " . $story2 . "</p>" .
 									"<a href='#' class='status'>" . $status . "</a>" .
 								"</monster-card>";
 
