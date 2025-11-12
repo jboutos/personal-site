@@ -126,15 +126,15 @@
 
 			.status {
 				align-self: start;   
+				text-decoration: none;
+				color: black;
 				padding: 0.6em;
 				background-color: #bcccce;
 				border-radius: 1em;
 			}
 
-			a {
-				align-self: start;
-				text-decoration: none;
-				color: black;
+			monster-catalog {
+				display: block;
 			}
 
 		</style>
@@ -156,49 +156,51 @@
 
 			echo "<inner-column>";
 				echo "<main>";
-				echo "<h1> Monster Adoption Service</h1>";
-				echo "<h2>Didn't you ever wonder what it would be like to have a little monster in your family?</h2>";
+					echo "<h1> Monster Adoption Service</h1>";
+					echo "<h2>Didn't you ever wonder what it would be like to have a little monster in your family?</h2>";
 
-				echo "<p> Ready to add a little bit of spook-tacular love to your life? Here at the Monster adoption service, 
-							we specialize in matching extraordinary humans with the world's most adorably fuzzy, surprisingly 
-							friendly, and sometimes a little mischievous monsters. Forget the fright—these unique companions 
-							only want snuggles, treats, and a forever home where their true, charming selves can shine! 
-							Get ready to meet your next best friend!</p>";
+					echo "<p> Ready to add a little bit of spook-tacular love to your life? Here at the Monster adoption service, 
+								we specialize in matching extraordinary humans with the world's most adorably fuzzy, surprisingly 
+								friendly, and sometimes a little mischievous monsters. Forget the fright—these unique companions 
+								only want snuggles, treats, and a forever home where their true, charming selves can shine! 
+								Get ready to meet your next best friend!</p>";
 
-				echo "<h3>Take a look below at some of our adorable monsters up for adoption!</h3>";
+					echo "<h3>Take a look below at some of our adorable monsters up for adoption!</h3>";
 				echo "</main>";
 
-				echo "<ol>";
-				foreach ($monsters as $monster) {
-					$id = $monster["id"];
-					$name = $monster["name"];
-					$story = "My favorite food is " . $monster["favorite food"] . " and I am " . $monster["age"] . " years old.";
-					$story2 = "On my free time I like to " . $monster["hobby"] . ".";
-					$portrait = $monster["portrait"];
-					$status = $monster["adopted"];
+				echo "<monster-catalog>";
+					echo "<ol>";
+					foreach ($monsters as $monster) {
+						$id = $monster["id"];
+						$name = $monster["name"];
+						$story = "My favorite food is " . $monster["favorite food"] . " and I am " . $monster["age"] . " years old.";
+						$story2 = "On my free time I like to " . $monster["hobby"] . ".";
+						$portrait = $monster["portrait"];
+						$status = $monster["adopted"];
 
-					if ($status == 1) {
-						$status = "Adopted!";
-					} else {
-						$status = "I need a home!";
+						if ($status == 1) {
+							$status = "Adopted!";
+						} else {
+							$status = "I need a home!";
+						}
+
+						echo "<li class='monster'>";
+
+							echo 
+								"<monster-card id='" . $id . "'>" .
+									"<picture class='portrait'>" .
+										"<img src='" . $portrait . "' width='200'>" .
+									"</picture>" .
+								   "<h2 class='name'>" . $name . "</h2>" .
+									"<p class='story'>" . $story . "</p>" .
+									"<p class='story2'>" . $story2 . "</p>" .
+									"<a href='#' class='status'>" . $status . "</a>" .
+								"</monster-card>";
+
+							echo "</li>";
 					}
-
-					echo "<li class='monster'>";
-
-						echo 
-							"<monster-card id='" . $id . "'>" .
-								"<picture class='portrait'>" .
-									"<img src='" . $portrait . "' width='200'>" .
-								"</picture>" .
-							   "<h2 class='name'>" . $name . "</h2>" .
-								"<p class='story'>" . $story . "</p>" .
-								"<p class='story2'>" . $story2 . "</p>" .
-								"<a href='#'><p class='status'>" . $status . "</p></a>" .
-							"</monster-card>";
-
-						echo "</li>";
-				}
-				echo "</ol>";
+					echo "</ol>";
+				echo "</monster-catalog>";
 			echo "</inner-column>";
 		?>
 	</body>
