@@ -1,58 +1,92 @@
-<style>
-	ol {
-		display: flex;
-		flex-direction: row;
-		list-style-type: none;
+<header style='font-size: 30px'>
+<?php 
+
+	function monsterGenerator($name, $age, $favoriteFood) {
+		$monster = [
+			"name" => $name,
+			"age" => $age,
+			"favoriteFood" => $favoriteFood
+		];
+		return $monster;
 	}
 
-	monster-card {
-		display: block;
-		border: 2px solid red;
-	}
-</style>
+	$crunchy = monsterGenerator("Crunchy", 6, "pork rinds");
+	$crusty = monsterGenerator("Crusty", 6, "bread");
+	$dusty = monsterGenerator("Dusty", 6, "off-brand cola");
+	$chunky = monsterGenerator("Chunky", 6, "corn on the cob");
+	$chubby = monsterGenerator("Chubby", 6, "marshmallow");
 
-<?php
-	$dingus = [3, 4, 5, "one", "cat", "dog", 434, true];
+	$monsters = [$crunchy, $crusty, $dusty, $chunky, $chubby];
 
-	$cody = ["id" => 1856, "name" => "Codey", "favorite food" => "Mountain Dew Code Red", "age" => 7, "adopted" => true, "portrait" => "https://peprojects.dev/images/portrait.jpg"];
-	$lima = ["id" => 1256, "name" => "Limabeam", "favorite food" => "Lima beans", "age" => 4, "adopted" => false, "portrait" => "https://peprojects.dev/images/portrait.jpg"];
-	$reads = ["id" => 764, "name" => "Miss reads-a-lot", "favorite food" => "Madeline cookies and tea", "age" => 9, "adopted" => false, "portrait" => "https://peprojects.dev/images/portrait.jpg"];
 
-	$monsters = [$cody, $lima, $reads];
+?>
+</header>
 
 
 
-	echo $dingus[3];
-	echo "<p> I have " . $dingus[3] . " " . $dingus[4];
-	$story = $cody["name"] . "'s" . " favorite food is " . $cody["favorite food"] . ".";
-	echo "<p id=" . $cody["id"] . ">" . $cody["name"] . " is " . $cody["age"] . " years old." . " " . $story . "</p>";
 
-	$fruitsArray = ["apple", "banana", "melon", "blueberries", "eggplant"];
 
-	echo "<ol>";
 
-	foreach ($fruitsArray as $fruit) {
-		echo "<li>" . $fruit . "</li>";
-	}
 
-	echo "</ol>";
 
-	foreach ($monsters as $monster) {
-		echo $monster["name"];
-	}
 
-	foreach ($monsters as $monster) {
-		$name = $monster["name"];
-		echo "<li class='monster'>" . $name . "</li>";
-	}
 
-	foreach ($monsters as $monster) {
-		$info = $monster["id"] . " " . $monster["name"] . " " . $monster["favorite food"] . " " . $monster["age"] . " " . $monster["adopted"];
-		echo "<li class='all-info'>" . $info . "</li>";
-	}
 
-	echo "<ol>";
-	foreach ($monsters as $monster) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include('styles.php'); ?>
+<?php include('monster-factory.php'); ?>
+
+<ol class='monster-list'>
+
+<?php foreach ($monsters as $monster) { ?>
+	<?php
 		$id = $monster["id"];
 		$name = $monster["name"];
 		$story = "My favorite food is " . $monster["favorite food"] . " and I am " . $monster["age"] . " years old.";
@@ -66,19 +100,21 @@
 			$status = "Needs a home!";
 		}
 
-		echo "<li class='monster'>";
+	?>
 
-		echo 
-			"<monster-card id='" . $id . "'>" .
-				"<picture class='portrait'>" .
-					"<img src='" . $portrait . "' width='200'>" .
-				"</picture>" .
-			   "<h2 class='name'>" . $name . "</h2>" .
-				"<p class='story'>" . $story . "</p>" .
-				"<p class='status'>" . $status . "</p>" .
-			"</monster-card>";
+	<li class='monster'>
+		<monster-card id='<?=$id?>'>
+			<picture class='portrait'>
+				<img src='<?=$portrait?>' width='200'>
+			</picture>
+		   <h2 class='name'><?=$name?></h2>
 
-		echo "</li>";
-	}
-	echo "</ol>";
-?>
+			<p class='story'><?=$story?></p>
+			<p class='status'><?=$status?></p>
+		</monster-card>
+
+	</li>
+
+<?php } ?>
+
+</ol>

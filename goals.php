@@ -48,7 +48,7 @@
 		</header>
 		
 		<?php
-			$short_Term_Goals = ["Get to understand basic design concepts", "Be able to copy most of the things I see online", "Have a good grasp on algorithmic thinking", "Build a personal website", "Be in a position to create simple apps"];
+			$short_Term_Goals = ["Get to understand basic design concepts", "Be able to recreate most of the things I see online", "Have a good grasp on algorithmic thinking", "Build a personal website", "Be in a position to create simple apps"];
 
 			$longer_Term_Goals = ["Have a good grasp on both frontend and backend and find my niche", "Better networking", "Land a job"];
 

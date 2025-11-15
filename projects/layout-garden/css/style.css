@@ -17,7 +17,7 @@ partials {
 inner-column {
 	display: flex; 
    flex-direction: column;
-	max-width: 1400px;
+	max-width: 1600px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -70,7 +70,7 @@ split-hero {
 	text-align: center;
 	padding-bottom: 30px;
 
-	inner-column {
+	section {
 		gap: 20px;
 	}
 	
@@ -171,10 +171,10 @@ info-cards {
 			grid-template-columns: 1fr 1fr;
 		}
 
-		@media (min-width: 1200px) {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+		@media (min-width: 1450px) {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: auto;
 		}
 	}
 }
@@ -188,8 +188,10 @@ info-cards {
 	.info {
 		margin-bottom: 20px;
 
-		@media (min-width: 1200px) {
-			min-width: 250px;
+		@media (min-width: 1450px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 	}
 
@@ -2478,6 +2480,11 @@ featured-content {
 
     .info-1, .info-2 {
         width: 35%; 
+    }
+
+    picture {
+    	max-height: 500px;
+    	overflow: hidden;
     }
 
     img {
