@@ -242,6 +242,7 @@ info-cards {
 
 
 
+
 /*THIRD MODULE*/
 
 
@@ -253,15 +254,6 @@ feature-tiles {
 		gap: 20px;
 		height: 100px;
 		padding-bottom: 30px;
-
-		inner-column {
-			display: flex; 
-		   flex-direction: column;
-			max-width: 1400px;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
 	}
 }
 
@@ -351,8 +343,6 @@ feature-tiles {
 
 /*MODULES*/
 content-split {
-
-	display: block;
 	padding: 20px;
 	padding-bottom: 30px;
 
@@ -501,7 +491,6 @@ content-split {
 
 /*MODULES*/
 success-stories-list {
-	display: block;
 	padding-bottom: 30px;
 
 	.stories {
@@ -691,12 +680,6 @@ feature-overview {
 
 /*MODULES*/
 footer-1 {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 60px 20px;
 
 	@media (min-width: 1200px) {
@@ -845,13 +828,7 @@ footer-1 {
 
 /*MODULES*/
 footer-2 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 4em 0 2em 0;
+	padding: 4em 1em 2em 1em;
 
 	.hyper-container {
 
@@ -1106,7 +1083,6 @@ footer-2 {
 
 /*MODULES*/
 stat-highlight {
-	display: block;
 	padding: 2em 0 2em 0;
 
 	@media (min-width: 1100px) {
@@ -1232,6 +1208,7 @@ stat-highlight {
 
 /*MODULES*/
 footer-3 {
+
 	.mega-container {
 		display: flex;
 		flex-direction: column;
@@ -1379,12 +1356,8 @@ footer-3 {
 
 /*MODULES*/
 tour-booking {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding: 40px 0;
-	justify-content: center;
-
+	
 	inner-column {
 		align-items: center;
 	}
@@ -1650,11 +1623,6 @@ tour-booking {
 
 /*MODULES*/
 card-list {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin-left: auto;
-   margin-right: auto;
 	padding: 2em;
 
 	.container {
@@ -2010,12 +1978,6 @@ footer-4 {
 
 /*MODULES*/
 footer-5 {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	
-	margin-left: auto;
-	margin-right: auto;
 	padding: 3em 0;
 
 	.logo, hr, .container, .socials, .footer {
@@ -2225,13 +2187,7 @@ footer-5 {
 
 /*MODULE*/
 
-featured-content {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	width:100%;
-	margin-left: auto;
-	margin-right: auto;
+featured-content {	
 	padding-bottom: 30px;
 
 	.container-2 {
@@ -2524,12 +2480,6 @@ featured-content {
 
 /*MODULES*/
 footer-6 {
-	width: 100vw;
-	
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: ;
-	text-align: center;
 	padding: 40px;
 
 	@media (min-width: 1000px) {
@@ -2560,6 +2510,8 @@ footer-6 {
 	}
 
 	.mega-container-1 {
+		text-align: center;
+
 		@media (min-width: 600px) {
 			display: grid;
 			grid-template-rows: 1fr 1fr;
@@ -2568,6 +2520,10 @@ footer-6 {
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+
+	.mega-container-2 {
+		text-align: center;
 	}
 }
 
@@ -2759,6 +2715,7 @@ footer-6 {
 
 /*MODULES*/
 article-showcase {
+
 	.info {
 		display: flex;
 		flex-direction: column;
@@ -3006,14 +2963,11 @@ article-showcase {
 
 /*MODULES*/
 header {
-	display: flex;
-	flex-direction: column;
-	width: 95%;
-	max-width: 1500px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1em 0;
-	gap:3px;
+	padding: 1em;
+	
+	inner-column {
+	   gap: 3px;
+	}
 
 	.container {
 		display: flex;

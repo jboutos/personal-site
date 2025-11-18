@@ -18,8 +18,21 @@
 
 	$monsters = [$crunchy, $crusty, $dusty, $chunky, $chubby];
 
+	?>
 
-?>
+	<?php foreach ($monsters as $monster) { ?>
+
+		<li class='monster'>
+			<monster-card>
+			   <h2 class='name'><?=$monster["name"]?></h2>
+
+				<p class='age'><?=$monster["age"]?></p>
+				<p class='food'><?=$monster["favoriteFood"]?></p>
+			</monster-card>
+		</li>
+
+	<?php } ?>
+
 </header>
 
 
