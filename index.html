@@ -12,27 +12,34 @@
 		<link rel='stylesheet' href='style.css'>
 		<style>
 
+			html {
+				--color: #233EA9;
+				--link: #4A4A4F;
+				--list: slategray;
+				--base: lavender;
+				--hover: cornflowerblue;
+			}
+
 			body {
-				background-color: lavender;
+				background-color: var(--base);
 			}
 			h1 {
-				color: #233EA9;
+				color: var(--color);
 			}
 
 			h2 {
-				color: #233EA9;
+				color: var(--color);
 			}
 
 			a {
-				color: #4A4A4F;
-			}
-
-			a:hover {
-				background-color: cornflowerblue;
+				color: var(--link);
+				&:hover {
+					background-color: var(--hover);
+				}
 			}
 
 			li::marker {
-				color: slategray;
+				color: var(--list);
 			}
 
 			.info {
