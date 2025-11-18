@@ -96,16 +96,16 @@
 						<?php
 
 						$qualifications = ["Willingness to learn", "Cooperative", "Focused on goals and targets", "Efficient communicator"];
-
-						echo "<ul>";
-
-						foreach ($qualifications as $quality) {
-							echo "<li>" . $quality . "</li>";
-						}
-
-						echo "</ul>";
-						
 						?>
+
+						<ul>
+
+						<?php foreach ($qualifications as $quality) { ?>
+							<li><?=$quality?></li>
+						<?php } ?>
+
+						</ul>
+						
 					</qualifications>
 
 					<hr>
@@ -155,16 +155,15 @@
 							<?php
 
 								$experiences = ["Cultivation of olive trees in Macrychori, Larisa<br>2016 - 2024", "Study and engagement with investments in various sectors (stocks, bonds, mutual funds, real estate, cryptocurrencies, etc.)<br>2014 - Today"];
-
-								echo "<ul>";
-
-								foreach ($experiences as $experience) {
-									echo "<li>" . $experience . "</li>";
-								}
-
-								echo "</ul>";
-						
 							?>
+
+								<ul>
+
+								<?php foreach ($experiences as $experience) { ?>
+									<li><?=$experience?></li>
+								<?php } ?>
+
+								</ul>
 							
 						</work-experience>
 
@@ -174,16 +173,15 @@
 							<?php
 
 								$languages = ["English - Excellent knowledge (Cambridge Proficiency)", "French - Proficient (C1)", "Greek - Native"];
-
-								echo "<ul>";
-
-								foreach ($languages as $language) {
-									echo "<li>" . $language . "</li>";
-								}
-
-								echo "</ul>";
-						
 							?>
+
+								<ul>
+
+								<?php foreach ($languages as $language) { ?>
+									<li><?=$language?></li>
+								<?php } ?>
+
+								</ul>
 							
 						</languages>
 
@@ -193,16 +191,15 @@
 							<?php
 
 								$hobbies = ["Volunteering at a shelter for stray animals", "Surfing, snowboarding"];
-
-								echo "<ul>";
-
-								foreach ($hobbies as $hobby) {
-									echo "<li>" . $hobby . "</li>";
-								}
-
-								echo "</ul>";
-						
 							?>
+
+								<ul>
+
+								<?php foreach ($hobbies as $hobby) { ?>
+									<li><?=$hobby?></li>
+								<?php } ?>
+
+								</ul>
 
 						</hobbies>
 
