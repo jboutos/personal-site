@@ -6,6 +6,8 @@ body {
 	font-family: Verdana, sans-serif;
 	box-sizing: border-box;
 	max-width: 900px;
+
+	margin: 2.5em 0 0 4em;
 }
 
 .calm-voice, .loud-voice, .attention-voice{

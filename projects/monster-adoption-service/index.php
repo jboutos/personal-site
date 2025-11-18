@@ -24,6 +24,11 @@
 					grid-template-columns: repeat(2, 1fr);
 				}
 
+				@media (min-width: 840px) {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+				}
+
 				@media (min-width: 1150px) {
 					display: grid;
 					grid-template-columns: repeat(4, 1fr);
@@ -49,6 +54,7 @@
 				
 				width: 200px;   
 				aspect-ratio: 1 / 1;
+
 			}
 
 			.portrait img {
@@ -57,15 +63,15 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover; 
-				border-radius: 2em;
+				border-radius: 1.3em;
 			}
 
 			monster-card {
 				display: flex;
 				flex-direction: column;
 
+				
 				padding: 1em;
-
 				background-color: #eadeb8;
 				border-radius: 2em;
 				max-width: 270px;
