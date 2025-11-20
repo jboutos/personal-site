@@ -62,7 +62,7 @@
 		if (strlen($quote) == 0 || strlen($author) == 0 || is_numeric($quote) || is_numeric($author)) {
 			$output = "Please enter a valid author/quote";
 		} else {
-			$output = "<p>" . $author . " says, \"" . $quote . "\"</p>";
+			$output = "<p>" . ucwords($author) . " says, \"" . $quote . "\"</p>";
 		}
 
 		echo $output;

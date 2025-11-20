@@ -55,20 +55,7 @@
 
 	<body>
 
-		<header>
-
-			<div class='column'>
-
-				<nav>
-					<a href='#'>home</a>
-					<a href='4-page-website/welcome.html'>about</a>
-					<a href='4-page-website/contact.html'>contact</a>
-					<a href='projects/index.html'>projects</a>
-				</nav>
-				
-			</div>
-
-		</header>
+		<?php include('header.php') ?>
 
 		<main>
 

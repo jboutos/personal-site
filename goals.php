@@ -38,14 +38,8 @@
 		</style>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<a href='index.html'>home</a>
-				<a href='4-page-website/welcome.html'>about</a>
-				<a href='4-page-website/contact.html'>contact</a>
-				<a href='projects/index.html'>projects</a>
-			</nav>
-		</header>
+		
+		<?php include('header.php') ?>
 		
 		<?php
 			$short_Term_Goals = ["Get to understand basic design concepts", "Be able to recreate most of the things I see online", "Have a good grasp on algorithmic thinking", "Build a personal website", "Be in a position to create simple apps"];

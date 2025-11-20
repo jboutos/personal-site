@@ -47,18 +47,7 @@
 	
 	<body>
 
-		<header>
-
-			<div class ='column'>
-				<nav>
-					<a href='../index.html'>home</a>
-					<a href='welcome.html'>about</a>
-					<a href='contact.html'>contact</a>
-					<a href='../projects/index.html'>projects</a>
-				</nav>
-			</div>
-
-		</header>
+		<?php include('../header.php') ?>
 
 		<main>
 
@@ -77,9 +66,9 @@
 
 				<div class='links'>
 					<ul>
-						<li><a href='welcome.html'>welcome</a></li>
-						<li><a href='contact.html'>contact</a></li>
-						<li><a href='journal.html'>journal</a></li>
+						<li><a href='welcome.php'>welcome</a></li>
+						<li><a href='contact.php'>contact</a></li>
+						<li><a href='journal.php'>journal</a></li>
 					</ul>
 				</div>
 				
