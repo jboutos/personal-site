@@ -41,16 +41,7 @@
 	
 	<body>
 
-		<header>
-
-			<nav>
-				<a href='../index.html'>home</a>
-				<a href='../4-page-website/welcome.html'>about</a>
-				<a href='../4-page-website/contact.html'>contact</a>
-				<a href='index.html'>projects</a>
-			</nav>
-
-		</header>
+		<?php include('../header.php') ?>
 
 		<main>
 		

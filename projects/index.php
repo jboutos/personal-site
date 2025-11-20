@@ -49,7 +49,7 @@
 
 			<ul>
 				<li><a href='archive/index.html'>Archived exercises</a></li>
-				<li><a href='homepage.html'>Portal</a></li>
+				<li><a href='homepage.php'>Portal</a></li>
 				<li><a href='adventure-game/index.html'>Adventure game</a></li>
 				<li><a href='super-layout-challenge-1/index.html'>Super layout challenge</a></li>
 				<li><a href='super-layout-challenge-pink/index.html'>Super layout challenge v2</a></li>
