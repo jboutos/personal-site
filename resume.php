@@ -32,10 +32,16 @@
 
 		.profile img {
 			width: 150px;
+
+			margin-top: 26px;
 		}
 
 		.contact img {
 			width: 20px;
+		}
+
+		right-panel {
+			padding: 1em;
 		}
 
 		left-panel {
