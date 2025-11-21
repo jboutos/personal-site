@@ -26,6 +26,10 @@
 
 </style>
 
+<a href="?">
+	<p>Reload page</p>
+</a>
+
 <form method='POST'>
 
 	<h3>Simple calculator</h3>

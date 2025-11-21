@@ -31,10 +31,6 @@ $age = 1;
 $retirement_Age = 1;
 ?>
 
-<a href="?">
-	<p>Reload page</p>
-</a>
-
 <form method='POST'>
 
 	<h3>Retirement calculator</h3>
