@@ -66,7 +66,7 @@
 					<?php include('exercise-15/password-validator.php') ?>
 				</div>
 				<div>
-					<?php include('exercise-16/driving-age-calculator.php') ?>
+					<?php include('exercise-test/driving-age-calculator.php') ?>
 				</div>
 				<div>
 					<?php include('exercise-17/blood-alcohol-calculator.php') ?>
