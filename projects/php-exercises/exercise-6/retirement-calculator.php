@@ -35,7 +35,6 @@
 
 			if (!is_numeric($age) || !is_numeric($retirement_Age)) {
 	        echo "<p>Make sure you entered numbers in both fields!</p>";
-	        echo $output;
 	        return;
 	    	}	
 
