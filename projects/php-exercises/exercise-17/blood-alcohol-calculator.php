@@ -1,67 +1,33 @@
-<style>
-
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
+<a id='blood'></a>
 
 <form method='POST'>
 
 	<h3>Blood alcohol calculator</h3>
-	<p>What is your weight?</p>
+	<p>Calculates the blood alcohol content</p>
 
 	<div class='field'>
-		<label>Weight</label>
-		<input type='number' name='weight' min='1' step='0.1'>
+		<label for='weight'>Weight</label>
+		<input id='weight' type='number' name='weight' min='1' step='0.1' value="<?php echo $_POST['weight'] ?? ''; ?>">
 	</div>
 
-	<p>What is your gender?</p>
-
 	<div class='field'>
-		<label>Gender</label>
-		<input type='text' name='gender'>
+		<label for='gender'>Gender</label>
+		<input id='gender' type='text' name='gender' value="<?php echo $_POST['gender'] ?? ''; ?>">
 	</div>
 
-	<p>How many drinks did you have?</p>
-
 	<div class='field'>
-		<label>Amount of drinks</label>
-		<input type='number' name='drinks' min='0'>
+		<label for='drinks'>Total oz of drinks</label>
+		<input id='drinks' type='number' name='drinks' step='0.1' min='0' value="<?php echo $_POST['drinks'] ?? ''; ?>">
 	</div>
 
-	<p>Please enter the amount of alcohol by volume</p>
-
 	<div class='field'>
-		<label>Alcohol amount</label>
-		<input type='number' name='volume' step='0.1' min='0'>
+		<label for='volume'>Alcohol amount by volume</label>
+		<input id='volume' type='number' name='volume' step='0.1' min='0' value="<?php echo $_POST['volume'] ?? ''; ?>">
 	</div>
 
-	<p>How many hours have passed since your last drink?</p>
-
 	<div class='field'>
-		<label>Hours passed</label>
-		<input type='number' name='time' min='0'>
+		<label for='time'>Hours passed since last drink</label>
+		<input id='time' type='number' name='time' min='0' value="<?php echo $_POST['time'] ?? ''; ?>">
 	</div>
 
 	<button type='submit' name='blood-submit'>Submit</button>
@@ -90,22 +56,29 @@
 		if (isset($_POST['time'])) {
 			$time = $_POST['time'];
 		}
-
-		$weight = $_POST['weight'] ?? '';
-		$gender = $_POST['gender'] ?? '';
-		$drinks = $_POST['drinks'] ?? '';
-		$volume = $_POST['volume'] ?? '';
-		$time = $_POST['time'] ?? '';
-
-		if ($gender !== "male" && $gender !== "female") {
-    		echo "<p>Please enter a valid value</p>";
-    		exit;
+			
+		if (strlen($weight) == 0 || strlen($drinks) == 0 || strlen($volume) == 0 || strlen($time) == 0 ) {
+    		echo "<p>All fields must have values!</p>";
+    		return;
+		} else if ($gender !== "male" && $gender !== "female") {
+			echo "<p>Please enter a valid gender value</p>";
+    		return;
 		}
 
 		if ($gender == "male") {
 			$r = 0.73;
 		} else {
 			$r = 0.66;
+		}
+
+		$a = $drinks * ($volume / 100);
+		$bac = (($a * 5.14) / ($weight * $r)) - (0.015 * $time);
+		$bac = round($bac, 2);
+
+		if ($bac < 0.08) {
+			echo "<p>Your BAC is " . $bac . "<br>It is legal for you to drive.</p>";
+		} else {
+			echo "<p>Your BAC is " . $bac . "<br>It is not legal for you to drive.</p>";
 		}
 
 	}

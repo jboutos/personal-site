@@ -68,6 +68,9 @@
 				<div>
 					<?php include('exercise-16/driving-age-calculator.php') ?>
 				</div>
+				<div>
+					<?php include('exercise-17/blood-alcohol-calculator.php') ?>
+				</div>
 			</partials>
 
 			<footer>

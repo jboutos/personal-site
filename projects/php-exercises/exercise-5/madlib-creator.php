@@ -23,7 +23,7 @@
 
 		<div class='field'>
 			<label for='adjective'>Adjective</label>
-			<input id='adjective' type='text' name='adjective value="<?php echo $_POST['adjective'] ?? ''; ?>"'>
+			<input id='adjective' type='text' name='adjective' value="<?php echo $_POST['adjective'] ?? ''; ?>"'>
 		</div>
 
 		<button type='submit' name='madlib-submit'>Submit</button>
