@@ -27,8 +27,8 @@
 		</div>
 
 		<div class='field'>
-			<label for='time'>Hours passed since last drink</label>
-			<input id='time' type='number' name='time' min='0' value="<?php echo $_POST['time'] ?? ''; ?>">
+			<label for='timedr'>Hours passed since last drink</label>
+			<input id='timedr' type='number' name='time' min='0' value="<?php echo $_POST['time'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='blood-submit'>Submit</button>

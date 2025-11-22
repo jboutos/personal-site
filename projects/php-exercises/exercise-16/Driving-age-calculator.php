@@ -1,4 +1,4 @@
-<driving>
+<driving-age>
 	<a id='driving'></a>
 
 	<form action='index.php#driving' method='POST'>
@@ -49,4 +49,4 @@
 		    }
 		}
 	?>
-</driving>
+</driving-age>

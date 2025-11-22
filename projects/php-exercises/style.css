@@ -111,3 +111,12 @@ p, a {
 h1, h2, h3, h4 {
 	font-family: 'Julius Sans One', sans-serif;
 }
+
+span {
+	color: green;
+}
+
+.subfield {
+	display: flex;
+	align-items: center;
+}

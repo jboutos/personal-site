@@ -141,7 +141,7 @@
 							<picture>
 								<img src='images/email.png'>
 							</picture>
-							<p>gjbout89@gmail.com</p>
+							<p>jgbout89@gmail.com</p>
 						</div>
 
 						<div class='contact'>

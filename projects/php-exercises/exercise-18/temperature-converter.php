@@ -113,16 +113,29 @@
 		font-family: 'Julius Sans One', sans-serif;
 	}
 </style>
+<temperature>
+	<form method='POST'>
 
-<form method='POST'>
+		<h3>Temperature Converter</h3>
+		<p>Converts temperatures from Fahrenheit to Celsius and vice versa</p>
 
-	<h3>Temperature Converter</h3>
-	<p>Converts temperatures from Fahrenheit to Celsius and vice versa</p>
+		<div class='field'>
+        <label for="temperature">Enter temperature:</label>
+        <input type="number" id="temperature" name="temperature" value="<?php echo $_POST['temperature'] ?? ''; ?>">
+      </div>
 
-	<div class='field'>
-		<label></label>
-		<input>
-	</div>
+		<div class='field'>
+			<div class='subfield'>
+				<label>Fahrenheit to Celsius</label>
+				<input type='radio' name='temperature'>
+			</div>
 
-	<button type='submit' name='temperature-submit'>Submit</button>
-</form>
+			<div class='subfield'>
+				<label>Celsius to Fahrenheit</label>
+				<input type='radio' name='temperature'>
+			</div>
+		</div>
+
+		<button type='submit' name='temperature-submit'>Submit</button>
+	</form>
+</temperature>

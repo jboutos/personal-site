@@ -63,8 +63,6 @@
 			}
 
 			echo $output;
-
 		}
-
 	?>
 </madlib-creator>
