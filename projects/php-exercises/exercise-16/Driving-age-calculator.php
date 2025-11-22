@@ -14,11 +14,13 @@
 		<button type='submit' name='age-submit'>Submit</button>
 
 	</form>
-</driving-calculator>
+
 
 	<?php
 
 		if (isset($_POST['age-submit'])) {
+
+			$age = '';
 
 			if (isset($_POST['agedr'])) {
 				$age = $_POST['agedr'];
@@ -50,3 +52,4 @@
 		    }
 		}
 	?>
+</driving-calculator>
