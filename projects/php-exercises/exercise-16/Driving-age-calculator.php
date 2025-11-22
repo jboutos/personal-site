@@ -20,7 +20,7 @@
 
 		if (isset($_POST['age-submit'])) {
 
-			$age = '';
+			$age = $_POST['agedr'] ?? '';
 
 			if (isset($_POST['agedr'])) {
 				$age = $_POST['agedr'];
