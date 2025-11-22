@@ -1,7 +1,9 @@
 inner-column {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .field {
@@ -35,3 +37,25 @@ h3 {
 .field + .field {
 	margin-top: 1.1em;
 }
+
+partials {
+	display: block;
+
+	@media(min-width: 600px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1em;
+		row-gap: 2em;
+	}
+
+	@media(min-width: 750px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media(min-width: 900px) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
