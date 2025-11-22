@@ -1,0 +1,33 @@
+inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	max-width: 300px;
+	background-color: lightgray;
+	padding: 1em;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+button[type='submit'] {
+	margin-top: 20px;
+}
+
+label {
+	opacity: 0.5;
+	margin: 0;
+	font-size: 14p;
+	padding-bottom: 5px;
+}
+
+h3 {
+	color: brown;
+}

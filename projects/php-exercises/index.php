@@ -6,16 +6,7 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta name='description' content='A compilation of layouts'>
 		<meta property='og:image' content='[[meta image source]]'>
-
-		<style>
-
-			inner-column {
-				display: flex;
-				flex-direction: column;
-				gap: 30px;
-			}
-
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>   
 		<partials>
@@ -35,6 +26,7 @@
 				<?php include('exercise-13/compound-interest-calculator.php') ?>
 				<?php include('exercise-14/tax-calculator.php') ?>
 				<?php include('exercise-15/password-validator.php') ?>
+				<?php include('exercise-16/driving-age-calculator.php') ?>
 			</inner-column>
 		</partials>
 	</body>

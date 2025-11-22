@@ -1,48 +1,20 @@
-<style>
-
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
+<a id='password'></a>
 
 <p>Known combinations include: John => user123!, Mary => user234!, Nathan => user345!</p>
 
-<form method='POST'>
+<form action=index.php#password method='POST'>
 
 	<h3>Password validator</h3>
-	<p>Please enter a username:</p>
+	<p>Checks if the username matches the password</p>
 
 	<div class='field'>
-		<label>Username</label>
-		<input type='text' name='username'>
+		<label for='username'>Username</label>
+		<input id='username' type='text' name='username'>
 	</div>
 
-	<p>Please enter a password:</p>
-
 	<div class='field'>
-		<label>Password</label>
-		<input type='password' name='password' minlength='7'>
+		<label for='password'>Password</label>
+		<input id='password' type='password' name='password' minlength='7'>
 	</div>
 
 	<button type='submit' name='password-submit'>Submit</button>
@@ -62,7 +34,7 @@
 		}
 
 		if (strlen($username) == 0 || strlen($password) <= 6) {
-			$output = "<p>Incorrect input</p>";
+			$output = "<p>Both fields must have values!</p>";
 			echo $output;
 			exit;
 		}

@@ -1,49 +1,22 @@
-<style>
-
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
 <a href="?">
 	<p>Reload page</p>
 </a>
 
-<form method='POST'>
+<a id='simple-calculator'></a>
+
+<form action='index.php#simple-calculator' method='POST'>
 
 	<h3>Simple calculator</h3>
 
-	<?php echo "<p>Please enter the first number</p>"?>
+	<p>Calculates the addition, subtraction, multiplication and division of two numbers</p>
 	<div class='field'>
-		<label>First number</label>
-		<input type='number' name='number1'>
+		<label for='first-number'>First number</label>
+		<input id='first-number' type='number' name='number1'>
 	</div>
 
-	<?php echo "<p>Please enter the second number</p>"?>
 	<div class='field'>
-		<label>Second number</label>
-		<input type='number' name='number2'>
+		<label for='second-number'>Second number</label>
+		<input id='second-number' type='number' name='number2'>
 	</div>
 
 	<button type='submit' name='calculator-submit'>Submit</button>
@@ -54,32 +27,47 @@
 
 <?php
 
-if (isset($_POST["calculator-submit"])) {
-	
-	if (isset($_POST["number1"])) {
-		$number1 = $_POST["number1"];
+	if (isset($_POST["calculator-submit"])) {
+		
+		if (isset($_POST["number1"])) {
+			$number1 = $_POST["number1"];
+		}
+
+		if (isset($_POST["number2"])) {
+			$number2 = $_POST["number2"];
+		}
+
+		if (!is_numeric($number1) && !is_numeric($number2)) {
+			echo "<p>I need some values for the numbers!</p>";
+			exit;
+		}
+
+		if (!is_numeric($number1)) {
+			echo "<p>I need a value for the first number!</p>";
+			exit;
+		}
+
+		if (!is_numeric($number2)) {
+			echo "<p>I need a value for the second number!</p>";
+			exit;
+		}
+
+		$add = floatval($number1) + floatval($number2);
+		$sub = floatval($number1) - floatval($number2);
+		$mul = floatval($number1) * floatval($number2);
+
+		
+
+		echo "$number1 + $number2 equals $add<br>";
+		echo "$number1 - $number2 equals $sub<br>";
+		echo "$number1 * $number2 equals $mul<br>";
+		
+		if ($number2 == 0) {
+			$div = "Cannot divide by zero";
+			echo $div;
+		} else {
+			$div = floatval($number1) / floatval($number2);
+			echo "$number1 / $number2 equals $div<br>";
+		}
 	}
-
-	if (isset($_POST["number2"])) {
-		$number2 = $_POST["number2"];
-	}
-
-	$add = floatval($number1) + floatval($number2);
-	$sub = floatval($number1) - floatval($number2);
-	$mul = floatval($number1) * floatval($number2);
-
-	
-
-	echo "$number1 + $number2 equals $add<br>";
-	echo "$number1 - $number2 equals $sub<br>";
-	echo "$number1 * $number2 equals $mul<br>";
-	
-	if ($number2 == 0) {
-		$div = "Cannot divide by zero";
-		echo $div;
-	} else {
-		$div = floatval($number1) / floatval($number2);
-		echo "$number1 / $number2 equals $div<br>";
-	}
-}
 ?>

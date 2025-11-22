@@ -1,46 +1,18 @@
-<style>
+<a id='paint'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#paint' method='POST'>
 
 	<h3>Paint calculator (rectangle room)</h3>
-	<p>Please enter the length in feet</p>
+	<p>Calculates the amount of paint needed to paint a room</p>
 
 	<div class='field'>
-		<label></label>
-		<input type='number' name='length' min='1'>
+		<label for='length'>Length</label>
+		<input id='length' type='number' name='length' min='1'>
 	</div>
 
-	<p>Please enter the width in feet</p>
-
 	<div class='field'>
-		<label></label>
-		<input type='number' name='width' min='1'>
+		<label for='width'>Width</label>
+		<input id='width' type='number' name='width' min='1'>
 	</div>
 
 	<button type='submit' name='paint-submit'>Submit</button>
@@ -59,8 +31,8 @@
 			$width = $_POST['width'];
 		}
 
-		if (!is_numeric($length) || !is_numeric($width)) {
-			$output = "<p>Cannot calculate the paint</p>";
+		if (strlen($length) == 0 || strlen($width) == 0) {
+			$output = "<p>Both fields need values!</p>";
 			echo $output;
 			exit;
 		}

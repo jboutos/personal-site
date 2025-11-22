@@ -1,38 +1,12 @@
-<style>
+<a id='character-counting'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#character-counting' method='POST'>
 
 	<h3>Character counting app</h3>
-	<p>Please enter a string</p>
+	<p>Calculates the length of a given string</p>
 	<div class='field'>
-		<label>Input string</label>
-		<input type='text' name='input'>
+		<label for='input'>Input string</label>
+		<input id='input' type='text' name='input' value=''>
 	</div>
 
 	<button type='submit' name='character-submit'>Submit</button>
@@ -47,15 +21,11 @@
 		}
 
 		if (strlen($text) == 0) {
-			$output = "<p>Please enter a valid string";
+			$output = "<p>The string cannot be empty!</p>";
 		} else {
 			$output = "<p>" . $text . " has " . strlen($text) . " characters.</p>";
 		}
 
 		echo $output;
-
 	}
-
-
-
 ?>

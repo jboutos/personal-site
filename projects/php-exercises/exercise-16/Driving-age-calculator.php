@@ -1,39 +1,13 @@
-<style>
+<a id='driving'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#driving' method='POST'>
 
 	<h3>Driving age calculator</h3>
-	<p>What is your age?</p>
+	<p>Checks to see if you're eligible to drive</p>
 
 	<div class='field'>
-		<label>Age</label>
-		<input type='number' name='age' min='0'>
+		<label for='age'>Age</label>
+		<input id='age' type='number' name='age' min='0'>
 	</div>
 
 	<button type='submit' name='age-submit'>Submit</button>
@@ -48,8 +22,8 @@
 			$age = $_POST['age'];
 		}
 
-		if (!is_numeric($age)) {
-			echo "<p>Invalid input</p>";
+		if (strlen($age) == 0) {
+			echo "<p>Please enter a value!</p>";
 			exit;
 		}
 

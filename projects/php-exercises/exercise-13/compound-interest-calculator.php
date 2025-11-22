@@ -1,60 +1,28 @@
-<style>
+<a id='compound'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#compound' method='POST'>
 
 	<h3>Compound interest calculator</h3>
-	<p>Please enter the principal amount of money:</p>
+	<p>Calculates the compound interest of a principal amount of money</p>
 
 	<div class='field'>
-		<label>Amount</label>
-		<input type='number' name='amount' step='0.01' min='0.01'>
+		<label for='amount'>Principal amount</label>
+		<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
 	</div>
 
-	<p>Please enter the number of years to invest the money:</p>
-
 	<div class='field'>
-		<label>Time</label>
-		<input type='number' name='time' step='1' min='1'>
+		<label for='time'>Time in years</label>
+		<input id='time' type='number' name='time' step='1' min='1'>
 	</div>
 
-	<p>Please enter the interest rate as a percentage:</p>
-
 	<div class='field'>
-		<label>Rate</label>
-		<input type='number' name='rate' step='0.01' min='0.01' max='100'>
+		<label for='rate'>Interest rate as a percentage</label>
+		<input id='rate' type='number' name='rate' step='0.01' min='0.01' max='100'>
 	</div>
 
-	<p>Please enter the number of times the interest is compounded per year:</p>
-
 	<div class='field'>
-		<label>Compound periods</label>
-		<input type='number' name='period' step='1' min='1'>
+		<label for='period'>Compound periods</label>
+		<input id='period' type='number' name='period' step='1' min='1'>
 	</div>
 
 	<button type='submit' name='compound-submit'>Submit</button>
@@ -81,8 +49,8 @@
 			$period = $_POST['period'];
 		}
 
-		if (!is_numeric($amount) || !is_numeric($time) || !is_numeric($rate) || !is_numeric($period)) {
-			$output = "<p>Please enter valid numbers</p>";
+		if (strlen($amount) == 0 || strlen($time) == 0 || strlen($rate) == 0 || strlen($period) == 0) {
+			$output = "<p>All fields must have values!</p>";
 			echo $output;
 			exit;
 		}

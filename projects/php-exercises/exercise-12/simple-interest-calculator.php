@@ -1,53 +1,23 @@
-<style>
+<a id='conversion'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#conversion'method='POST'>
 
 	<h3>Simple interest calculator</h3>
-	<p>Please enter the principal amount of money:</p>
+	<p>Calculates the interest of a principal amount</p>
 
 	<div class='field'>
-		<label>Amount</label>
-		<input type='number' name='amount' step='0.01' min='0.01'>
+		<label for='amount'>Principal amount</label>
+		<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
 	</div>
 
-	<p>Please enter the rate as a percentage:</p>
-
 	<div class='field'>
-		<label>Rate</label>
-		<input type='number' name='rate' step='0.01' min='0.01' max="100">
+		<label for='rate'>Rate as percentage</label>
+		<input id='rate' type='number' name='rate' step='0.01' min='0.01' max="100">
 	</div>
 
-	<p>Please enter the time in years:</p>
-
 	<div class='field'>
-		<label>Time</label>
-		<input type='number' name='time' step='1' min='1'>
+		<label for='time'>Time in years</label>
+		<input id='time' type='number' name='time' step='1' min='1'>
 	</div>
 
 	<button type='submit' name='interest-submit'>Submit</button>
@@ -67,6 +37,11 @@
 
 		if(isset($_POST['time'])) {
 			$time = $_POST['time'];
+		}
+
+		if (strlen($amount) == 0 || strlen($rate) == 0 || strlen($time) == 0) {
+			echo "<p>All fields must have values!</p>";
+			exit;
 		}
 
 		$rate = $rate / 100;

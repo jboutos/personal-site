@@ -1,51 +1,23 @@
-<style>
-
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
 <?php
 $age = 1;
 $retirement_Age = 1;
 ?>
 
-<form method='POST'>
+<a id='retirement'></a>
+
+<form action='index.php#retirement' method='POST'>
 
 	<h3>Retirement calculator</h3>
-	<p>What is your current age?</p>
+	<p>Calculates your retirement age based on user input</p>
 
 	<div class='field'>
-		<label></label>
-		<input type='number' name='age' value='<?=$age?>' min='1'>
+		<label for='age'>Age</label>
+		<input id='age' type='number' name='age' value='<?=$age?>' min='1'>
 	</div>
 
-	<p>At what age would you like to retire?</p>
-
 	<div class='field'>
-		<label></label>
-		<input type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1'>
+		<label for='retirement'>Ideal retirement age</label>
+		<input id='retirement' type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1'>
 	</div>
 
 	<button type='submit' name='retirement-submit'>Submit</button>
@@ -66,7 +38,7 @@ $retirement_Age = 1;
 		}
 
 		if (!is_numeric($age) || !is_numeric($retirement_Age)) {
-        echo "<p>Please enter numbers in both fields.</p>";
+        echo "<p>Make sure you entered numbers in both fields!</p>";
         exit;
     	}	
 

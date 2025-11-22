@@ -1,53 +1,23 @@
-<style>
+<a id='pizza'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#pizza' method='POST'>
 
 	<h3>Pizza division</h3>
-	<p>How many people?</p>
+	<p>Calculates how much pizza each member of the party gets</p>
 
 	<div class='field'>
-		<label>People</label>
-		<input type='number' name='people' min='1'>
+		<label for='people'>Number of people</label>
+		<input id='people' type='number' name='people' min='1'>
 	</div>
 
-	<p>How many pizzas do you have?</p>
-
 	<div class='field'>
-		<label>Pizza</label>
-		<input type='number' name='pizza' min='1'>
+		<label for='pizza'>Amount of pizzas</label>
+		<input id='pizza' type='number' name='pizza' min='1'>
 	</div>
 
-	<p>How many slices per pizza?</p>
-
 	<div class='field'>
-		<label>Slices</label>
-		<input type='number' name='slice' min='1'>
+		<label for='slice'>Slices per pizza</label>
+		<input id='slice' type='number' name='slice' min='1'>
 	</div>
 
 	<button type='submit' name='pizza-submit'>Submit</button>
@@ -69,8 +39,8 @@
 			$slices = $_POST['slice'];
 		}
 
-		if (!is_numeric($people) || !is_numeric($pizza) || !is_numeric($slices)) {
-			$output = "Cannot calculate the division";
+		if (strlen($people) == 0 || strlen($pizza) == 0 || strlen($slices) == 0) {
+			$output = "All fields need values!";
 			echo $output;
 		} else {
 			$pizza_Per_Person = floor(($pizza * $slices) / $people);

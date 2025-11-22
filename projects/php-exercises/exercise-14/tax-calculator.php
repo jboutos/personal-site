@@ -1,46 +1,18 @@
-<style>
+<a id='tax-calc'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#tax-calc' method='POST'>
 
 	<h3>Tax calculator</h3>
-	<p>Please enter order amount:</p>
+	<p>Calculates the tax and returns is the state is wisconsin</p>
 
 	<div class='field'>
-		<label>Amount</label>
-		<input type='number' name='amount' step='0.01' min='0.01'>
+		<label for='amount'>Amount of money</label>
+		<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
 	</div>
 
-	<p>Please enter the state:</p>
-
 	<div class='field'>
-		<label>State</label>
-		<input type='text' name='state'>
+		<label for='state'>Us state</label>
+		<input id='state' type='text' name='state'>
 	</div>
 
 	<button type='submit' name='tax-submit'>Submit</button>
@@ -59,8 +31,12 @@
 			$state = strtoupper($_POST['state']);
 		}
 
-		if (!is_numeric($amount) || is_numeric($state) || strlen($state) == 0) {
-			$output = "<p>The input is not correct!</p>";
+		if (strlen($amount) == 0 || strlen($state) == 0) {
+			$output = "<p>Both fields must have values!</p>";
+			echo $output;
+			exit;
+		} else if (is_numeric($state)) {
+			$output = "<p>The state cnnot be a number!</p>";
 			echo $output;
 			exit;
 		}

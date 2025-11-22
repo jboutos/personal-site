@@ -1,46 +1,18 @@
-<style>
+<a id='quote-maker'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#quote-maker' method='POST'>
 
 	<h3>Quote maker</h3>
-	<p>What is the quote?</p>
+	<p>Creates a quote based on user input</p>
 
 	<div class='field'>
-		<label>Quote</label>
-		<input type='text' name='quote'>
+		<label for='quote'>Quote</label>
+		<input id='quote' type='text' name='quote'>
 	</div>
 
-	<p>Who said it?</p>
-
 	<div class='field'>
-		<label>Author</label>
-		<input type='text' name='author'>
+		<label for='author'>Author</label>
+		<input id='author' type='text' name='author'>
 	</div>
 
 	<button type='submit' name='quote-submit'>Submit</button>
@@ -59,16 +31,22 @@
 			$author = $_POST['author'];
 		}
 
-		if (strlen($quote) == 0 || strlen($author) == 0 || is_numeric($quote) || is_numeric($author)) {
-			$output = "Please enter a valid author/quote";
+		if (strlen($quote) == 0 && strlen($author) == 0) {
+			$output = "Author and quote must have some values!";
+		} else if (strlen($quote) == 0) {
+			$output = "Quote field cannot be empty!";
+		} else if (strlen($author) == 0) {
+			$output = "Author field cannot be empty!";
+		} else if (is_numeric($quote) || is_numeric($author)) {
+			$output = "Numbers do not work for the author and quote fields!";
+		} else if (is_numeric($quote)) {
+			$output = "Numbers do not work for the quote field!";
+		} else if (is_numeric($author)) {
+			$output = "Numbers do not work for the author field!";
 		} else {
 			$output = "<p>" . ucwords($author) . " says, \"" . $quote . "\"</p>";
 		}
 
 		echo $output;
-
 	}
-
-
-
 ?>

@@ -1,46 +1,18 @@
-<style>
+<a id='area'></a>
 
-	.field {
-		display: flex;
-		flex-direction: column;
-	}
-
-	form {
-		max-width: 300px;
-		background-color: lightgray;
-		padding: 1em;
-		border: 2px solid black;
-	}
-
-	button[type='submit'] {
-		margin-top: 20px;
-	}
-
-	label {
-		margin-bottom: 10px;
-	}
-
-	h3 {
-		color: brown;
-	}
-
-</style>
-
-<form method='POST'>
+<form action='index.php#area' method='POST'>
 
 	<h3>Area calculator</h3>
-	<p>What is the length of the room in feet?</p>
+	<p>Calculates the area of a rectangular room</p>
 
 	<div class='field'>
-		<label>Length</label>
-		<input type='number' name='length' min='0'>
+		<label for='length'>Length</label>
+		<input id='length' type='number' name='length' min='0'>
 	</div>
 
-	<p>What is the width of the room in feet?</p>
-
 	<div class='field'>
-		<label>Width</label>
-		<input type='number' name='width' min='0'>
+		<label for='width'>Width</label>
+		<input id='width' type='number' name='width' min='0'>
 	</div>
 
 	<button type='submit' name='area-submit'>Submit</button>
@@ -59,8 +31,8 @@
 			$width = $_POST['width'];
 		}
 
-		if ($length < 0 || $width < 0 || !is_numeric($length) || !is_numeric($width)) {
-			$output = "<p>Cannot calculate the area</p>";
+		if (strlen($length) == 0 || strlen($width) == 0) {
+			$output = "<p>Both fields must have values!</p>";
 			echo $output;
 		} else {
 			$area_Imp = $width * $length;
