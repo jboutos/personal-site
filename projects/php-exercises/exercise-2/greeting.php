@@ -8,7 +8,7 @@
 
 		<div class='field'>
 			<label for='text'>Name</label>
-			<input id='text' type='text' name='name'>
+			<input id='text' type='text' name='name' value="<?php echo $_POST['name'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='greeting-submit'>Submit</button>

@@ -8,17 +8,17 @@
 
 		<div class='field'>
 			<label for='amount'>Principal amount</label>
-			<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
+			<input id='amount' type='number' name='amount' step='0.01' min='0.01' value="<?php echo $_POST['amount'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='rate2'>Rate as percentage</label>
-			<input id='rate2' type='number' name='rate' step='0.01' min='0.01' max="100">
+			<input id='rate2' type='number' name='rate' step='0.01' min='0.01' max="100" value="<?php echo $_POST['rate'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='time'>Time in years</label>
-			<input id='time' type='number' name='time' step='1' min='1'>
+			<input id='time' type='number' name='time' step='1' min='1' value="<?php echo $_POST['time'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='interest-submit'>Submit</button>

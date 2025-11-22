@@ -8,32 +8,32 @@
 
 		<div class='field'>
 			<label for='price1'>Price of item 1</label>
-			<input id='price1' type='number' name='price1' min='0.01' step='0.01'>
+			<input id='price1' type='number' name='price1' min='0.01' step='0.01' value="<?php echo $_POST['price1'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='quant1'>Quantity of item 1</label>
-			<input id='quant1' type='number' name='quant1' min='1'>
+			<input id='quant1' type='number' name='quant1' min='1' value="<?php echo $_POST['quant1'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='price2'>Price of item 2</label>
-			<input id='price2' type='number' name='price2' min='0.01' step='0.01'>
+			<input id='price2' type='number' name='price2' min='0.01' step='0.01' value="<?php echo $_POST['price2'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='quant2'>Quantity of item 2</label>
-			<input id='quant2' type='number' name='quant2' min='1'>
+			<input id='quant2' type='number' name='quant2' min='1' value="<?php echo $_POST['quant2'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='price3'>Price of item 3</label>
-			<input id='price3' type='number' name='price3' min='0.01' step='0.01'>
+			<input id='price3' type='number' name='price3' min='0.01' step='0.01' value="<?php echo $_POST['price3'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='quant3'>Quantity of item 3</label>
-			<input id='quant3' type='number' name='quant3' min='1'>
+			<input id='quant3' type='number' name='quant3' min='1' value="<?php echo $_POST['quant3'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='checkout-submit'>Submit</button>

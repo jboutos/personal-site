@@ -1,9 +1,4 @@
 <retirement>
-	<?php
-	$age = 1;
-	$retirement_Age = 1;
-	?>
-
 	<a id='retirement'></a>
 
 	<form action='index.php#retirement' method='POST'>
@@ -13,12 +8,12 @@
 
 		<div class='field'>
 			<label for='age23'>Age</label>
-			<input id='age23' type='number' name='age' value='<?=$age?>' min='1'>
+			<input id='age23' type='number' name='age' value='<?=$age?>' min='1' value="<?php echo $_POST['age'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='retirement11'>Ideal retirement age</label>
-			<input id='retirement11' type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1'>
+			<input id='retirement11' type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1' value="<?php echo $_POST['retirement-age'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='retirement-submit'>Submit</button>

@@ -8,12 +8,12 @@
 
 		<div class='field'>
 			<label for='quote'>Quote</label>
-			<input id='quote' type='text' name='quote'>
+			<input id='quote' type='text' name='quote' value="<?php echo $_POST['quote'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='author'>Author</label>
-			<input id='author' type='text' name='author'>
+			<input id='author' type='text' name='author' value="<?php echo $_POST['author'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='quote-submit'>Submit</button>

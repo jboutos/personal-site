@@ -8,17 +8,17 @@
 
 		<div class='field'>
 			<label for='people'>Number of people</label>
-			<input id='people' type='number' name='people' min='1'>
+			<input id='people' type='number' name='people' min='1' value="<?php echo $_POST['people'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='pizza11'>Amount of pizzas</label>
-			<input id='pizza11' type='number' name='pizza' min='1'>
+			<input id='pizza11' type='number' name='pizza' min='1' value="<?php echo $_POST['pizza'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='slice'>Slices per pizza</label>
-			<input id='slice' type='number' name='slice' min='1'>
+			<input id='slice' type='number' name='slice' min='1' value="<?php echo $_POST['slice'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='pizza-submit'>Submit</button>

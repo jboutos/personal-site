@@ -8,12 +8,12 @@
 		<p>Calculates the addition, subtraction, multiplication and division of two numbers</p>
 		<div class='field'>
 			<label for='first-number'>First number</label>
-			<input id='first-number' type='number' name='number1'>
+			<input id='first-number' type='number' name='number1' value="<?php echo $_POST['number1'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='second-number'>Second number</label>
-			<input id='second-number' type='number' name='number2'>
+			<input id='second-number' type='number' name='number2' value="<?php echo $_POST['number2'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='calculator-submit'>Submit</button>

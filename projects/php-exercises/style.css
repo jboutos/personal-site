@@ -11,6 +11,14 @@ inner-column {
 	flex-direction: column;
 }
 
+header {
+	@media(min-width: 900px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 form {
 	max-width: 300px;
 	background-color: lightgray;
@@ -39,7 +47,8 @@ h3 {
 }
 
 partials {
-	display: block;
+	display: grid;
+	gap: 2em;
 
 	@media(min-width: 600px) {
 		display: grid;
@@ -57,5 +66,9 @@ partials {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
+}
+
+.mini {
+	font-size: 13px;
 }
 

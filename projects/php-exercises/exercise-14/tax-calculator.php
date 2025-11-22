@@ -8,7 +8,7 @@
 
 		<div class='field'>
 			<label for='amount55'>Amount of money</label>
-			<input id='amount55' type='number' name='amount' step='0.01' min='0.01'>
+			<input id='amount55' type='number' name='amount' step='0.01' min='0.01' value="<?php echo $_POST['amount'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>

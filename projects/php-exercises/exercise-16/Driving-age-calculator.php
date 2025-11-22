@@ -8,7 +8,7 @@
 
 		<div class='field'>
 			<label for='age'>Age</label>
-			<input id='age' type='number' name='agedr' min='0'>
+			<input id='age' type='number' name='agedr' min='0' value="<?php echo $_POST['agedr'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='age-submit'>Submit</button>

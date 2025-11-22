@@ -8,22 +8,22 @@
 
 		<div class='field'>
 			<label for='noun'>Noun</label>
-			<input id='noun' type='text' name='noun'>
+			<input id='noun' type='text' name='noun' value="<?php echo $_POST['noun'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='verb'>Verb</label>
-			<input id='verb' type='text' name='verb'>
+			<input id='verb' type='text' name='verb' value="<?php echo $_POST['verb'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='adverb'>Adverb</label>
-			<input id='adverb' type='text' name='adverb'>
+			<input id='adverb' type='text' name='adverb' value="<?php echo $_POST['adverb'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='adjective'>Adjective</label>
-			<input id='adjective' type='text' name='adjective'>
+			<input id='adjective' type='text' name='adjective value="<?php echo $_POST['adjective'] ?? ''; ?>"'>
 		</div>
 
 		<button type='submit' name='madlib-submit'>Submit</button>

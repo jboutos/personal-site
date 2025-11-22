@@ -1,21 +1,20 @@
 <password>
 	<a id='password'></a>
 
-	<p>Known combinations include: John => user123!, Mary => user234!, Nathan => user345!</p>
-
 	<form action=index.php#password method='POST'>
 
 		<h3>Password validator</h3>
 		<p>Checks if the username matches the password</p>
+		<p class='mini'><em>(Known combinations include: John => user123!, Mary => user234!, Nathan => user345!)</em></p>
 
 		<div class='field'>
 			<label for='username'>Username</label>
-			<input id='username' type='text' name='username'>
+			<input id='username' type='text' name='username' value="<?php echo $_POST['username'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='password11'>Password</label>
-			<input id='password11' type='password' name='password' minlength='7'>
+			<input id='password11' type='password' name='password' minlength='7' value="<?php echo $_POST['password'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='password-submit'>Submit</button>

@@ -7,7 +7,7 @@
 		<p>Calculates the length of a given string</p>
 		<div class='field'>
 			<label for='input'>Input string</label>
-			<input id='input' type='text' name='input' value=''>
+			<input id='input' type='text' name='input' value="<?php echo $_POST['input'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='character-submit'>Submit</button>

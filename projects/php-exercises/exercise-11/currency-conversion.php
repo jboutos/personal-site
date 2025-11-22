@@ -8,12 +8,12 @@
 
 		<div class='field'>
 			<label for='euros'>Amount eur</label>
-			<input id='euros' type='number' name='euros' step='0.01' min='0.01'>
+			<input id='euros' type='number' name='euros' step='0.01' min='0.01' value="<?php echo $_POST['euros'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='rate'>Exchange rate</label>
-			<input id='rate' type='number' name='euro-rate' step='0.0001' min='0'>
+			<input id='rate' type='number' name='euro-rate' step='0.0001' min='0' value = "<?php echo $_POST['euro-rate'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='currency-submit'>Submit</button>

@@ -8,22 +8,22 @@
 
 		<div class='field'>
 			<label for='amount44'>Principal amount</label>
-			<input id='amount44' type='number' name='amount' step='0.01' min='0.01'>
+			<input id='amount44' type='number' name='amount' step='0.01' min='0.01' value="<?php echo $_POST['amount'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='time44'>Time in years</label>
-			<input id='time44' type='number' name='time' step='1' min='1'>
+			<input id='time44' type='number' name='time' step='1' min='1' value="<?php echo $_POST['time'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='rate44'>Interest rate as a percentage</label>
-			<input id='rate44' type='number' name='rate' step='0.01' min='0.01' max='100'>
+			<input id='rate44' type='number' name='rate' step='0.01' min='0.01' max='100' value="<?php echo $_POST['rate'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='period44'>Compound periods</label>
-			<input id='period44' type='number' name='period' step='1' min='1'>
+			<input id='period44' type='number' name='period' step='1' min='1' value="<?php echo $_POST['period'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='compound-submit'>Submit</button>

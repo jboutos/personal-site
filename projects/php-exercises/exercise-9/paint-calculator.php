@@ -8,12 +8,12 @@
 
 		<div class='field'>
 			<label for='length23'>Length</label>
-			<input id='length23' type='number' name='length' min='1'>
+			<input id='length23' type='number' name='length' min='1' value="<?php echo $_POST['length'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
 			<label for='width23'>Width</label>
-			<input id='width23' type='number' name='width' min='1'>
+			<input id='width23' type='number' name='width' min='1' value="<?php echo $_POST['width'] ?? ''; ?>">
 		</div>
 
 		<button type='submit' name='paint-submit'>Submit</button>
