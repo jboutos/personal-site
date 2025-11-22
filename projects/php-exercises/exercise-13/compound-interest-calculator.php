@@ -6,23 +6,23 @@
 	<p>Calculates the compound interest of a principal amount of money</p>
 
 	<div class='field'>
-		<label for='amount'>Principal amount</label>
-		<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
+		<label for='amount44'>Principal amount</label>
+		<input id='amount44' type='number' name='amount' step='0.01' min='0.01'>
 	</div>
 
 	<div class='field'>
-		<label for='time'>Time in years</label>
-		<input id='time' type='number' name='time' step='1' min='1'>
+		<label for='time44'>Time in years</label>
+		<input id='time44' type='number' name='time' step='1' min='1'>
 	</div>
 
 	<div class='field'>
-		<label for='rate'>Interest rate as a percentage</label>
-		<input id='rate' type='number' name='rate' step='0.01' min='0.01' max='100'>
+		<label for='rate44'>Interest rate as a percentage</label>
+		<input id='rate44' type='number' name='rate' step='0.01' min='0.01' max='100'>
 	</div>
 
 	<div class='field'>
-		<label for='period'>Compound periods</label>
-		<input id='period' type='number' name='period' step='1' min='1'>
+		<label for='period44'>Compound periods</label>
+		<input id='period44' type='number' name='period' step='1' min='1'>
 	</div>
 
 	<button type='submit' name='compound-submit'>Submit</button>

@@ -11,8 +11,8 @@
 	</div>
 
 	<div class='field'>
-		<label for='pizza'>Amount of pizzas</label>
-		<input id='pizza' type='number' name='pizza' min='1'>
+		<label for='pizza11'>Amount of pizzas</label>
+		<input id='pizza11' type='number' name='pizza' min='1'>
 	</div>
 
 	<div class='field'>

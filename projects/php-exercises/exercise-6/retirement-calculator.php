@@ -11,13 +11,13 @@ $retirement_Age = 1;
 	<p>Calculates your retirement age based on user input</p>
 
 	<div class='field'>
-		<label for='age'>Age</label>
-		<input id='age' type='number' name='age' value='<?=$age?>' min='1'>
+		<label for='age23'>Age</label>
+		<input id='age23' type='number' name='age' value='<?=$age?>' min='1'>
 	</div>
 
 	<div class='field'>
-		<label for='retirement'>Ideal retirement age</label>
-		<input id='retirement' type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1'>
+		<label for='retirement11'>Ideal retirement age</label>
+		<input id='retirement11' type='number' name='retirement-age' value='<?=$retirement_Age?>' min='1'>
 	</div>
 
 	<button type='submit' name='retirement-submit'>Submit</button>

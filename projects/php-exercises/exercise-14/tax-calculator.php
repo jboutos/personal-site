@@ -6,8 +6,8 @@
 	<p>Calculates the tax and returns is the state is wisconsin</p>
 
 	<div class='field'>
-		<label for='amount'>Amount of money</label>
-		<input id='amount' type='number' name='amount' step='0.01' min='0.01'>
+		<label for='amount55'>Amount of money</label>
+		<input id='amount55' type='number' name='amount' step='0.01' min='0.01'>
 	</div>
 
 	<div class='field'>

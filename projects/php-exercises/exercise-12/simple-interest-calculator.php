@@ -1,6 +1,6 @@
-<a id='conversion'></a>
+<a id='interest-calc'></a>
 
-<form action='index.php#conversion'method='POST'>
+<form action='index.php#interest-calc'method='POST'>
 
 	<h3>Simple interest calculator</h3>
 	<p>Calculates the interest of a principal amount</p>
@@ -11,8 +11,8 @@
 	</div>
 
 	<div class='field'>
-		<label for='rate'>Rate as percentage</label>
-		<input id='rate' type='number' name='rate' step='0.01' min='0.01' max="100">
+		<label for='rate2'>Rate as percentage</label>
+		<input id='rate2' type='number' name='rate' step='0.01' min='0.01' max="100">
 	</div>
 
 	<div class='field'>

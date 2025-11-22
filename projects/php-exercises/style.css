@@ -31,3 +31,7 @@ label {
 h3 {
 	color: brown;
 }
+
+.field + .field {
+	margin-top: 1em;
+}

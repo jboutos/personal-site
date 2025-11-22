@@ -6,13 +6,13 @@
 	<p>Calculates the amount of paint needed to paint a room</p>
 
 	<div class='field'>
-		<label for='length'>Length</label>
-		<input id='length' type='number' name='length' min='1'>
+		<label for='length23'>Length</label>
+		<input id='length23' type='number' name='length' min='1'>
 	</div>
 
 	<div class='field'>
-		<label for='width'>Width</label>
-		<input id='width' type='number' name='width' min='1'>
+		<label for='width23'>Width</label>
+		<input id='width23' type='number' name='width' min='1'>
 	</div>
 
 	<button type='submit' name='paint-submit'>Submit</button>
