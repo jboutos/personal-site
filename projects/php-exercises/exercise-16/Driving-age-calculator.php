@@ -14,6 +14,7 @@
 		<button type='submit' name='age-submit'>Submit</button>
 
 	</form>
+</driving-calculator>
 
 	<?php
 
@@ -49,4 +50,3 @@
 		    }
 		}
 	?>
-</driving-calculator>
