@@ -7,6 +7,7 @@
 		<meta name='description' content='A compilation of layouts'>
 		<meta property='og:image' content='[[meta image source]]'>
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
 	</head>
 	<body>   
 		<inner-column>

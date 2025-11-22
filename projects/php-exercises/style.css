@@ -19,23 +19,41 @@ header {
 	}
 }
 
+header a {
+	margin-bottom: 1em;
+	color: brown;
+}
+
 form {
 	max-width: 300px;
-	background-color: lightgray;
+	background: linear-gradient(150deg, lightgray, #F2F0EF);
 	padding: 1em;
-	border: 2px solid black;
+	border: 1px solid black;
 	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 button[type='submit'] {
 	margin-top: 20px;
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 3px 7px;
+}
+
+input {
+	border-radius: 10px;
+	border: 1px solid gray;
+	padding: 3px 7px;
 }
 
 label {
 	opacity: 0.5;
 	margin: 0;
-	font-size: 14p;
+	font-size: 13px;
 	padding-bottom: 5px;
+	font-family: 'Monda', sans-serif;
+
 }
 
 h3 {
@@ -72,3 +90,11 @@ partials {
 	font-size: 13px;
 }
 
+p, a {
+	font-family: 'Monda', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Julius Sans One', sans-serif;
+}
