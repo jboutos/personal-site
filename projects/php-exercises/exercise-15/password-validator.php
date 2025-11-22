@@ -13,8 +13,8 @@
 	</div>
 
 	<div class='field'>
-		<label for='password'>Password</label>
-		<input id='password' type='password' name='password' minlength='7'>
+		<label for='password11'>Password</label>
+		<input id='password11' type='password' name='password' minlength='7'>
 	</div>
 
 	<button type='submit' name='password-submit'>Submit</button>

@@ -7,7 +7,7 @@
 
 	<div class='field'>
 		<label for='age'>Age</label>
-		<input id='age' type='number' name='age' min='0'>
+		<input id='age' type='number' name='agedr' min='0'>
 	</div>
 
 	<button type='submit' name='age-submit'>Submit</button>
@@ -18,8 +18,8 @@
 
 	if (isset($_POST['age-submit'])) {
 
-		if (isset($_POST['age'])) {
-			$age = $_POST['age'];
+		if (isset($_POST['agedr'])) {
+			$age = $_POST['agedr'];
 		}
 
 		if (strlen($age) == 0) {
