@@ -17,7 +17,7 @@
 				--link: #4A4A4F;
 				--list: slategray;
 				--base: lavender;
-				--hover: cornflowerblue;
+				--hover: hsl(235, 80%, 80%);
 			}
 
 			body {

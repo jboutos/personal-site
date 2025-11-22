@@ -70,6 +70,12 @@
 				</div>
 			</partials>
 
+			<footer>
+				<a href="?">
+					<p>Reload page</p>
+				</a>
+			</footer>
+
 		</inner-column>
 	</body>
 </html>

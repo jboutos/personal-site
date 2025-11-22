@@ -33,12 +33,16 @@
 				$password = $_POST['password'];
 			}
 
-			if (strlen($username) == 0) {
-				$output = "<p>Username cannot be empty!</p>";
+			if (strlen($username) == 0 && strlen($password) == 0) {
+				$output = "<p>Both fields must have values!</p>";
 				echo $output;
 				return;
 			} else if (strlen($password) <= 6) {
 				$output = "<p>Password needs more than 6 characters!</p>";
+				echo $output;
+				return;
+			} else if (strlen($username) == 0) {
+				$output = "<p>Username cannot be empty!</p>";
 				echo $output;
 				return;
 			}

@@ -1,3 +1,13 @@
+<style>
+	@media(max-width: 385px) {
+		nav {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+</style>
+
+
 <?php include('config.php'); ?>
 
 <header>
