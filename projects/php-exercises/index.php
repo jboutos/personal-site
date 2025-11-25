@@ -71,6 +71,12 @@
 				<div>
 					<?php include('exercise-17/blood-alcohol-calculator.php') ?>
 				</div>
+				<div>
+					<?php include('exercise-18/temperature-converter.php') ?>
+				</div>
+				<div>
+					<?php include('exercise-19/bmi-calculator.php') ?>
+				</div>
 			</partials>
 
 			<footer>
