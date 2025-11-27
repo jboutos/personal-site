@@ -1,4 +1,4 @@
-<footer-3>
+<footer>
 	<div class='hyper-container'>
 		<div class='mega-container'>
 			<div class='container'>
@@ -24,4 +24,4 @@
 			<h5 class='mini-voice'>© Copyright</h5>
 		</div>
 	</div>
-</footer-3>
+</footer>

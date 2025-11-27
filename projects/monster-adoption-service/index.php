@@ -206,7 +206,7 @@
 									"<a href='#' class='status'>" . $status . "</a>" .
 								"</monster-card>";
 
-							echo "</li>";
+						echo "</li>";
 					}
 					echo "</ol>";
 				echo "</monster-catalog>";

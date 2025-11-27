@@ -37,57 +37,48 @@
 			}
 		}
 
-		if ($feetOrInches == 'f') {
+		if (isset($_POST['feet-submit'])) {
 
-			if (isset($_POST['feet-submit'])) {
+			if (isset($_POST['height-feet'])) {
+				$heightFeet = $_POST['height-feet'];
+			}
+			
+			if (isset($_POST['weight'])) {
+				$weight = $_POST['weight'];
+			}
 
-				if (isset($_POST['height-feet'])) {
-					$heightFeet = $_POST['height-feet'];
-				}
-				
-				if (isset($_POST['weight'])) {
-					$weight = $_POST['weight'];
-				}
-
-				if (is_numeric($heightFeet) && is_numeric($weight) && strlen($heightFeet) > 0 && strlen($weight) > 0) {
-					$heightInches = $heightFeet * 12;
-					$result = round((703 * $weight) / ($heightInches ** 2), 2);
-				} else {
-					$error2 = '<p style="color: red">I need some valid values for weight and height!</p>';
-					$heightFeet = '';
-					$heightInches = '';
-					$weight = '';
-				}
+			if (is_numeric($heightFeet) && is_numeric($weight) && strlen($heightFeet) > 0 && strlen($weight) > 0) {
+				$heightInches = $heightFeet * 12;
+				$result = round((703 * $weight) / ($heightInches ** 2), 2);
+			} else {
+				$error2 = '<p style="color: red">I need some valid values for weight and height!</p>';
+				$heightFeet = '';
+				$heightInches = '';
+				$weight = '';
 			}
 		}
 
-	   elseif ($feetOrInches == 'i') {
+		elseif (isset($_POST['inches-submit'])) {
 
-			if (isset($_POST['inches-submit'])) {
+			if (isset($_POST['height-inches'])) {
+				$heightInches = $_POST['height-inches'];
+			}
+			
+			if (isset($_POST['weight'])) {
+				$weight = $_POST['weight'];
+			}
 
-				if (isset($_POST['height-inches'])) {
-					$heightInches = $_POST['height-inches'];
-				}
-				
-				if (isset($_POST['weight'])) {
-					$weight = $_POST['weight'];
-				}
-
-				if (is_numeric($heightInches) && is_numeric($weight) && strlen($heightInches) > 0 && strlen($weight) > 0) {
-					$result = round((703 * $weight) / ($heightInches ** 2), 2);
-				} else {
-					$error2 = '<p style="color: red">I need some valid values for weight and height!</p>';
-					$heightInches = '';
-					$weight = '';
-				}
+			if (is_numeric($heightInches) && is_numeric($weight) && strlen($heightInches) > 0 && strlen($weight) > 0) {
+				$result = round((703 * $weight) / ($heightInches ** 2), 2);
+			} else {
+				$error2 = '<p style="color: red">I need some valid values for weight and height!</p>';
+				$heightInches = '';
+				$weight = '';
 			}
 		}
+		
 	} else {
 		if (isset($_POST['measurement-submit'])) {
-
-			if (isset($_POST['units'])) {
-				$units = strtolower($_POST['units']);
-			}
 
 			if (isset($_POST['height'])) {
 				$height = $_POST['height'];
@@ -95,10 +86,6 @@
 
 			if (isset($_POST['weight'])) {
 				$weight = $_POST['weight'];
-			}
-
-			if (isset($_POST['units'])) {
-				$units = strtolower($_POST['units']);
 			}
 
 			if (is_numeric($height) && is_numeric($weight) && strlen($height) > 0 && strlen($weight) > 0) {

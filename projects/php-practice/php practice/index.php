@@ -107,3 +107,10 @@ echo "\n";
 	<button type='submit' name='submitted'>Push me</button>
 
 </form>
+
+<?php
+
+	$name = $_GET['name'];
+	echo $name
+
+?>

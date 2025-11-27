@@ -56,16 +56,17 @@ button[type='submit'] {
 }
 
 input {
-	border-radius: 10px;
+	border-radius: 13px;
 	border: 1px solid gray;
-	padding: 3px 7px;
+	padding: 0.3em 0.4em;
+	font-size: 1rem;
 }
 
 label {
 	opacity: 0.5;
 	margin: 0;
 	font-size: 13px;
-	padding-bottom: 5px;
+	padding-bottom: 0.1em;
 	font-family: 'Monda', sans-serif;
 
 }
