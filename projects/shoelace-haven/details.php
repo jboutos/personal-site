@@ -23,21 +23,25 @@
 
 	<description>
 
-		<picture>
-			<img src='<?=$detail["image"]?>'>
-		</picture>
+		<inner-column>
 
-		<div class='description'>
+			<picture>
+				<img src='<?=$detail["image"]?>'>
+			</picture>
 
-			<h1 class='attention-voice'><?=$detail['name']?></h1>
-			<p class='calm-voice'><?=$description2?></p>
-			<?php if ($detail["availability"]) { ?>
-				<a href='#'>Add to cart</a>
-			<?php } else { ?>
-				<span>Restock soon</span>
-			<?php } ?>
+			<div class='description'>
 
-		</div>
+				<h1 class='attention-voice'><?=$detail['name']?></h1>
+				<p class='calm-voice'><?=$description2?></p>
+				<?php if ($detail["availability"]) { ?>
+					<a href='#'>Add to cart</a>
+				<?php } else { ?>
+					<span>Restock soon</span>
+				<?php } ?>
+
+			</div>
+
+		</inner-column>
 
 	</description>
 
@@ -45,12 +49,16 @@
 
 	<description2>
 
-		<div class='description'>
+		<inner-column>
 
-			<h1 class='attention-voice'>No product found!</h1>
-			<p class='calm-voice'>Check our list for more shoelaces <a href='?page=list'>here</a></p>
+			<div class='description'>
 
-		</div>
+				<h1 class='attention-voice'>No product found!</h1>
+				<p class='calm-voice'>Check our list for more shoelaces <a href='?page=list'>here</a></p>
+
+			</div>
+
+		</inner-column>
 
 	</description2>
 

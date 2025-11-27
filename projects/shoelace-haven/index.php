@@ -7,6 +7,10 @@
 	} else {
 		$page = 'home';
 	}
+
+	function getTemplate($page) {
+		include($page . '.php');
+	}
 ?>
 
 <html lang='en'>
@@ -15,32 +19,24 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<title>Shoelace Haven</title>
 		<meta name='description' content='Further php testing'>
-		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/projects/shoelace-haven/images/logo.png'>
+		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/projects/shoelace-haven/images/slice2.png'>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
 	</head>
 	<body>
-		<inner-column>
-			<header>
-				<?php include('logo.php'); ?>
-				<?php include('site-menu.php'); ?>
-			</header>
-			<main>
-			<?php 
-				if ($page == 'home') {
-					include('home.php');
-				}
-				if ($page == 'list') {
-					include('list.php');
-				}
-				if ($page == 'details') {
-					include('details.php');
-				}
-			?>
-			</main>
-			<footer>
-				<?php include('footer.php') ?>
-			</footer>
-		</inner-column>
+
+		<header>
+			<?php include('logo.php'); ?>
+			<?php include('site-menu.php'); ?>
+		</header>
+
+		<main>
+			<?php getTemplate($page); ?>
+		</main>
+
+		<footer>
+			<?php include('footer.php') ?>
+		</footer>
+
 	</body>
 </html>
