@@ -172,9 +172,9 @@ footer {
 	color: black;
 
 	button {
-		background-color: white;
+		background-color: hsl(220 28% 74.2%);
 		color: black;
-		border: 2px solid black;
+		border: 1px solid hsl(220 28% 48.6%);
 		border-radius: 30px;
 	}
 }
@@ -357,6 +357,8 @@ description {
 
 	@media (min-width: 550px) {
 		display: flex;
+		gap: 2em;
+		justify-content: center;
 	}
 
 	img {
@@ -364,12 +366,27 @@ description {
 		height: auto;
 	}
 
-	h1 + p {
-		margin-top: 2em;
-	}
-
 	.calm-voice {
 		max-width: 60ch;
+	}
+
+	a {
+		padding: 0.5em 0.8em;
+		background-color: hsl(220 28% 74.2%);
+		width: 20%;
+		min-width: 110px;
+		border-radius: 30px;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		border: 1px solid hsl(220 28% 48.6%);
+		text-align: center;
+	}
+
+	.description {
+		display: flex;
+		flex-direction: column;
+		jsutify-content: flex-start;
+		gap: 1em;
+
 	}
 
 }
