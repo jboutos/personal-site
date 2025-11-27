@@ -4,10 +4,6 @@
 body {
 }
 
-header {
-	padding: 0 0 2em 0;
-}
-
 inner-column {
 	display: flex; 
    flex-direction: column;
@@ -102,7 +98,7 @@ footer {
 footer {
 
 	display: block;
-	padding: 0 15px;
+	padding: 0 15px 0 15px;
 	width: 100vw;
 	
 	.mini-voice {
@@ -269,6 +265,7 @@ navigation {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		row-gap: 1em;
+		padding: 1em 0;
 
 		@media (min-width: 350px) {
 			display: flex;
