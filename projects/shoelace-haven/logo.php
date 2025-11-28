@@ -5,7 +5,7 @@
 		<div class='container'>
 		
 			<picture>
-				<img src='images/slice6.svg'>
+				<img src='images/slice10.png'>
 			</picture>
 
 			<h4 class='subtle-voice'>Footwear accessories specialist since 2000</h4>

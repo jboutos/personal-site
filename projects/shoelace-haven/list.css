@@ -1,0 +1,67 @@
+shoelaces {
+
+	text-align: center;
+	display: block;
+	padding: 0 15px;
+
+	shoelace-card {
+
+		display: flex;
+		flex-direction: column;
+
+		padding: 1em;
+		background-color: hsl(220 28% 93.8%);
+		border-radius: 2em;
+		max-width: 250px;
+		height: 100%;
+		gap: 1em;
+		border: 1px solid hsl(220 28% 74.2%);
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+		@media (min-width: 530px) {
+			justify-content: space-between;
+			max-width: 300px;
+		}
+	}
+
+	ul {
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		row-gap: 1.5em;
+		column-gap: 1em;
+		justify-items: center;
+		margin-bottom: 2em;
+	}
+
+	picture {
+
+		aspect-ratio: 1 / 1;
+    	overflow: hidden;
+	}
+
+	img {
+
+		width: 100%;
+		height: 100%;
+    	object-fit: cover;
+    	border-radius: 0.7em;
+	}
+
+	h1 {
+
+		margin: 1em 0 2em 0;
+	}
+
+	a {
+
+		padding: 0.5em 0.8em;
+		background-color: hsl(220 28% 74.2%);
+		width: 70%;
+		border-radius: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		border: 1px solid hsl(220 28% 48.6%);
+	}
+}

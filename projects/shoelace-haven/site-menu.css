@@ -1,0 +1,23 @@
+navigation {
+
+	display: block;
+	padding: 0 15px;
+
+	nav {
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 1em;
+		padding: 1em 0;
+
+		@media (min-width: 350px) {
+			display: flex;
+			gap: 1em;
+		}
+	}
+
+	a {
+		display: inline-block;
+		font-size: 1.3em;
+	}
+}

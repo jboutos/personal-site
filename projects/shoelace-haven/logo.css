@@ -1,0 +1,30 @@
+logo {
+
+	display: block;
+	padding: 2em 0 0 15px;
+	background-color: hsl(220 28% 93.8%);
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+
+		padding-bottom: 2em;
+
+		@media (min-width: 450px) {
+			flex-direction: row;
+			align-items: center;
+			gap: 4.5em;
+		}
+	}
+
+	picture {
+
+		max-width: 150px;
+	}
+
+	img {
+
+		max-width: 150px;
+	}
+}

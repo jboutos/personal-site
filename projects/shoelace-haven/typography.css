@@ -1,0 +1,78 @@
+.loud-voice {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.attention-voice {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.subtle-voice {
+ font-family: 'Merriweather', sans-serif;
+ font-size: 1.3rem;
+ font-weight: 500;
+}
+
+.calm-voice {
+ font-family: 'Merriweather', sans-serif;
+ font-size: 1rem;
+ max-width: 80ch;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+a {
+	font-family: 'Mulish', serif;
+}
+
+.miniscule-voice {
+	font-family: 'Mulish', sans-serif;
+	font-size: 0.7rem;
+}
+
+.mini-voice {
+	font-family: 'Mulish', sans-serif;
+	font-size: 0.6rem;
+	font-weight: 200;
+}
+
+footer {
+
+	.calm-voice {
+		line-height: 1.6;
+	}
+
+	button {
+		font-size: 1.1rem;
+	}
+}
+
+navigation {
+
+	h4 {
+		text-wrap: pretty;
+	}
+}
+
+description {
+
+	.calm-voice {
+		max-width: 60ch;
+		line-height: 1.4;
+	}
+}
+
+shoelaces {
+
+	.subtle-voice {
+		font-size: 1.3em;
+	}
+
+	.calm-voice {
+		font-size: 0.9em;
+		line-height: 1.3;
+	}
+}

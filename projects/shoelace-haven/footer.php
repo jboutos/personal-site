@@ -17,9 +17,22 @@
 						<a href='#'>Code of conduct</a>
 					</div>
 				</div>
-				<div class='button'>
-					<button>International (English)</button>
-				</div>
+				<socials>
+					<div class='button'>
+						<button>International (English)</button>
+					</div>
+					<div class='socials'>
+						<picture>
+							<img src='images/facebook.png'>
+						</picture>
+						<picture>
+							<img src='images/instagram.png'>
+						</picture>
+						<picture class='get-in-line'>
+							<img src='images/x.png'>
+						</picture>
+					</div>
+				</socials>
 			</div>
 			<div class='footer'>
 				<h5 class='mini-voice'>© Copyright</h5>
