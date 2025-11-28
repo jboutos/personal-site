@@ -8,7 +8,7 @@ navigation {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		row-gap: 1em;
-		padding: 1em 0;
+		padding: 1em 0 0.8em 0;
 
 		@media (min-width: 350px) {
 			display: flex;
@@ -19,5 +19,11 @@ navigation {
 	a {
 		display: inline-block;
 		font-size: 1.3em;
+		border-bottom: 4px solid transparent;
+	}
+
+	a:hover {
+		border-bottom: 4px solid #5e709b;
+		background-color: white;
 	}
 }

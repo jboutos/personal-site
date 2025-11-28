@@ -73,6 +73,7 @@ footer {
 
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		gap: 10px;
 	}
 
@@ -126,6 +127,10 @@ footer {
 	.get-in-line img {
 
 		width: 29px;
+	}
+
+	a {
+		padding: 5px;
 	}
 }
 

@@ -18,3 +18,19 @@ inner-column {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+button:hover {
+	background-color: hsl(220 28% 90%);
+}
+
+button[type='submit']:hover {
+	background-color: hsl(220 28% 90%);
+}
+
+a:hover {
+	background-color: hsl(220 28% 90%);
+}
+
+a {
+	padding: 2px;
+}

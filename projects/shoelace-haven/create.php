@@ -26,9 +26,17 @@
 
 		if (!in_array($shape, ["oval", "flat", "round"]) || !in_array($material, ["cotton", "synthetic", "leather"]) || !in_array($color, ["white", "black", "beige", "blue", "brown"])) {
 			$message = "<p class='calm-voice error'><em>Please enter the acceptable values in the fields!</em></p>";
-			$order = [$shape => strtolower($_POST['shape']), $material => strtolower($_POST['material']), $size => $_POST['size'], $color => strtolower($_POST['color'])];
 		} else {
 			$message = "<p class='calm-voice'><em>Your request for a pair of " . $shape . " shaped " . $material . " shoelaces of color " . $color . " and size " . $size . "cm was received!</em></p>";
+
+			//create shoelace
+			$customShoelace = ["Shape" => ucfirst($shape), "Material" => ucfirst($material), "Size" => $size, "Color" => ucfirst($color)];
+
+			//tranform it to json file
+			$customShoelaceJson = json_encode($customShoelace);
+
+			//save json
+			file_put_contents('shoelace.json', $customShoelaceJson);
 		}
 	}
 
