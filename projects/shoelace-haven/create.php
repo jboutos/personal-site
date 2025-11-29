@@ -5,6 +5,9 @@
 	$size = $_POST['size'] ?? '';
 	$color = $_POST['color'] ?? '';
 	$message = '';
+	//$shoelaceData = file_get_contents("shoelace.json");
+
+	//var_dump($shoelaceData);
 	
 	if (isset($_POST['submit'])) {
 
@@ -36,7 +39,7 @@
 			$customShoelaceJson = json_encode($customShoelace);
 
 			//save json
-			file_put_contents('shoelace.json', $customShoelaceJson);
+			file_put_contents('shoelace.json', $customShoelaceJson, FILE_APPEND);
 		}
 	}
 
@@ -46,37 +49,41 @@
 
 	<inner-column>
 
-		<h1 class=attention-voice>Create your very own custom shoelace!</h1>
+		<container>
 
-		<form method='POST'>
+			<h1 class=attention-voice>Create your very own custom shoelace!</h1>
 
-			<h3 class='subtle-voice'>Shoelace customizer</h3>
+			<form method='POST'>
 
-			<div class='field'>
-				<label for='shape'>Shape (oval, flat, round)</label>
-				<input id='shape' type='text' name='shape' value='<?php echo $shape; ?>' required>
-			</div>
+				<h3 class='subtle-voice'>Shoelace customizer</h3>
 
-			<div class='field'>
-				<label for='material'>Material (cotton, synthetic, leather)</label>
-				<input id='material' type='text' name='material' value='<?php echo $material; ?>' required>
-			</div>
+				<div class='field'>
+					<label for='shape'>Shape (oval, flat, round)</label>
+					<input id='shape' type='text' name='shape' value='<?php echo $shape; ?>' required>
+				</div>
 
-			<div class='field'>
-				<label for='size'>Size (in cm)</label>
-				<input id='size' type='number' name='size' min='60' max='180' step='1' value='<?php echo $size; ?>' required>
-			</div>
+				<div class='field'>
+					<label for='material'>Material (cotton, synthetic, leather)</label>
+					<input id='material' type='text' name='material' value='<?php echo $material; ?>' required>
+				</div>
 
-			<div class='field'>
-				<label for='color'>Color (white, black, beige, blue, brown)</label>
-				<input id='color' type='text' name='color' value='<?php echo $color; ?>' required>
-			</div>
+				<div class='field'>
+					<label for='size'>Size (60 - 180cm)</label>
+					<input id='size' type='number' name='size' min='60' max='180' step='1' value='<?php echo $size; ?>' required>
+				</div>
 
-			<button type='submit' name='submit'>Submit</button>
+				<div class='field'>
+					<label for='color'>Color (white, black, beige, blue, brown)</label>
+					<input id='color' type='text' name='color' value='<?php echo $color; ?>' required>
+				</div>
 
-			<?php echo $message; ?>
+				<button type='submit' name='submit'>Add to cart</button>
 
-		</form>
+				<?php echo $message; ?>
+
+			</form>
+
+		</container>
 
 	</inner-column>
 

@@ -2,6 +2,8 @@
 
 <?php
 
+	$shoelace_id = '';
+
 	if (isset($_GET['shoelace'])) {
 		$shoelace_id = $_GET['shoelace'];
 	}

@@ -7,6 +7,20 @@ calculator {
 			text-align: center;
 	}
 
+	inner-column {
+
+		@media (min-width: 2000px) {
+			height: 100vh;
+		}
+	}
+
+	container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-grow: 1;
+	}
+
 	form {
 
 		max-width: 300px;

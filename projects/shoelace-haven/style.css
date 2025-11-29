@@ -9,6 +9,9 @@
 @import url("logo.css");
 @import url("site-menu.css");
 
+body {
+}
+
 inner-column {
 
 	display: flex; 

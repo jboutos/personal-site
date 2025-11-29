@@ -4,9 +4,10 @@
 
 	<inner-column>
 
-		<h1 class='attention-voice'>A broad selection of shoelaces<br> for your everyday needs!</h1>
-
 		<catalog>
+
+			<h1 class='attention-voice'>A broad selection of shoelaces<br> for your everyday needs!</h1>
+
 			<ul>
 			<?php
 				foreach ($shoelaces as $shoelace) {
@@ -34,6 +35,7 @@
 				}
 			?>
 			</ul>
+			
 		</catalog>
 
 	</inner-column>

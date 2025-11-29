@@ -7,7 +7,7 @@
 		<welcome>
 			
 			<h1 class='attention-voice'>Welcome to Shoelace Haven</h1>
-			<p class='calm-voice'>Shoelace Haven is your go-to destination for stylish, high-quality shoelaces and other footwear accesories that bring comfort, confidence, and personality into every outfit. Step into a space where fashion feels effortless!</p>
+			<p class='calm-voice'>Shoelace Haven is your go-to destination for stylish, high-quality shoelaces and other footwear accessories that bring comfort, confidence, and personality into every outfit. Step into a space where fashion feels effortless!</p>
 
 		</welcome>
 

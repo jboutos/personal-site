@@ -4,6 +4,20 @@ shoelaces {
 	display: block;
 	padding: 0 15px;
 
+	inner-column {
+
+		@media (min-width: 2000px) {
+			height: 100vh;
+		}
+	}
+
+	catalog {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-grow: 1;
+	}
+
 	shoelace-card {
 
 		display: flex;
