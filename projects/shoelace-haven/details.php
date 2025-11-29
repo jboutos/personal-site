@@ -30,7 +30,7 @@
 			<container>
 
 				<picture>
-					<img src='<?=$detail["image"]?>'>
+					<img src='<?=$detail["image"]?>' alt='<?=$detail["name"] . " image"?>'>
 				</picture>
 
 				<div class='description'>

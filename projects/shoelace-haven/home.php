@@ -1,6 +1,6 @@
 <container>
 	<picture class='hero'>
-		<img src='images/laces.png'>
+		<img src='images/laces.png' alt='pairs of shoes in a row'>
 	</picture>
 	<inner-column>
 
@@ -15,7 +15,7 @@
 
 			<div class='info'>
 				<picture>
-					<img src='images/shipping.png'>
+					<img src='images/shipping.png' alt='shipping image'>
 				</picture>
 				<h3>FREE DELIVERY</h3>
 				<p>Free delivery over €30</p>
@@ -23,7 +23,7 @@
 
 			<div class='info'>
 				<picture>
-					<img src='images/refund.png'>
+					<img src='images/refund.png' alt='refund image'>
 				</picture>
 				<h3>14 DAYS FOR REFUND</h3>
 				<p>For all countries in Europe</p>
@@ -31,7 +31,7 @@
 
 			<div class='info'>
 				<picture>
-					<img src='images/contact.png'>
+					<img src='images/contact.png' alt='contact image'>
 				</picture>
 				<h3>HOTLINE</h3>
 				<p>+63 685 553 18</p>
@@ -39,7 +39,7 @@
 
 			<div class='info'>
 				<picture>
-					<img src='images/bag.png'>
+					<img src='images/bag.png' alt='shopping bag image'>
 				</picture>
 				<h3>CLICK & COLLECT</h3>
 				<p>1-5 working days</p>

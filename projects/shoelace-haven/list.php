@@ -24,7 +24,7 @@
 
 						echo "<shoelace-card id='" . $id . "'>" .
 									"<picture class='image'>" .
-										"<img src='" . $image . "'>" .
+										"<img src='" . $image . "' alt='" . $name . " image'>" .
 									"</picture>" .
 									"<h2 class='subtle-voice'>" . $name . "</h2>" .
 									"<p class='calm-voice'>" . $description . "</p>" .

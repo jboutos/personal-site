@@ -6,7 +6,7 @@
 
 			<a href='?page=home'>
 				<picture>
-					<img src='images/slice10.png'>
+					<img src='images/slice10.png' alt='company logo'>
 				</picture>
 			</a>
 
