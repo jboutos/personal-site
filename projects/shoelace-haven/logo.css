@@ -27,4 +27,8 @@ logo {
 
 		max-width: 150px;
 	}
+
+	a:hover {
+		background-color: transparent;
+	}
 }
