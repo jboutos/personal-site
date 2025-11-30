@@ -39,7 +39,7 @@
 			$customShoelaceJson = json_encode($customShoelace);
 
 			//save json
-			file_put_contents('shoelace.json', $customShoelaceJson, FILE_APPEND);
+			file_put_contents('shoelace.json', $customShoelaceJson . PHP_EOL, FILE_APPEND);
 		}
 	}
 

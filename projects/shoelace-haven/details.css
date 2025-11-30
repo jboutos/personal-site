@@ -90,6 +90,12 @@ description2 {
 	display: block;
 	padding: 0 15px;
 
+	inner-column {
+		@media (min-width: 2000px) {
+			height: 100vh;
+		}
+	}
+
 	container {
 		flex-grow: 1;
 	}

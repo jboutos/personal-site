@@ -580,4 +580,20 @@ var_dump($team);
 
 
 
+
+
+
+
+function updateNameAssoc($array, $id) {
+    if (isset($array[$id])) {
+        $array[$id]['name'] = 'Jonathan Trip';
+    }
+    return $array;
+}
+
+$team2 = updateNameAssoc($team2, 'c789');
+var_dump($team2);
+
+
+
 ?>
