@@ -60,6 +60,7 @@
 				<li><a href='monster-adoption-service/index.php'>Monster adoption service</a></li>
 				<li><a href='php-exercises/index.php'>Php practice</a></li>
 				<li><a href='shoelace-haven/index.php'>Php routing practice</a></li>
+				<li><a href='crud-app/index.php'>Simple crud app</a></li>
 			</ul>
 
 		</main>
