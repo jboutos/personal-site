@@ -33,13 +33,23 @@
 			$message = "<p class='calm-voice'><em>Your request for a pair of " . $shape . " shaped " . $material . " shoelaces of color " . $color . " and size " . $size . "cm was received!</em></p>";
 
 			//create shoelace
-			$customShoelace = ["Shape" => ucfirst($shape), "Material" => ucfirst($material), "Size" => $size, "Color" => ucfirst($color)];
+			$customShoelace = ["Id" => uniqid(), "Shape" => ucfirst($shape), "Material" => ucfirst($material), "Size" => $size, "Color" => ucfirst($color)];
+
+			// append mechanism
+			if (file_exists('shoelace.json')) {
+				$shoelaceData = file_get_contents("carbrands.json");
+				$customShoelaces = json_decode($shoelaceData);
+			} else {
+				$customShoelaces = [];
+			}
+
+			$customShoelaces = $customShoelace;
 
 			//tranform it to json file
-			$customShoelaceJson = json_encode($customShoelace);
+			$customShoelaceJson = json_encode($customShoelaces);
 
 			//save json
-			file_put_contents('shoelace.json', $customShoelaceJson . PHP_EOL, FILE_APPEND);
+			file_put_contents('shoelace.json', $customShoelaceJson);
 		}
 	}
 

@@ -1,76 +1,55 @@
-<!doctype html>
-<html lang='en'>
+<style>
 	
-	<head>
-		
-		<title>Homepage</title>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<meta name='description' content='A portal to various useful links'>
-		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/projects/images/meta-3.png'>
-		<link rel='stylesheet' href='../style.css'>
-		<style>
-			
-			body {
-				background-color: powderblue;
-			}
+	body {
+		background-color: powderblue;
+	}
 
-			h1 {
-				color: mediumblue;
-			}
+	h1 {
+		color: mediumblue;
+	}
 
-			h2 {
-				color: firebrick;
-			}
+	h2 {
+		color: firebrick;
+	}
 
-			a {
-				color: mediumblue;
-			}
+	a {
+		color: mediumblue;
+	}
 
-			a:hover {
-				background-color: hsl(180, 92%, 40%);
-			}
+	a:hover {
+		background-color: hsl(180, 92%, 40%);
+	}
 
-			li::marker {
-				color: mediumblue;
-			}
+	li::marker {
+		color: mediumblue;
+	}
 
-		</style>
+</style>
+
+<main>
+
+	<h1 class='loud-voice'>Portal</h1>
+
+	<h2 class='attention-voice'>Booking sites</h2>
 	
-	</head>
+	<ul>
+		<li><a href='https://www.booking.com/' target='book'>Booking</a></li>
+		<li><a href='https://www.travala.com/' target="travala">Travala</a></li>
+		<li><a href='https://www.trivago.com/' target='triv'>Trivago</a></li>
+	</ul>
+
+	<h2 class='attention-voice'>Sports sites</h2>
 	
-	<body>
+	<ul>
+		<li><a href='https://www.hoopfellas.gr/el/' target='hoops'>Hoopfellas</a></li>	
+		<li><a href='https://amerikanos24.com/' target='amer'>Amerikanos24</a></li>
+		<li><a href='https://www.gazzetta.gr/' target='gazz'>Gazzetta</a></li>
+	</ul>
 
-		<?php include('../header.php') ?>
+	<h2 class='attention-voice'>News sites</h2>
 
-		<main>
-		
-			<h1 class='loud-voice'>Portal</h1>
-
-			<h2 class='attention-voice'>Booking sites</h2>
-			
-			<ul>
-				<li><a href='https://www.booking.com/' target='book'>Booking</a></li>
-				<li><a href='https://www.travala.com/' target="travala">Travala</a></li>
-				<li><a href='https://www.trivago.com/' target='triv'>Trivago</a></li>
-			</ul>
-
-			<h2 class='attention-voice'>Sports sites</h2>
-			
-			<ul>
-				<li><a href='https://www.hoopfellas.gr/el/' target='hoops'>Hoopfellas</a></li>	
-				<li><a href='https://amerikanos24.com/' target='amer'>Amerikanos24</a></li>
-				<li><a href='https://www.gazzetta.gr/' target='gazz'>Gazzetta</a></li>
-			</ul>
-
-			<h2 class='attention-voice'>News sites</h2>
-
-			<ul>
-				<li><a href='https://www.efsyn.gr/' target='ef'>Efsyn</a></li>
-				<li><a href='https://www.pronews.gr/' target='pro'>Pronews</a></li>
-			</ul>
-		</main>
-
-	</body>
-
-</html>
+	<ul>
+		<li><a href='https://www.efsyn.gr/' target='ef'>Efsyn</a></li>
+		<li><a href='https://www.pronews.gr/' target='pro'>Pronews</a></li>
+	</ul>
+</main>

@@ -1,75 +1,56 @@
-<!doctype html>
- <html lang='en'>
 
-	<head>
-		
-		<title>Learning journal</title>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<meta name='description' content='A short journal'>
-		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/projects/images/meta-7.png'>
-		<link rel='stylesheet' href='../style.css'>
-		<style>
-			body {
-				background-color: mistyrose;
-			}
+<style>
+	body {
+		background-color: mistyrose;
+	}
 
-			h1 {
-				color: #7f1786;
-			}
+	h1 {
+		color: #7f1786;
+	}
 
-			h2 {
-				color: #7f1786;
-			}
+	h2 {
+		color: #7f1786;
+	}
 
-			p {
-				color: darkmagenta;
-			}
+	p {
+		color: darkmagenta;
+	}
 
-			a {
-				color: darkmagenta;
-			}
+	a {
+		color: darkmagenta;
+	}
 
-			li {
-				color: darkmagenta;
-			}
+	li {
+		color: darkmagenta;
+	}
 
-			a:hover {
-				background-color: orchid;
-			}
+	a:hover {
+		background-color: orchid;
+	}
 
-			li::marker {
-				color: darkmagenta;
-			}
-		</style>
-	</head>
+	li::marker {
+		color: darkmagenta;
+	}
+</style>
+
+<main>
+
+	<div class ='column'>
+
+		<h1 class='loud-voice'>A rather short journal of some of my thoughts on the html module</h1>
+
+		<p class='calm-voice'>I'm already having doubts about being able to complete this course. I couldn't follow the instructions for that homebrew app, I installed it via the terminal and then... ? Other than that I now have to attempt linking all these html documents together, I think I can do this.</p>
+
+		<h2 class='attention-voice'>Introductory links</h2>
+
+		<div class='links'>
+			<ul>
+				<li><a href='?page=welcome'>welcome</a></li>
+				<li><a href='?page=favorite-foods'>favorite foods</a></li>
+				<li><a href='?page=contact'>contact</a></li>
+			</ul>
+		</div>
+
+	</div>
 	
-	<body>
-
-		<?php include('../header.php') ?>
-
-		<main>
-
-			<div class ='column'>
-
-				<h1 class='loud-voice'>A rather short journal of some of my thoughts on the html module</h1>
-
-				<p class='calm-voice'>I'm already having doubts about being able to complete this course. I couldn't follow the instructions for that homebrew app, I installed it via the terminal and then... ? Other than that I now have to attempt linking all these html documents together, I think I can do this.</p>
-
-				<h2 class='attention-voice'>Introductory links</h2>
-
-				<div class='links'>
-					<ul>
-						<li><a href='welcome.php'>welcome</a></li>
-						<li><a href='favorite-foods.php'>favorite foods</a></li>
-						<li><a href='contact.php'>contact</a></li>
-					</ul>
-				</div>
-
-			</div>
-			
-		</main>
-
-	</body>
-
-</html>
+</main>

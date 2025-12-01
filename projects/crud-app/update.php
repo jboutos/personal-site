@@ -11,7 +11,7 @@
 
         $carData = file_get_contents('carbrands.json');
 
-        // Decode the json file into a php array
+        // Decode the json file into a php associative array
         $cars = json_decode($carData, true);
 
         function updateCar($array, $id, $value1, $value2) {
@@ -39,12 +39,12 @@
 
     <div class='field'>
         <label for='emake'>Make</label>
-        <input id='emake' type='text' name='emake' required>
+        <input id='emake' type='text' name='emake' value='<?php echo $make; ?>' required>
     </div>
 
     <div class='field'>
         <label for='emodel'>Model</label>
-        <input id='emodel' type='text' name='emodel' required>
+        <input id='emodel' type='text' name='emodel' value='<?php echo $model; ?>' required>
     </div>
 
     <button type='submit' name='edit-submit'>Submit</button>
@@ -53,8 +53,8 @@
 
 <?php 
 
-if (isset($_POST['edit-submit'])) {
-    echo "<p>Car was updated</p>"; 
+    if (isset($_POST['edit-submit'])) {
+        echo "<p>Car was updated</p>"; 
 } ?>
 
 <a class='redirection' href=?page=home>Go back</a>

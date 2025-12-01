@@ -16,11 +16,11 @@ if (file_exists("carbrands.json")) {
 <ul>
 <?php foreach ($cars as $car) { ?>
     <li>
-    	<list-manager>
-        <?php echo "<p>" . $car['Make'] . " " . $car['Model'] . "</p>"; ?>
-        <a href="?page=update&id=<?php echo $car['Id']; ?>">Edit</a>
-        <a href="?page=delete&id=<?php echo $car['Id']; ?>">Delete</a>
-      </list-manager>
+        <list-manager>
+            <?php echo "<p>" . $car['Make'] . " " . $car['Model'] . "</p>"; ?>
+            <a href="?page=update&id=<?php echo $car['Id']; ?>">Edit</a>
+            <a href="?page=delete&id=<?php echo $car['Id']; ?>">Delete</a>
+        </list-manager>
     </li>
 <?php } ?>
 </ul>

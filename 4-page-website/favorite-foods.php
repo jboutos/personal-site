@@ -1,80 +1,60 @@
-<!doctype html>
- <html lang='en'>
 
-	<head>
+<style>
+	body {
+		background-color: mistyrose;
+	}
 
-		<title>Favorite stuff</title>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<meta name='description' content='A list of favorite foods'>
-		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/projects/images/meta-6.png'>
-		<link rel='stylesheet' href='../style.css'>
-		<style>
-			body {
-				background-color: mistyrose;
-			}
+	h1 {
+		color: #7f1786;
+	}
 
-			h1 {
-				color: #7f1786;
-			}
+	h2 {
+		color: #7f1786;
+	}
 
-			h2 {
-				color: #7f1786;
-			}
+	p {
+		color: darkmagenta;
+	}
 
-			p {
-				color: darkmagenta;
-			}
+	a {
+		color: darkmagenta;
+	}
 
-			a {
-				color: darkmagenta;
-			}
+	li {
+		color: darkmagenta;
+	}
 
-			li {
-				color: darkmagenta;
-			}
+	a:hover {
+		background-color: orchid;
+	}
 
-			a:hover {
-				background-color: orchid;
-			}
+	li::marker {
+		color: darkmagenta;
+	}
+</style>
 
-			li::marker {
-				color: darkmagenta;
-			}
-		</style>
+<main>
+
+	<div class ='column'>
 		
-	</head>
-	
-	<body>
+		<h1 class='loud-voice'>Favorite foods</h1>
+		<p class='calm-voice'>Some of my favorite foods include:</p>
+		
+		<ul>
+			<li>Mousakas</li>
+			<li>Strapatsada</li>
+			<li>Tripe soup</li>
+		</ul>
 
-		<?php include('../header.php') ?>
+		<h2 class='attention-voice'>Introductory links</h2>
 
-		<main>
-
-			<div class ='column'>
-				
-				<h1 class='loud-voice'>Favorite foods</h1>
-				<p class='calm-voice'>Some of my favorite foods include:</p>
-				
-				<ul>
-					<li>Mousakas</li>
-					<li>Strapatsada</li>
-					<li>Tripe soup</li>
-				</ul>
-
-				<h2 class='attention-voice'>Introductory links</h2>
-
-				<div class='links'>
-					<ul>
-						<li><a href='welcome.php'>welcome</a></li>
-						<li><a href='contact.php'>contact</a></li>
-						<li><a href='journal.php'>journal</a></li>
-					</ul>
-				</div>
-				
-			</div>
-		</main>
-
-   </body>
-
-</html>
+		<div class='links'>
+			<ul>
+				<li><a href='?page=welcome'>welcome</a></li>
+				<li><a href='?page=contact'>contact</a></li>
+				<li><a href='?page=journal'>journal</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</main>

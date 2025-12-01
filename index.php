@@ -1,5 +1,16 @@
 <!doctype html>
 
+<?php
+
+	$page = null;
+	if (isset($_GET['page'])) {
+		$page = $_GET['page'];
+	} else {
+		$page = 'home';
+	}
+
+?>
+
 <html lang='en'>
 
 	<head>
@@ -10,46 +21,6 @@
 		<meta name='description' content='An amalgamation of everything unholy created at PE so far'>
 		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'>
 		<link rel='stylesheet' href='style.css'>
-		<style>
-
-			html {
-				--color: #233EA9;
-				--link: #4A4A4F;
-				--list: slategray;
-				--base: lavender;
-				--hover: hsl(235, 80%, 80%);
-			}
-
-			body {
-				background-color: var(--base);
-			}
-			h1 {
-				color: var(--color);
-			}
-
-			h2 {
-				color: var(--color);
-			}
-
-			a {
-				color: var(--link);
-				&:hover {
-					background-color: var(--hover);
-				}
-			}
-
-			li::marker {
-				color: var(--list);
-			}
-
-			.info {
-				display: flex;
-				flex-direction: column;
-				align-items: start;
-				gap: 10px;
-			}
-
-		</style>
 		
 	</head>
 
@@ -57,25 +28,37 @@
 
 		<?php include('header.php') ?>
 
-		<main>
+		<?php 
 
-			<div class='column'>
+			if ($page == 'home') {
+				include('home.php');
+			}
+			if ($page == 'goals') {
+				include('goals.php');
+			}
+			if ($page == 'welcome') {
+				include('4-page-website/welcome.php');
+			}
+			if ($page == 'contact') {
+				include('4-page-website/contact.php');
+			}
+			if ($page == 'projects') {
+				include('projects/projects.php');
+			}
+			if ($page == 'favorite-foods') {
+				include('4-page-website/favorite-foods.php');
+			}
+			if ($page == 'journal') {
+				include('4-page-website/journal.php');
+			}
+			if ($page == 'archive') {
+				include('projects/archive/archive.php');
+			}
+			if ($page == 'homepage') {
+				include('projects/homepage.php');
+			}
 
-				<h1 class='loud-voice'>My web-dev journey</h1>
-
-				
-				
-				<div class='info'>
-					<ul>
-						<li><a href='goals.php'>Goals</a></li>
-						<li><a href='resume.php'>Resume</a></li>
-						<li><a href='https://substack.com/@mrmusicvibe?utm_source=user-menu'>My substack</a></li>
-					</ul>
-				</div>
-
-			</div>
-
-		</main>
+		?>
 
 	</body>
 
