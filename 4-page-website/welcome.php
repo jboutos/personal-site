@@ -16,16 +16,8 @@
 		color: darkmagenta;
 	}
 
-	a {
-		color: darkmagenta;
-	}
-
 	li {
 		color: darkmagenta;
-	}
-
-	a:hover {
-		background-color: orchid;
 	}
 
 	li::marker {
@@ -43,9 +35,9 @@
 
 		<div class='links'>
 			<ul>
-				<li><a href='?page=favorite-foods'>favorite foods</a></li>
-				<li><a href='?page=contact'>contact</a></li>
-				<li><a href='?page=journal'>journal</a></li>
+				<li><a href='?page=favorite-foods' class='<?php if ($page == "welcome") {echo "purple";} ?>'>favorite foods</a></li>
+				<li><a href='?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a></li>
+				<li><a href='?page=journal' class='<?php if ($page == "welcome") {echo "purple";} ?>'>journal</a></li>
 			</ul>
 		</div>
 

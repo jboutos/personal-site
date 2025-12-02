@@ -15,10 +15,10 @@
 	<div class='column'>
 
 		<nav>
-			<a href='<?=BASE_URL?>'>home</a>
-			<a href='<?=BASE_URL?>?page=welcome'>about</a>
-			<a href='<?=BASE_URL?>?page=contact'>contact</a>
-			<a href='<?=BASE_URL?>?page=projects'>projects</a>
+			<a href='<?=BASE_URL?>' class='<?php if ($page == "welcome") {echo "purple";} ?>'>home</a>
+			<a href='<?=BASE_URL?>?page=welcome' class='<?php if ($page == "welcome") {echo "purple";} ?>'>about</a>
+			<a href='<?=BASE_URL?>?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a>
+			<a href='<?=BASE_URL?>?page=projects' class='<?php if ($page == "welcome") {echo "purple";} ?>'>projects</a>
 		</nav>
 		
 	</div>

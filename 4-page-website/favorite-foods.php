@@ -50,9 +50,9 @@
 
 		<div class='links'>
 			<ul>
-				<li><a href='?page=welcome'>welcome</a></li>
-				<li><a href='?page=contact'>contact</a></li>
-				<li><a href='?page=journal'>journal</a></li>
+				<li><a href='?page=welcome' class='<?php if ($page == "welcome") {echo "purple";} ?>'>welcome</a></li>
+				<li><a href='?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a></li>
+				<li><a href='?page=journal' class='<?php if ($page == "welcome") {echo "purple";} ?>'>journal</a></li>
 			</ul>
 		</div>
 		
