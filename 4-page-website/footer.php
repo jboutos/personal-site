@@ -15,9 +15,9 @@
 
 <div class='links'>
 	<nav>
-		<a href='?page=welcome' class='<?php if ($page == "welcome") {echo "purple";} ?>'>welcome</a>
-		<a href='?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a>
-		<a href='?page=favorite-foods' class='<?php if ($page == "welcome") {echo "purple";} ?>'>favorite foods</a>
-		<a href='?page=journal' class='<?php if ($page == "welcome") {echo "purple";} ?>'>journal</a>
+		<a href='?page=welcome'>welcome</a>
+		<a href='?page=contact'>contact</a>
+		<a href='?page=favorite-foods'>favorite foods</a>
+		<a href='?page=journal'>journal</a>
 	</nav>
 </div>

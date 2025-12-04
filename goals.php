@@ -1,27 +1,52 @@
 <style>
+
 	body {
-		background-color: seashell;
+		--color: hsl(248 39% 39.2%);
+		--charged : hsl(249 79.8% 67.1%);
+		--base: hsl(25 100% 96.7%);
+		--hover: hsl(219 79.2% 66.1%);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			--color: hsl(25 100% 96.7%);
+			--charged : hsl(249 79.8% 80.1%);
+			--base: hsl(248 39% 39.2%);
+			--hover: hsl(219 79.2% 66.1%);
+		}
+	}
+
+	body {
+		background-color: var(--base);
 	}
 
 	h1 {
-		color: mediumslateblue;
+		color: var(--charged);
+	}
+
+	a, li::marker, h2 {
+		color: var(--color);
+	}
+
+	a:hover {
+		background-color: var(--hover);
 	}
 
    li {
 		font-size:18px;
 		line-height: 2em;
-	}
-
-	a, li::marker, h2 {
-		color: darkslateblue;
-		}
-
-	a:hover {
-		background-color: cornflowerblue;
+		color: var(--color);
 	}
 
 	ul + h2 {
 		margin-top: 1.5em;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+		padding-left: 1.2em;
 	}
 
 </style>

@@ -1,11 +1,21 @@
 <style>
 
-	html {
-		--color: #233EA9;
-		--link: #4A4A4F;
-		--list: slategray;
-		--base: lavender;
+	body {
+		--color: hsl(230 59.8% 40%);
+		--link: hsl(240 3.3% 30%);
+		--list: hsl(210 12.6% 50.2%);
+		--base: hsl(240 61.3% 93.9%);
 		--hover: hsl(235, 80%, 80%);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			--color: hsl(240 61.3% 93.9%);
+			--link: hsl(240 61.3% 93.9%);
+			--list: hsl(332 82.4% 55.9%);
+			--base: hsl(230 59.8% 40%);
+			--hover: hsl(235, 80%, 80%);
+		}
 	}
 
 	body {

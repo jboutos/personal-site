@@ -1,19 +1,30 @@
 
 <style>
+
 	body {
-		background-color: mistyrose;
+		--color: hsl(296 70.7% 30.8%);
+		--base: hsl(7 75.8% 93.5%);
+		--hover: hsl(302 58.9% 64.7%);
 	}
 
-	h1, h2 {
-		color: #7f1786;
+	@media (prefers-color-scheme: dark) {
+		body {
+			--color: hsl(7 75.8% 93.5%);
+			--base: hsl(296 70.7% 30.8%);
+			--hover: hsl(302 58.9% 64.7%);
+		}
 	}
 
-	p, a, li, li::marker {
-		color: darkmagenta;
+	body {
+		background-color: var(--base);
+	}
+
+	h1, h2, p, a, li, li::marker {
+		color: var(--color);
 	}
 
 	a:hover {
-		background-color: orchid;
+		background-color: var(--hover);
 	}
 
 	.links {
@@ -23,6 +34,10 @@
 
 	li {
 		list-style-type: none;
+	}
+
+	h2 {
+		margin-top: 1em;
 	}
 
 	h2:last-of-type {

@@ -8,7 +8,7 @@
 			color: firebrick;
 		}
 
-		p, h2, a {
+		p, h2, a, li::marker {
 			color: mediumblue;
 		}
 
@@ -16,17 +16,23 @@
 			background-color: hsl(180, 92%, 40%);
 		}
 
-		li::marker {
-			color: mediumblue;
+		ul {
+			display: flex;
+			flex-direction: column;
+			margin-top: 2em;
+		}
+
+		.careful-voice {
+			margin-top: 0.5em;
 		}
 
 </style>
 
 <main>
 
-	<h1 class='loud-voice'>A list of older PE projects</h2>
+	<h1 class='attention-voice'>A list of older PE projects</h2>
 
-	<h2 class='attention-voice'>Older exercises (go to heaven)</h2>
+	<h2 class='careful-voice'>Older exercises (go to heaven)</h2>
 
 	<ul>
 		<li><a href='projects/archive/google-doc.html'>Google doc</a></li>

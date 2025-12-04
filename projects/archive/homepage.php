@@ -16,13 +16,23 @@
 		background-color: hsl(180, 92%, 40%);
 	}
 
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+	}
+
+	.careful-voice {
+		margin-top: 1em;
+	}
+
 </style>
 
 <main>
 
-	<h1 class='loud-voice'>Portal</h1>
+	<h1 class='attention-voice'>Portal</h1>
 
-	<h2 class='attention-voice'>Booking sites</h2>
+	<h2 class='careful-voice'>Booking sites</h2>
 	
 	<ul>
 		<li><a href='https://www.booking.com/' target='book'>Booking</a></li>
@@ -30,7 +40,7 @@
 		<li><a href='https://www.trivago.com/' target='triv'>Trivago</a></li>
 	</ul>
 
-	<h2 class='attention-voice'>Sports sites</h2>
+	<h2 class='careful-voice'>Sports sites</h2>
 	
 	<ul>
 		<li><a href='https://www.hoopfellas.gr/el/' target='hoops'>Hoopfellas</a></li>	
@@ -38,7 +48,7 @@
 		<li><a href='https://www.gazzetta.gr/' target='gazz'>Gazzetta</a></li>
 	</ul>
 
-	<h2 class='attention-voice'>News sites</h2>
+	<h2 class='careful-voice'>News sites</h2>
 
 	<ul>
 		<li><a href='https://www.efsyn.gr/' target='ef'>Efsyn</a></li>
