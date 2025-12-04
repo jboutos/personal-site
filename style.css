@@ -12,10 +12,6 @@ body {
 	}
 }
 
-.calm-voice, .loud-voice, .attention-voice{
-	padding-left: 5px;
-}
-
 h1 {
 	font-family: arial;
 	padding: 1.3em 0;
@@ -86,12 +82,23 @@ li {
 }
 
 .attention-voice {
-	font-size: 1.7rem;
-	font-weight: 500;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.careful-voice {
+	font-size: 1.5rem;
+	font-weight: 550;
+}
+
+.subtle-voice {
+	font-size: 1.3rem;
+	max-width: 60ch;
 }
 
 .calm-voice {
 	font-size: 1rem;
+	max-width: 60ch;
 }
 
 a.purple {
@@ -100,4 +107,18 @@ a.purple {
 
 a:hover.purple {
 	background-color: orchid;
+}
+
+picture {
+	display: block;
+	aspect-ratio: 1 / 1;
+ 	overflow: hidden;
+ 	max-width: 400px;
+}
+
+img {
+	display: block;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }

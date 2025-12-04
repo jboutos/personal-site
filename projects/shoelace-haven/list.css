@@ -1,5 +1,4 @@
 shoelaces {
-
 	text-align: center;
 	display: block;
 	padding: 0 15px;
@@ -19,7 +18,6 @@ shoelaces {
 	}
 
 	shoelace-card {
-
 		display: flex;
 		flex-direction: column;
 
@@ -39,7 +37,6 @@ shoelaces {
 	}
 
 	ul {
-
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		row-gap: 1.5em;
@@ -49,13 +46,11 @@ shoelaces {
 	}
 
 	picture {
-
 		aspect-ratio: 1 / 1;
     	overflow: hidden;
 	}
 
 	img {
-
 		width: 100%;
 		height: 100%;
     	object-fit: cover;
@@ -63,12 +58,10 @@ shoelaces {
 	}
 
 	h1 {
-
 		margin: 1em 0 2em 0;
 	}
 
 	a {
-
 		padding: 0.5em 0.8em;
 		background-color: hsl(220 28% 74.2%);
 		width: 70%;

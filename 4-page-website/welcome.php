@@ -4,24 +4,35 @@
 		background-color: mistyrose;
 	}
 
-	h1 {
+	h1, h2 {
 		color: #7f1786;
+	}
+
+	p, li, li::marker {
+		color: darkmagenta;
+	}
+
+	.substack {
+		font-size: 1rem;
+	}
+
+	.attention-voice {
+		padding-bottom: 30px;
+	}
+
+	.links {
+		display: block;
+		margin-top: 1em;
+	}
+
+	h1 {
+		padding-top: 1em;
+		padding-bottom: 0.5em;
 	}
 
 	h2 {
-		color: #7f1786;
-	}
-
-	p {
-		color: darkmagenta;
-	}
-
-	li {
-		color: darkmagenta;
-	}
-
-	li::marker {
-		color: darkmagenta;
+		padding-bottom: 0;
+		margin-top: 2em;
 	}
 </style>
 
@@ -29,17 +40,12 @@
 
 	<div class='column'>
 
-		<h1 class='loud-voice'>Hello people, have fun!</h1>
+		<h1 class='attention-voice'>Hello people!</h1>
+		<p class='calm-voice'>I'm John and I'm trying to learn more about web development! I'm sort of introverted and have a difficult time finding anything to talk about regarding myself. Hopefully, given some time I will at very least be able to present myself throught my work instead of words! In the meantime you can always check out my <a href='https://substack.com/@mrmusicvibe?utm_source=user-menu' target="_blank" class='substack'>substack</a>!</p>
 
-		<h2 class='attention-voice'>Introductory links</h2>
+		<h2 class='careful-voice'>Introductory links</h2>
 
-		<div class='links'>
-			<ul>
-				<li><a href='?page=favorite-foods' class='<?php if ($page == "welcome") {echo "purple";} ?>'>favorite foods</a></li>
-				<li><a href='?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a></li>
-				<li><a href='?page=journal' class='<?php if ($page == "welcome") {echo "purple";} ?>'>journal</a></li>
-			</ul>
-		</div>
+		<?php include('footer.php') ?>
 
 	</div>
 

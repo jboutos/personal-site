@@ -34,6 +34,8 @@
 		<li><a href='projects/archive/details-element.html'>Details element example</a></li>
 		<li><a href='projects/archive/html-audio.html'>Html audio</a></li>
 		<li><a href='projects/archive/base/index.php'>Base</a></li>
+		<li><a href='?page=homepage'>Portal</a></li>
+		<li><a href='projects/archive/adventure-game/index.html'>Adventure game</a></li>
 	</ul>
 
 </main>

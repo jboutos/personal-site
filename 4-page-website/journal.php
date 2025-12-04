@@ -4,23 +4,11 @@
 		background-color: mistyrose;
 	}
 
-	h1 {
+	h1, h2 {
 		color: #7f1786;
 	}
 
-	h2 {
-		color: #7f1786;
-	}
-
-	p {
-		color: darkmagenta;
-	}
-
-	a {
-		color: darkmagenta;
-	}
-
-	li {
+	p, a, li, li::marker {
 		color: darkmagenta;
 	}
 
@@ -28,28 +16,55 @@
 		background-color: orchid;
 	}
 
-	li::marker {
-		color: darkmagenta;
+	.careful-voice {
+		padding: 0;
+	}
+
+	ul {
+		margin-bottom: 2em;
+	}
+
+	.links {
+		display: block;
+		margin-top: 1em;
+	}
+
+	h1 {
+		padding-top: 1em;
+		padding-bottom: 0.5em;
+	}
+
+	h2 {
+		padding-bottom: 0;
+		margin-top: 2em;
 	}
 </style>
+
+<?php
+
+	$journal = json_decode(file_get_contents('journal.json'), true);
+
+?>
 
 <main>
 
 	<div class ='column'>
 
-		<h1 class='loud-voice'>A rather short journal of some of my thoughts on the html module</h1>
+		<h1 class='attention-voice'>A rather short journal on my web-dev endeavours</h1>
 
-		<p class='calm-voice'>I'm already having doubts about being able to complete this course. I couldn't follow the instructions for that homebrew app, I installed it via the terminal and then... ? Other than that I now have to attempt linking all these html documents together, I think I can do this.</p>
 
-		<h2 class='attention-voice'>Introductory links</h2>
+		<ul>
+		<?php foreach ($journal as $entry) { ?>
+		  <li>
+			  <h1 class=careful-voice><?= $entry['date'] ?></h2>
+			  <p class='calm-voice'><?= $entry['observations'] ?></p>
+		  </h1>
+		<?php } ?>
+		</ul>
 
-		<div class='links'>
-			<ul>
-				<li><a href='?page=welcome' class='<?php if ($page == "welcome") {echo "purple";} ?>'>welcome</a></li>
-				<li><a href='?page=favorite-foods' class='<?php if ($page == "welcome") {echo "purple";} ?>'>favorite foods</a></li>
-				<li><a href='?page=contact' class='<?php if ($page == "welcome") {echo "purple";} ?>'>contact</a></li>
-			</ul>
-		</div>
+		<h2 class='careful-voice'>Introductory links</h2>
+
+		<?php include('footer.php') ?>
 
 	</div>
 	

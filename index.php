@@ -42,9 +42,7 @@
 			if ($page == 'contact') {
 				include('4-page-website/contact.php');
 			}
-			if ($page == 'projects') {
-				include('projects/projects.php');
-			}
+			
 			if ($page == 'favorite-foods') {
 				include('4-page-website/favorite-foods.php');
 			}
@@ -57,6 +55,14 @@
 			if ($page == 'homepage') {
 				include('projects/homepage.php');
 			}
+			if ($page == 'projects') {
+				include('projects/projects.php');
+			}
+
+			if ($page == 'project-details') {
+				include('projects/project-details.php');
+			}
+
 
 		?>
 
