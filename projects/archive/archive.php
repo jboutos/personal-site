@@ -1,19 +1,35 @@
 <style>
+
+		body {
+			--color: hsl(240 100% 40.2%);
+			--charged: hsl(0 67.9% 41.6%);
+			--base: hsl(188 45.3% 81.4%);
+			--hover: hsl(180, 92%, 40%);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				--color: hsl(188 45.3% 81.4%);
+				--charged: hsl(0 67.9% 60.6%);
+				--base: hsl(240 100% 40.2%);
+				--hover: hsl(180, 92%, 20%);
+			}
+		}
 	
 		body {
-			background-color: powderblue;
+			background-color: var(--base);
 		}
 
 		h1 {
-			color: firebrick;
+			color: var(--charged);
 		}
 
 		p, h2, a, li::marker {
-			color: mediumblue;
+			color: var(--color);
 		}
 
 		a:hover {
-			background-color: hsl(180, 92%, 40%);
+			background-color: var(--hover);
 		}
 
 		ul {
