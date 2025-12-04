@@ -4,7 +4,7 @@
 		background-color: powderblue;
 	}
 
-	h1 {
+	h1, a, li::marker {
 		color: mediumblue;
 	}
 
@@ -12,16 +12,8 @@
 		color: firebrick;
 	}
 
-	a {
-		color: mediumblue;
-	}
-
 	a:hover {
 		background-color: hsl(180, 92%, 40%);
-	}
-
-	li::marker {
-		color: mediumblue;
 	}
 
 </style>

@@ -22,11 +22,6 @@
 	}
 
 	ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		row-gap: 1.5em;
-		column-gap: 2em;
-		padding: 0;
 		margin-top: 3em;
 	}
 
@@ -35,18 +30,12 @@
 		max-width: 500px;
 	}
 
-	ul li:nth-child(10) img {
+	ul li:nth-child(9) img {
 	    object-fit: contain;
 	}
 
 	h2 {
-		padding-bottom: 0;
 		margin-top: 0.5em;
-	}
-
-	h1 {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
 	}
 
 </style>

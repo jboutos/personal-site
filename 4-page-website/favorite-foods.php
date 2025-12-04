@@ -12,6 +12,10 @@
 		color: darkmagenta;
 	}
 
+	a:hover {
+		background-color: orchid;
+	}
+
 	.links {
 		display: block;
 		margin-top: 1em;
@@ -21,25 +25,14 @@
 		list-style-type: none;
 	}
 
-	ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		row-gap: 1.5em;
-		column-gap: 2em;
-		padding: 0;
-		margin-top: 1em;
-	}
-
 	h2:last-of-type {
-		 padding-bottom: 0;
-		 margin-top: 0.5em;
-		}
-
-
-	h1 {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
+	 padding-bottom: 0;
 	}
+
+	.foods {
+		margin-top: 2em;
+	}
+
 </style>
 
 <?php
@@ -82,7 +75,7 @@
 			?>
 		</ul>
 
-		<h2 class='careful-voice'>Introductory links</h2>
+		<h2 class='careful-voice foods'>Introductory links</h2>
 
 		<?php include('footer.php') ?>
 		

@@ -3,6 +3,11 @@
 		nav {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
+			row-gap: 0.3em;
+		}
+
+		a {
+			justify-self: start;
 		}
 	}
 </style>

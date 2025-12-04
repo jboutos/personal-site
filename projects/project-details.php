@@ -10,17 +10,13 @@
 		color: firebrick;
 	}
 
-	p, a, h2 {
+	p, a, h2, li::marker {
 		color: mediumblue;
 		max-width: 50ch;
 	}
 
 	a:hover {
 		background-color: hsl(180, 92%, 40%);
-	}
-
-	li::marker {
-		color: mediumblue;
 	}
 
 	picture {
@@ -31,6 +27,13 @@
 		display: flex;
 		align-items: start;
 		gap: 2em;
+	}
+
+	.description {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.3em;
 	}
 
 </style>
@@ -71,7 +74,7 @@
 
 					<h1 class='attention-voice'><?=$detail['title']?></h1>
 					<p class='calm-voice'><?=$description?></p>
-					<a href='<?=$detail["link"]?>'>Go to exercise</a>
+					<a href='<?=$detail["link"]?>' target='<?=$detail["target"]?>'>Go to exercise</a>
 
 				</div>
 
@@ -88,7 +91,7 @@
 				<div class='description'>
 
 					<h1 class='attention-voice'>No project found!</h1>
-					<p class='calm-voice'>Check out the list for more projects <a href='?page=projects2'>here</a></p>
+					<p class='calm-voice'>Check out the list for more projects <a href='?page=projects'>here</a></p>
 
 				</div>
 

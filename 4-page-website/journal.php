@@ -29,15 +29,6 @@
 		margin-top: 1em;
 	}
 
-	h1 {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
-	}
-
-	h2 {
-		padding-bottom: 0;
-		margin-top: 2em;
-	}
 </style>
 
 <?php

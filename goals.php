@@ -7,16 +7,12 @@
 		color: mediumslateblue;
 	}
 
-	h2 {
-		color: darkslateblue;
-	}
-
    li {
 		font-size:18px;
 		line-height: 2em;
 	}
 
-	a {
+	a, li::marker, h2 {
 		color: darkslateblue;
 		}
 
@@ -24,9 +20,10 @@
 		background-color: cornflowerblue;
 	}
 
-	li::marker {
-		color: darkslateblue;
+	ul + h2 {
+		margin-top: 1.5em;
 	}
+
 </style>
 
 <?php
@@ -37,8 +34,8 @@
 
 <main>
 
-	<h1 class='loud-voice'>Goals</h1>
-	<h2 class='attention-voice'>End of course goals</h2>
+	<h1 class='attention-voice'>Goals</h1>
+	<h2 class='careful-voice'>End of course goals</h2>
 
 	<ul>
 
@@ -48,7 +45,7 @@
 
 	</ul>
 
-	<h2 class='attention-voice'>5 years in goals</h2>
+	<h2 class='careful-voice'>5 years in goals</h2>
 
 	<ul>
 

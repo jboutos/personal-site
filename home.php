@@ -38,25 +38,6 @@
 		list-style-type: none;
 	}
 
-	ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		row-gap: 1.5em;
-		column-gap: 2em;
-		padding: 0;
-		margin-top: 1em;
-	}
-
-	h2 {
-		padding-bottom: 0;
-		margin-top: 0.5em;
-	}
-
-	h1 {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
-	}
-
 </style>
 
 <?php

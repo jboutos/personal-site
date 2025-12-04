@@ -39,7 +39,7 @@
 	}
 
 	button {
-		max-width: 100px;
+		max-width: 120px;
 	}
 
 	.links {
@@ -47,14 +47,8 @@
 		margin-top: 1em;
 	}
 
-	h1 {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
-	}
-
-	h2 {
-		padding-bottom: 0;
-		margin-top: 2em;
+	p {
+		margin-top: 1em;
 	}
 </style>
 
@@ -62,6 +56,7 @@
 
 	$message = $_POST['message'] ?? '';
 	$name = $_POST['name'] ?? '';
+	$reply = '';
 
 	
 	if (isset($_POST['submitted'])) {
@@ -70,6 +65,7 @@
 			echo "<p>Please enter some text</p>";
 		} else {
 			$post = ['Id' => uniqid(),'name' => $name, 'message' => $message];
+			$reply = "<p>Message was sent!</p>";
 
 			if (file_exists('messages.json')) {
 				$messageData = file_get_contents("messages.json");
@@ -108,9 +104,11 @@
 				<textarea id="message" name="message" value='<?php echo $message; ?>' required></textarea>
 			</div>
 
-			<button type='submit' name='submitted'>Submit</button>
+			<button type='submit' name='submitted'>Send message</button>
 
 		</form>
+
+		<?php if ($reply) echo $reply ?>
 
 		<h2 class='careful-voice'>Introductory links</h2>
 		

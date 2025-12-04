@@ -21,6 +21,7 @@
 		<meta name='description' content='An amalgamation of everything unholy created at PE so far'>
 		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'>
 		<link rel='stylesheet' href='style.css'>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
 		
 	</head>
 
