@@ -49,6 +49,10 @@
 		padding-left: 1.2em;
 	}
 
+	h1 + h2 {
+		margin-top: 1em;
+	}
+
 </style>
 
 <?php

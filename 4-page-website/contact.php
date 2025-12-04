@@ -3,7 +3,8 @@
 	body {
 		--color: hsl(296 70.7% 30.8%);
 		--base: hsl(7 75.8% 93.5%);
-		--hover: hsl(302 58.9% 64.7%);
+		--hover: hsl(302 58.9% 80.7%);
+		--button: hsl(296 70.7% 30.8%);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
 			--color: hsl(7 75.8% 93.5%);
 			--base: hsl(296 70.7% 30.8%);
 			--hover: hsl(302 58.9% 64.7%);
+			--button: hsl(296 70.7% 30.8%);
 		}
 	}
 
@@ -47,10 +49,14 @@
 	input, textarea {
 		border: 1px solid darkmagenta;
 		font-size: 1rem;
+		box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 	}
 
 	button {
 		max-width: 120px;
+		color: var(--button);
+		border: 1px solid var(--color);
+		box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 	}
 
 	.links {
@@ -61,6 +67,11 @@
 	p {
 		margin-top: 1em;
 	}
+
+	p + p {
+		margin-top: 0;
+	}
+	
 </style>
 
 <?php

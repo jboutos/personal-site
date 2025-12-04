@@ -27,42 +27,50 @@
 
 	<body class='dark'>
 
-		<?php include('header.php') ?>
+		<header>
 
-		<?php 
+			<?php include('header.php') ?>
 
-			if ($page == 'home') {
-				include('home.php');
-			}
-			if ($page == 'goals') {
-				include('goals.php');
-			}
-			if ($page == 'welcome') {
-				include('4-page-website/welcome.php');
-			}
-			if ($page == 'contact') {
-				include('4-page-website/contact.php');
-			}	
-			if ($page == 'favorite-foods') {
-				include('4-page-website/favorite-foods.php');
-			}
-			if ($page == 'journal') {
-				include('4-page-website/journal.php');
-			}
-			if ($page == 'projects') {
-				include('projects/projects.php');
-			}
-			if ($page == 'project-details') {
-				include('projects/project-details.php');
-			}
-			if ($page == 'archive') {
-				include('projects/archive/archive.php');
-			}
-			if ($page == 'homepage') {
-				include('projects/archive/homepage.php');
-			}
+		</header>
 
-		?>
+		<main>
+
+			<?php 
+
+				if ($page == 'home') {
+					include('home.php');
+				}
+				if ($page == 'goals') {
+					include('goals.php');
+				}
+				if ($page == 'welcome') {
+					include('4-page-website/welcome.php');
+				}
+				if ($page == 'contact') {
+					include('4-page-website/contact.php');
+				}	
+				if ($page == 'favorite-foods') {
+					include('4-page-website/favorite-foods.php');
+				}
+				if ($page == 'journal') {
+					include('4-page-website/journal.php');
+				}
+				if ($page == 'projects') {
+					include('projects/projects.php');
+				}
+				if ($page == 'project-details') {
+					include('projects/project-details.php');
+				}
+				if ($page == 'archive') {
+					include('projects/archive/archive.php');
+				}
+				if ($page == 'homepage') {
+					include('projects/archive/homepage.php');
+				}
+
+			?>
+
+		</main>
 
 	</body>
 

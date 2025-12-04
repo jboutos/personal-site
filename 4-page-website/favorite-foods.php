@@ -4,7 +4,7 @@
 	body {
 		--color: hsl(296 70.7% 30.8%);
 		--base: hsl(7 75.8% 93.5%);
-		--hover: hsl(302 58.9% 64.7%);
+		--hover: hsl(302 58.9% 80.7%);
 	}
 
 	@media (prefers-color-scheme: dark) {
