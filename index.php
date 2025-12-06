@@ -48,6 +48,12 @@
 				if (isset($pages[$page])) {
 					include($pages[$page]);
 				} else {
+					http_response_code(404);
+					include('404.php');
+				}
+
+				$code = http_response_code();
+				if($code == 404) {
 					include('404.php');
 				}
 
