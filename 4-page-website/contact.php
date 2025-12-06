@@ -71,7 +71,7 @@
 	p + p {
 		margin-top: 0;
 	}
-	
+
 </style>
 
 <?php
@@ -86,7 +86,7 @@
 		if (is_numeric($message) || strlen($message) == 0) {
 			echo "<p>Please enter some text</p>";
 		} else {
-			$post = ['Id' => uniqid(),'name' => $name, 'message' => $message];
+			$post = ['Id' => uniqid(), 'name' => $name, 'message' => $message];
 			$reply = "<p>Message was sent!</p>";
 
 			if (file_exists('messages.json')) {
