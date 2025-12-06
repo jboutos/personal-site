@@ -2,12 +2,7 @@
 
 <?php
 
-	$page = null;
-	if (isset($_GET['page'])) {
-		$page = $_GET['page'];
-	} else {
-		$page = 'home';
-	}
+	$page = $_GET['page'] ?? 'home';
 
 ?>
 
@@ -37,52 +32,24 @@
 
 			<?php 
 
-				$found = false;
+				$pages = [
+				    'home' => 'home.php',
+				    'goals' => 'goals.php',
+				    'welcome' => '4-page-website/welcome.php',
+				    'contact' => '4-page-website/contact.php',
+				    'favorite-foods' => '4-page-website/favorite-foods.php',
+				    'journal' => '4-page-website/journal.php',
+				    'projects' => 'projects/projects.php',
+				    'project-details' => 'projects/project-details.php',
+				    'archive' => 'projects/archive/archive.php',
+				    'homepage' => 'projects/archive/homepage.php',
+				];
 
-			    if ($page == 'home') {
-			        include('home.php');
-			        $found = true;
-			    }
-			    if ($page == 'goals') {
-			        include('goals.php');
-			        $found = true;
-			    }
-			    if ($page == 'welcome') {
-			        include('4-page-website/welcome.php');
-			        $found = true;
-			    }
-			    if ($page == 'contact') {
-			        include('4-page-website/contact.php');
-			        $found = true;
-			    }
-			    if ($page == 'favorite-foods') {
-			        include('4-page-website/favorite-foods.php');
-			        $found = true;
-			    }
-			    if ($page == 'journal') {
-			        include('4-page-website/journal.php');
-			        $found = true;
-			    }
-			    if ($page == 'projects') {
-			        include('projects/projects.php');
-			        $found = true;
-			    }
-			    if ($page == 'project-details') {
-			        include('projects/project-details.php');
-			        $found = true;
-			    }
-			    if ($page == 'archive') {
-			        include('projects/archive/archive.php');
-			        $found = true;
-			    }
-			    if ($page == 'homepage') {
-			        include('projects/archive/homepage.php');
-			        $found = true;
-			    }
-
-			    if (!$found) {
-			        include('404.php');
-			    }
+				if (isset($pages[$page])) {
+					include($pages[$page]);
+				} else {
+					include('404.php');
+				}
 
 			?>
 
