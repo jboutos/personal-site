@@ -2,7 +2,27 @@
 
 <?php
 
-	$page = $_GET['page'] ?? 'home';
+	$$page = $_GET['page'] ?? 'home';
+
+	$pages = [
+	    'home' => 'home.php',
+	    'goals' => 'goals.php',
+	    'welcome' => '4-page-website/welcome.php',
+	    'contact' => '4-page-website/contact.php',
+	    'favorite-foods' => '4-page-website/favorite-foods.php',
+	    'journal' => '4-page-website/journal.php',
+	    'projects' => 'projects/projects.php',
+	    'project-details' => 'projects/project-details.php',
+	    'archive' => 'projects/archive/archive.php',
+	    'homepage' => 'projects/archive/homepage.php',
+	];
+
+	if (isset($pages[$page])) {
+	    $include_file = $pages[$page];
+	} else {
+	    http_response_code(404);
+	    $include_file = '404.php';
+	}
 
 ?>
 
@@ -32,28 +52,7 @@
 
 			<?php 
 
-				$pages = [
-				    'home' => 'home.php',
-				    'goals' => 'goals.php',
-				    'welcome' => '4-page-website/welcome.php',
-				    'contact' => '4-page-website/contact.php',
-				    'favorite-foods' => '4-page-website/favorite-foods.php',
-				    'journal' => '4-page-website/journal.php',
-				    'projects' => 'projects/projects.php',
-				    'project-details' => 'projects/project-details.php',
-				    'archive' => 'projects/archive/archive.php',
-				    'homepage' => 'projects/archive/homepage.php',
-				];
-
-				if (!isset($pages[$page])) {
-				    http_response_code(404);
-				}
-
-				if (http_response_code() === 404) {
-				    include '404.php';
-				} else {
-				    include $pages[$page];
-				}
+				<?php include $include_file; ?>
 
 
 			?>
