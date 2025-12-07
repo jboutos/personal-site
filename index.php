@@ -45,17 +45,16 @@
 				    'homepage' => 'projects/archive/homepage.php',
 				];
 
-				if (isset($pages[$page])) {
-					include($pages[$page]);
-				} else {
-					http_response_code(404);
-					include('404.php');
+				if (!isset($pages[$page])) {
+				    http_response_code(404);
 				}
 
-				$code = http_response_code();
-				if($code == 404) {
-					include('404.php');
+				if (http_response_code() === 404) {
+				    include '404.php';
+				} else {
+				    include $pages[$page];
 				}
+
 
 			?>
 
