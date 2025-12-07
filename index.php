@@ -50,12 +50,7 @@
 
 		<main>
 
-			<?php 
-
-				<?php include $include_file; ?>
-
-
-			?>
+			<?php include $include_file; ?>
 
 		</main>
 
