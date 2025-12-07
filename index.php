@@ -18,10 +18,10 @@
 	];
 
 	if (isset($pages[$page])) {
-	    $include_file = $pages[$page];
+	    $template = $pages[$page];
 	} else {
 	    http_response_code(404);
-	    $include_file = '404.php';
+	    $template = '404.php';
 	}
 
 ?>
@@ -50,7 +50,7 @@
 
 		<main>
 
-			<?php include $include_file; ?>
+			<?php include $template; ?>
 
 		</main>
 
