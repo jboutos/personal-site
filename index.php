@@ -1,8 +1,8 @@
 <!doctype html>
 
 <?php
-	    
-	$page = $_GET['page'];
+
+	$page = $_GET['page'] ?? 'home';
 
 	$pages = [
 	    'home' => 'home.php',
@@ -17,7 +17,9 @@
 	    'homepage' => 'projects/archive/homepage.php',
 	];
 
-	if (isset($pages[$page])) {
+	if (http_response_code() === 404) {
+   	 $template = '404.php';
+	} elseif (isset($pages[$page])) {
 	    $template = $pages[$page];
 	} else {
 	    http_response_code(404);
