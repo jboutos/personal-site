@@ -2,12 +2,6 @@
 
 <?php
 
-	if (http_response_code() === 404) {
-	    $template = '404.php';
-	}
-
-	$page = $_GET['page'] ?? 'home';
-
 	$pages = [
 	    'home' => 'home.php',
 	    'goals' => 'goals.php',
@@ -21,11 +15,12 @@
 	    'homepage' => 'projects/archive/homepage.php',
 	];
 
-	if (isset($pages[$page])) {
-	    $template = $pages[$page];
-	} else {
+	if (!isset($_GET['page'])) {
 	    http_response_code(404);
 	    $template = '404.php';
+	} else {
+	    $page = $_GET['page'] ?: 'home';
+	    $template = $pages[$page] ?? '404.php';
 	}
 
 ?>
