@@ -17,7 +17,7 @@
 	    'homepage' => 'projects/archive/homepage.php',
 	];
 
-	if (isset($pages[$page])) {
+	if (!empty($pages[$page])) {
 	    $template = $pages[$page];
 	} else {
 	    http_response_code(404);
