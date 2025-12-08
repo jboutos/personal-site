@@ -19,11 +19,9 @@
 
 	if (isset($pages[$page])) {
 	    $template = $pages[$page];
-	} elseif {
+	} else {
 	    http_response_code(404);
 	    $template = '404.php';
-	} else {
-		$page = $_GET['home'];
 	}
 
 ?>
