@@ -2,6 +2,11 @@
 
 <?php
 
+	if (http_response_code(404)); {
+		$template = '404.php';
+	}
+	    
+
 	$page = $_GET['page'] ?? 'home';
 
 	$pages = [
