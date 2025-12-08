@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{SCCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^(.*)$ .index.php?page=$1 [L,QSA]
 </IfModule>
