@@ -2,7 +2,7 @@
 
 <?php
 
-	$page = $_GET['page'] ?? 'home';
+	$page = $_GET['page'] ?? null;
 
 	$pages = [
 	    'home' => 'home.php',
