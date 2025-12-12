@@ -1,16 +1,20 @@
 <style>
-	@media(max-width: 385px) {
-		nav {
+	.links nav {
+
+		@media(max-width: 385px) {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			row-gap: 0.3em;
 		}
-
-		a {
-			justify-self: start;
-			align-self: start
+	}
+		
+	.links a {
+		@media(max-width: 385px) {
+			justify-felf: center;
+			text-align: center;
 		}
 	}
+}
 </style>
 
 <div class='links'>

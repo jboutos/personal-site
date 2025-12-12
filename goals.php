@@ -5,6 +5,7 @@
 		--charged : hsl(249 79.8% 67.1%);
 		--base: hsl(25 100% 96.7%);
 		--hover: hsl(219 79.2% 66.1%);
+		--circle: hsl(248 39% 39.2% / 0.4);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
 			--charged : hsl(249 79.8% 80.1%);
 			--base: hsl(248 39% 39.2%);
 			--hover: hsl(219 79.2% 66.1%);
+			--circle: hsl(25 100% 96.7% / 0.4);
 		}
 	}
 
@@ -26,6 +28,12 @@
 
 	a, li::marker, h2 {
 		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill: var(--circle);
 	}
 
 	a:hover {
@@ -53,6 +61,10 @@
 		margin-top: 1em;
 	}
 
+	h1, h2, li {
+		text-align: start;
+	}
+
 </style>
 
 <?php
@@ -62,26 +74,29 @@
 ?>
 
 <main>
+	<div class='column'>
 
-	<h1 class='attention-voice'>Goals</h1>
-	<h2 class='careful-voice'>End of course goals</h2>
+		<h1 class='attention-voice'>Goals</h1>
+		<h2 class='careful-voice'>End of course goals</h2>
 
-	<ul>
+		<ul>
 
-		<?php foreach ($short_Term_Goals as $sh_Goal) { ?>
-			<li> <?=$sh_Goal?> </li>
-		<?php } ?>
+			<?php foreach ($short_Term_Goals as $sh_Goal) { ?>
+				<li> <?=$sh_Goal?> </li>
+			<?php } ?>
 
-	</ul>
+		</ul>
 
-	<h2 class='careful-voice'>5 years in goals</h2>
+		<h2 class='careful-voice'>5 years in goals</h2>
 
-	<ul>
+		<ul>
 
-		<?php foreach ($longer_Term_Goals as $l_Goal) { ?>
-			<li> <?=$l_Goal?> </li>
-		<?php } ?>
+			<?php foreach ($longer_Term_Goals as $l_Goal) { ?>
+				<li> <?=$l_Goal?> </li>
+			<?php } ?>
 
-	</ul>
+		</ul>
+
+	</div>
 
 </main>

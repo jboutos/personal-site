@@ -1,14 +1,23 @@
 <style>
-	@media(max-width: 385px) {
-		nav {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			row-gap: 0.3em;
+	.header {
+		@media(max-width: 385px) {
+			display: flex;
+			flex-direction: column;
 		}
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-		a {
-			justify-self: start;
-		}
+		margin-top: 2em;
+		border-bottom: 1px solid black;
+	}
+
+	header a {
+		text-decoration: none;
+	}
+
+	.subtle-voice {
+		margin: 0;
 	}
 </style>
 
@@ -17,7 +26,11 @@
 
 <header>
 
-	<div class='column'>
+	<div class='column header'>
+
+		<a class='logo' href='<?=BASE_URL?>'>
+			<h2 class='subtle-voice'>J.BOUTOS</h2>
+		</a>
 
 		<nav>
 			<a href='<?=BASE_URL?>'>home</a>

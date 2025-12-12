@@ -37,6 +37,8 @@
 		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'>
 		<link rel='stylesheet' href='style.css'>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:600|Merriweather+Sans:300" rel="stylesheet">
+
 		
 	</head>
 
@@ -53,6 +55,10 @@
 			<?php include $template; ?>
 
 		</main>
+
+		<svg class='circle' width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3725 30.6274 12 24 12C17.3726 12 12 17.3725 12 24C12 30.6274 17.3726 36 24 36Z"/>
+		</svg>
 
 	</body>
 

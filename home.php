@@ -4,8 +4,9 @@
 		--color: hsl(230 59.8% 40%);
 		--link: hsl(240 3.3% 30%);
 		--list: hsl(210 12.6% 50.2%);
-		--base: hsl(240 61.3% 93.9%);
-		--hover: hsl(235, 80%, 80%);
+		--base: hsl(48 0% 93.7%);
+		--hover: hsl(225 46.1% 52.7%);
+		--circle: hsl(230 59.8% 40% / 0.4);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -14,7 +15,8 @@
 			--link: hsl(240 61.3% 93.9%);
 			--list: hsl(332 82.4% 55.9%);
 			--base: hsl(230 59.8% 40%);
-			--hover: hsl(235, 80%, 60%);
+			--hover: hsl(225 46.1% 32.7%);
+			--circle: hsl(240 61.3% 93.9% / 0.4);
 		}
 	}
 
@@ -24,13 +26,22 @@
 
 	h1, h2 {
 		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill:var(--circle);
 	}
 
 	a {
-		color: var(--link);
-		&:hover {
-			background-color: var(--hover);
-		}
+		display: inline-block;
+		text-decoration: underline;
+		color: var(--color);
+	}
+
+	.subtle-voice {
+		color: var(--color);
 	}
 
 	li::marker {
@@ -46,6 +57,10 @@
 
 	li {
 		list-style-type: none;
+	}
+
+	info-card {
+		display: block;
 	}
 
 </style>

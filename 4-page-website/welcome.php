@@ -5,6 +5,7 @@
 		--color: hsl(296 70.7% 30.8%);
 		--base: hsl(7 75.8% 93.5%);
 		--hover: hsl(302 58.9% 80.7%);
+		--circle: hsl(296 70.7% 30.8% / 0.4);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -12,6 +13,7 @@
 			--color: hsl(7 75.8% 93.5%);
 			--base: hsl(296 70.7% 30.8%);
 			--hover: hsl(302 58.9% 64.7%);
+			--circle: hsl(7 75.8% 93.5% / 0.4);
 		}
 	}
 
@@ -21,6 +23,12 @@
 
 	h1, h2, p, a, li, li::marker {
 		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill: var(--circle);
 	}
 
 	a:hover {
@@ -42,6 +50,7 @@
 
 	.calm-voice {
 		padding-bottom: 0;
+		margin: 0 auto;
 	}
 </style>
 
