@@ -135,7 +135,7 @@ header a:hover {
 
 .circle {
 	position: absolute;
-	bottom: -400px;
+	bottom: -600px;
 	right: -400px;
 	z-index: -1;
 }
