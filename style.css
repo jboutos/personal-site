@@ -5,7 +5,6 @@ body {
 	padding: 0 2em;
 	position: relative;
 
-
 	text-align: center;
 
 	@media(max-width: 385px) {
@@ -15,6 +14,11 @@ body {
 	@media (min-width: 700px) {
 		margin: 0 auto;
 	}
+}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
