@@ -1,6 +1,6 @@
 <style>
 	.header {
-		@media(max-width: 385px) {
+		@media(max-width: 450px) {
 			display: flex;
 			flex-direction: column;
 		}

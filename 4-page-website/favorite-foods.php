@@ -56,6 +56,12 @@
 		margin-top: 2em;
 	}
 
+	food-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 </style>
 
 <?php

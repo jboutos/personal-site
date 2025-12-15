@@ -10,7 +10,14 @@
 		
 	.links a {
 		@media(max-width: 385px) {
-			justify-felf: center;
+			justify-self: center;
+			text-align: left;
+			margin-right: 0;
+		}
+	}
+
+	.links nav a:nth-of-type(3) {
+		@media(max-width: 385px) {
 			text-align: center;
 		}
 	}

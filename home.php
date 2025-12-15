@@ -73,7 +73,7 @@
 	$resume = ['title' => 'Resume', 'image' => 'images/resume.webp', 'link' => 'resume.php', 'target' => '_blank'];
 	$substack = ['title' => 'My substack', 'image' => 'images/substack.png', 'link' => 'https://substack.com/@mrmusicvibe?utm_source=user-menu', 'target' => '_blank'];
 
-	$infos = [$goals, $resume, $substack];
+	$infos = [$goals, $substack, $resume];
 
 ?>
 
