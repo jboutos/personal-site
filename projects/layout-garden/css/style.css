@@ -253,7 +253,7 @@ feature-tiles {
 		align-items: center;
 		gap: 20px;
 		height: 100px;
-		padding-bottom: 30px;
+		padding: 1em 0;
 	}
 }
 
@@ -262,11 +262,7 @@ feature-tiles {
 	display: block;
 	position: relative;
 	
-	padding: 0 20px;
-
-	p {
-		padding-bottom: 5px;
-	}
+	padding: 20px;
 
 	img {
 		max-width: 50px;
@@ -275,6 +271,8 @@ feature-tiles {
 	}
 
 	.calm-voice {
+		margin-bottom: 0.5em;
+
 		@media (max-width: 316px) {
 			padding: 0;
 		}
@@ -284,7 +282,11 @@ feature-tiles {
 /*TYPOGRAPHY*/
 feature-tiles {
 	.calm-voice {
-		line-height: var(--space);
+		line-height: 1.1;
+	}
+
+	.subtle-voice {
+		font-size: clamp(1rem, 7vw, 1.5rem);
 	}
 }
 
@@ -382,7 +384,7 @@ content-split {
 content-split {
 
 	@media (min-width: 600px) {
-		width: 80%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}

@@ -9,6 +9,7 @@
 		justify-content: space-between;
 
 		margin-top: 2em;
+		padding-bottom: 0.1em;
 		border-bottom: 1px solid black;
 	}
 
