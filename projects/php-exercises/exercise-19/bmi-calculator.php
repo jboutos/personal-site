@@ -157,36 +157,34 @@
 
 			<?php if ($feetOrInches == 'f'): ?>
 
+				<input type='hidden' name='units' value='<?php echo $units ?>'>
+				<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
+
 				<div class='field'>
 					<label for='height-feet'>Please Enter your height:</label>
 					<input id='height-feet' type='number' name='height-feet' min='0' step='0.01' required>
-					<input type='hidden' name='units' value='<?php echo $units ?>'>
-					<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
 				</div>
 
 				<div class='field'>
 					<label for='weightbmi'>Please enter your weight:</label>
 					<input id='weightbmi' type='number' name='weight' min='0' step = 0.01 required>
-					<input type='hidden' name='units' value='<?php echo $units ?>'>
-					<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
 				</div>
 
 				<button type='submit' name='feet-submit'>Submit</button>
 
 			<?php elseif ($feetOrInches == 'i'): ?>
 
+				<input type='hidden' name='units' value='<?php echo $units ?>'>
+				<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
+
 				<div class='field'>
 					<label for='height-inches'>Please Enter your height:</label>
 					<input id='height-inches' type='number' name='height-inches' min='0' step='0.01' required>
-					<input type='hidden' name='units' value='<?php echo $units ?>'>
-					<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
 				</div>
 
 				<div class='field'>
 					<label for='weightbmi2'>Please enter your weight:</label>
 					<input id='weightbmi2' type='number' name='weight' min='0' step='0.01' required>
-					<input type='hidden' name='units' value='<?php echo $units ?>'>
-					<input type='hidden' name='feet-or-inches' value='<?php echo $feetOrInches ?>'>
 				</div>
 
 				<button type='submit' name='inches-submit'>Submit</button>
@@ -195,16 +193,16 @@
 
 		<?php else: ?>
 
+			<input type='hidden' name='units' value='<?php echo $units ?>'>
+
 			<div class='field'>
 				<label for='heightmetric'>Please enter your height:</label>
 				<input id='heightmetric' type='number' name='height' min='0' step ='0.01' required>
-				<input type='hidden' name='units' value='<?php echo $units ?>'>
 			</div>
 
 			<div class='field'>
 				<label for='weightmetric'>Please enter your weight:</label>
 				<input id='weightmetric' type='number' name='weight' min='0' step ='0.01' required>
-				<input type='hidden' name='units' value='<?php echo $units ?>'>
 			</div>
 
 			<button type='submit' name='measurement-submit'>Submit</button>

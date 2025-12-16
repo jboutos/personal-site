@@ -86,9 +86,4 @@ container {
 
 		margin-top: 1em;
 	}
-
-	h3 + p {
-
-		marign-top: 2em;
-	}
 }

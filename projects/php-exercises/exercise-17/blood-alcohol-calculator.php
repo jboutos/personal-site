@@ -8,7 +8,7 @@
 
 		<div class='field'>
 			<label for='weight'>Weight</label>
-			<input id='weight' type='number' name='weight' min='1' step='0.1' value="<?php echo $_POST['weight'] ?? ''; ?>">
+			<input id='weight' type='number' name='weight-blood' min='1' step='0.1' value="<?php echo $_POST['weight-blood'] ?? ''; ?>">
 		</div>
 
 		<div class='field'>
@@ -38,8 +38,8 @@
 
 		if (isset($_POST['blood-submit'])) {
 
-			if (isset($_POST['weight'])) {
-				$weight = $_POST['weight'];
+			if (isset($_POST['weight-blood'])) {
+				$weight_blood = $_POST['weight-blood'];
 			}
 
 			if (isset($_POST['gender'])) {
@@ -58,7 +58,7 @@
 				$time = $_POST['time'];
 			}
 				
-			if (strlen($weight) == 0 || strlen($drinks) == 0 || strlen($volume) == 0 || strlen($time) == 0 ) {
+			if (strlen($weight_blood) == 0 || strlen($drinks) == 0 || strlen($volume) == 0 || strlen($time) == 0 ) {
 	    		echo "<p>All fields must have values!</p>";
 	    		return;
 			} else if ($gender !== "male" && $gender !== "female") {
@@ -73,7 +73,7 @@
 			}
 
 			$a = $drinks * ($volume / 100);
-			$bac = (($a * 5.14) / ($weight * $r)) - (0.015 * $time);
+			$bac = (($a * 5.14) / ($weight_blood * $r)) - (0.015 * $time);
 			$bac = round($bac, 2);
 
 			if ($bac < 0.08) {

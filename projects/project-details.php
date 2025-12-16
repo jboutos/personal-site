@@ -82,7 +82,7 @@
 	}
 
 	.description .attention-voice {
-		margin-bottom: 0;
+		margin-bottom: 0.5em;
 
 		@media (max-width: 850px) {
 			margin-top: 0.5em;
