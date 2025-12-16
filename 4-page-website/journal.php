@@ -6,6 +6,7 @@
 		--base: hsl(7 75.8% 93.5%);
 		--hover: hsl(302 58.9% 80.7%);
 		--circle: hsl(296 70.7% 30.8% / 0.4);
+	}
 
 	@media (prefers-color-scheme: dark) {
 		body {

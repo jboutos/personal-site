@@ -42,31 +42,51 @@
 		background-color: var(--hover);
 	}
 
+
+
+	h1.attention-voice {
+		margin-top: 0;
+	}
+
 	container {
-		@media (max-width: 645px) {
-			display: flex;
-			flex-direction: column;
-		}
 		display: flex;
-		align-items: start;
-		justify-content: center;
-		gap: 2em;
+		flex-direction: column;
+		align-items: center;
 		margin-top: 14em;
+
+		@media (min-width: 850px) {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 2em;
+		}
 	}
 
 	.description {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.3em;
+		gap: 0.5em;
+		@media (min-width: 850px) {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.5em;
+		}
 	}
 
-	.calm-voice {
-		text-align: left;
+	.attention-voice, .description a, .calm-voice {
+		@media (min-width: 850px) {
+			text-align: start;
+		}
 	}
 
-	h1.attention-voice {
-		margin-top: 0;
+	.description .attention-voice {
+		margin-bottom: 0;
+
+		@media (max-width: 850px) {
+			margin-top: 0.5em;
+			padding-bottom: 0.2em;
+		}
 	}
 
 </style>

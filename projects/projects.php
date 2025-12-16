@@ -24,7 +24,6 @@
 
 	h1.attention-voice {
 		color: var(--charged);
-		margin-bottom: 0;
 	}
 
 	p, a, h2, li::marker, .circle {

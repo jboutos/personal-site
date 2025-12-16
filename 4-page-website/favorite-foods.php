@@ -79,7 +79,7 @@
 	<div class ='column'>
 		
 		<h1 class='attention-voice'>Favorite foods</h1>
-		<p class='calm-voice'>Some of my favorite foods include:</p>
+		<h2 class='careful-voice'>Some of my favorite foods include:</p>
 		
 		<ul>
 			<?php

@@ -39,10 +39,6 @@
 		font-size: 1rem;
 	}
 
-	.attention-voice {
-		padding-bottom: 30px;
-	}
-
 	.links {
 		display: block;
 		margin-top: 1em;
