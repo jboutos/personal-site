@@ -77,6 +77,7 @@
 	.attention-voice, .description a, .calm-voice {
 		@media (min-width: 850px) {
 			text-align: start;
+			margin-left: 0;
 		}
 	}
 
