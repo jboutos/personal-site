@@ -71,15 +71,10 @@
 
 <?php include("projects-data.php") ?>
 
-<div class='column'>
+<?php
 
-	<h1 class='attention-voice'>A list of completed PE projects thus far</h1>
+	function projectCardComponent($project) {
 
-	<h2 class='careful-voice'>The list will be updated as more projects are added</h2>
-
-	<ul>
-	<?php
-	foreach ($projects as $project) {
 		$id = $project["id"];
 		$title = $project["title"];
 		$link = $project["link"];
@@ -95,9 +90,24 @@
 						"<h2 class='subtle-voice'>" . $title . "</h2>" .
 						"<a href='?page=project-details&project=$id'>See more</a>" .
 			     "</project-card>";
-
+			     
 		echo "</li>";
 	}
+
+?>
+
+<div class='column'>
+
+	<h1 class='attention-voice'>A list of completed PE projects thus far</h1>
+
+	<h2 class='careful-voice'>The list will be updated as more projects are added</h2>
+
+	<ul>
+	<?php
+	
+		foreach ($projects as $project) {
+			projectCardComponent($project);
+		}
 
 	?>
 	</ul>

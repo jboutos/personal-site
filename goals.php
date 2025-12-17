@@ -65,6 +65,10 @@
 		text-align: start;
 	}
 
+	.goals {
+		width: 100%;
+	}
+
 </style>
 
 <?php
@@ -79,7 +83,7 @@
 		<h1 class='attention-voice'>Goals</h1>
 		<h2 class='careful-voice'>End of course goals</h2>
 
-		<ul>
+		<ul class='goals'>
 
 			<?php foreach ($short_Term_Goals as $sh_Goal) { ?>
 				<li> <?=$sh_Goal?> </li>
@@ -89,7 +93,7 @@
 
 		<h2 class='careful-voice'>5 years in goals</h2>
 
-		<ul>
+		<ul class='goals'>
 
 			<?php foreach ($longer_Term_Goals as $l_Goal) { ?>
 				<li> <?=$l_Goal?> </li>
