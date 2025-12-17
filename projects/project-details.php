@@ -90,6 +90,10 @@
 		}
 	}
 
+	.details {
+		max-width: 450px;
+	}
+
 </style>
 
 <?php include("projects-data.php") ?>
@@ -120,7 +124,7 @@
 
 			<container>
 
-				<picture>
+				<picture class='details'>
 					<img src='<?=$detail["image"]?>' alt='<?=$detail["title"] . " image"?>'>
 				</picture>
 
