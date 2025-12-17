@@ -1,7 +1,7 @@
 <feature-overview>
 	<inner-column>
 		<h2 class='attention-voice'>How it works</h2>
-		<p >This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+		<p class=calm-voice>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
 		<div class='mega-container'>
 			<div class='container'>
 				<div>

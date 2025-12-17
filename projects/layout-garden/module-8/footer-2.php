@@ -2,7 +2,7 @@
 	<inner-column>
 		<div class='hyper-container'>
 			<div class='brand'>
-				<h1 class='attention-voice'>Heading level 1</h1>
+				<h2 class='attention-voice'>Heading level 2</h2>
 				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

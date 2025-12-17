@@ -11,46 +11,40 @@
 		</div>
 		<div class='container'>
 			<a href='#'>
-				<div>
-					<div class='background'>
-						<div>
-							<h5>JLY</h5>
-							<h4>20</h4>
-							<h5>2020</h5>
-						</div>
+				<div class='background'>
+					<div>
+						<h5>JLY</h5>
+						<h4>20</h4>
+						<h5>2020</h5>
 					</div>
-					<h3 class='subtle-voice'>Level 3</h3>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
+				<h3 class='subtle-voice'>Level 3</h3>
+				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
 			<a href='#'>
-				<div>
-					<div class='background-2'>
-						<div>
-							<h5>JLY</h5>
-							<h4>20</h4>
-							<h5>2020</h5>
-						</div>
+				<div class='background-2'>
+					<div>
+						<h5>JLY</h5>
+						<h4>20</h4>
+						<h5>2020</h5>
 					</div>
-					<h3 class='subtle-voice'>Level 3</h3>
-					<p class='calm-voice'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
+				<h3 class='subtle-voice'>Level 3</h3>
+				<p class='calm-voice'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
 			<a href='#'>
-				<div>
-					<div class='background-3'>
-						<div>
-							<h5>JLY</h5>
-							<h4>20</h4>
-							<h5>2020</h5>
-						</div>
+				<div class='background-3'>
+					<div>
+						<h5>JLY</h5>
+						<h4>20</h4>
+						<h5>2020</h5>
 					</div>
-					<h3 class='subtle-voice'>Level 3</h3>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
+				<h3 class='subtle-voice'>Level 3</h3>
+				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
 		</div>
 	</inner-column>

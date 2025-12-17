@@ -1,19 +1,19 @@
 <tour-booking>
 	<inner-column>
-		<h4>Tours</h4>
+		<h4 class=wise-voice>Tours</h4>
 		<h1 class='loud-voice'>Heading level 1</h1>
-		<p class='introductory'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<p class='calm-voice introductory'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur.</p>
-		<p class='introductory-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<p class='calm-voice introductory-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor.</p>
-		<h4>Visit</h4>
+		<h4 class='wise-voice'>Visit</h4>
 		<h1 class='loud-voice'>Book a Tour</h1>
-		<p class='introductory-3'>Tours will load below. Please wait one moment for them to load, if they do not, refresh the page.</p>
+		<p class='calm-voice introductory-3'>Tours will load below. Please wait one moment for them to load, if they do not, refresh the page.</p>
 		<div class='card'>
 			<div class='background'>
 				<div class="bottom-right">FROM</div>
@@ -34,7 +34,7 @@
 					</picture>
 					<p>This is a date</p>
 				</div>
-				<p class='extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class='calm-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -73,7 +73,7 @@
 					</picture>
 					<p>This is a date</p>
 				</div>
-				<p class='extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class='calm-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

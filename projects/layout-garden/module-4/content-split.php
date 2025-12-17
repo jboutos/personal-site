@@ -23,7 +23,7 @@
 					</ul>
 				</div>
 				<div class='regulations'>
-					<h4 class='subtle-voice'>This is a heading level 4</h4>
+					<h3 class='subtle-voice'>This is a heading level 3</h3>
 				</div>
 			</div>
 		</div>
