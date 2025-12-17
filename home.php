@@ -70,7 +70,7 @@
 <?php
 
 	$goals = ['title' => 'Goals', 'image' => 'images/goals.png', 'link' => '?page=goals', 'target' => '_self'];
-	$resume = ['title' => 'Resume', 'image' => 'images/resume.webp', 'link' => 'resume.php', 'target' => '_blank'];
+	$resume = ['title' => 'Resume', 'image' => 'images/resume.png', 'link' => 'resume.php', 'target' => '_blank'];
 	$substack = ['title' => 'My substack', 'image' => 'images/substack.png', 'link' => 'https://substack.com/@mrmusicvibe?utm_source=user-menu', 'target' => '_blank'];
 
 	$infos = [$goals, $substack, $resume];
@@ -97,7 +97,7 @@
 									"<a href='" . $link . "' target='" . $target . "'>" .
 										'<h1 class="careful-voice">' . $title . "</h1>" .
 									"</a>" .
-									"<picture>" .
+									"<picture class='home'>" .
 										"<img src='" . $image . "'>" .
 									"</picture>" .
 					      	"</info-card>" .

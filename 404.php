@@ -34,11 +34,26 @@
 		object-fit: contain;
 	}
 
+	container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+
+		margin-top: 7em;
+	}
+
+	.error {
+		max-width: 350px;
+	}
+
 </style>
 
-<picture>
-	<img src="images/slice1.png">
-</picture>
-<h1 class='loud-voice'>Error 404</h1>
-<p class='calm-voice'>Page not found!</p>
-<a href="?page=home">Go back</a>
+<container>
+	<picture class='error'>
+		<img src="images/404.png">
+	</picture>
+	<h1 class='loud-voice'>Error 404</h1>
+	<p class='calm-voice'>Page not found!</p>
+	<a href="?page=home">Go back</a>
+</container>
