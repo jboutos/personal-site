@@ -13,7 +13,7 @@ $theme = $_GET['theme'] ?? 'default';
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
 		<link rel='stylesheet' href='css/style.css'>
 	</head>
-	<body class="theme-<?= $theme ?>">
+	<body class='theme-<?= $theme ?>'>
 		<partials>
 			<?php include('module-1/split-hero.php') ?>
 			<?php include('module-2/info-cards.php') ?>
