@@ -43,7 +43,7 @@
 
 <body>
 
-	<h1 class='attention-voice'>Please choose between the following:</h1>
+	<h1 class='attention-voice'>Please choose between the following themes:</h1>
 	<nav>
 		<a href='index.php?theme=default'>Original theme</a>
 		<a href='index.php?theme=purple'>(Almost) everything is purple</a>

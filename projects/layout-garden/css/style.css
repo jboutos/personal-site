@@ -38,7 +38,7 @@ body {
 	--background-24: #2a64ae;
 }
 
-.theme-purple .wrapper {
+.theme-purple {
 	--passionate: purple;
 	--affirmative: #7b3fe4;
 	--vibrant: #c77dff;
@@ -1247,10 +1247,9 @@ footer-3 {
 		margin-left: auto;
 		margin-right: auto;
 
-		@media (min-width: 1200px) {
+		@media (min-width: 1000px) {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-evenly;
 		}
 	}
 
@@ -1302,8 +1301,8 @@ footer-3 {
 			width: 350px;
 		}
 
-		@media (min-width: 1200px) {
-			width: 70%;
+		@media (min-width: 1000px) {
+			width: 100%;
 		}
 	}
 
@@ -1312,20 +1311,20 @@ footer-3 {
 			width: 70%;
 		}
 
-		@media (min-width: 1200px) {
+		@media (min-width: 1000px) {
 			flex-grow: 1;
 		}
 	}
 
 	.button {
 
-		@media (min-width: 1200px) {
+		@media (min-width: 1000px) {
 			flex-grow: 1;
 		}
 	}
 
 	.footer {
-		@media (min-width: 1200px) {
+		@media (min-width: 1000px) {
 			width: 100%;
 		}
 	}
@@ -1339,7 +1338,7 @@ footer-3 {
 		line-height: var(--space);
 		font-weight: 600;
 
-		@media (min-width: 1200px) {
+		@media (min-width: 1000px) {
 			line-height: 1.8;
 		}
 	}
