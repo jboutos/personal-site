@@ -3,9 +3,9 @@
 
 body {
 	--passionate: red;
-	--space: 1.5;
+	--space: 1.4;
 	--color: black;
-	--bakground-color: white;
+	--background-color: white;
 }
 
 partials {
@@ -50,7 +50,7 @@ inner-column {
 .calm-voice {
  font-family: 'Mulish', serif;
  font-size: 1rem;
- line-height: 1.4;
+ line-height: var(--space);
 }
 
 .miniscule-voice {
@@ -62,6 +62,10 @@ inner-column {
 	font-family: 'Mulish', sans-serif;
 	font-size: 0.6rem;
 	font-weight: 200;
+}
+
+a {
+	font-family: 'Mulish', sans-serif;
 }
 
 
@@ -221,9 +225,6 @@ info-cards {
 
 /*TYPOGRAPHY*/
 info-cards {
-	.calm-voice {
-		line-height: var(--space);
-	}
 
 	.attention-voice {
 		@media (max-width: 312px) {
@@ -352,8 +353,7 @@ feature-tiles {
 
 /*MODULES*/
 content-split {
-	padding: 20px;
-	padding-bottom: 30px;
+	padding: 2em 1em;
 
 	.regulations {
 		display: flex;
@@ -415,6 +415,12 @@ content-split {
 		padding-top: 35px;
 	}
 
+	.subtle-voice {
+		@media (max-width: 305px) {
+			padding-left: 10px;
+		}
+	}
+
 	ul {
 		padding-top: 20px;
 	}
@@ -457,13 +463,6 @@ content-split {
 	}
 }
 
-/*TYPOGRAPHY*/
-content-split {
-	.calm-voice {
-		line-height: 1.8;
-	}
-}
-
 
 /*STYLE*/
 content-split {
@@ -500,7 +499,7 @@ content-split {
 
 /*MODULES*/
 success-stories-list {
-	padding-bottom: 30px;
+	padding: 0 1em 30px 1em;
 
 	.stories {
 		display: flex;
@@ -571,14 +570,6 @@ success-stories-list {
 }
 
 
-/*TYPOGRAPHY*/
-success-stories-list {
-	.calm-voice {
-		line-height: var(--space);
-	}
-}
-
-
 /*STYLE*/
 success-stories-list {
 	background: linear-gradient(to bottom, #fefefe, #f3f4f6);
@@ -601,7 +592,7 @@ success-stories-list {
 
 /*MODULES*/
 feature-overview {
-	padding-bottom: 2em;
+	padding: 0 1em 2em 1em;
 
 	.mega-container {
 		display: flex;
@@ -683,14 +674,6 @@ feature-overview {
 		@media (min-width: 800px) {
 			padding: 60px 0 0 0;
 		}
-	}
-}
-
-
-/*TYPOGRAPHY*/
-feature-overview {
-	.calm-voice {
-		line-height: var(--space);
 	}
 }
 
@@ -817,15 +800,6 @@ footer-1 {
 		}
 	}
 }
-
-
-/*TYPOGRAPHY*/
-footer-1 {
-	.calm-voice {
-		line-height: var(--space);
-	}
-}
-
 
 /*STYLE*/
 footer-1 {
@@ -1085,9 +1059,6 @@ footer-2 {
 
 /*TYPOGRAPHY*/
 footer-2 {
-	.calm-voice {
-		line-height: var(--space);
-	}
 
 	a {
 		font-size: 1.1rem;
@@ -1125,10 +1096,6 @@ stat-highlight {
 
 /*STRUCTURE*/
 stat-highlight {
-	
-	.loud-voice {
-		padding: 0.7em 0 3em 0;
-	}
 
 	a {
 		padding: 4em 0 2em 0;
@@ -1171,10 +1138,6 @@ stat-highlight {
 		}
 	}
 
-	.calm-voice {
-		line-height: 1.6;
-	}
-
 	a {
 		font-size: 1.2rem;
 	}
@@ -1213,6 +1176,8 @@ stat-highlight {
 
 /*MODULES*/
 footer-3 {
+
+	padding: 0 1em;
 
 	.mega-container {
 		display: flex;
@@ -1310,9 +1275,6 @@ footer-3 {
 
 /*TYPOGRAPHY*/
 footer-3 {
-	.calm-voice {
-		line-height: 1.6;
-	}
 
 	a {
 		line-height: var(--space);
@@ -1321,11 +1283,6 @@ footer-3 {
 		@media (min-width: 1200px) {
 			line-height: 1.8;
 		}
-	}
-
-	button {
-		font-size: 1.2rem;
-		font-weight: 600;
 	}
 }
 
@@ -1552,10 +1509,6 @@ tour-booking {
 		text-align: center;
 	}
 
-	.calm-voice {
-		line-height: 1.4;
-	}
-
 	h4 {
 		font-size: 1.2rem;
 	}
@@ -1624,7 +1577,7 @@ tour-booking {
 
 /*MODULES*/
 card-list {
-	padding: 2em;
+	padding: 2em 1em;
 
 	.container {
 		display: flex;
@@ -1656,7 +1609,7 @@ card-list {
 	  margin-right: auto;
 	}
 
-	h5 {
+	h4 {
 		padding-bottom: 0.3em;
 	}
 
@@ -1720,19 +1673,6 @@ card-list {
 	.subtle-voice {
 		padding: 15px 0 0 7px;
 	}
-
-	.calm-voice {
-		font-size: 14px;
-		line-height: 1.2;
-
-		@media (min-width: 950px) {
-			font-size: 16px;
-		}
-	}
-
-	h5 {
-		font-size: 1.1rem;
-	}
 }
 
 
@@ -1793,7 +1733,7 @@ footer-4 {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px 0;
+	padding: 2em 1em;
 
 	.loud-voice {
 		padding: 0.2em 0;
@@ -1979,7 +1919,7 @@ footer-4 {
 
 /*MODULES*/
 footer-5 {
-	padding: 3em 0;
+	padding: 3em 1em;
 
 	.logo, hr, .container, .socials, .footer {
 		width: 95%;
@@ -2287,7 +2227,6 @@ featured-content {
 
 	p {
 		margin-bottom: 20px;
-		line-height: 1.4;
 	}
 }
 
@@ -2717,6 +2656,8 @@ footer-6 {
 /*MODULES*/
 article-showcase {
 
+	padding: 0 1em;
+
 	.info {
 		display: flex;
 		flex-direction: column;
@@ -2751,9 +2692,7 @@ article-showcase {
 	}
 
 	.calm-voice {
-		font-family: serif;
 		font-size: 1.3rem;
-		line-height: var(--space);
 		max-width: 60ch;
 	}
 
@@ -2827,7 +2766,6 @@ article-showcase {
 
 	.calm-voice {
 		font-size: 1.3rem;
-		line-height: var(--space);
 		max-width: 60ch;
 	}
 
@@ -3030,7 +2968,6 @@ header {
 	.calm-voice {
 		font-family: serif;
 		font-size: 1.3rem;
-		line-height: var(--space);
 	}
 
 	img {
@@ -3097,7 +3034,6 @@ header {
 
 	.calm-voice {
 		font-size: 1.3rem;
-		line-height: var(--space);
 	}
 }
 

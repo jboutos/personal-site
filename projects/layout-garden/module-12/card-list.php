@@ -15,7 +15,7 @@
 					</picture>
 				</div>
 				<div>
-					<h5>Heading level 5</h5>
+					<h4 class='wise-voice'>Heading level 4</h4>
 					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco.</p>
@@ -32,7 +32,7 @@
 					</picture>
 				</div>
 				<div>
-					<h5>Heading level 5</h5>
+					<h4 class='wise-voice'>Heading level 4</h4>
 					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation.</p>
@@ -49,7 +49,7 @@
 					</picture>
 				</div>
 				<div>
-					<h5>Heading level 5</h5>
+					<h4 class='wise-voice'>Heading level 4</h4>
 					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco.</p>
@@ -66,7 +66,7 @@
 					</picture>
 				</div>
 				<div>
-					<h5>Heading level 5</h5>
+					<h4 class='wise-voice'>Heading level 4</h4>
 					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco.</p>

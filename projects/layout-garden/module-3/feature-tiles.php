@@ -1,4 +1,4 @@
-<feature-tiles>
+<feature-tiles class='wrapper'>
 	<inner-column>
 		<div class='info-pic'>
 			<div class='picture'>

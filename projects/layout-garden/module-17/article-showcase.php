@@ -13,9 +13,9 @@
 			<a href='#'>
 				<div class='background'>
 					<div>
-						<h5>JLY</h5>
-						<h4>20</h4>
-						<h5>2020</h5>
+						<h4 class='miniscule-voice'>JLY</h4>
+						<h4 class='miniscule-voice'>20</h4>
+						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
 				<h3 class='subtle-voice'>Level 3</h3>
@@ -25,9 +25,9 @@
 			<a href='#'>
 				<div class='background-2'>
 					<div>
-						<h5>JLY</h5>
-						<h4>20</h4>
-						<h5>2020</h5>
+						<h4 class='miniscule-voice'>JLY</h4>
+						<h4 class='miniscule-voice'>20</h4>
+						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
 				<h3 class='subtle-voice'>Level 3</h3>
@@ -37,9 +37,9 @@
 			<a href='#'>
 				<div class='background-3'>
 					<div>
-						<h5>JLY</h5>
-						<h4>20</h4>
-						<h5>2020</h5>
+						<h4 class='miniscule-voice'>JLY</h4>
+						<h4 class='miniscule-voice'>20</h4>
+						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
 				<h3 class='subtle-voice'>Level 3</h3>

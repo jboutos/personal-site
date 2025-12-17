@@ -18,7 +18,7 @@
 					</div>
 				</div>
 				<div class='button'>
-					<button>International (English)</button>
+					<button class=wise-voice>International (English)</button>
 				</div>
 			</div>
 			<div class='footer'>

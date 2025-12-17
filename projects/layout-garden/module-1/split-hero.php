@@ -1,5 +1,5 @@
-<inner-column>
-	<split-hero>
+<split-hero class='wrapper'>
+	<inner-column>
 		<section>
 			<div class='half one'>
 				<picture>
@@ -27,5 +27,5 @@
 				</div>
 			</div>
 		</section>
-	</split-hero>
-</inner-column>
+	</inner-column>
+</split-hero>

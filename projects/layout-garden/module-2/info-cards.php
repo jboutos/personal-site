@@ -1,4 +1,4 @@
-<info-cards>
+<info-cards class='wrapper'>
 	<inner-column>
 		<container>
 			<div class='info'>
