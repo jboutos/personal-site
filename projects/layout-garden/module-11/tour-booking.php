@@ -1,4 +1,4 @@
-<tour-booking>
+<tour-booking class='wrapper'>
 	<inner-column>
 		<h4 class=wise-voice>Tours</h4>
 		<h1 class='loud-voice'>Heading level 1</h1>

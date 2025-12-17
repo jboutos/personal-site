@@ -1,4 +1,4 @@
-<footer-4>
+<footer-4 class='wrapper'>
 	<inner-column>
 		<div class='container-2'>
 			<div class='logo'>

@@ -1,4 +1,4 @@
-<footer-2>
+<footer-2 class='wrapper'>
 	<inner-column>
 		<div class='hyper-container'>
 			<div class='brand'>

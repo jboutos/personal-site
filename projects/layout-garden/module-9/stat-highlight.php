@@ -1,4 +1,4 @@
-<stat-highlight>
+<stat-highlight class='wrapper'>
 	<inner-column>
 		<container>
 			<div class='info'>

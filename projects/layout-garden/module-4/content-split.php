@@ -1,4 +1,4 @@
-<content-split>
+<content-split class='wrapper'>
 	<inner-column>
 		<div>
 			<picture>

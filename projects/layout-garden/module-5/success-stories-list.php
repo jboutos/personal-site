@@ -1,4 +1,4 @@
-<success-stories-list>
+<success-stories-list class='wrapper'>
 	<inner-column>
 		<h2 class='attention-voice'>Success Stories</h2>
 		<div class='container'>

@@ -1,5 +1,5 @@
 <?php
-$theme = isset($_GET['theme']) ? $_GET['theme'] : 'default';
+$theme = $_GET['theme'] ?? 'default';
 ?>
 
 <!doctype html>

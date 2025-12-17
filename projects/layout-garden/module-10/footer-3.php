@@ -1,4 +1,4 @@
-<footer-3>
+<footer-3 class='wrapper'>
 	<inner-column>
 		<div class='hyper-container'>
 			<div class='mega-container'>

@@ -1,4 +1,4 @@
-<card-list>
+<card-list class='wrapper'>
 	<inner-column>
 		<div class='link-top'>
 			<h2 class='attention-voice'>Heading level 2</h2>

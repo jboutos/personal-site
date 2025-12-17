@@ -1,4 +1,4 @@
-<footer-1>
+<footer-1 class='wrapper'>
 	<inner-column>
 		<div class='container-2'>
 			<div class='contact'>

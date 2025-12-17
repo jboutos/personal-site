@@ -1,4 +1,4 @@
-<footer-5>
+<footer-5 class='wrapper'>
 	<inner-column>
 		<div class='logo'>
 			<div>

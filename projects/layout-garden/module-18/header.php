@@ -1,4 +1,4 @@
-<header>
+<header class='wrapper'>
 	<inner-column>
 		<div class='container'>
 			<div>

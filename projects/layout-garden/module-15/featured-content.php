@@ -1,4 +1,4 @@
-<featured-content>
+<featured-content class='wrapper'>
 	<inner-column>
 		<div class='container-2'>
 			<div class='card-1'>
