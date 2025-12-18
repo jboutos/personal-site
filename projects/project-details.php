@@ -99,13 +99,13 @@
 <?php include("projects-data.php") ?>
 
 <?php
-//needed the data as a prtial, if it wss kept in projects2 the array wouldnt load since index php includes only this page and not projects2!
+	//needed the data as a partial, if it wss kept in projects2 the array wouldnt load since index.php includes only this page and not projects2!
 
 	$project_id = '';
 
 	if (isset($_GET['project'])) {
 		$project_id = $_GET['project'];
-	}
+	
 
 	foreach ($projects as $project) {
 		if ($project_id == $project["id"]) {
@@ -116,7 +116,7 @@
 ?>
 
 <?php if (isset($detail)) { ?>
-	<?php component("project-detail", $detail); ?>
+	<?php component("project-detail", $detail); } ?>
 <?php } else { ?>
 	<?php component("project-not-found"); ?>
 <?php } ?>
