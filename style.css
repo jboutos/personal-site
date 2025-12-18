@@ -113,7 +113,7 @@ picture {
 	display: block;
 	aspect-ratio: 1 / 1;
  	overflow: hidden;
- 	max-width: 250px;
+ 	max-width: 300px;
 }
 
 img {
@@ -125,7 +125,7 @@ img {
 
 ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(210px, 250px));
+	grid-template-columns: repeat(auto-fit, minmax(210px, 300px));
 	justify-content: center;
 
 	row-gap: 1.5em;

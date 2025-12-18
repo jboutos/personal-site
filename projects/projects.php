@@ -63,38 +63,13 @@
 		margin-top: 0.5em;
 	}
 
-	.project .subtle-voice {
+	.projects .subtle-voice {
 		margin-top: 0.5em;
 	}
 
 </style>
 
 <?php include("projects-data.php") ?>
-
-<?php
-
-	function projectCardComponent($project) {
-
-		$id = $project["id"];
-		$title = $project["title"];
-		$link = $project["link"];
-		$image = $project["image"];
-
-
-		echo "<li class='project'>";
-
-			echo "<project-card id='" . $id . "'>" .
-						"<picture class='image'>" .
-							"<img src='" . $image . "' alt='" . $title . " image'>" .
-						"</picture>" .
-						"<h2 class='subtle-voice'>" . $title . "</h2>" .
-						"<a href='?page=project-details&project=$id'>See more</a>" .
-			     "</project-card>";
-			     
-		echo "</li>";
-	}
-
-?>
 
 <div class='column'>
 
@@ -104,9 +79,9 @@
 
 	<ul>
 	<?php
-	
+
 		foreach ($projects as $project) {
-			projectCardComponent($project);
+			component("project-card", $project);
 		}
 
 	?>

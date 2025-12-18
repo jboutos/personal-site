@@ -2,6 +2,8 @@
 
 <?php
 
+	require('projects/functions.php');
+
 	$page = $_GET['page'] ?? 'home';
 
 	$pages = [

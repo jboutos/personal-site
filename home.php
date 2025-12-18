@@ -87,21 +87,7 @@
 		<ul>
 			<?php
 				foreach ($infos as $info) {
-					$title = $info['title'];
-					$image = $info['image'];
-					$link = $info['link'];
-					$target = $info['target'];
-
-					echo "<li>" .
-								"<info-card>" .
-									"<a href='" . $link . "' target='" . $target . "'>" .
-										'<h1 class="careful-voice">' . $title . "</h1>" .
-									"</a>" .
-									"<picture class='home'>" .
-										"<img src='" . $image . "'>" .
-									"</picture>" .
-					      	"</info-card>" .
-					      "</li>";
+					component("info-card", $info);
 				}
 			?>
 		</ul>

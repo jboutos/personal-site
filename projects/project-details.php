@@ -115,46 +115,8 @@
 	}
 ?>
 
-<?php if (isset($detail)) { 
-
-	$description = "In " . strtolower($detail["title"]) . " " . $detail["description"];
-?>
-
-	<description>
-
-			<container>
-
-				<picture class='details'>
-					<img src='<?=$detail["image"]?>' alt='<?=$detail["title"] . " image"?>'>
-				</picture>
-
-				<div class='description'>
-
-					<h1 class='attention-voice'><?=$detail['title']?></h1>
-					<p class='calm-voice'><?=$description?></p>
-					<a href='<?=$detail["link"]?>' target='<?=$detail["target"]?>'>Go to exercise</a>
-
-				</div>
-
-			</container>
-
-	</description>
-
-<?php } else {?>
-
-	<description2>
-
-			<container>
-
-				<div class='description'>
-
-					<h1 class='attention-voice'>No project found!</h1>
-					<p class='calm-voice'>Check out the list for more projects <a href='?page=projects'>here</a></p>
-
-				</div>
-
-			</container>
-
-	</description2>
-
+<?php if (isset($detail)) { ?>
+	<?php component("project-detail", $detail); ?>
+<?php } else { ?>
+	<?php component("project-not-found"); ?>
 <?php } ?>
