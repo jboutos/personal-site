@@ -1,0 +1,21 @@
+{
+  "goals": {
+    "title": "Goals",
+    "image": "images/goals.png",
+    "link": "?page=goals",
+    "target": "_self"
+  },
+  "substack": {
+    "title": "My substack",
+    "image": "images/substack.png",
+    "link": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
+    "target": "_blank"
+  },
+  "resume": {
+    "title": "Resume",
+    "image": "images/resume.png",
+    "link": "resume.php",
+    "target": "_blank"
+  }
+}
+
