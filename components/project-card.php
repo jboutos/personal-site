@@ -6,7 +6,7 @@
 
 		<h2 class='subtle-voice'><?= $title ?></h2>
 
-		<a href='?page=project-details&project=<?= $id ?>'>
+		<a href='?page=details&project=<?= $id ?>'>
 			See more
 		</a>
 	</project-card>

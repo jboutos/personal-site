@@ -1,10 +1,10 @@
 <?php
 
-	function favoriteFoodsPage() {
+	function foodsPage() {
 
 	   $data = getJsonData('favoritefoodsdata');
 
-		return view('favorite-foods', [
+		return view('foods', [
 		   'title' => 'Favorite foods',
 		   'subtitle' => 'Some of my favorite foods include:',
 		   'data' => $data,

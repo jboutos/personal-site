@@ -28,7 +28,7 @@
 	<nav>
 		<a href='?page=welcome'>welcome</a>
 		<a href='?page=contact'>contact</a>
-		<a href='?page=favorite-foods'>favorite foods</a>
+		<a href='?page=foods'>favorite foods</a>
 		<a href='?page=journal'>journal</a>
 	</nav>
 </div>
