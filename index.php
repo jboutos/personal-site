@@ -29,19 +29,9 @@
 		<meta name='description' content='An amalgamation of everything unholy created at PE so far'>
 		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'>
 		<link rel='stylesheet' href='css/style.css'>
-		<link rel="stylesheet" type="text/css" href="css/home.css">
-		<link rel="stylesheet" type="text/css" href="css/projects.css">
-		<link rel="stylesheet" type="text/css" href="css/favorite-foods.css">
-		<link rel="stylesheet" type="text/css" href="css/project-details.css">
-		<link rel="stylesheet" type="text/css" href="css/goals.css">
-		<link rel="stylesheet" type="text/css" href="css/welcome.css">
-		<link rel="stylesheet" type="text/css" href="css/contact.css">
-		<link rel="stylesheet" type="text/css" href="css/journal.css">
-		<link rel="stylesheet" type="text/css" href="css/archive.css">
-		<link rel="stylesheet" type="text/css" href="css/homepage.css">
+		<?= getCSS($page); ?>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Catamaran:600|Merriweather+Sans:300" rel="stylesheet">
-
 		
 	</head>
 

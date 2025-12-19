@@ -3,6 +3,7 @@
 ?>
 
 <description>
+
 	<container>
 
 		<picture class='details'>
@@ -16,4 +17,5 @@
 		</div>
 
 	</container>
+	
 </description>

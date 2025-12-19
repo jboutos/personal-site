@@ -25,4 +25,9 @@
 		return ob_get_clean();
 	}
 
+	function getCSS($page) {
+		$filepath = "css/$page.css";
+		return "<link rel='stylesheet' href='$filepath'>";
+	}
+
 ?>
