@@ -2,7 +2,7 @@
 
 	function goalsPage() {
 
-	   $data = getGoalsData();
+	   $data = getJsonData('goalsdata');
 
 		return view('goals', [
 		   'title' => 'Goals',

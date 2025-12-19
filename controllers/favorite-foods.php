@@ -2,7 +2,7 @@
 
 	function favoriteFoodsPage() {
 
-	   $data = getFavoriteFoodsData();
+	   $data = getJsonData('favoritefoodsdata');
 
 		return view('favorite-foods', [
 		   'title' => 'Favorite foods',

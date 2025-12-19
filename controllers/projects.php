@@ -2,7 +2,7 @@
 
 	function projectsPage() {
 
-	   $data = getProjectsData();
+	   $data = getJsonData('projectsdata');
 
 		return view('projects', [
 		   'title' => 'My web-dev journey',

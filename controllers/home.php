@@ -2,7 +2,7 @@
 
 	function homePage() {
 
-	   $data = getHomeData();
+	   $data = getJsonData('homedata');
 
 		return view('home', [
 		   'title' => 'My web-dev journey',
