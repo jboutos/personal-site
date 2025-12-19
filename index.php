@@ -2,7 +2,7 @@
 
 <?php
 
-	require('projects/functions.php');
+	require('functions.php');
 	require('controllers/home.php');
 	require('controllers/projects.php');
 	require('controllers/favorite-foods.php');

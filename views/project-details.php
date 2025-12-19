@@ -1,4 +1,4 @@
-<?php include("projects/projects-data.php") ?>
+<?php $projects = getJsonData('projectsdata') ?>
 
 <?php
 	//needed the data as a partial, if it was kept in projects2 the array wouldnt load since index.php includes only this page and not projects2!

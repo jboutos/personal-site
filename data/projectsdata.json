@@ -1,7 +1,7 @@
 {
   "slc": {
     "title": "Super layout challenge",
-    "image": "projects/images/car-service-express.png",
+    "image": "images/car-service-express.png",
     "link": "projects/super-layout-challenge-1/index.html",
     "id": 2,
     "description": "I had to test my knowledge of flexbox. The layout has various breakpoints!",
@@ -9,7 +9,7 @@
   },
   "slcp": {
     "title": "Super layout challenge v2",
-    "image": "projects/images/pink.png",
+    "image": "images/pink.png",
     "link": "projects/super-layout-challenge-pink/index.html",
     "id": 3,
     "description": "I once again tested my knowledge of flexbox, this one turned out to be a bit trickier!",
@@ -17,7 +17,7 @@
   },
   "garden": {
     "title": "Layout garden",
-    "image": "projects/images/garden.png",
+    "image": "images/garden.png",
     "link": "projects/layout-garden/route.php",
     "id": 4,
     "description": "you will find a collection of various layouts I found on the internet and tried copying!",
@@ -25,7 +25,7 @@
   },
   "slcg": {
     "title": "Super layout challenge grid edition",
-    "image": "projects/images/grid.jpg",
+    "image": "images/grid.jpg",
     "link": "projects/surlc-grid/index.html",
     "id": 5,
     "description": "I had to recreate the super layout challenge using only grid!",
@@ -33,14 +33,14 @@
   },
   "grid": {
     "title": "Grid practice layouts",
-    "image": "projects/images/grid2.png",
+    "image": "images/grid2.png",
     "link": "projects/grid-practice-layouts/index.php",
     "id": 6,
     "description": "I had to once again use grid but with no cleart guidelines as to breakpoints."
   },
   "madlib": {
     "title": "Madlib",
-    "image": "projects/images/madlib.webp",
+    "image": "images/madlib.webp",
     "link": "projects/php-madlib/index.php",
     "id": 7,
     "description": "I tried for the first time some php coding!",
@@ -48,7 +48,7 @@
   },
   "monster": {
     "title": "Monster adoption service",
-    "image": "projects/images/monster.jpg",
+    "image": "images/monster.jpg",
     "link": "projects/monster-adoption-service/index.php",
     "id": 8,
     "description": "I had to use php to create a template card for cute monsters up for adoption.",
@@ -56,7 +56,7 @@
   },
   "form": {
     "title": "Form exercises",
-    "image": "projects/images/form.png",
+    "image": "images/form.png",
     "link": "projects/php-exercises/index.php",
     "id": 9,
     "description": "I had to test for the first time how the html form works in conjuction with php!",
@@ -64,7 +64,7 @@
   },
   "route": {
     "title": "Routing exercise",
-    "image": "projects/images/shoelace.png",
+    "image": "images/shoelace.png",
     "link": "projects/shoelace-haven/index.php",
     "id": 10,
     "description": "everything came together as I got to combine php routing, templating and forms to create a small sort of functional site!",
@@ -72,7 +72,7 @@
   },
   "crud": {
     "title": "Simple crud app",
-    "image": "projects/images/crud.png",
+    "image": "images/crud.png",
     "link": "projects/crud-app/index.php",
     "id": 11,
     "description": "I learned for the first time about the concept of databases and json files where you can add/edit and delete a list of cars!",
@@ -80,7 +80,7 @@
   },
   "archived": {
     "title": "Archive",
-    "image": "projects/images/archives1.png",
+    "image": "images/archives1.png",
     "link": "?page=archive",
     "id": 1,
     "description": "you will find all the older exercises",
