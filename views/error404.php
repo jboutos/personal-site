@@ -47,13 +47,17 @@
 		max-width: 350px;
 	}
 
+	.loud-voice {
+		margin: 0;
+	}
+
 </style>
 
 <container>
 	<picture class='error'>
 		<img src="images/404.png">
 	</picture>
-	<h1 class='loud-voice'>Error 404</h1>
-	<p class='calm-voice'>Page not found!</p>
-	<a href="?page=home">Go back</a>
+	<h1 class='loud-voice'><?= $title ?></h1>
+	<p class='calm-voice'><?= $subtitle ?></p>
+	<a href="?page=home"><?= $link ?></a>
 </container>

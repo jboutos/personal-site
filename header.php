@@ -13,7 +13,7 @@
 		border-bottom: 1px solid black;
 	}
 
-	header a {
+	header-container a {
 		text-decoration: none;
 	}
 
@@ -25,7 +25,7 @@
 
 <?php include('config.php'); ?>
 
-<header>
+<header-container>
 
 	<div class='column header'>
 
@@ -33,7 +33,7 @@
 			<h2 class='subtle-voice'>J.BOUTOS</h2>
 		</a>
 
-		<nav>
+		<nav class='navigation'>
 			<a href='<?=BASE_URL?>'>home</a>
 			<a href='<?=BASE_URL?>?page=welcome'>about</a>
 			<a href='<?=BASE_URL?>?page=contact'>contact</a>
@@ -42,4 +42,4 @@
 		
 	</div>
 
-</header>
+</header-container>

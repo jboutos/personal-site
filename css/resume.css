@@ -1,0 +1,77 @@
+section {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media (min-width: 570px) {
+		grid-template-columns: 0.25fr 1fr;
+		gap: 2em;
+	}
+}
+
+h1, h3 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p, li {
+	font-family: 'Quattrocento', serif;
+}
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.profile img {
+	width: 150px;
+
+	margin-top: 26px;
+}
+
+.contact img {
+	width: 20px;
+}
+
+right-panel {
+	padding: 1em;
+}
+
+left-panel {
+	display: block;
+	background-color: hsl(189 69.7% 70.1%);
+
+	padding: 1em;
+
+
+
+	@media (min-width: 570px) {
+		height: 100vh;
+	}
+}
+
+.contact {
+	@media (min-width: 570px) {
+		display: flex;
+		align-items: center;
+		gap: 0.7em;
+	}
+}
+
+work-experience {
+	display: block;
+	margin-top: 2em;
+}
+
+qualifications {
+	display: block;
+
+	margin-top: 2em;
+}
+
+ul li {
+	margin-top: 0.6em;
+	max-width: 60ch;
+}

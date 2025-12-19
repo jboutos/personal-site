@@ -1,0 +1,69 @@
+.welcome {
+
+	--color: hsl(296 70.7% 30.8%);
+	--base: hsl(7 75.8% 93.5%);
+	--hover: hsl(302 58.9% 80.7%);
+	--circle: hsl(296 70.7% 30.8% / 0.4);
+
+
+	@media (prefers-color-scheme: dark) {
+
+		--color: hsl(7 75.8% 93.5%);
+		--base: hsl(296 70.7% 30.8%);
+		--hover: hsl(302 58.9% 64.7%);
+		--circle: hsl(7 75.8% 93.5% / 0.4);
+	}
+
+
+	background-color: var(--base);
+
+
+	h1, h2, p, a, li, li::marker {
+		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill: var(--circle);
+	}
+
+	a:hover {
+		background-color: var(--hover);
+	}
+
+	.substack {
+		font-size: 1rem;
+	}
+
+	.links {
+		display: block;
+		margin-top: 1em;
+	}
+
+	.calm-voice {
+		padding-bottom: 0;
+		margin: 0 auto;
+	}
+
+	.container svg {
+		@media (max-width: 750px) {
+			display: none;
+		}
+		position: absolute;
+		max-width: 20%;
+		fill: var(--circle);
+		@media (min-width: 751px) {
+			transform: translate(-230%, -50%);
+		}
+	}
+
+	.column {
+		position: relative;
+	}
+
+	.navigation a:hover, .logo:hover {
+		background-color: transparent;
+	}
+}
+

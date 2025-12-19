@@ -4,7 +4,7 @@
 
   <ul>
       <?php
-          foreach ($infos as $info) {
+          foreach ($data as $info) {
               component("info-card", $info);
           }
       ?>

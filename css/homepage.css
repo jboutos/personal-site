@@ -1,0 +1,51 @@
+.homepage {
+
+	--color: hsl(240 100% 40.2%);
+	--charged: hsl(0 67.9% 41.6%);
+	--base: hsl(188 45.3% 81.4%);
+	--hover: hsl(180, 92%, 40%);
+
+	@media (prefers-color-scheme: dark) {
+		--color: hsl(188 45.3% 81.4%);
+		--charged: hsl(0 67.9% 60.6%);
+		--base: hsl(240 100% 40.2%);
+		--hover: hsl(180, 92%, 20%);
+	}
+	
+	background-color: var(--base);
+
+	h1, a, li::marker {
+		color: var(--color);
+	}
+
+	h2 {
+		color: var(--charged);
+	}
+
+	a:hover {
+		background-color: var(--hover);
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+	}
+
+	.careful-voice {
+		margin-top: 1em;
+	}
+
+	.navigation a, .logo {
+		text-decoration: none;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.navigation a, .logo {
+		text-decoration: none;
+	}
+}	
+

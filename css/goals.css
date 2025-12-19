@@ -1,0 +1,78 @@
+.goals {
+
+	--color: hsl(248 39% 39.2%);
+	--charged : hsl(249 79.8% 67.1%);
+	--base: hsl(25 100% 96.7%);
+	--hover: hsl(219 79.2% 66.1%);
+	--circle: hsl(248 39% 39.2% / 0.4);
+
+
+	@media (prefers-color-scheme: dark) {
+
+		--color: hsl(25 100% 96.7%);
+		--charged : hsl(249 79.8% 80.1%);
+		--base: hsl(248 39% 39.2%);
+		--hover: hsl(219 79.2% 66.1%);
+		--circle: hsl(25 100% 96.7% / 0.4);
+
+	}
+
+
+	background-color: var(--base);
+
+
+	h1 {
+		color: var(--charged);
+	}
+
+	a, li::marker, h2 {
+		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill: var(--circle);
+	}
+
+	a:hover {
+		background-color: var(--hover);
+	}
+
+   li {
+		font-size:18px;
+		line-height: 2em;
+		color: var(--color);
+	}
+
+	ul + h2 {
+		margin-top: 1.5em;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+		padding-left: 1.2em;
+		margin-left: 0;
+	}
+
+	h1 + h2 {
+		margin-top: 1em;
+	}
+
+	h1, h2, li {
+		text-align: start;
+	}
+
+	.goalsul {
+		width: 100%;
+	}
+
+	.navigation a:hover, .logo:hover {
+		background-color: transparent;
+	}
+}
+
+
+	

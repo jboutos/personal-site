@@ -2,11 +2,11 @@
 
 	function homePage() {
 
-	   $infos = getHomeData();
+	   $data = getHomeData();
 
-		return view('infos', [
+		return view('home', [
 		   'title' => 'My web-dev journey',
-		   'infos' => $infos,
+		   'data' => $data,
 	  ]);
 	}
 

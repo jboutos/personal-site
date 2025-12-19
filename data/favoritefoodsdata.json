@@ -1,0 +1,20 @@
+{
+  "mousakas": {
+    "name": "Mousakas",
+    "image": "images/mousakas.jpg",
+    "link": "https://akispetretzikis.com/en/recipe/1559/moysakas",
+    "target": "_blank"
+  },
+  "tripe": {
+    "name": "Tripe soup",
+    "image": "images/patsas.jpg",
+    "link": "https://www.amberq.gr/en/grillphilosophy/greek-patsas-recipe-in-the-wood-fired-oven",
+    "target": "_blank"
+  },
+  "strapatsada": {
+    "name": "Strapatsada",
+    "image": "images/strapatsada.jpg",
+    "link": "https://akispetretzikis.com/en/recipe/3347/kagiana-strapatsada",
+    "target": "_blank"
+  }
+}

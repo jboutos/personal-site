@@ -1,0 +1,48 @@
+.error404 {
+
+	--color: hsl(28 42.9% 31%);
+	--base: hsl(36 75.3% 85.1%);
+	--hover: hsl(28 42.9% 57.5%);
+
+	@media (prefers-color-scheme: dark) {
+		--color: hsl(36 75.3% 85.1%);
+		--base: hsl(28 42.9% 31%);
+		--hover: hsl(235, 80%, 60%);
+	}
+
+	background-color: var(--base);
+
+	.loud-voice, .calm-voice, a {
+		color: var(--color);
+	}
+
+	a:hover {
+		color: var(--hover);
+	}
+
+	.loud-voice {
+		padding-top: 0;
+	}
+
+	img {
+		object-fit: contain;
+	}
+
+	container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+
+		margin-top: 7em;
+	}
+
+	.error {
+		max-width: 350px;
+	}
+
+	.navigation a, .logo {
+		text-decoration: none;
+	}
+}	
+

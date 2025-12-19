@@ -1,0 +1,20 @@
+{
+  "short_term_goals": {
+    "title": "Short Term Goals",
+    "items": [
+      "Get to understand basic design concepts",
+      "Be able to recreate most of the things I see online",
+      "Have a good grasp on algorithmic thinking",
+      "Build a personal website",
+      "Be in a position to create simple apps"
+    ]
+  },
+  "long_term_goals": {
+    "title": "Long Term Goals",
+    "items": [
+      "Have a good grasp on both frontend and backend and find my niche",
+      "Better networking",
+      "Land a job"
+    ]
+  }
+}
