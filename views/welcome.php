@@ -5,7 +5,7 @@
 
 	<h2 class='careful-voice'><?= $link2 ?></h2>
 
-	<?php include('footer.php') ?>
+	<?php include('modules/footer.php') ?>
 
 	<div class='container'>
 		<svg width="800px" height="800px" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">

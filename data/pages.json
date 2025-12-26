@@ -1,0 +1,57 @@
+{
+  "home": {
+    "title": "home",
+    "description": "it's the homepage!",
+    "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png",
+  },
+    "projects": {
+    "title": "projects",
+    "description": "Projects page",
+    "image": "https://peprojects.dev/beta3/johnb/images/meta2.png",
+  },
+    "foods": {
+    "title": "foods",
+    "description": "A list of my favorite foods",
+    "image": "https://peprojects.dev/beta3/johnb/images/mousakas.jpg",
+  },
+    "contact": {
+    "title": "contact",
+    "description": "Contact information",
+    "image": "https://peprojects.dev/beta3/johnb/images/contact.jpg",
+  },
+    "goals": {
+    "title": "goals",
+    "description": "My goals",
+    "image": "https://peprojects.dev/beta3/johnb/images/goals.png",
+  },
+    "journal": {
+    "title": "journal",
+    "description": "Journal page",
+    "image": "https://peprojects.dev/beta3/johnb/images/journal.jpg",
+  },
+    "details": {
+    "title": "details",
+    "description": "A more detailed look at each project",
+    "image": "https://peprojects.dev/beta3/johnb/images/details.jpg",
+  },
+    "welcome": {
+    "title": "welcome",
+    "description": "Introduction",
+    "image": "https://peprojects.dev/beta3/johnb/images/welcome.png",
+  },
+    "archive": {
+    "title": "archive",
+    "description": "Older exercises",
+    "image": "https://peprojects.dev/beta3/johnb/images/archives1.png",
+  },
+    "homepage": {
+    "title": "homepage",
+    "description": "A simple portal",
+    "image": "https://peprojects.dev/beta3/johnb/images/portal.jpg",
+  },
+    "error404": {
+    "title": "error404",
+    "description": "Custom 404 page",
+    "image": "https://peprojects.dev/beta3/johnb/images/error.jpg",
+  }
+}

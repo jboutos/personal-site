@@ -43,6 +43,7 @@ container {
 		width: 90%;
 		margin: 3em auto;
 		flex-grow: 1;
+		gap: 4em;
 
 		@media (min-width: 400px) {
 			display: grid;

@@ -1,24 +1,17 @@
-<div class='column'>
+<div class="column">
 
-	<h1 class='attention-voice'><?= $title ?></h1>
-	<h2 class='careful-voice'><?= $subtitle1 ?></h2>
+  <h1 class="attention-voice"><?= $title ?></h1>
 
-	<ul class='goals'>
+	  <?php foreach ($data as $proximity) { ?>
 
-		<?php foreach ($data['short_term_goals']['items'] as $goal) { ?>
-	      <li><?= $goal ?></li>
-	    <?php } ?>
+	    <h2 class="careful-voice"><?= $proximity['title'] ?></h2>
 
-	</ul>
+	    <ul class="goals">
+	      <?php foreach ($proximity['goals'] as $goal) { ?>
+	        <li><?= $goal ?></li>
+	      <?php } ?>
+	    </ul>
 
-	<h2 class='careful-voice'><?= $subtitle2 ?></h2>
-
-	<ul class='goals'>
-
-		<?php foreach ($data['long_term_goals']['items'] as $goal) { ?>
-	      <li><?= $goal ?></li>
-	    <?php } ?>
-
-	</ul>
+	  <?php } ?>
 
 </div>

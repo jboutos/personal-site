@@ -2,11 +2,11 @@
 
 <?php
 
-	
-
 	require('functions.php');
 
 	getController($_GET['page'] ?? 'home');
+
+	$meta = getPageMeta($_GET['page'] ?? 'home');
 
 ?>
 
@@ -14,11 +14,11 @@
 
 	<head>
 
-		<title>Index</title>
+		<title><?= $meta['title'] ?></title>
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<meta name='description' content='An amalgamation of everything unholy created at PE so far'>
-		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'>
+		<meta name='description' content='<?= $meta['description'] ?>'>
+		<meta property='og:image' content='<?= $meta['image'] ?>'>
 		<link rel='stylesheet' href='css/style.css'>
 		<?= getCSS($_GET['page'] ?? 'home'); ?>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Mulish:300" rel="stylesheet">
@@ -30,7 +30,7 @@
 
 		<header>
 
-			<?php include('header.php') ?>
+			<?php include('modules/header.php') ?>
 
 		</header>
 

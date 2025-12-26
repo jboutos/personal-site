@@ -1,0 +1,97 @@
+[
+	{
+		"title": "Simple calculator",
+		"intro": "Prompts for two numbers. Prints the sum, difference, product, and quotient of those numbers.",
+		"id": 1
+	},
+	{
+		"title": "Welcomer",
+		"intro": "A program that prompts for your name and prints a greeting using your name.",
+		"id": 2
+	},
+	{
+		"title": "Character counter",
+		"intro": "A program that prompts for an input string and displays output that shows the input string and the number of characters the string contains.",
+		"id": 3
+	},
+	{
+		"title": "Quote maker",
+		"intro": "A program that prompts for a quote and an author.",
+		"id": 4
+	},
+	{
+		"title": "Madlib creator",
+		"intro": "a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective and injects those into a story.",
+		"id": 5
+	},
+	{
+		"title": "Retirement calculator",
+		"intro": "A program that determines how many years you have left until retirement and the year you can retire.",
+		"id": 6
+	},
+	{
+		"title": "Rectangular area calculator",
+		"intro": "A program that calculates the area of a room.",
+		"id": 7
+	},
+	{
+		"title": "Pizza calculator",
+		"intro": "A program that evenly divides pizzas",
+		"id": 8
+	},
+	{
+		"title": "Paint calculator",
+		"intro": "Calculates the gallons of paint needed to paint the ceiling of a rectangular room",
+		"id": 9
+	},
+	{
+		"title": "Checkout calculator",
+		"intro": "Calculates the subtotal of items and the taxes.",
+		"id": 10
+	},
+	{
+		"title": "Currency convertor",
+		"intro": "A program that converts currency.",
+		"id": 11
+	},
+	{
+		"title": "Simple interest calculator",
+		"intro": "A program that computes simple interest.",
+		"id": 12
+	},
+	{
+		"title": "Compound interest calculator",
+		"intro": "A program that computes compound interest.",
+		"id": 13
+	},
+	{
+		"title": "Tax calculator",
+		"intro": "Calculates the total amount of an order. If the state is Wisconsin the tax is displayed separately.",
+		"id": 14
+	},
+	{
+		"title": "Pasword validator",
+		"intro": "A program that validates user login credentials.",
+		"id": 15
+	},
+	{
+		"title": "Driving age calculator",
+		"intro": "A program that checks if the user is of legal driving age.",
+		"id": 16
+	},
+	{
+		"title": "Blood alcohol calculator",
+		"intro": "Calculates the blood alcohol content.",
+		"id": 17
+	},
+	{
+		"title": "Temperature converter",
+		"intro": "a program that converts temperatures from Fahrenheit to Celsius and vice versa.",
+		"id": 18
+	},
+	{
+		"title": "Bmi calculator",
+		"intro": "Calculates the body mass index.",
+		"id": 19
+	}
+]

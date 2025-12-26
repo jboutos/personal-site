@@ -55,5 +55,5 @@
 
 	<h2 class='careful-voice'><?= $links ?></h2>
 
-	<?php include('footer.php') ?>
+	<?php include('modules/footer.php') ?>
 </div>
