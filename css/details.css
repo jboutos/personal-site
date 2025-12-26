@@ -86,6 +86,11 @@
 	.navigation a:hover, .logo:hover {
 		background-color: transparent;
 	}
+
+	.not-found {
+		margin: 0 auto;
+	}
+
 }
 
 

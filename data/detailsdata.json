@@ -1,0 +1,89 @@
+{
+  "slc": {
+    "title": "Super layout challenge",
+    "image": "images/car-service-express.png",
+    "link": "projects/super-layout-challenge-1/index.html",
+    "id": 2,
+    "description": "I had to test my knowledge of flexbox. The layout has various breakpoints!",
+    "target": "_blank"
+  },
+  "slcp": {
+    "title": "Super layout challenge v2",
+    "image": "images/pink.png",
+    "link": "projects/super-layout-challenge-pink/index.html",
+    "id": 3,
+    "description": "I once again tested my knowledge of flexbox, this one turned out to be a bit trickier!",
+    "target": "_blank"
+  },
+  "garden": {
+    "title": "Layout garden",
+    "image": "images/garden.png",
+    "link": "projects/layout-garden/route.php",
+    "id": 4,
+    "description": "you will find a collection of various layouts I found on the internet and tried copying!",
+    "target": "_blank"
+  },
+  "slcg": {
+    "title": "Super layout challenge grid edition",
+    "image": "images/grid.jpg",
+    "link": "projects/surlc-grid/index.html",
+    "id": 5,
+    "description": "I had to recreate the super layout challenge using only grid!",
+    "target": "_blank"
+  },
+  "grid": {
+    "title": "Grid practice layouts",
+    "image": "images/grid2.png",
+    "link": "projects/grid-practice-layouts/index.php",
+    "id": 6,
+    "description": "I had to once again use grid but with no cleart guidelines as to breakpoints."
+  },
+  "madlib": {
+    "title": "Madlib",
+    "image": "images/madlib.webp",
+    "link": "projects/php-madlib/index.php",
+    "id": 7,
+    "description": "I tried for the first time some php coding!",
+    "target": "_blank"
+  },
+  "monster": {
+    "title": "Monster adoption service",
+    "image": "images/monster.jpg",
+    "link": "projects/monster-adoption-service/index.php",
+    "id": 8,
+    "description": "I had to use php to create a template card for cute monsters up for adoption.",
+    "target": "_blank"
+  },
+  "form": {
+    "title": "Form exercises",
+    "image": "images/form.png",
+    "link": "projects/php-exercises/index.php",
+    "id": 9,
+    "description": "I had to test for the first time how the html form works in conjuction with php!",
+    "target": "_blank"
+  },
+  "route": {
+    "title": "Routing exercise",
+    "image": "images/shoelace.png",
+    "link": "projects/shoelace-haven/index.php",
+    "id": 10,
+    "description": "everything came together as I got to combine php routing, templating and forms to create a small sort of functional site!",
+    "target": "_blank"
+  },
+  "crud": {
+    "title": "Simple crud app",
+    "image": "images/crud.png",
+    "link": "projects/crud-app/index.php",
+    "id": 11,
+    "description": "I learned for the first time about the concept of databases and json files where you can add/edit and delete a list of cars!",
+    "target": "_blank"
+  },
+  "archived": {
+    "title": "Archive",
+    "image": "images/archives1.png",
+    "link": "?page=archive",
+    "id": 1,
+    "description": "you will find all the older exercises",
+    "target": "_blank"
+  }
+}

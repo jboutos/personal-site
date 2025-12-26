@@ -4,7 +4,7 @@
 		extract($props);
 		ob_start();
 		include("components/{$template}.php");
-		echo ob_get_clean();
+		return ob_get_clean();
 	}
 
 	function getJsonData($filename) {

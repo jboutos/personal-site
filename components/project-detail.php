@@ -1,7 +1,3 @@
-<?php
-	$description = "In " . strtolower($title) . " " . $description;
-?>
-
 <description>
 
 	<container>

@@ -53,7 +53,7 @@
         <ul>
             <?php foreach ($data as $item) { ?>
                 <li>
-                    <?php component($component, $item); ?>
+                    <?= component($component, $item); ?>
                 </li>
             <?php } ?>
         </ul>
