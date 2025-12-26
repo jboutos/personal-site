@@ -2,7 +2,9 @@
 
 	function archivePage() {
 
-		return view('archive', [
+		$page = pageNameFromFunction(__FUNCTION__);
+
+		return view($page, [
 		   'title' => 'A list of older PE projects',
 		   'subtitle' => 'Older exercises (go to heaven)',
 		   'link' => 'Google doc',

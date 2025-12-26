@@ -1,7 +1,10 @@
 <?php
 
 	function detailsPage() {
-		return view('details');
+
+		$page = pageNameFromFunction(__FUNCTION__);
+
+		return view($page);
 	}
 
 ?>

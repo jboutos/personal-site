@@ -2,7 +2,9 @@
 
 	function error404Page() {
 
-		return view('error404', [
+		$page = pageNameFromFunction(__FUNCTION__);
+
+		return view($page, [
 		   'title' => 'Error 404',
 		   'subtitle' => 'Page not found!',
 		   'link' => 'Go back',

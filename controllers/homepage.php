@@ -2,7 +2,9 @@
 
 	function homepagePage() {
 
-		return view('homepage', [
+		$page = pageNameFromFunction(__FUNCTION__);
+
+		return view($page, [
 		   'title' => 'Portal',
 		   'subtitle' => 'Booking sites',
 		   'subtitle2' => 'Sports sites',

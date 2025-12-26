@@ -62,4 +62,8 @@
 		return $pages[$page] ?? $default;
 	}
 
+	function pageNameFromFunction($function) {
+	   return str_replace('Page', '', $function);
+	}
+
 ?>

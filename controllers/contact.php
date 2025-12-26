@@ -2,7 +2,9 @@
 
 	function contactPage() {
 
-		return view('contact', [
+		$page = pageNameFromFunction(__FUNCTION__);
+
+		return view($page, [
 		   'title' => 'Contact information',
 		   'subtitle' => 'You can contact me at jgbout@yahoo.com',
 		   'subtitle2' => 'Alternatively you can drop a message below (be kind)',
