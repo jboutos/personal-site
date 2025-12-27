@@ -16,18 +16,13 @@
 			} else {
 				$post = ['Id' => uniqid(), 'name' => $name, 'message' => $message];
 
-				if (file_exists('messages.json')) {
-					$messageData = file_get_contents("messages.json");
-					$messages = json_decode($messageData, true);
-				} else {
-					$messages = [];
-				}
+				$messages = getJsonData($page . 'data');
 
 				$messages[] = $post;
 
 				$messageJson = json_encode($messages, JSON_PRETTY_PRINT);
 
-				file_put_contents('messages.json', $messageJson);
+				file_put_contents('data/contactdata.json', $messageJson);
 
 				$reply = "<p>Message was sent!</p>";
 

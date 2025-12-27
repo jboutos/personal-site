@@ -3,7 +3,7 @@
 	function journalPage() {
 
 		$page = pageNameFromFunction(__FUNCTION__);
-		$journal = json_decode(file_get_contents('journal.json'), true);
+		$journal = getJsonData($page . 'data');
 
 		return view('generic', [
 		   'title' => 'A rather short journal on my web-dev endeavours',
