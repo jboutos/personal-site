@@ -26,7 +26,7 @@
 		
 	</head>
 
-	<body class="dark <body class='dark <?= pageSelect($_GET['page'] ?? 'home') ?>">
+	<body class="dark <?= pageSelect($_GET['page'] ?? 'home') ?>">
 
 		<header>
 

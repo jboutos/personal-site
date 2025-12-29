@@ -78,6 +78,14 @@
     "description": "I learned for the first time about the concept of databases and json files where you can add/edit and delete a list of cars!",
     "target": "_blank"
   },
+  "Surl": {
+    "title": "Another responsive layout challenge",
+    "image": "images/surl.png",
+    "link": "projects/super-ultra-responsive-layout/index.php",
+    "id": 12,
+    "description": "I revisited some responsive layouts, nothing too fancy.",
+    "target": "_blank"
+  },
   "archived": {
     "title": "Archive",
     "image": "images/archives1.png",
