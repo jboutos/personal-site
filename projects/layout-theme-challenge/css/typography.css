@@ -1,0 +1,64 @@
+
+.loud-voice	{
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(36px, 5vw, 60px);
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700;
+	}
+}
+
+.intro-voice	{
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(36px, 5vw, 48px);
+	font-weight: 700;
+}
+
+.attention-voice	{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.subtle-voice {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.something-for-site-map-headings {
+	/* */
+}
+
+.calm-voice, a {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now $todo */
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p {
+	margin-top: 20px;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+h3 + p {
+	margin-top: 20px;
+}
+
+h3 + a {
+	margin-top: 0.8em;
+}
+
+.circle {
+	margin-bottom: 0.8em;
+}

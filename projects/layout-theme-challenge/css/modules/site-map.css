@@ -1,0 +1,41 @@
+
+site-map {
+  display: grid;
+  gap: 2em;
+  /* */
+  padding-top: 40px;
+  padding-bottom: 120px;
+  /* */
+  @media (min-width: 300px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 450px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+site-map .logo {
+  max-width:  40px;
+}
+
+site-map .logo * {
+  fill: currentColor;
+}
+
+site-map a {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding:  10px;
+  text-decoration: underline;
+  justify-self: flex-start;
+}
+
+site-map h3 {
+  justify-self: flex-start;
+}
+
+

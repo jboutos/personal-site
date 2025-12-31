@@ -1,0 +1,172 @@
+
+/* RESET */
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/*@import 'developer-styles.css'; */
+/* comment this ^ out - when you are ready */
+
+
+/* SETTINGS */
+@import 'settings.css'; /* variables/ etc */
+
+
+/* STRUCTURE */
+@import 'structure.css';
+
+
+/* TYPOGRAPHY */
+@import 'typography.css';
+
+
+/* COMPONENTS */
+@import 'components.css';
+
+
+/* MODULES */
+@import 'modules/masthead.css';
+@import 'modules/graphic-diptych.css';
+@import 'modules/call-to-action.css';
+@import 'modules/articles-intro.css';
+@import 'modules/article-card.css';
+@import 'modules/site-map.css';
+/* should everything/nothing be in it's own file? */
+
+
+/* ACTUAL SITE STYLES */
+html {
+	background-color: var(--background);
+}
+
+
+
+
+/*
+	This the area where you work out your styles 
+	If it makes sense, you can break these out into their own files.
+*/
+
+
+/* SITE SECTIONS */
+.site-header {
+	/*background-color: #9ec9eb;*/
+	position: sticky;
+	top: 0;
+	/*box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
+}
+.site-header inner-column {
+	padding: 14px;
+}
+
+
+
+
+
+
+
+/* OK! SITE STYLES! */
+.site-header {
+  background-color: var(--color);
+  color: var(--white);
+}
+
+.site-header a {
+	border-bottom: 4px solid transparent;
+
+	&:hover:not(.logo) {
+		border-bottom: 4px solid var(--background);
+	}
+}
+
+.site-header span, .site-header h2 {
+	color: var(--background);
+}
+
+.welcome {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+
+/* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
+
+
+.get-involved {
+  background-color:  var(--highlight);
+  background-image:  url("../images/sheep-2.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  color: var(--white);
+} /* interesting way to include the whole image in your CSS */
+
+.get-involved a {
+	background-color: var(--whiteopaque);
+	padding: 0.6em 2em;
+
+	&:hover {
+		background-color: var(--hoveropaque);
+	}
+}
+
+.get-involved inner-column {
+	/*max-width:  700px;*/
+}
+
+.get-involved call-to-action {
+
+}
+
+.stuff {
+  background-color: var(--white);
+}
+
+.stuff a {
+	background-color: var(--color);
+	color: var(--background);
+	padding: 0.6em 2em;
+
+	&:hover {
+		background-color: var(--hover);
+	}
+}
+
+.stuff p, .stuff h2 {
+	color: var(--color);
+}
+
+.help-us {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.help-us a {
+	background-color: var(--color);
+	color: var(--background);
+	padding: 0.6em 2em;
+
+	&:hover {
+		background-color: var(--hover);
+	}
+}
+
+.site-footer {
+	background-color: var(--color);
+	color: var(--white);
+}
+
+.site-footer a {
+	padding: 0.2em 0;
+
+	&:hover {
+		background-color: var(--hoverfooter);
+	}
+}
+
+.site-footer > h2, h3, a {
+	color: var(--background);
+}
+
+.site-footer .logo {
+	max-width:  60px;
+}
+

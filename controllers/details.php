@@ -2,8 +2,8 @@
 
 	function detailsPage() {
 
-		$page = pageNameFromFunction(__FUNCTION__);
-		$projects = getJsonData($page . 'data');
+		$page = pageSelect($_GET['page'] ?? 'home');
+		$projects = getJsonData('projectsdata');
 
 		//needed the data as a partial, if it was kept in projects2 the array wouldnt load since index.php includes only this page and not projects2!
 		$project_id = $_GET['project'] ?? '';
