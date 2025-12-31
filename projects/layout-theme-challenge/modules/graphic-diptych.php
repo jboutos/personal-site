@@ -2,7 +2,7 @@
 <graphic-diptych>
 
 	<picture>
-		<img src='images/knit.jpg' alt='$todo'>
+		<img src='images/knit.jpg' alt='wool knit texture photo'>
 	</picture>
 
 	<text-content>

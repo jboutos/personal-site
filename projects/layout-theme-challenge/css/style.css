@@ -95,7 +95,7 @@ html {
   background-color:  var(--highlight);
   background-image:  url("../images/sheep-2.jpg");
   background-size: cover;
-  background-position: 50% 60%;
+  background-position: 50% 50%;
   color: var(--white);
 } /* interesting way to include the whole image in your CSS */
 
