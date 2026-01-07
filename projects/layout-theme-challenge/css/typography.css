@@ -69,6 +69,10 @@ svg {
 	box-shadow: 0.8px 0.8px 0.8px black;
 }
 
+.get-involved span {
+	text-shadow: 0.6px 0.6px 0.6px black;
+}
+
 .get-involved .calm-voice {
 	max-width: 40ch;
 }
