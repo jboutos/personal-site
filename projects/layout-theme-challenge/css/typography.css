@@ -21,6 +21,10 @@
 	font-weight: 600;
 }
 
+article-card .attention-voice {
+	font-size: 25px;
+}
+
 .subtle-voice {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;

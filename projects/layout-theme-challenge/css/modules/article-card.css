@@ -2,7 +2,6 @@
 article-card {
   display: block;
   padding-top: 40px;
-  padding-bottom: 40px;
   /* */
   display: flex;
   flex-direction: column;
@@ -14,6 +13,6 @@ article-card h2 {
 }
 
 article-card a {
-  margin-top: 20px;
+  margin-top: 15px;
   color: var(--color);
 }
