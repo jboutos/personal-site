@@ -37,28 +37,34 @@
 	line-height: 1.4;
 }
 
+.miniscule-voice {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+}
+
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now $todo */
-p + p {
-	margin-top: 14px;
-}
 
-h1 + p {
-	margin-top: 20px;
-}
-
-h2 + p {
-	margin-top: 20px;
-}
-
-h3 + p {
-	margin-top: 20px;
+p + p, h1 + p, h2 + p, h3 + p, h3 + a {
+	margin-top: 1.3em;
 }
 
 h3 + a {
-	margin-top: 0.8em;
+	margin-top: 1em;
 }
 
-.circle {
-	margin-bottom: 0.8em;
+svg {
+	margin-bottom: 1em;
+}
+
+.get-involved {
+	text-shadow: 0.8px 0.8px 0.8px black;
+}
+
+.get-involved a {
+	box-shadow: 0.8px 0.8px 0.8px black;
+}
+
+.get-involved .calm-voice {
+	max-width: 40ch;
 }

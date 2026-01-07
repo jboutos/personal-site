@@ -2,6 +2,7 @@
 html {
 	--black: #111111;
 	--white: #FFFFFF;
+	--article: #FFFFFF;
 	--whiteopaque: rgba(255, 255, 255, 0.50);
 	--color: #54513e;
 	--highlight: #aadee9;
@@ -9,7 +10,22 @@ html {
 	--hover: #6a6752;
 	--hoveropaque: rgba(255, 255, 255, 0.60);
 	--hoverfooter: rgba(248, 245, 240, 0.3);
+
+	@media (prefers-color-scheme: dark) {
+		--black: #111111;
+		--white: #FFFFFF;
+		--article: #6A6F60;
+		--whiteopaque: rgba(255, 255, 255, 0.50);
+		--color: #f8f5f0;
+		--highlight: #aadee9;
+		--background: #54513e;
+		--hover: #6a6752;
+		--hoveropaque: rgba(255, 255, 255, 0.60);
+		--hoverfooter: #6B6854;
+	}
 }
+
+
 /* you can make more! */
 
 

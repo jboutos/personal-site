@@ -30,6 +30,7 @@
 @import 'modules/articles-intro.css';
 @import 'modules/article-card.css';
 @import 'modules/site-map.css';
+@import 'modules/404.css';
 /* should everything/nothing be in it's own file? */
 
 
@@ -71,10 +72,10 @@ html {
 }
 
 .site-header a {
-	border-bottom: 4px solid transparent;
+	border-bottom: 2px solid transparent;
 
 	&:hover:not(.logo) {
-		border-bottom: 4px solid var(--background);
+		border-bottom: 2px solid var(--background);
 	}
 }
 
@@ -117,7 +118,7 @@ html {
 }
 
 .stuff {
-  background-color: var(--white);
+  background-color: var(--article);
 }
 
 .stuff a {
@@ -155,7 +156,8 @@ html {
 }
 
 .site-footer a {
-	padding: 0.2em 0;
+	padding: 0.2em 0 0 0;
+	margin-bottom: 0.3em;
 
 	&:hover {
 		background-color: var(--hoverfooter);
@@ -163,6 +165,10 @@ html {
 }
 
 .site-footer > h2, h3, a {
+	color: var(--background);
+}
+
+.site-footer p {
 	color: var(--background);
 }
 

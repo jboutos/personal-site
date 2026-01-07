@@ -3,7 +3,7 @@
 <html lang='en'>
 	<?php include('head.php'); ?>
 
-	<body>
+	<body class='dark'>
 		<header class='site-header'>
 		<inner-column>
 

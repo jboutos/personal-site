@@ -17,8 +17,8 @@
 
 
 	<nav class='user-menu'>
-		<a href='#'>
-			<span>Sign-in</span>
+		<a class='user' href='#'>
+			<?php include("./icons/user.php"); ?>
 		</a>
 	</nav>
 

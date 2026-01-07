@@ -8,6 +8,7 @@ mast-head nav {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  gap: 1.5em;
 }
 
 mast-head .logo {
@@ -17,7 +18,7 @@ mast-head .logo {
 mast-head a {
   font-family: sans-serif;
   font-size: 1rem;
-  padding:  10px;
+  padding:  10px 0;
 }
 
 @media (min-width: 600px) {
@@ -25,5 +26,21 @@ mast-head a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+}
+
+mast-head a:nth-of-type(2) {
+  @media (min-width: 393px) {
+    margin-left: 1em;
+  }
+}
+
+.user {
+  width: 30px;
+  fill: var(--background);
+}
+
+mast-head svg {
+  margin: 0;
 }
