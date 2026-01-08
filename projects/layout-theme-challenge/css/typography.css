@@ -49,8 +49,12 @@ article-card .attention-voice {
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now $todo */
 
-p + p, h1 + p, h2 + p, h3 + p, h3 + a {
+p + p, h1 + p, h3 + p, h3 + a {
 	margin-top: 1.3em;
+}
+
+h2 + p {
+	margin-top: 1em;
 }
 
 h3 + a {
