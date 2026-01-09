@@ -1,6 +1,5 @@
-
+<hr>
 <site-map>
-
 	<nav class='site-menu'>
 		<a href='./'>Home</a>
 		<a href='404.php'>404 error</a>

@@ -1,12 +1,17 @@
 
 graphic-diptych {
   display: block;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   /* */
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 1099px) {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
 }
 
 graphic-diptych text-content {
@@ -16,6 +21,10 @@ graphic-diptych text-content {
 @media (max-width: 1099px) {
   graphic-diptych picture {
     max-width: 900px;
+  }
+
+  .welcome .calm-voice {
+    max-width: 74ch;
   }
 }
 
