@@ -13,7 +13,13 @@ graphic-diptych text-content {
   display: block;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1099px) {
+  graphic-diptych picture {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1100px) {
   graphic-diptych {
     flex-direction: row;
     align-items: center;
@@ -27,7 +33,7 @@ graphic-diptych text-content {
     order: 2;
     /* OR you could use flex-direction row-reverse */
     /* it depends on the situation */
-    min-width: 600px;
+    min-width: 500px;
   }
 
   graphic-diptych img {

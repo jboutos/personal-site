@@ -2,11 +2,9 @@
 <site-map>
 
 	<nav class='site-menu'>
-		<a class='logo circle' href='#'>
-			<?php include("./icons/circle.php"); ?>
-		</a>
 		<a href='./'>Home</a>
 		<a href='404.php'>404 error</a>
+		<a class='logo circle' href='#'>Find a Store</a>
 	</nav>
 
 	<nav class='user-menu'>

@@ -18,13 +18,19 @@ mast-head .logo {
 
 }
 
+.header-menu {
+  @media (max-width: 850px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 mast-head a {
   font-family: sans-serif;
   font-size: 1rem;
-  padding:  10px 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
   mast-head {
     display: flex;
     flex-direction: row;
@@ -40,10 +46,40 @@ mast-head a:nth-of-type(2) {
 }
 
 .user {
-  width: 30px;
-  fill: var(--background);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.user span {
+  font-size: 0.9rem;
+}
+
+.user svg {
+  width: 20px;
+  fill: currentColor;
 }
 
 mast-head svg {
   margin: 0;
+}
+
+.logo-company h3 {
+  color: var(--logo);
+}
+
+.wide {
+  @media(max-width: 850px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  @media (min-width: 850px) {
+    display: none;
+  }
+}
+
+.user:hover {
+  color: var(--hover-user);
 }

@@ -9,13 +9,17 @@ article-card {
 }
 
 article-card h2 {
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 article-card a {
-  margin-top: 8px;
+  margin-top: 16px;
   padding: 0;
   color: var(--color);
+}
+
+article-card .calm-voice {
+  margin-top: 13px;
 }
 
 article-card a.link {

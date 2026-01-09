@@ -74,13 +74,17 @@ html {
 .site-header a {
 	border-bottom: 2px solid transparent;
 
-	&:hover:not(.logo) {
+	&:hover:not(.logo-company, .user) {
 		border-bottom: 2px solid var(--background);
 	}
 }
 
-.site-header span, .site-header h2 {
-	color: var(--background);
+.site-footer .logo-company:hover {
+	background-color: transparent;
+}
+
+.site-header .logo:hover {
+	background-color: transparent;
 }
 
 .welcome {
@@ -88,15 +92,31 @@ html {
   color: var(--color);
 }
 
+.welcome img {
+	border: 1px solid gray;
+}
+
+.welcome a {
+	display: inline-block;
+	padding: 0.4em 0.8em;
+	color: var(--background);
+	background-color: var(--color);
+
+	&:hover {
+		background-color: var(--hover);
+	}
+}
+
 
 /* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
 
 
 .get-involved {
+	padding-block: clamp(100px, 6vh, 200px);
   background-color:  var(--highlight);
   background-image:  url("../images/sheep-2.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0 50%;
   color: var(--white);
 } /* interesting way to include the whole image in your CSS */
 
@@ -130,6 +150,10 @@ html {
 	}
 }
 
+.stuff img {
+	border: 1px solid gray;
+}
+
 .stuff p, .stuff h2 {
 	color: var(--color);
 }
@@ -157,13 +181,9 @@ html {
 .site-footer a {
 	padding: 0.2em 0 0 0;
 	margin-bottom: 0.3em;
-
-	&:hover {
-		background-color: var(--hoverfooter);
-	}
 }
 
-.site-footer > h2, h3, a {
+.site-footer > h2, h3 {
 	color: var(--background);
 }
 
@@ -172,6 +192,14 @@ html {
 }
 
 .site-footer .logo {
-	max-width:  60px;
-}
+	padding: 0.4em 0.8em;
+	margin-top: 10px;
+	border: 1px solid gray;
+	background-color: var(--background);
+	color: var(--color);
 
+	&:hover {
+		background-color: var(--hover-footer);
+		text-decoration: none;
+	}
+}

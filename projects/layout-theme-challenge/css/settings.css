@@ -7,7 +7,11 @@ html {
 	--color: #54513e;
 	--highlight: #aadee9;
 	--background: #f8f5f0;
+	--logo: #FEFDFC;
 	--hover: #6a6752;
+	--hover-footer: #EFECE6;
+	--hover-user: #F2F1F0
+;
 	--hoveropaque: rgba(255, 255, 255, 0.60);
 	--hoverfooter: rgba(248, 245, 240, 0.3);
 

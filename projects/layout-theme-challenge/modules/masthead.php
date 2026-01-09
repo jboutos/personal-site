@@ -1,24 +1,36 @@
-
 <mast-head>
 
-	<nav class='site-menu'>
-		<a class='logo' href='#'>
+	<nav class='header-menu'>
+		<a class='logo-company' href='#'>
 			<h3 class='subtle-voice'>THE WOOL COMPANY</h2>
 		</a>
 
-		<a href='#'>
-			<span>Some page</span>
+		<a class='user hamburger' href='#'>
+			<?php include("./icons/hamburger.php"); ?>
 		</a>
 
-		<a href='#'>
-			<span>"Masthead"</span>
+		<a href='#' class='wide'>
+			<span>Products</span>
+		</a>
+
+		<a href='#' class='wide'>
+			<span>On sale</span>
+		</a>
+
+		<a href='#' class='wide'>
+			<span>About Us</span>
 		</a>
 	</nav>
 
 
-	<nav class='user-menu'>
+	<nav class='user-menu wide'>
+		<a class='user' href='#'>
+			<?php include("./icons/cart.php"); ?>
+			<span>Shopping-cart</span>
+		</a>
 		<a class='user' href='#'>
 			<?php include("./icons/user.php"); ?>
+			<span>Sign-in</span>
 		</a>
 	</nav>
 
