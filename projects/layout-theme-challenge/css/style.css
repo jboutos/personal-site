@@ -121,7 +121,8 @@ html {
 } /* interesting way to include the whole image in your CSS */
 
 .get-involved a {
-	background-color: var(--whiteopaque);
+	background-color: white;
+	color: transparent;
 	padding: 0.4em 0.8em;
 
 	&:hover {

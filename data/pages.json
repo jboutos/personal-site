@@ -53,5 +53,10 @@
     "title": "error404",
     "description": "Custom 404 page",
     "image": "https://peprojects.dev/beta3/johnb/images/error.jpg"
+  },
+   "case": {
+    "title": "case",
+    "description": "Theme challenge case study",
+    "image": "https://peprojects.dev/beta3/johnb/images/error.jpg"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "point1": {
+    "description": "Borders on images can really make them pop in a nice way!",
+    "image": "images/border.png"
+  },
+  "point2": {
+    "description": "Text on images is a recipe for disaster...",
+    "image": "images/text.png"
+  },
+  "point3": {
+    "description": "Sometimes hierarchy dictates spacing that feels counter-intuitive.",
+    "image": "images/hierarchy.png"
+  },
+  "point4": {
+    "description": "You should always account for worst-case scenarios with regards to font-sizes and line-heights.",
+    "image": "images/worst-case.png"
+  },
+  "point5": {
+    "description": "Less is more sometimes!",
+    "image": "images/less.png"
+  }
+}

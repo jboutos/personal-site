@@ -1,0 +1,114 @@
+.case {
+
+	.calm-voice, .attention-voice, .subtle-voice {
+		text-align: start;
+		margin: 0;
+
+		@media (min-width: 800px) {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	video {
+		display: block;
+	}
+
+	--color: hsl(240 100% 40.2%);
+	--charged: hsl(0 67.9% 41.6%);
+	--base: hsl(188 45.3% 81.4%);
+	--hover: hsl(180, 92%, 40%);
+	--circle: hsla(240 100% 40.2% / 0.4);
+
+	@media (prefers-color-scheme: dark) {
+		--color: hsl(188 45.3% 81.4%);
+		--charged: hsl(0 67.9% 60.6%);
+		--base: hsl(240 100% 40.2%);
+		--hover: hsl(180, 92%, 20%);
+		--circle: hsl(188 45.3% 81.4% / 0.4);
+	}
+
+	background-color: var(--base);
+
+	h1, h2, p, a, li, label, li::marker {
+		color: var(--color);
+		fill: var(--color);
+	}
+
+	.circle {
+		color: var(--circle);
+		fill: var(--circle);
+	}
+
+	a:hover {
+		background-color: var(--hover);
+	}
+
+	.calm-voice {
+		margin-top: 2em;
+	}
+
+	.calm-voice + .calm-voice {
+		margin-top: 2em;
+	}
+
+	.calm-voice + picture {
+		margin: 2em 0;
+
+		@media (min-width: 800px) {
+			margin: 2em auto;
+		}
+	}
+
+	.navigation a:hover, .logo:hover {
+		background-color: transparent;
+	}
+
+	picture {
+		display: block;
+		aspect-ratio: auto;
+	 	overflow: hidden;
+	 	max-width: 500px;
+	 	margin: 0;
+
+	 	@media (min-width: 800px) {
+			margin: 0 auto;
+		}
+	}
+
+	li {
+		list-style: none;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	case-card picture {
+		margin-top: 0.5em;
+	}
+
+	.media {
+		margin: 2em 0;
+		max-width: 640px; 
+
+		@media (min-width: 800px) {
+			margin: 2em auto;
+		}
+	}
+
+	video {
+		width: 100%;
+		height: auto;
+	}
+
+	h1.attention-voice {
+		margin: 2em 0 0.8em 0;
+	}
+
+	h2.subtle-voice:nth-of-type(2) {
+		margin-top: 2em;
+	}
+}

@@ -79,12 +79,13 @@
     "target": "_blank"
   },
   "ltc": {
-    "title": "theming layout challenge",
+    "title": "Theming layout challenge",
     "image": "images/sheep-2.jpg",
     "link": "projects/layout-theme-challenge/index.php",
     "id": 12,
     "description": "I had to style a premade html template.",
-    "target": "_blank"
+    "target": "_blank",
+    "caseStudyLink": "?page=case"
   },
   "archived": {
     "title": "Archive",

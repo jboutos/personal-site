@@ -23,6 +23,8 @@
 		    $detail['description'] = "In " . strtolower($detail['title']) . " " . $detail['description'];
 		}
 
+		$caseStudyLink = isset($detail['caseStudyLink']) ? BASE_URL . $detail['caseStudyLink'] : '';
+
 		return view($page, [
 			'detail' => $detail
 		]);

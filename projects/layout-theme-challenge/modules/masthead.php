@@ -26,7 +26,7 @@
 	<nav class='user-menu wide'>
 		<a class='user' href='#'>
 			<?php include("./icons/cart.php"); ?>
-			<span>Shopping-cart</span>
+			<span>Shopping Cart</span>
 		</a>
 		<a class='user' href='#'>
 			<?php include("./icons/user.php"); ?>
