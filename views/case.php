@@ -37,7 +37,7 @@
       </ul>
 		<h2 class='subtle-voice'>And some final thoughts:</h2>
 		<p class='calm-voice'>People tend to say “think outside the box,” but as a fan of tautology, I like to turn things on their heads sometimes. The thoughts you’re sometimes looking for are outside the box for a reason, because there is no box outside of which to think as per one’s perception, you're (usually) limited by the mental matrix you inhabit. So, while honing your eye and working your brain muscles is always a good idea for personal growth, sometimes you just have to be presented with new concepts. The first iteration of my page was flat for reasons I couldn’t quite comprehend. If not for Derek’s directions, I’d still be going around in circles…</p>
-		<p class='calm-voice'>Having researched multiple sites for this project and being the sort of obtuse person I am it took me a while to notice the importance of having a proper stock of images as well as some custom designs for what you intend to build. I would so far as to say that this material might as well dictate the layout of the whole site/app.</p>
+		<p class='calm-voice'>Having researched multiple sites for this project and being the sort of obtuse person I am it took me a while to notice the importance of having a proper stock of images as well as some custom designs for what you intend to build. I would go so far as to say that this material might as well dictate the layout of the whole site/app.</p>
 		<p class='calm-voice'>Bonus code snippet, the cool hover effect I just learned about:</p>
 		<div class="media">
 			<video width="640" height="360" controls>
