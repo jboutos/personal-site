@@ -3,6 +3,7 @@
 	.calm-voice, .attention-voice, .subtle-voice {
 		text-align: start;
 		margin: 0;
+		text-wrap: pretty;
 
 		@media (min-width: 800px) {
 			text-align: center;
