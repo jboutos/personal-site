@@ -1,6 +1,7 @@
 header-2 {
 	display: block;
 	background-color: var(--button-1);
+	color: var(--white);
 }
 
 header-2 inner-column {
@@ -20,46 +21,42 @@ header-2 .center {
 }
 
 header-2 a {
-	color: var(--white);
 }
 
-header-2 .language {
+.language {
 	display: flex;
 	align-items: center;
-	gap: 0.5em;
+	gap: 0.3em;
 }
 
-header-2 .hidden-small {
-	@media (max-width: 690px) {
+.hidden-small {
+	@media (max-width: 730px) {
 		display: none;
 	}
 
-	@media (min-width: 691px) {
+	@media (min-width: 731px) {
 		display: block;
 	}
 }
 
-header-2 .hidden-large {
-	@media (max-width: 690px) {
+.hidden-large {
+	@media (max-width: 730px) {
 		display: block;
 	}
 
-	@media (min-width: 691px) {
+	@media (min-width: 731px) {
 		display: none;
 	}
 }
 
-header-2 .hidden-large svg {
-	width: 25px;
-}
-
-header-2 .button {
-	background-color: var(--white);
-	padding: 0.5em 1em;
-	border-radius: 5px;
+.hidden-large svg {
+	width: 20px;
 }
 
 header-2 .button a {
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	background-color: var(--white);
 	color: var(--button-1);
 }
 

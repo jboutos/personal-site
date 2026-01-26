@@ -1,0 +1,27 @@
+hero-2 {
+	display: block;
+	background-image: url('../../images/background-1.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 8em 0;
+	text-align: center;
+}
+
+hero-2 .container {
+	display: flex;
+	justify-content: center;
+	gap: 1.5em;
+}
+
+hero-2 a {
+	padding: 0.5em 1.5em;
+	margin-top: 2em;
+	background-color: var(--button-1);
+	border: 1px solid var(--button-1);
+	color: var(--white);
+}
+
+hero-2 .calm-voice {
+	margin: 1em auto 0 auto;
+}

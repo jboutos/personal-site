@@ -1,7 +1,6 @@
 @import 'meyer-reset.css';
 @import 'setup.css';
 @import 'template-css/header-1.css';
-@import 'template-css/header-2.css';
 @import 'template-css/hero-1.css';
 @import 'template-css/video-section-1.css';
 @import 'template-css/product-features-1.css';
@@ -9,6 +8,14 @@
 @import 'template-css/call-to-action-1.css';
 @import 'template-css/faq-1.css';
 @import 'template-css/footer-1.css';
+@import 'template-css/header-2.css';
+@import 'template-css/hero-2.css';
+@import 'template-css/video-section-2.css';
+@import 'template-css/product-features-2.css';
+@import 'template-css/testimonial-2.css';
+@import 'template-css/call-to-action-2.css';
+@import 'template-css/faq-2.css';
+@import 'template-css/footer-2.css';
 
 html {
 	--button-1: #1E3FAE;
@@ -49,12 +56,26 @@ inner-column {
 	text-wrap: pretty;
 }
 
+.careful-voice-thin {
+	font-size: 2.2rem;
+	font-weight: 350;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	max-width: 30ch;
+	text-wrap: pretty;
+}
+
 .significant-voice, span {
 	font-size: 1.1rem;
 	font-weight: 550;
 	font-family: 'Inter', sans-serif;
 	line-height: 1.25;
 	text-wrap: pretty;
+}
+
+span {
+	display: block;
+	line-height: 0;
 }
 
 .calm-voice {

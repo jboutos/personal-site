@@ -13,18 +13,18 @@
 	</head>
 	<body>
 		<header>
-			<?php include('templates/header-1.php'); ?>
+			<?php include('templates/header-2.php'); ?>
 		</header>
 		<main>
-			<?php include('templates/hero-1.php'); ?>
-			<?php include('templates/video-section-1.php'); ?>
-			<?php include('templates/product-features-1.php'); ?>
-			<?php include('templates/testimonial-1.php'); ?>
-			<?php include('templates/call-to-action-1.php'); ?>
-			<?php include('templates/faq-1.php'); ?>
+			<?php include('templates/hero-2.php'); ?>
+			<?php include('templates/video-section-2.php'); ?>
+			<?php include('templates/product-features-2.php'); ?>
+			<?php include('templates/testimonial-2.php'); ?>
+			<?php include('templates/call-to-action-2.php'); ?>
+			<?php include('templates/faq-2.php'); ?>
 		</main>
 		<footer>
-			<?php include('templates/footer-1.php'); ?>
+			<?php include('templates/footer-2.php'); ?>
 		</footer>
 	</body>
 </html>

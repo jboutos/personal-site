@@ -9,7 +9,7 @@ call-to-action-1 .careful-voice {
 call-to-action-1 inner-column {
 	background-color: var(--background);
 	border-radius: 5px;
-	padding: 3em 0;
+	padding: 3em 0.5em;
 
 	@media(min-width: 450px) {
 		display: flex;

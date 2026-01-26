@@ -1,18 +1,19 @@
-faq-1 {
+faq-2 {
 	display: block;
 	padding: 4em 0;
 }
 
 summary {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: flex-start;
+	gap: 1em;
 	list-style: none; 
 	cursor: pointer;
 	font-weight: 600;
 }
 
-faq-1 inner-column {
+faq-2 inner-column {
 	display: flex;
 	flex-direction: column;
 	gap: 0;
@@ -30,12 +31,13 @@ faq-1 inner-column {
 	}
 }
 
-faq-1 svg {
-	stroke: black;
+faq-2 svg {
+	stroke: var(--button-1);
+	width: 20px;
 }
 
-faq-1 .chevron {
-	transition: transform 0.3s ease, opacity 0.3s ease;
+faq-2 .chevron {
+	transition: transform 0.3s ease;
 }
 
 details[open] .chevron {
@@ -47,7 +49,7 @@ details {
 	border-bottom: 0.5px solid black;
 }
 
-faq-1 h3 + p {
+faq-2 h3 + p {
 	margin-bottom: 4em;
 }
 
@@ -57,10 +59,10 @@ details .calm-voice {
 	}
 }
 
-faq-1 .careful-voice {
+faq-2 .careful-voice {
 	max-width: 40ch;
 }
 
-faq-1 details .calm-voice {
+faq-2 details .calm-voice {
 	margin-top: 0.5em;
 }

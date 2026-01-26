@@ -1,0 +1,79 @@
+call-to-action-2 {
+	display: block;
+}
+
+call-to-action-2 .careful-voice {
+	max-width: 30ch;
+}
+
+call-to-action-2 inner-column {
+	background-color: var(--background);
+	border-radius: 5px;
+	padding: 3em 0.5em;
+
+	@media(min-width: 450px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 0;
+	}
+}
+
+call-to-action-2 a {
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	background-color: var(--button-1);
+	color: var(--white);
+	border: 1px solid var(--button-1);
+}
+
+call-to-action-2 a:nth-of-type(2) {
+	background-color: transparent;
+	color: var(--button-1);
+	border: 1px solid var(--button-1);
+}
+
+call-to-action-2 span {
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1;
+	border-radius: 0;
+	background-color: var(--button-1);
+	color: var(--white);
+}
+
+call-to-action-2 .quote-2 {
+	background-color: transparent;
+	color: var(--button-1);
+}
+
+call-to-action-2 .link-2 svg {
+	stroke: var(--button-1);
+}
+
+call-to-action-2 .link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.3em;
+}
+
+call-to-action-2 svg {
+	stroke: var(--white);
+}
+
+call-to-action-2 h3 {
+	margin : 0.5em 0 1em 0;
+}
+
+call-to-action-2 .container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 0.5em;
+
+	@media(min-width: 450px) {
+	flex-direction: row;
+	}
+}
