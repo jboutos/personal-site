@@ -1,4 +1,3 @@
-
 <call-to-action>
 
 	<h2 class='attention-voice'>Experience Merino, Naturally</h2>

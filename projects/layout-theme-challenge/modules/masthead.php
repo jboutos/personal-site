@@ -6,7 +6,7 @@
 		</a>
 
 		<a class='user hamburger' href='#'>
-			<?php include("./icons/hamburger.php"); ?>
+			<?php include('./icons/hamburger.php'); ?>
 		</a>
 
 		<a href='#' class='wide'>
@@ -25,11 +25,11 @@
 
 	<nav class='user-menu wide'>
 		<a class='user' href='#'>
-			<?php include("./icons/cart.php"); ?>
+			<?php include('./icons/cart.php'); ?>
 			<span>Shopping Cart</span>
 		</a>
 		<a class='user' href='#'>
-			<?php include("./icons/user.php"); ?>
+			<?php include('./icons/user.php'); ?>
 			<span>Sign-in</span>
 		</a>
 	</nav>

@@ -1,0 +1,50 @@
+testimonial-1 {
+	display: block;
+	padding: 4em 0;
+
+	@media (min-width: 550px) {
+		text-align: center;
+	}
+}
+
+testimonial-1 inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+
+	@media (min-width: 550px) {
+		align-items: center;
+	}
+}
+
+testimonial-1 svg {
+	fill: var(--button-1);
+	margin-bottom: 1em;
+}
+
+testimonial-1 h3 + p {
+	margin-bottom: 4em;
+}
+
+testimonial-1 p + svg {
+	margin-top: 1em;
+}
+
+testimonial-1 h5 {
+	margin-bottom: 3em;
+}
+
+testimonial-1 .circle {
+	margin-bottom: 0;
+}
+
+testimonial-1 .container {
+	@media (min-width: 550px) {
+		display: flex;
+		gap: 3em;
+	}
+}
+
+testimonial-1 .testimonial {
+	max-width: 30ch;
+}

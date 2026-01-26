@@ -1,0 +1,99 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+@import 'template-css/header-1.css';
+@import 'template-css/header-2.css';
+@import 'template-css/hero-1.css';
+@import 'template-css/video-section-1.css';
+@import 'template-css/product-features-1.css';
+@import 'template-css/testimonial-1.css';
+@import 'template-css/call-to-action-1.css';
+@import 'template-css/faq-1.css';
+@import 'template-css/footer-1.css';
+
+html {
+	--button-1: #1E3FAE;
+	--background: #f0f3fc;
+	--background-2: #3563E9;
+	--white: #ffffff;
+	--black: #212121;
+}
+
+inner-column {
+	display: block;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 1em 0.5em;
+}
+
+.loud-voice {
+	font-size: clamp(2rem, 5vw, 3rem);
+	font-weight: 600;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	text-wrap: pretty;
+}
+
+.attention-voice {
+	font-size: clamp(1.8rem, 5vw, 2.5rem);
+	font-weight: 550;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	text-wrap: pretty;
+}
+
+.careful-voice {
+	font-size: clamp(1.5rem, 5vw, 2.2rem);
+	font-weight: 550;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	text-wrap: pretty;
+}
+
+.significant-voice, span {
+	font-size: 1.1rem;
+	font-weight: 550;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	text-wrap: pretty;
+}
+
+.calm-voice {
+	font-size: 1rem;
+	font-family: 'Inter', serif;
+	font-weight: 400;
+	line-height: 1.4;
+	max-width: 60ch;
+	text-wrap: pretty;
+}
+
+.miniscule-voice {
+	font-size: 0.9rem;
+	font-family: 'Inter', serif;
+	text-wrap: pretty;
+}
+
+a {
+	font-family: 'Inter', serif;
+	font-weight: 400;
+}
+
+h1 + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 1em;
+}
+
+h3 + p {
+	margin-top: 1em;
+}
+
+h4 + p {
+	margin-top: 0.5em;
+}
+
+p + picture {
+	margin-top: 1em;
+}
+

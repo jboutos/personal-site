@@ -211,7 +211,6 @@
 
 	<?php else: ?>
 
-		
 		<?php 
 
 			if ($result >= 18.5 && $result <= 25) {

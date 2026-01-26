@@ -1,0 +1,107 @@
+footer-1 {
+	display: block;
+	background-color: var(--background-2);
+	color: var(--white);
+}
+
+footer-1 .subscribe {
+	display: inline-block;
+	background-color: var(--button-1);
+	color: var(--white);
+	padding: 2em;
+}
+
+footer-1 .subscribe-container {
+	display: inline-block;
+	position: relative;
+}
+
+footer-1 .subscribe-container input {
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+footer-1 .subscribe-container .submit-btn {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  padding: 7.5px 10px;
+  background-color: var(--background-2);
+  border-radius: 0 5px 5px 0;
+}
+
+footer-1 .subscribe .calm-voice {
+	max-width: 35ch;
+}
+
+footer-1 svg {
+	stroke: white;
+	fill: white;
+}
+
+footer-1 .subscribe-container svg {
+	fill: none;
+}
+
+.upper-footer {
+	border-bottom: 0.1px solid var(--white);
+}
+
+.socials {
+	display: flex;
+	gap: 0.3em;
+}
+
+.terms {
+	display: flex;
+	gap: 2em;
+}
+
+footer-1 a {
+	display: inline-block;
+}
+
+.upper-footer {
+	padding: 2em 0;
+
+	@media(min-width: 500px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media(min-width: 800px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+footer-1 .container:not(:last-of-type) {
+	padding: 2em;
+}
+
+.lower-footer {
+	padding: 2em 0;
+
+	@media(min-width: 500px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+footer-1 .container a {
+	margin-top: 1em;
+}
+
+footer-1 .container h4 {
+	margin-bottom: 0.5em;
+}
+
+footer-1 .subscribe h4, footer-1 .subscribe-container {
+	margin-bottom: 1.25em;
+}

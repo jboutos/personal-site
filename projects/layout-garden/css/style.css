@@ -931,8 +931,16 @@ footer-2 {
 
 	.container {
 
-		display: flex;
-		gap: 200px;
+		@media (max-width: 390px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media (min-width: 391px) {
+			display: flex;
+			flex-direction: row;
+			gap: 200px;
+		}
 
 		@media (min-width: 600px) {
 			grid-area: 2 / 1 / 3 / 2 ;
@@ -1995,6 +2003,7 @@ footer-5 {
 
 	.info {
 		display: flex;
+		justify-content: space-between;
 		gap: 40px;
 		margin-bottom: 40px;
 	}
@@ -2114,9 +2123,6 @@ footer-5 {
 
 	/*STRUCTURE*/
 	footer-5 {
-		.info {
-			width: 50%;
-		}
 
 		.info-1 {
 			flex-grow: 2;

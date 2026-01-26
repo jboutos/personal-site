@@ -1,0 +1,25 @@
+video-1 {
+	display: block;
+	padding: 4em 0;
+}
+
+video-1 .calm-voice, video-1 .attention-voice {
+	@media(min-width: 550px) {
+		text-align: center;
+	}
+}
+
+video-1 .calm-voice {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+video-1 .calm-voice:nth-of-type(2) {
+	margin-bottom: 2em;
+}
+
+video-1 img {
+	max-width: 600px;
+	margin: 0 auto;
+}

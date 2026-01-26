@@ -1,4 +1,3 @@
-
 <graphic-diptych>
 
 	<picture>

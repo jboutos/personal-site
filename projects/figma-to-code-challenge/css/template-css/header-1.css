@@ -1,0 +1,72 @@
+header-1 {
+	display: block;
+}
+
+header-1 inner-column {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header-1 ul {
+	display: flex;
+	align-items: center;
+	gap: 1.5em;
+}
+
+header-1 .center {
+	gap: 2em;
+}
+
+header-1 a {
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+}
+
+.hidden-small {
+	@media (max-width: 730px) {
+		display: none;
+	}
+
+	@media (min-width: 731px) {
+		display: block;
+	}
+}
+
+.hidden-large {
+	@media (max-width: 730px) {
+		display: block;
+	}
+
+	@media (min-width: 731px) {
+		display: none;
+	}
+}
+
+.hidden-large svg {
+	width: 20px;
+}
+
+header-1 .button a {
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	background-color: var(--button-1);
+	color: var(--white);
+}
+
+header-1 svg {
+	fill: var(--button-1);
+}
+
+header-1 .hidden-small svg {
+	fill: none;
+	stroke: var(--black);
+}
+
+header-1 .hidden-large svg {
+	stroke: var(--black);
+}
