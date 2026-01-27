@@ -15,6 +15,7 @@ hero-3 .container-3 {
 
 hero-3 .calm-voice {
 	margin: 1em auto 0 auto;
+	color: var(--white);
 }
 
 hero-3 .input-container {

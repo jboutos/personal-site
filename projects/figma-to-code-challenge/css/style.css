@@ -99,6 +99,7 @@ span {
 	font-family: 'Inter', serif;
 	font-weight: 400;
 	line-height: 1.4;
+	color: #616161;
 	max-width: 60ch;
 	text-wrap: pretty;
 }

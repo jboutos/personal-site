@@ -42,6 +42,10 @@ video-3 p + h3 {
 	margin-bottom: 2em;
 }
 
+video-3 h4 {
+	margin-bottom: 1em;
+}
+
 video-3 .video-link {
 	display: flex;
 	align-items: center;
