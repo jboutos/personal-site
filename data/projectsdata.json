@@ -87,6 +87,14 @@
     "target": "_blank",
     "caseStudyLink": "?page=case"
   },
+  "ftc": {
+    "title": "Figma to code challenge",
+    "image": "images/figma.png",
+    "link": "projects/figma-to-code-challenge/index.php",
+    "id": 13,
+    "description": "I had to copy the styles of a figma site mockup.",
+    "target": "_blank"
+  },
   "archived": {
     "title": "Archive",
     "image": "images/archives1.png",
