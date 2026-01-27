@@ -1,0 +1,77 @@
+call-to-action-3 {
+	display: block;
+	padding: 4em 0;
+}
+
+call-to-action-3 .container-3 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+call-to-action-3 .input-container {
+  position: relative;
+}
+
+call-to-action-3 .input-container svg {
+  position: absolute;
+  left: 10px;
+  top: 75%;
+  	@media(min-width: 351px) {
+		top: 50%;
+	}
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+call-to-action-3 input {
+	padding: 0.9em 6em 0.9em 2.8em;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+call-to-action-3 button {
+	padding: 0.9em 7.9em 0.9em 7.9em;
+	border-radius: 5px;
+	border: none;
+	color: var(--white);
+	background-color: var(--button-1);
+
+	@media(min-width: 351px) {
+		padding: 0.9em 1em 0.9em 1em;
+	}
+}
+
+call-to-action-3 input {
+	margin-top: 3em;
+
+	@media(min-width: 351px) {
+		margin-bottom: 3em;
+	}
+	
+}
+
+call-to-action-3 button {
+	margin-bottom: 3em;
+
+	@media(min-width: 351px) {
+		margin-top: 3em;
+	}
+}
+
+call-to-action-3 input::placeholder {
+	color: #E0E0E0;
+}
+
+call-to-action-3 img {
+	max-width: 500px;
+}
+
+call-to-action-3 inner-column {
+	@media(min-width: 800px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3em;
+	}
+}

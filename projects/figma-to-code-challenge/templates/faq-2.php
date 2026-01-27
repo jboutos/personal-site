@@ -6,23 +6,23 @@
 
 		<div class='faq'>
 			<details>
-				<summary class='significant-voice'><span class='chevron'><?php include('images/plus.php'); ?></span>How soon will my order ship?</summary>
+				<summary class='significant-voice summary'><span class='chevron'><?php include('images/plus.php'); ?></span>How soon will my order ship?</summary>
 				<p class='calm-voice'>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 			<details>
-				<summary class='significant-voice'><span class='chevron'><?php include('images/plus.php'); ?></span>Are there any warranty exclusions?</summary>
+				<summary class='significant-voice summary'><span class='chevron'><?php include('images/plus.php'); ?></span>Are there any warranty exclusions?</summary>
 				<p class='calm-voice'>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 			<details>
-				<summary class='significant-voice'><span class='chevron'><?php include('images/plus.php'); ?></span>Are there any return exclusions?</summary>
+				<summary class='significant-voice summary'><span class='chevron'><?php include('images/plus.php'); ?></span>Are there any return exclusions?</summary>
 				<p class='calm-voice'>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 			<details>
-				<summary class='significant-voice'><span class='chevron'><?php include('images/plus.php'); ?></span>Will I be charged for a replacement item?</summary>
+				<summary class='significant-voice summary'><span class='chevron'><?php include('images/plus.php'); ?></span>Will I be charged for a replacement item?</summary>
 				<p class='calm-voice'>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 			<details>
-				<summary class='significant-voice'><span class='chevron'><?php include('images/plus.php'); ?></span>How can I track my orders & payment?</summary>
+				<summary class='significant-voice summary'><span class='chevron'><?php include('images/plus.php'); ?></span>How can I track my orders & payment?</summary>
 				<p class='calm-voice'>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 		</div>

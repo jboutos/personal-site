@@ -35,4 +35,4 @@
 			</ul>
 		</nav>
 	</inner-column>
-</header-1s>
+</header-1>

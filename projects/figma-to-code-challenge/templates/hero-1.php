@@ -2,7 +2,7 @@
 	<inner-column>
 		<h1 class='loud-voice'>Monstrously Cohesive Visual <br>Systems</h1>
 		<p class='calm-voice'>Creating visual languages for brands with bold identities and even bolder appetites, keeping every detail on-brand.</p>
-		<div class='container'>
+		<div class='container-hero'>
 			<a href=''>Get Started</a>
 			<a href=''>Start free trial</a>
 		</div>

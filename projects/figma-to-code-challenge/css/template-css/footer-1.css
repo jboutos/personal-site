@@ -8,7 +8,7 @@ footer-1 .subscribe {
 	display: inline-block;
 	background-color: var(--button-1);
 	color: var(--white);
-	padding: 2em;
+	padding: 2em 3em;
 }
 
 footer-1 .subscribe-container {
@@ -45,7 +45,7 @@ footer-1 svg {
 	fill: white;
 }
 
-footer-1 .subscribe-container svg {
+footer-1 .subscribe-container-2 svg {
 	fill: none;
 }
 
@@ -80,12 +80,24 @@ footer-1 a {
 	}
 }
 
-footer-1 .container:not(:last-of-type) {
+footer-1 .container-2:not(:last-of-type) {
 	padding: 2em;
+}
+
+footer-1 .container-2:nth-of-type(1) {
+	@media(min-width: 800px) {
+		padding-left: 0;
+	}
 }
 
 .lower-footer {
 	padding: 2em 0;
+
+	@media(max-width: 499px) {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
 
 	@media(min-width: 500px) {
 		display: flex;
@@ -94,11 +106,11 @@ footer-1 .container:not(:last-of-type) {
 	}
 }
 
-footer-1 .container a {
+footer-1 .container-2 a {
 	margin-top: 1em;
 }
 
-footer-1 .container h4 {
+footer-1 .container-2 h4 {
 	margin-bottom: 0.5em;
 }
 

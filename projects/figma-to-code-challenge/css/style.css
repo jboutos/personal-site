@@ -16,6 +16,13 @@
 @import 'template-css/call-to-action-2.css';
 @import 'template-css/faq-2.css';
 @import 'template-css/footer-2.css';
+@import 'template-css/header-3.css';
+@import 'template-css/hero-3.css';
+@import 'template-css/video-section-3.css';
+@import 'template-css/product-features-3.css';
+@import 'template-css/testimonial-3.css';
+@import 'template-css/faq-3.css';
+@import 'template-css/call-to-action-3.css';
 
 html {
 	--button-1: #1E3FAE;
@@ -62,6 +69,15 @@ inner-column {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.25;
 	max-width: 30ch;
+	text-wrap: pretty;
+}
+
+.lesser-voice {
+	font-size: 1.5rem;
+	font-weight: 350;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.25;
+	max-width: 25ch;
 	text-wrap: pretty;
 }
 
@@ -116,5 +132,22 @@ h4 + p {
 
 p + picture {
 	margin-top: 1em;
+}
+
+section {
+	background-color: #FFCC11;
+	color: var(--button-1);
+	padding: 0.5em 0;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	@media(min-width: 350px) {
+		flex-direction: row;
+		justify-content: center;
+	}
 }
 

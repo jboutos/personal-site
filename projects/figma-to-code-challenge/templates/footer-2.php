@@ -43,7 +43,7 @@
 				<div class='subscribe'>
 					<h4 class='significant-voice'>Subscribe</h4>
 					<div class="subscribe-container">
-					   <input type="email" placeholder="Email address" aria-label="Sign-up" />
+					   <input type="email" placeholder="Email address" aria-label="Sign-up">
 					   <button type="submit" class="submit-btn"><?php include('images/chevron-right.php'); ?></button>
 					</div>
 					<p class='calm-voice'>Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi. </p>

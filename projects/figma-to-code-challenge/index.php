@@ -1,4 +1,9 @@
 <!doctype html>
+<?php
+
+	$page = $_GET['page'] ?? 'home';
+
+?>
 <html>
 	<head>
 		<meta charset='UTF-8'>
@@ -12,19 +17,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<?php include('templates/header-2.php'); ?>
-		</header>
-		<main>
-			<?php include('templates/hero-2.php'); ?>
-			<?php include('templates/video-section-2.php'); ?>
-			<?php include('templates/product-features-2.php'); ?>
-			<?php include('templates/testimonial-2.php'); ?>
-			<?php include('templates/call-to-action-2.php'); ?>
-			<?php include('templates/faq-2.php'); ?>
-		</main>
-		<footer>
-			<?php include('templates/footer-2.php'); ?>
-		</footer>
+		<section>
+			<nav>
+				<ul class='navigation'>
+					<li><a href='?page=home'>Template 1</a></li>
+					<li><a href='?page=template-2'>Template 2</a></li>
+					<li><a href='?page=template-3'>Template 3</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<?php 
+			if ($page == 'home') {
+				include('pages/page-1.php');
+			} else if ($page == 'template-2') {
+				include('pages/page-2.php');
+			} else if ($page == 'template-3') {
+				include('pages/page-3.php');
+			} 
+		?>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 		<h3 class='careful-voice'>What Our Clients Say</h3>
 		<p class='calm-voice'>Neque, pulvinar vestibulum non aliquam.</p>
 
-		<div class='container'>
+		<div class='container-testimonial'>
 			<div class='review'>
 				<?php
 					for ($i = 0; $i < 5; $i++) {

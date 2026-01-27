@@ -22,7 +22,7 @@ product-feature-1 img {
 	max-width: 350px;
 }
 
-product-feature-1 .container:nth-of-type(1) {
+product-feature-1 .container-feature:nth-of-type(1) {
 	margin-bottom: 3em;
 }
 

@@ -1,6 +1,6 @@
 <product-feature-1>
 	<inner-column>
-		<div class='container'>
+		<div class='container-feature'>
 			<h3 class='careful-voice'>Etiam nulla lectus molestie at vulputate.</h3>
 			<p class='calm-voice'>Neque, pulvinar vestibulum non aliquam.</p>
 			<picture>

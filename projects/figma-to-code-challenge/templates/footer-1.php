@@ -2,7 +2,7 @@
 	<inner-column>
 		<div class='upper-footer'>
 
-			<div class='container'>
+			<div class='container-2'>
 				<h4 class='significant-voice'>Product</h4>
 				<nav>
 					<ul>
@@ -16,7 +16,7 @@
 				</nav>
 			</div>
 
-			<div class='container'>
+			<div class='container-2'>
 				<h4 class='significant-voice'>Information</h4>
 				<nav>
 					<ul>
@@ -27,7 +27,7 @@
 				</nav>
 			</div>
 
-			<div class='container'>
+			<div class='container-2'>
 				<h4 class='significant-voice'>Company</h4>
 				<nav>
 					<ul>
@@ -39,7 +39,7 @@
 				</nav>
 			</div>
 
-			<div class='container'>
+			<div class='container-2'>
 				<div class='subscribe'>
 					<h4 class='significant-voice'>Subscribe</h4>
 					<div class="subscribe-container">

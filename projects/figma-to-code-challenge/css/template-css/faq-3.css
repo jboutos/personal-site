@@ -1,43 +1,35 @@
-faq-2 {
+faq-3 {
 	display: block;
 	padding: 4em 0;
 }
 
-.summary {
+summary {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: flex-start;
-	gap: 1em;
 	list-style: none; 
 	cursor: pointer;
 	font-weight: 600;
 }
 
-faq-2 inner-column {
+faq-3 inner-column {
 	display: flex;
 	flex-direction: column;
 	gap: 0;
 
 	@media(min-width: 650px) {
+		flex-direction: row;
 		align-items: center;
-		text-align: center;
+		gap: 3em;
 	}
 }
 
-.faq {
-	@media(min-width: 650px) {
-		width: 60%;
-		margin: 0 auto;
-	}
+faq-3 svg {
+	stroke: black;
 }
 
-faq-2 svg {
-	stroke: var(--button-1);
-	width: 20px;
-}
-
-faq-2 .chevron {
-	transition: transform 0.3s ease;
+faq-3 .chevron {
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 details[open] .chevron {
@@ -49,8 +41,12 @@ details {
 	border-bottom: 0.5px solid black;
 }
 
-faq-2 h3 + p {
+faq-3 h3 + p {
 	margin-bottom: 4em;
+
+	@media(min-width: 650px) {
+		margin-bottom: 0;
+	}
 }
 
 details .calm-voice {
@@ -59,10 +55,10 @@ details .calm-voice {
 	}
 }
 
-faq-2 .careful-voice {
+faq-3 .careful-voice {
 	max-width: 40ch;
 }
 
-faq-2 details .calm-voice {
+faq-3 details .calm-voice {
 	margin-top: 0.5em;
 }

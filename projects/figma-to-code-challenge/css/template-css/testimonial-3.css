@@ -1,0 +1,51 @@
+testimonial-3 {
+	display: block;
+	padding: 4em 0;
+}
+
+testimonial-3 img {
+	max-width: 500px;
+}
+
+testimonial-3 inner-column {
+	@media(min-width: 750px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+testimonial-3 testimonial {
+	@media(min-width: 750px) {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+		text-align: start;
+	}
+}
+
+testimonial-3 .user-info {
+	@media(min-width: 750px) {
+		display: flex;
+		gap: 0.5em;
+	}
+}
+
+testimonial-3 .user-info .calm-voice {
+	@media(min-width: 750px) {
+		margin-top: 0;
+	}
+}
+
+testimonial-3 h3 + p {
+	margin-bottom: 2em;
+}
+
+testimonial-3 .lesser-voice {
+	margin-bottom: 1em;
+}
+
+testimonial-3 picture {
+	margin-bottom: 1em;
+}
