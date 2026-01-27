@@ -33,6 +33,8 @@ testimonial-3 .user-info {
 }
 
 testimonial-3 .user-info .calm-voice {
+	line-height: 1.7;
+
 	@media(min-width: 750px) {
 		margin-top: 0;
 	}
