@@ -49,6 +49,10 @@ footer-1 svg {
 	fill: white;
 }
 
+footer-1 .subscribe-container svg {
+	fill: none;
+}
+
 footer-1 .subscribe-container-2 svg {
 	fill: none;
 }
