@@ -27,6 +27,7 @@ testimonial-2 .user {
 	@media(min-width: 700px) {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		gap: 0.5em;
 	}
 }
