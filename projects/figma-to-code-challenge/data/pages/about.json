@@ -1,0 +1,246 @@
+{
+	"id": "about",
+	"title": "About",
+	"sections": [
+		{
+			"id": "header",
+			"variant": "header-2",
+			"logo": "images/logo-blue.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Home",
+					"style": "primary"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Update"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Services"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Features"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "About Us"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "EN",
+					"image": "images/language.php"
+				}
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "LogIn"
+				}
+			],
+			"alt": [
+				{
+					"type": "link",
+					"url": "#",
+					"image": "images/hamburger.php"
+				}
+			]
+		},
+		{
+			"id": "hero",
+			"theme": "wavy",
+			"heading": "Monstrously Cohesive Visual <br>Systems",
+			"intro": "Creating visual languages for brands with bold identities and even bolder appetites, keeping every detail on-brand.",
+			"variant": "hero-2",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Get Started",
+					"style": "primary"
+				}
+			]
+		},
+		{
+			"id": "video-spotlight",
+			"eyebrow": "Your Visual Language Partner",
+			"heading": "Consistency Across All Faces (and Tentacles)",
+			"intro": "We specialize in monster-friendly design systems that scale from wiggly toes to toothy grins.",
+			"style": "pop-up",
+			"visual": "images/graphic-1.php",
+			"variant": "video-2",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Learn More",
+					"icon": "images/right-arrow.php"
+				}
+			]
+		},
+		{
+			"id": "product-features",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"layout": "grid",
+			"marker": "icon",
+			"image": null,
+			"source": "features.json",
+			"variant": "product-2"
+		},
+		{
+			"id": "testimonials",
+			"heading": "What our clients say",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"source": "testimonials.json",
+			"variant": "testimonial-2",
+			"layout": "stacked"
+		},
+		{
+			"id": "call-to-action",
+			"intro": "Fringilla non proin nec in in lorem amet eget ac. Mauris.",
+			"eyebrow": "Rhoncus, accumsan dictum",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"variant": "call-2",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Get free quotes",
+					"style": "primary",
+					"class": "link",
+					"class-2": "quote"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Free SignUp",
+					"style": "secondary",
+					"class": "link link-2",
+					"class-2": "quote-2"
+				}
+			]
+		},
+		{
+			"id": "faq",
+			"heading": "Frequently asked qustions",
+			"intro": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+			"source": "faqs.json",
+			"variant": "faq-2"
+		},
+		{
+			"id": "footer",
+			"variant": "footer-2",
+			"logo": "images/logo-blue.php",
+			"heading-1": "Product",
+			"heading-2": "Information",
+			"heading-3": "Company",
+			"heading-4": "Subscribe",
+			"intro": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi.",
+			"social-1": "images/linkedin.php",
+			"social-2": "images/facebook.php",
+			"social-3": "images/social.php",
+			"icon": "images/chevron-right.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Diam orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Mi feugiat"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Netus fermentum"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Suspendisse viverra"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id dolor"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Nibh"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Egestas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Dictum"
+				}
+
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id maecenas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Magna ultricies"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Quis risus"
+				}
+			],
+			"actions4": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Terms"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Privacy"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Cookies"
+				}
+			],
+			"actions5": [
+				{
+					"placeholder": "Email address"
+				}
+			]
+		}
+	]
+}

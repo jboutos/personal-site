@@ -1,0 +1,245 @@
+{
+	"id": "contact",
+	"title": "Contact",
+	"sections": [
+		{
+			"id": "header",
+			"variant": "header-3",
+			"logo": "images/logo-blue.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Home",
+					"style": "primary"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Update"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Services"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Features"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "About Us"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "SignUp"
+				}
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "LogIn"
+				}
+			],
+			"alt": [
+				{
+					"type": "link",
+					"url": "#",
+					"image": "images/hamburger.php"
+				}
+			]
+		},
+		{
+			"id": "hero",
+			"theme": "dark",
+			"heading": "Monstrously Cohesive Visual <br>Systems",
+			"intro": "Creating visual languages for brands with bold identities and even bolder appetites, keeping every detail on-brand.",
+			"variant": "hero-3",
+			"actions": [
+				{
+					"type": "signup",
+					"text": "SignUp"
+				}
+			]
+		},
+		{
+			"id": "video-spotlight",
+			"eyebrow": "Your Visual Language Partner",
+			"heading": "Consistency Across All Faces (and Tentacles)",
+			"intro": "We specialize in monster-friendly design systems that scale from wiggly toes to toothy grins.",
+			"variant": "video-3",
+			"blurbs": [
+				{
+					"heading": "Fur-Friendly Colors",
+					"content": "Bold, harmonious palettes that bring even the wildest textures together, ensuring your brand looks polished and cohesive, no matter the fur or features."
+				},
+				{
+					"heading": "All-Eyes Typography",
+					"content": "Readable and clear, designed to accommodate any number of eyes—whether you’ve got just one, or a hundred peeking through fur."
+				},
+				{
+					"heading": "Appendage Accessibility",
+					"content": "Our systems are designed for all, from claws to paws to wings, ensuring easy interaction no matter how you click, tap, or thump."
+				}
+			],
+			"style": "pop-up",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "See All",
+					"image": "images/link.php"
+				}
+			]
+		},
+		{
+			"id": "product-features",
+			"eyebrow": "Rhoncus, accumsan dictum",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"layout": "grid",
+			"marker": "icon",
+			"image": null,
+			"source": "features.json",
+			"variant": "product-3"
+		},
+		{
+			"id": "testimonials",
+			"heading": "What our clients say",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"source": "testimonials.json",
+			"variant": "testimonial-3",
+			"layout": "media"
+		},
+		{
+			"id": "faq",
+			"heading": "Frequently asked qustions",
+			"intro": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+			"source": "faqs.json",
+			"variant": "faq-3"
+		},
+		{
+			"id": "call-to-action",
+			"eyebrow": "Rhoncus, accumsan dictum",
+			"heading": "Etiam nulla lectus amet nunc",
+			"image": "//peprojects.dev/images/landscape.jpg",
+			"variant": "call-3",
+			"actions": [
+				{
+					"type": "signup",
+					"text": "SignUp"
+				}
+			]
+		},
+		{
+			"id": "footer",
+			"variant": "footer-1",
+			"logo": "images/logo-blue.php",
+			"heading-1": "Product",
+			"heading-2": "Information",
+			"heading-3": "Company",
+			"heading-4": "Subscribe",
+			"intro": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi.",
+			"social-1": "images/linkedin.php",
+			"social-2": "images/facebook.php",
+			"social-3": "images/social.php",
+			"icon": "images/chevron-right.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Diam orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Mi feugiat"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Netus fermentum"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Suspendisse viverra"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id dolor"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Nibh"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Egestas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Dictum"
+				}
+
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id maecenas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Magna ultricies"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Quis risus"
+				}
+			],
+			"actions4": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Terms"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Privacy"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Cookies"
+				}
+			],
+			"actions5": [
+				{
+					"placeholder": "Email address"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,44 @@
+[
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/graphic-1.php",
+		"enum": 1
+	},
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/clock.php",
+		"enum": 2
+	},
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/youtube.php",
+		"enum": 3
+	},
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/thermometer.php",
+		"enum": 4
+	},
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/wind.php",
+		"enum": 5
+	},
+	{
+		"heading": "Et, odio elementum",
+		"content": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+		"image-1": "images/graphic-1.php",
+		"image-2": "images/glass.php",
+		"enum": 6
+	}
+]

@@ -1,0 +1,20 @@
+[
+	{
+		"quote": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
+		"source": "Courtney Henry",
+		"job": "Marketing Coordinator",
+		"avatar": "images/circle.php",
+		"imageLarge": "//peprojects.dev/images/landscape.jpg",
+		"star": "images/star.php",
+		"image": "images/star.php"
+	},
+	{
+		"quote": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
+		"source": "Courtney Henry",
+		"job": "Marketing Coordinator",
+		"avatar": "images/circle.php",
+		"imageLarge": "//peprojects.dev/images/landscape.jpg",
+		"rating": 5,
+		"image": "images/star.php"
+	}
+]

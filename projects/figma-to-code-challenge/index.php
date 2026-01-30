@@ -3,10 +3,17 @@
 
 	$page = $_GET['page'] ?? 'home';
 
+	function load_json($path) {
+		if (!file_exists($path)) return [];
+		return json_decode(file_get_contents($path), true);
+	}
+
+	$pageData = load_json("data/pages/$page.json");
+
 ?>
 <html>
 	<head>
-		<meta charset='UTF-8'>
+		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta name='description' content=''>
 		<title>Figma to code challenge</title>
@@ -21,20 +28,27 @@
 			<nav>
 				<ul class='navigation'>
 					<li><a href='?page=home'>Template 1</a></li>
-					<li><a href='?page=template-2'>Template 2</a></li>
-					<li><a href='?page=template-3'>Template 3</a></li>
+					<li><a href='?page=about'>Template 2</a></li>
+					<li><a href='?page=contact'>Template 3</a></li>
 				</ul>
 			</nav>
 		</section>
 
-		<?php 
-			if ($page == 'home') {
-				include('pages/page-1.php');
-			} else if ($page == 'template-2') {
-				include('pages/page-2.php');
-			} else if ($page == 'template-3') {
-				include('pages/page-3.php');
-			} 
+		<?php
+			foreach ($pageData['sections'] as $section):
+
+				$template = 'sections/' . $section['id'] . '.php';
+
+				$data = [];
+				if (!empty($section['source'])) {
+					$data = load_json('data/' . $section['source']);
+				}
+
+				include($template);
+
+
+			endforeach;
 		?>
+		
 	</body>
 </html>

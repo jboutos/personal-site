@@ -22,7 +22,16 @@
 @import 'template-css/product-features-3.css';
 @import 'template-css/testimonial-3.css';
 @import 'template-css/faq-3.css';
+@import 'template-css/video-section.css';
 @import 'template-css/call-to-action-3.css';
+@import 'template-css/call-to-action.css';
+@import 'template-css/faq.css';
+@import 'template-css/header.css';
+@import 'template-css/hero.css';
+@import 'template-css/product-features.css';
+@import 'template-css/testimonial.css';
+@import 'template-css/video-spotlight.css';
+@import 'template-css/footer.css';
 
 html {
 	--button-1: #1E3FAE;

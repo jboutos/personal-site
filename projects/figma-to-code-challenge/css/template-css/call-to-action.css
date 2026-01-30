@@ -1,0 +1,214 @@
+.call-1 {
+  display: block;
+}
+
+.call-1 .careful-voice {
+  max-width: 30ch;
+}
+
+.call-1 inner-column {
+  background-color: var(--background);
+  border-radius: 5px;
+  padding: 3em 0.5em;
+
+  @media(min-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+}
+
+.call-1 a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: var(--button-1);
+  color: var(--white);
+}
+
+.call-1 span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 0;
+  background-color: var(--button-1);
+  color: var(--white);
+}
+
+.call-1 .link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3em;
+}
+
+.call-1 svg {
+  stroke: var(--white);
+}
+
+.call-1 h3 {
+  margin : 0.5em 0 1em 0;
+}
+
+.call-2 {
+  display: block;
+}
+
+.call-2 .careful-voice {
+  max-width: 30ch;
+}
+
+.call-2 inner-column {
+  background-color: var(--background);
+  border-radius: 5px;
+  padding: 3em 0.5em;
+
+  @media(min-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+}
+
+.call-2 a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: var(--button-1);
+  color: var(--white);
+  border: 1px solid var(--button-1);
+}
+
+.call-2 a:nth-of-type(2) {
+  background-color: transparent;
+  color: var(--button-1);
+  border: 1px solid var(--button-1);
+}
+
+.call-2 span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 0;
+  background-color: var(--button-1);
+  color: var(--white);
+}
+
+.call-2 .quote-2 {
+  background-color: transparent;
+  color: var(--button-1);
+}
+
+.call-2 .link-2 svg {
+  stroke: var(--button-1);
+}
+
+.call-2 .link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3em;
+}
+
+.call-2 svg {
+  stroke: var(--white);
+}
+
+.call-2 h3 {
+  margin : 0.5em 0 1em 0;
+}
+
+.call-2 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5em;
+
+  @media(min-width: 450px) {
+  flex-direction: row;
+  }
+}
+
+.call-3 {
+  display: block;
+  padding: 4em 0;
+}
+
+.call-3 .container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.call-3 .input-container {
+  position: relative;
+}
+
+.call-3 .input-container svg {
+  position: absolute;
+  left: 10px;
+  top: 75%;
+    @media(min-width: 351px) {
+    top: 50%;
+  }
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.call-3 input {
+  padding: 0.9em 6em 0.9em 2.8em;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.call-3 button {
+  padding: 0.9em 7.9em 0.9em 7.9em;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  background-color: var(--button-1);
+
+  @media(min-width: 351px) {
+    padding: 0.9em 1em 0.9em 1em;
+  }
+}
+
+.call-3 input {
+  margin-top: 3em;
+
+  @media(min-width: 351px) {
+    margin-bottom: 3em;
+  }
+  
+}
+
+.call-3 button {
+  margin-bottom: 3em;
+
+  @media(min-width: 351px) {
+    margin-top: 3em;
+  }
+}
+
+.call-3 input::placeholder {
+  color: #E0E0E0;
+}
+
+.call-3 img {
+  max-width: 500px;
+}
+
+.call-3 inner-column {
+  @media(min-width: 800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+}
+
+.call-3 .careful-voice {
+  max-width: 20ch;
+}

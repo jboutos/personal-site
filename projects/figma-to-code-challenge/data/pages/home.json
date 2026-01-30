@@ -1,0 +1,233 @@
+{
+	"id": "home",
+	"title": "Home",
+	"sections": [
+		{
+			"id": "header",
+			"variant": "header-1",
+			"logo": "images/logo-blue.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Home",
+					"style": "primary"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Update"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Services"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Features"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "About Us"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "EN",
+					"image": "images/language.php"
+				}
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "LogIn"
+				}
+			],
+			"alt": [
+				{
+					"type": "link",
+					"url": "#",
+					"image": "images/hamburger.php"
+				}
+			]
+		},
+		{
+			"id": "hero",
+			"theme": "diagonal",
+			"heading": "Monstrously Cohesive Visual <br>Systems",
+			"intro": "Creating visual languages for brands with bold identities and even bolder appetites, keeping every detail on-brand.",
+			"variant": "hero-1",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Get Started",
+					"style": "primary"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Start free trial",
+					"style": "secondary"
+				}
+			]
+		},
+		{
+			"id": "video-spotlight",
+			"eyebrow": "Your Visual Language Partner",
+			"heading": "Consistency Across All Faces (and Tentacles)",
+			"url": "#",
+			"intro": "We specialize in monster-friendly design systems that scale from wiggly toes to toothy grins.",
+			"image": "//peprojects.dev/images/landscape.jpg",
+			"variant": "video-1"
+		},
+		{
+			"id": "product-features",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"layout": "split",
+			"marker": "number",
+			"image": "//peprojects.dev/images/square.jpg",
+			"source": "features.json",
+			"variant": "product-1"
+		},
+		{
+			"id": "testimonials",
+			"heading": "What our clients say",
+			"intro": "Neque, pulvinar vestibulum non aliquam.",
+			"source": "testimonials.json",
+			"variant": "testimonial-1",
+			"layout": "columns"
+		},
+		{
+			"id": "call-to-action",
+			"eyebrow": "Rhoncus, accumsan dictum",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"variant": "call-1",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Get free quotes",
+					"style": "primary"
+				}
+			]
+		},
+		{
+			"id": "faq",
+			"heading": "Frequently asked qustions",
+			"intro": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+			"source": "faqs.json",
+			"variant": "faq-1"
+		},
+		{
+			"id": "footer",
+			"variant": "footer-1",
+			"logo": "images/logo-blue.php",
+			"heading-1": "Product",
+			"heading-2": "Information",
+			"heading-3": "Company",
+			"heading-4": "Subscribe",
+			"intro": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi.",
+			"social-1": "images/linkedin.php",
+			"social-2": "images/facebook.php",
+			"social-3": "images/social.php",
+			"icon": "images/chevron-right.php",
+			"actions": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Diam orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Mi feugiat"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Netus fermentum"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Suspendisse viverra"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id dolor"
+				}
+			],
+			"actions2": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Nibh"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Egestas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Dictum"
+				}
+
+			],
+			"actions3": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id maecenas"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Id orci"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Magna ultricies"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Quis risus"
+				}
+			],
+			"actions4": [
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Terms"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Privacy"
+				},
+				{
+					"type": "link",
+					"url": "#",
+					"text": "Cookies"
+				}
+			],
+			"actions5": [
+				{
+					"placeholder": "Email address"
+				}
+			]
+		}
+	]
+}
