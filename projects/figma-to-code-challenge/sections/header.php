@@ -1,7 +1,7 @@
 <?php
-	$actions2 = $section['actions2'][0];
-	$actions3 = $section['actions3'][0];
-	$alt = $section['alt'][0];
+	$actions2 = $section['actions2'][0] ?? null;
+	$actions3 = $section['actions3'][0] ?? null;
+	$alt = $section['alt'][0] ?? null;
 ?>
 
 

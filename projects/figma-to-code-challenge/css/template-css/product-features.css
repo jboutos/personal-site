@@ -144,8 +144,8 @@
 
 .product-3 .visual {
   display: flex;       
-   align-items: center;    
-   justify-content: center;
+  align-items: center;    
+  justify-content: center;
   height: 3em;
   width: 3em;
   border-radius: 50%;

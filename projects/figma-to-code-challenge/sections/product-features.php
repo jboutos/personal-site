@@ -1,5 +1,5 @@
 <?php
-  $features = json_decode(file_get_contents(__DIR__ . '/../data/' . $section['source']),true);
+  $features = json_decode(file_get_contents(__DIR__ . '/../data/' . $section['source']), true);
 ?>
 
 

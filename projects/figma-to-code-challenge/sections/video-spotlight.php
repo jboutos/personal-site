@@ -1,4 +1,4 @@
-<?php $actions = $section['actions'][0]; ?>
+<?php $actions = $section['actions'][0] ?? null; ?>
 
 <video-spotlight class='<?= $section['variant'] ?>'>
 	<inner-column>

@@ -1,7 +1,7 @@
 <?php
 
-  $items = json_decode(file_get_contents(__DIR__ . '/../data/' . $section['source']),true);
-  $item = $items[0]; 
+  $items = json_decode(file_get_contents(__DIR__ . '/../data/' . $section['source']), true);
+  $item = $items[0] ?? null; 
   
 ?>
 
