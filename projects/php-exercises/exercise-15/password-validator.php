@@ -1,7 +1,7 @@
 <password>
 	<a id='password'></a>
 
-	<form action=index.php#password method='POST'>
+	<form action=index.php?show=ex15 method='POST'>
 
 		<h3>Password validator</h3>
 		<p>Checks if the username matches the password</p>

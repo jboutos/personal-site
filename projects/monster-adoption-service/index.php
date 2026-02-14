@@ -63,24 +63,7 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover; 
-				border-radius: 1.3em;
-			}
-
-			monster-card {
-				display: flex;
-				flex-direction: column;
-
-				
-				padding: 1em;
-				background-color: #eadeb8;
-				border-radius: 2em;
-				max-width: 270px;
-				height: 100%;
-
-				@media (min-width: 530px) {
-					justify-content: space-between;
-					max-width: 300px;
-				}
+				border-radius: var(--radius-3);
 			}
 
 			monster-card p {
@@ -140,11 +123,72 @@
 				color: black;
 				padding: 0.6em;
 				background-color: #bcccce;
-				border-radius: 1em;
+				border-radius: var(--radius-2);
 			}
 
 			monster-catalog {
 				display: block;
+			}
+
+			.test {
+				display: flex;
+				align-items: center;
+				gap: 2em;
+			}
+
+			html {
+			  --hue: 0; /* change me! */
+			  --radius: 2em;
+			  --radius-2: 1em;
+			  --radius-3: 1.3em;
+			  --font: 3em;
+			  --attention: 2em;
+			  --subtle: 1.5em;
+			  --calm: 1em;
+			}
+
+			/* attention subtle calm*/
+
+			.loud-voice {
+				font-size: var(--font);
+			}
+
+			.attention-voice {
+				font-size: var(--attention);
+			}
+
+			.subtle-voice {
+				font-size: var(--subtle);
+			}
+
+			.calm-voice {
+				font-size: var(--calm);
+			}
+
+			body {
+				background-color: hsl(var(--hue), 20%, 50%);
+			}
+
+			.test-container {
+				display: flex;
+				flex-direction: column;
+			}
+
+			monster-card {
+				display: flex;
+				flex-direction: column;
+
+				
+				padding: 1em;
+				background-color: #eadeb8;
+				border-radius: var(--radius);
+				max-width: 270px;
+				height: 100%;
+
+				@media (min-width: 530px) {
+					justify-content: space-between;
+					max-width: 300px;
+				}
 			}
 
 		</style>
@@ -165,17 +209,35 @@
 			$monsters = [$cody, $lima, $reads, $fragoo, $banana, $orangina, $shadow];
 
 			echo "<inner-column>";
-				echo "<main>";
-					echo "<h1> Monster Adoption Service</h1>";
-					echo "<h2>Didn't you ever wonder what it would be like to have a little monster in your family?</h2>";
+			?>
+			<div class='test-container'>
+				<div class='test'>
+					<p>Adjust the colors!</p>
+					<input class='color' type='range' min='0' max='1000' step='10'>
+				</div>
 
-					echo "<p> Ready to add a little bit of spook-tacular love to your life? Here at the Monster adoption service, 
+				<div class='test'>
+					<p>Adjust the border roundness!</p>
+					<input class='round' type='range' min='0' max='4'>
+				</div>
+
+				<div class='test'>
+					<p>Adjust the font sizes!</p>
+					<input class='font' type='range' min='1' max='10'>
+				</div>
+			</div>
+			<?php
+				echo "<main>";
+					echo "<h1 class='loud-voice'> Monster Adoption Service</h1>";
+					echo "<h2 class='attention-voice'>Didn't you ever wonder what it would be like to have a little monster in your family?</h2>";
+
+					echo "<p class='calm-voice'> Ready to add a little bit of spook-tacular love to your life? Here at the Monster adoption service, 
 								we specialize in matching extraordinary humans with the world's most adorably fuzzy, surprisingly 
 								friendly, and sometimes a little mischievous monsters. Forget the fright—these unique companions 
 								only want snuggles, treats, and a forever home where their true, charming selves can shine! 
 								Get ready to meet your next best friend!</p>";
 
-					echo "<h3>Take a look below at some of our adorable monsters up for adoption!</h3>";
+					echo "<h3 class='subtle-voice'>Take a look below at some of our adorable monsters up for adoption!</h3>";
 				echo "</main>";
 
 				echo "<monster-catalog>";
@@ -201,8 +263,8 @@
 									"<picture class='portrait'>" .
 										"<img src='" . $portrait . "' width='200'>" .
 									"</picture>" .
-								   "<h2 class='name'>" . $name . "</h2>" .
-									"<p class='story'>" . $story . " " . $story2 . "</p>" .
+								   "<h2 class='attention-voice name'>" . $name . "</h2>" .
+									"<p class='calm-voice story'>" . $story . " " . $story2 . "</p>" .
 									"<a href='#' class='status'>" . $status . "</a>" .
 								"</monster-card>";
 
@@ -212,5 +274,7 @@
 				echo "</monster-catalog>";
 			echo "</inner-column>";
 		?>
+
+		<script src="script.js"></script>
 	</body>
 </html>

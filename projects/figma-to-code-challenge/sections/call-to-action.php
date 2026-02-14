@@ -1,3 +1,7 @@
+<?php
+  $action = $section['actions'][0];
+?>
+
 <call-to-action class='<?= $section['variant'] ?>'>
   <inner-column>
 

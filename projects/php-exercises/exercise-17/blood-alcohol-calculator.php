@@ -1,7 +1,7 @@
 <blood-alcohol>
 	<a id='blood'></a>
 
-	<form action='index.php#blood' method='POST'>
+	<form action='index.php?show=ex17' method='POST'>
 
 		<h3>Blood alcohol calculator</h3>
 		<p>Calculates the blood alcohol content</p>

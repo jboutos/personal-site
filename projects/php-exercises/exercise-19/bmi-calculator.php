@@ -112,7 +112,7 @@
 
 <a id='temp'></a>
 
-<form action='index.php#temp' method='POST'>
+<form action='index.php?show=ex19' method='POST'>
 
 
 	<h3>BMI calculator</h3>

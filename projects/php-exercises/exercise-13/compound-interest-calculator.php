@@ -1,7 +1,7 @@
 <compound>
 	<a id='compound'></a>
 
-	<form action='index.php#compound' method='POST'>
+	<form action='index.php?show=ex13' method='POST'>
 
 		<h3>Compound interest calculator</h3>
 		<p>Calculates the compound interest of a principal amount of money</p>

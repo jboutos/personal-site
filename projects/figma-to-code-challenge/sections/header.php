@@ -1,7 +1,7 @@
 <?php
-	$actions2 = $section['actions2'][0] ?? null;
-	$actions3 = $section['actions3'][0] ?? null;
-	$alt = $section['alt'][0] ?? null;
+	$actions2 = $section['actions2'][0];
+	$actions3 = $section['actions3'][0];
+	$alt = $section['alt'][0];
 ?>
 
 
@@ -37,11 +37,31 @@
 		<nav class='hidden-large'>
 			<ul>
 				<li>
-					<a href='#'>
+					<a rel='toggle' href='#'>
 						<?php include($alt['image']) ?>
 					</a>
 				</li>
 			</ul>
+			<nav class='menu'>
+				<ul>
+				<?php foreach ($section['actions'] as $action): ?>
+					<li><a href='#'><?= $action['text'] ?></a></li>
+				<?php endforeach; ?>
+					<nav>
+						<ul>
+							<li>
+								<a>Language</a>
+							</li>
+							<li>
+								<a>Log In</a>
+							</li>
+						</ul>
+					</nav>
+					<span class='calm-voice' rel='toggle'>Close</span>
+				</ul>
+				
+			</nav>
 		</nav>
+
 	</inner-column>
 </header>

@@ -1,7 +1,7 @@
 <tax>
 	<a id='tax-calc'></a>
 
-	<form action='index.php#tax-calc' method='POST'>
+	<form action='index.php?show=ex14' method='POST'>
 
 		<h3>Tax calculator</h3>
 		<p>Calculates the tax and returns is the state is wisconsin</p>

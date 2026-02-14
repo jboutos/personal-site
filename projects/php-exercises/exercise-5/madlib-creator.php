@@ -1,7 +1,7 @@
 <madlib-creator>
 	<a id='madlib-creator'></a>
 
-	<form action='index.php#madlib-creator' method='POST'>
+	<form action='index.php?show=ex5' method='POST'>
 
 		<h3>Madlib creator</h3>
 		<p>Creates a madlib based on user input</p>

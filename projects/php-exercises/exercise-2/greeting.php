@@ -1,7 +1,7 @@
 <greeting>
 	<a id='greeting'></a>
 
-	<form action='index.php#greeting' method='POST'>
+	<form action='index.php?show=ex2' method='POST'>
 
 		<h3>A warm greeting</h3>
 		<p>The user enters his name and gets a warm greeting</p>

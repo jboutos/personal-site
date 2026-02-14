@@ -1,7 +1,7 @@
 <quote-maker>
 	<a id='quote-maker'></a>
 
-	<form action='index.php#quote-maker' method='POST'>
+	<form action='index.php?show=ex4' method='POST'>
 
 		<h3>Quote maker</h3>
 		<p>Creates a quote based on user input</p>

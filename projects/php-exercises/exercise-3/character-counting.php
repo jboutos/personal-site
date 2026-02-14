@@ -1,7 +1,7 @@
 <character-counting>
 	<a id='character-counting'></a>
 
-	<form action='index.php#character-counting' method='POST'>
+	<form action='index.php?show=ex3' method='POST'>
 
 		<h3>Character counting app</h3>
 		<p>Calculates the length of a given string</p>

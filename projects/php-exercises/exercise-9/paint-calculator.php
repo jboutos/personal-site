@@ -1,7 +1,7 @@
 <paint>
 	<a id='paint'></a>
 
-	<form action='index.php#paint' method='POST'>
+	<form action='index.php?show=ex9' method='POST'>
 
 		<h3>Paint calculator (rectangle room)</h3>
 		<p>Calculates the amount of paint needed to paint a room</p>

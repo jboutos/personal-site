@@ -1,7 +1,7 @@
 <simple-calculator>
 	<a id='simple-calculator'></a>
 
-	<form action='index.php#simple-calculator' method='POST'>
+	<form action='index.php?show=ex1' method='POST'>
 
 		<h3>Simple calculator</h3>
 

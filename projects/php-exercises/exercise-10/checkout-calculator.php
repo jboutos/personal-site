@@ -1,7 +1,7 @@
 <checkout>
 	<a id='checkout'></a>
 
-	<form action='index.php#checkout' method='POST'>
+	<form action='index.php?show=ex10' method='POST'>
 
 		<h3>Checkout calculator</h3>
 		<p>Calculates the subtotal total and tax of a transaction</p>

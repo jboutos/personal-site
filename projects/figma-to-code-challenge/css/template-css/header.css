@@ -215,3 +215,51 @@
 .header-3 .hidden-large svg {
 	stroke: var(--black);
 }
+
+.menu {
+	display: none;
+}
+
+.hidden-large {
+	position: relative;
+}
+
+body.menu-open .menu { /* how the menu should behave _visually_ (when open) */
+	padding: 2em 1em;
+	/* */
+	position: absolute; /* cover the whole screen */
+	top: 100%;
+	right: 10%;
+	width: 200px;
+ 
+	/* */
+	display: flex; /* positioning its items */
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	/* */
+	/*background-color: rgba(211, 211, 211, 0.6);*/
+	background-color: rgba(30, 63, 174, 0.6);
+	color: var(--white);
+}
+
+body.menu-open .menu span, body.menu-open .menu .calm-voice {
+	display: block;
+	color: var(--white);
+}
+
+body.menu-open .menu a, body.menu-open .menu span {
+	padding: 0.5em 1em;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+body.menu-open .menu ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	list-style: none;
+}

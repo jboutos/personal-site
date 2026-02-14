@@ -1,7 +1,7 @@
 <pizza>
 	<a id='pizza'></a>
 
-	<form action='index.php#pizza' method='POST'>
+	<form action='index.php?show=ex8' method='POST'>
 
 		<h3>Pizza division</h3>
 		<p>Calculates how much pizza each member of the party gets</p>

@@ -1,7 +1,7 @@
 <area>
 	<a id='area'></a>
 
-	<form action='index.php#area' method='POST'>
+	<form action='index.php?show=ex7' method='POST'>
 
 		<h3>Area calculator</h3>
 		<p>Calculates the area of a rectangular room</p>

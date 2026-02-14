@@ -1,7 +1,7 @@
 <interest>
 	<a id='interest-calc'></a>
 
-	<form action='index.php#interest-calc'method='POST'>
+	<form action='index.php?show=ex12'method='POST'>
 
 		<h3>Simple interest calculator</h3>
 		<p>Calculates the interest of a principal amount</p>

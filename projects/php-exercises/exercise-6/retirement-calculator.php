@@ -1,7 +1,7 @@
 <retirement>
 	<a id='retirement'></a>
 
-	<form action='index.php#retirement' method='POST'>
+	<form action='index.php?show=ex6' method='POST'>
 
 		<h3>Retirement calculator</h3>
 		<p>Calculates your retirement age based on user input</p>

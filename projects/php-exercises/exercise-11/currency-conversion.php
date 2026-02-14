@@ -1,7 +1,7 @@
 <currency>
 	<a id='conversion'></a>
 
-	<form action='index.php#conversion' method='POST'>
+	<form action='index.php?show=ex11' method='POST'>
 
 		<h3>Currency conversion</h3>
 		<p>Converts euros to dollars</p>

@@ -42,8 +42,10 @@
 				<path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3725 30.6274 12 24 12C17.3726 12 12 17.3725 12 24C12 30.6274 17.3726 36 24 36Z"/>
 			</svg>
 
-		</main>
+			<div id="move"></div>
 
+		</main>
+	<script src='js/script.js'></script>
 	</body>
 
 </html>

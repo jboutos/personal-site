@@ -46,7 +46,7 @@
 
 <a id='temp'></a>
 
-<form action='index.php#temp' method='POST'>
+<form action='index.php?show=ex18' method='POST'>
 
     <h3>Temperarture converter</h3>
     <p>Receives a temperature either in Celsius or Fahrenheit and converts it</p>
