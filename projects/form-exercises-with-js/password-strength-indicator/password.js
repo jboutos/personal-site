@@ -28,7 +28,7 @@ function renderIntroPass() {
           r="50"
           fill="none"
           stroke="#eee"
-          stroke-width="12"
+          stroke-width="14"
         />
         
         <!-- Progress ring -->
@@ -39,7 +39,7 @@ function renderIntroPass() {
           r="50"
           fill="none"
           stroke="blue"
-          stroke-width="12"
+          stroke-width="14"
           stroke-linecap="round"
           transform="rotate(-90 60 60)"
         />

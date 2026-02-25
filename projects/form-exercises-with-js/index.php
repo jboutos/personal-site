@@ -5,7 +5,7 @@
 		<title>Php practice</title>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta name='description' content='A compilation of layouts'>
-		<meta property='og:image' content='[[meta image source]]'>
+		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/js.png'>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
 	</head>
@@ -68,5 +68,5 @@
 		<script src="temperature-converter/temperature.js"></script>
 		<script src="filtering-values/filter.js"></script>
 		<script src="employee-list-removal/employee.js"></script>
-	</body>
+	</body>	
 </html>

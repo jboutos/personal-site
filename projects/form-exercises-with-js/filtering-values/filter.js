@@ -13,14 +13,35 @@ function renderIntroFilter() {
 	inputAreaFilter.innerHTML = `
 	<div class='input-area field'>
 	<label for='filterEven'>Enter a list of numbers, separated by spaces:</label>
-   <input id='filterEven' type='text' name='filterEven' ></input>
-   </div>
-   <button type='submit'>Submit</button>`;
+  <input id='filterEven' type='text' name='filterEven' ></input>
+  </div>
+	<p id="errorMessage"></p>
+  <button type='submit'>Submit</button>`;
 
-   const input = document.querySelector('#filterEven');
+  const input = document.querySelector('#filterEven');
 }
 
 renderIntroFilter();
+
+//input.addEventListener('input', function(event) {
+//	
+//	const input = document.querySelector('#filterEven');
+//  const error = document.querySelector('#errorMessage');
+//	let userInput = this.value.trim();
+//
+//	let newInput = userInput.split(' ');
+//
+//	let hasInvalid = newInput.some(value => {
+//		return value !== '' && isNaN(Number(value));
+//	});
+//
+//	if (hasInvalid) {
+//		error.textContent = 
+//		  'Only numbers separated by spaces are allowed.';
+//	} else {
+//		error.textContent += '';
+//	}
+//});
 
 filterForm.addEventListener('submit', function(event) {
 	event.preventDefault();
@@ -37,11 +58,9 @@ filterForm.addEventListener('submit', function(event) {
 	userInput = userInput.split(" ").map(item => {
       item = item.trim();
       if (!isNaN(Number(item)) && item != "" && item != " ") {
-         return Number(item);
-      } else {
-         inputAreaFilter.innerHTML += `<p>${item} will not be added in the array!</p>`;
-      } 
-   });
+        return Number(item);
+      }
+  });
 
 	function filterEvenNumbers(input) {
 		let newArray = [];
@@ -58,7 +77,13 @@ filterForm.addEventListener('submit', function(event) {
 
 	let text = filterEvenNumbers(userInput);
 
-	inputAreaFilter.innerHTML = `<p>The even numbers are: ${text}</p>
-<a href='#'>Go Back</a>`;
+	if (text.length === 0) {
+		inputAreaFilter.innerHTML = `<p>There were no even numbers in your input</p>
+		<a href='#'>Go Back</a>`;
+	} else {
+			inputAreaFilter.innerHTML = `<p>The even numbers are: ${text}</p>
+			<a href='#'>Go Back</a>`;
+	}
+
 });
 
