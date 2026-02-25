@@ -46,13 +46,14 @@
 		margin: 0 auto;
 	}
 
-	.container svg {
+	.hello-container svg {
 		@media (max-width: 750px) {
 			display: none;
 		}
 		position: absolute;
 		max-width: 20%;
 		fill: var(--circle);
+		transition: transform 0.3s ease;
 		@media (min-width: 751px) {
 			transform: translate(-230%, -50%);
 		}

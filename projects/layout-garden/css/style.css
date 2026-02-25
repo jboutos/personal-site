@@ -39,12 +39,12 @@ body {
 }
 
 .theme-purple {
-	--passionate: purple;
-	--affirmative: #7b3fe4;
-	--vibrant: #c77dff;
-	--soothing: #5a3fb4;
-	--bright: #b64efb;
-	--sea: #9b5cdc;
+	--passionate: hsl(300, 100%, 25%);
+	--affirmative: hsl(262, 75%, 57%);
+	--vibrant: hsl(273, 100%, 75%);
+	--soothing: hsl(254, 48%, 48%);
+	--bright: hsl(276, 96%, 65%);
+	--sea: hsl(270, 65%, 61%);
 	--coffee: #9a7aab;
 	--background-1: #e6dbf2;
 	--background-2: #7a4fb3;

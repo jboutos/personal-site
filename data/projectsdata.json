@@ -95,6 +95,14 @@
     "description": "I had to copy the styles of a figma site mockup.",
     "target": "_blank"
   },
+  "jsf": {
+    "title": "Javascript Forms",
+    "image": "images/js.png",
+    "link": "projects/form-exercises-with-js/index.php",
+    "id": 14,
+    "description": "I had to create some forms using Javascript!",
+    "target": "_blank"
+  },
   "archived": {
     "title": "Archive",
     "image": "images/archives1.png",

@@ -19,7 +19,7 @@
 
         <h2 class="careful-voice"><?= $link2 ?></h2>
 
-        <div class="container">
+        <div class="hello-container">
             <?php include('modules/waving-hand.php'); ?>
         </div>
 

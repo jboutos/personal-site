@@ -10,3 +10,12 @@ document.body.onpointermove = event => {
     }, {duration: 1000, fill: "forwards"})
 
 }
+const rotate = document.querySelector('.hello-container');
+
+//rotate.addEventListener('mouseenter', () => {
+//  rotate.style.transform = "rotate(20 deg) scale(1.2)";
+//});
+
+//rotate.addEventListener('mouseleave', () => {
+//  rotate.style.transform = "rotate(0deg) scale(1)"; 
+//});
