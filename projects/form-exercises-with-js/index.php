@@ -1,8 +1,36 @@
 <!doctype html>
 <html lang='en'>
+<?php
+	$exercise = $_GET['ex'] ?? null;
+
+	function pageSelect($exercise) {
+		$exercises = ['bmi-calculator', 'currency-conversion', 'employee-list-removal', 'filtering-values', 'numbers-to-names', 'password-strength-indicator', 'temperature-converter', '404'];
+
+		return in_array($exercise, $exercises) ? $exercise : '404';
+	}
+
+	function getScript($exercise) {
+		if (!$exercise) {
+      	return;
+    	}
+
+		$exercise = pageSelect($exercise);
+		echo "<script src='{$exercise}/{$exercise}.js'></script>";
+	}
+
+	function getTemplate($exercise) {
+
+		if (!$exercise) {
+      	return;
+    	}
+
+		$exercise = pageSelect($exercise);
+		include($exercise . '/' . $exercise . '.php');
+	}
+?>
 	<head>
 		<meta charset='utf-8'>
-		<title>Php practice</title>
+		<title>Js practice</title>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta name='description' content='A compilation of layouts'>
 		<meta property='og:image' content='https://peprojects.dev/beta3/johnb/images/js.png'>
@@ -20,37 +48,17 @@
 			</header>
 
 			<section>
-				<button class='index-button' data-target='ex1'>BMI Calculator</button>
-				<button class='index-button' data-target='ex2'>Currency Conversion</button>
-				<button class='index-button' data-target='ex3'>Employee List Removal</button>
-				<button class='index-button' data-target='ex4'>Filtering Values</button>
-				<button class='index-button' data-target='ex5'>Numbers to Names</button>
-				<button class='index-button' data-target='ex6'>Password Strength Indicator</button>
-				<button class='index-button' data-target='ex7'>Temperature Converter</button>
+				<a href='?ex=bmi-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'bmi-calculator' ? 'active' : ''; ?>'>BMI Calculator</a>
+				<a href='?ex=currency-conversion' class='index-button <?= ($_GET['ex'] ?? '') === 'currency-conversion' ? 'active' : ''; ?>'>Currency Conversion</a>
+				<a href='?ex=employee-list-removal' class='index-button <?= ($_GET['ex'] ?? '') === 'employee-list-removal' ? 'active' : ''; ?>'>Employee List Removal</a>
+				<a href='?ex=filtering-values' class='index-button <?= ($_GET['ex'] ?? '') === 'filtering-values' ? 'active' : ''; ?>'>Filtering Values</a>
+				<a href='?ex=numbers-to-names' class='index-button <?= ($_GET['ex'] ?? '') === 'numbers-to-names' ? 'active' : ''; ?>'>Numbers to Names</a>
+				<a href='?ex=password-strength-indicator' class='index-button <?= ($_GET['ex'] ?? '') === 'password-strength-indicator' ? 'active' : ''; ?>'>Password Strength Indicator</a>
+				<a href='?ex=temperature-converter' class='index-button <?= ($_GET['ex'] ?? '') === 'temperature-converter' ? 'active' : ''; ?>'>Temperature Converter</a>
 			</section>
 
 			<partials>
-				<div id='ex1' class='hidden form'>
-					<?php include('bmi-calculator/bmi-calculator.php') ?>
-				</div>
-				<div id='ex2' class='hidden form'>
-					<?php include('currency-conversion/currency-conversion.php') ?>
-				</div>
-				<div id='ex3' class='hidden form'>
-					<?php include('employee-list-removal/employee-list-removal.php') ?>
-				</div>
-				<div id='ex4' class='hidden form'>
-					<?php include('filtering-values/filtering-values.php') ?>
-				</div>
-				<div id='ex5' class='hidden form'>
-					<?php include('numbers-to-names/numbers-to-names.php') ?>
-				</div>
-				<div id='ex6' class='hidden form'>
-					<?php include('password-strength-indicator/password-strength-indicator.php') ?>
-				</div>
-				<div id='ex7' class='hidden form'>
-					<?php include('temperature-converter/temperature-converter.php') ?>
-				</div>
+				<?php getTemplate($exercise); ?>
 			</partials>
 
 			<footer>
@@ -60,13 +68,6 @@
 			</footer>
 
 		</inner-column>
-		<script src='script.js'></script>
-		<script src="bmi-calculator/bmi.js"></script>
-		<script src="currency-conversion/currency.js"></script>
-		<script src="numbers-to-names/numbers.js"></script>
-		<script src="password-strength-indicator/password.js"></script>
-		<script src="temperature-converter/temperature.js"></script>
-		<script src="filtering-values/filter.js"></script>
-		<script src="employee-list-removal/employee.js"></script>
+		<?php getScript($exercise); ?>
 	</body>	
 </html>

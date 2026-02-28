@@ -1,5 +1,3 @@
-
-
 const passwordForm = document.querySelector('#passwordForm');
 const inputAreaPassword = document.querySelector('#passwordArea');
 

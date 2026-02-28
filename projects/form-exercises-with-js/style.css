@@ -11,22 +11,6 @@ inner-column {
 	flex-direction: column;
 }
 
-header {
-	@media(min-width: 900px) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
-footer {
-	@media(min-width: 900px) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 header a {
 	margin-bottom: 1em;
 	color: brown;
@@ -44,15 +28,6 @@ form {
 	border: 1px solid black;
 	border-radius: 10px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-button[type='submit'] {
-	margin-top: 20px;
-	border-radius: 15px;
-	border: 1px solid black;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	padding: 3px 7px;
-	cursor: pointer;
 }
 
 input {
@@ -112,33 +87,6 @@ span {
 	display: none;
 }
 
-section {
-  display: flex;
-  justify-content: center;     
-  gap: 0.5em;             
-  overflow-x: auto;    
-  padding: 0.5em;         
-  scroll-behavior: smooth;
-}
-
-section button {
-  flex: 0 0 auto;       
-}
-
-section::-webkit-scrollbar {
-  height: 5px;          
-}
-
-section::-webkit-scrollbar-thumb {
-  background: brown;
-  border-radius: 3px;
-}
-
-section::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 3px;
-}
-
 .radio {
 	display: flex;
 	align-items: center;
@@ -172,10 +120,6 @@ section::-webkit-scrollbar-track {
   transition: stroke-dashoffset 0.4s ease, stroke 0.3s ease;
 }
 
-.index-button {
-	padding: 0.5em 1em;
-}
-
 #liveFeedback {
 	display: flex;
 	align-items: center;
@@ -190,4 +134,69 @@ section::-webkit-scrollbar-track {
 
 #feedbackGraphic {
 	order: -1;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     
+  gap: 0.5em;             
+  overflow-y: scroll;
+  overflow-x: hidden; 
+  height: 40px;   
+  width: 95vw;
+  padding: 0.5em;         
+  scroll-behavior: smooth;
+}
+
+section button {
+  flex: 0 0 auto;       
+}
+
+.index-button {
+	padding: 0.5em 1em;
+}
+
+section a {
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+	cursor: pointer;
+	text-decoration: none;
+	background-color: lightgray;
+	color: black;
+
+	&:hover {
+		background-color: #C8C8C8;
+	}
+}
+
+.active:visited {
+    background-color: #BEBEBE;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+header a, footer a {
+	display: flex;
+	justify-content: center;
+}
+
+button[type='submit'] {
+	margin-top: 20px;
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 3px 7px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #F9F9F9;
+	}
 }
