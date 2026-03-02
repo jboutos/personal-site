@@ -1,124 +1,122 @@
-let todos = [];
-let count = 0;
-const form = document.querySelector('#todoForm');
-const field = document.querySelector('.field');
-let output = document.querySelector('output');
-let input = document.querySelector('#todo');
-const submitBtn = document.querySelector('#submit');
+const todoApp = {
 
-function add(content) {
-	let formattedTodo = {
-		id: `${count++}`,
-		content: content,
-		complete: false,
-	};
+	count : 0,
+	form : document.querySelector('#todoForm'),
+	field : document.querySelector('.field'),
+	output : document.querySelector('output'),
+	input : document.querySelector('#todo'),
+	submitBtn : document.querySelector('#submit'),
+	todos : [],
+	add: function(content) {
+		let formattedTodo = {
+			id: `${this.count++}`,
+			content: content,
+			complete: false,
+		};
 
-	todos.unshift(formattedTodo);
-	update();
-}
+		this.todos = [formattedTodo, ...this.todos];
+		//this.todos.unshift(formattedTodo);
+		this.update();
+	},
+	update: function() {
 
-function remove(id) {
-	//todos.splice(id, 1);
-	//delete todos[id];
-	todos = todos.filter(todo => todo.id !== id);
-	update();
-}
+		let html = '';
 
-function update() {
-
-	let html = '';
-
-	html += "<div class='container'>";
-	for (let i = 0; i < todos.length; i++) {
-		html += `<div class='todo-container'>
-		<div class='status'>
-    	<input class='complete' id='complete${todos[i].id}' type='checkbox' name='complete' data-id='${todos[i].id}' ${todos[i].complete ? 'checked' : ''}>
-    	<label for='complete${todos[i].id}'>Completed</label>
-  		</div>
-		<div class='task'><p>To do: </p><span>${todos[i].content}</span></div>
-		<button class='edit' type='button' name='edit' data-id='${todos[i].id}'>Edit</button>
-		<button class='remove-btn' type='button' data-id='${todos[i].id}'>Remove</button>
-		</div>`;
-	}
-	html += "</div>";
-
-	output.innerHTML = html;
-}
-
-function edit(id) { //caution i need to safeguard against null and empty
-
-	let editedTodo = prompt('Edit your todo:');
-
-	if (editedTodo.length === 0) {
-		alert('Your todo cannot be empty!');
-		edit();
-	}
-
-	if (editedTodo === null) {
-		return;
-	}
-
-	todos = todos.map(todo => {
-		if (todo.id === id) {
-			todo.content = editedTodo;
+		html += "<div class='container'>";
+		for (let i = 0; i < this.todos.length; i++) {
+			html += `<div class='todo-container'>
+			<div class='status'>
+	    	<input class='complete' id='complete${this.todos[i].id}' type='checkbox' name='complete' data-id='${this.todos[i].id}' ${this.todos[i].complete ? 'checked' : ''}>
+	    	<label for='complete${this.todos[i].id}'>Completed</label>
+	  		</div>
+			<div class='task'><p>To do: </p><span>${this.todos[i].content}</span></div>
+			<button class='edit' type='button' name='edit' data-id='${this.todos[i].id}'>Edit</button>
+			<button class='remove-btn' type='button' data-id='${this.todos[i].id}'>Remove</button>
+			</div>`;
 		}
-		return todo;
-	});
-	update();
-}
+		html += "</div>";
 
-function complete(id) {
-	todos = todos.map(todo => {
-		if (todo.id === id) {
-			todo.complete = true;
+		this.output.innerHTML = html;
+	},
+	remove: function(id) {
+		//todos.splice(id, 1);
+		//delete todos[id];
+		this.todos = this.todos.filter(todo => todo.id !== id);
+		this.update();
+	},
+	edit: function(id) { //caution i need to safeguard against null and empty
+
+		let editedTodo = prompt('Edit your todo:');
+
+		if (editedTodo.length === 0) {
+			alert('Your todo cannot be empty!');
+			this.edit();
 		}
-		return todo;
-	});
-	update();
-}
 
-function markUndone(id) {
-	todos = todos.map(todo => {
-		if (todo.id === id) {
-			todo.complete = false;
+		if (editedTodo === null) {
+			return;
 		}
-		return todo;
-	});
-	update();
-}
 
-submitBtn.addEventListener('click', function(event) {
-	event.preventDefault();
-	let content = input.value;
+		this.todos = this.todos.map(todo => {
+			if (todo.id === id) {
+				todo.content = editedTodo;
+			}
+			return todo;
+		});
+		this.update();
+	},
+	complete: function(id) {
+		this.todos = this.todos.map(todo => {
+			if (todo.id === id) {
+				todo.complete = true;
+			}
+			return todo;
+		});
+		this.update();
+	},
+	markUndone: function(id) {
+		this.todos = this.todos.map(todo => {
+			if (todo.id === id) {
+				todo.complete = false;
+			}
+			return todo;
+		});
+		this.update();
+	},
+	initEvents: function() {
+      this.submitBtn.addEventListener('click', (event) => {
+         event.preventDefault();
+         let content = this.input.value;
+         if (content.length === 0) {
+            alert('Input cannot be empty!');
+            return;
+         } else {
+         	this.add(content);
+         }
+      });
 
-	if (content.length === 0) {
-		alert('Input cannot be empty!');
-		return;
-	} else {
-		add(content);
-	}
-});
+      this.output.addEventListener('click', (event) => {
+         if (event.target.classList.contains('remove-btn')) {
+		      const idToRemove = event.target.getAttribute('data-id'); //event.taget.dataset.id;
+		      this.remove(idToRemove);
+		   }
 
-output.addEventListener('click', function(event) {
+		   if (event.target.classList.contains('edit')) {
+		      const idToAlter = event.target.getAttribute('data-id');
+		      this.edit(idToAlter);
+		   }
 
-   if (event.target.classList.contains('remove-btn')) {
-      const idToRemove = event.target.getAttribute('data-id'); //event.taget.dataset.id;
-      remove(idToRemove);
+		   if (event.target.classList.contains('complete')) {
+		      const idState = event.target.getAttribute('data-id');
+
+		      if (event.target.checked) {
+			      this.complete(idState);
+			   } else {
+			      this.markUndone(idState);
+			   }
+		   }
+      });
    }
+};
 
-   if (event.target.classList.contains('edit')) {
-      const idToAlter = event.target.getAttribute('data-id');
-      edit(idToAlter);
-   }
-
-   if (event.target.classList.contains('complete')) {
-      const idState = event.target.getAttribute('data-id');
-
-      if (event.target.checked) {
-	      complete(idState);
-	   } else {
-	      markUndone(idState);
-	   }
-   }
-});
-
+todoApp.initEvents();
