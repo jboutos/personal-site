@@ -13,7 +13,7 @@ function add(content) {
 		complete: false,
 	};
 
-	todos.push(formattedTodo);
+	todos.unshift(formattedTodo);
 	update();
 }
 
@@ -26,17 +26,23 @@ function remove(id) {
 
 function update() {
 
-	output.innerHTML = '';
+	let html = '';
 
+	html += "<div class='container'>";
 	for (let i = 0; i < todos.length; i++) {
-		output.innerHTML += `<div>${todos[i].content}</div>
-		<div>
+		html += `<div class='todo-container'>
+		<div class='status'>
     	<input class='complete' id='complete${todos[i].id}' type='checkbox' name='complete' data-id='${todos[i].id}' ${todos[i].complete ? 'checked' : ''}>
-    	<label for='complete${todos[i].id}''>Completed</label>
+    	<label for='complete${todos[i].id}'>Completed</label>
   		</div>
+		<div class='task'><p>To do: </p><span>${todos[i].content}</span></div>
 		<button class='edit' type='button' name='edit' data-id='${todos[i].id}'>Edit</button>
-		<button class='remove-btn' type='button' data-id='${todos[i].id}'>Remove</button>`;
+		<button class='remove-btn' type='button' data-id='${todos[i].id}'>Remove</button>
+		</div>`;
 	}
+	html += "</div>";
+
+	output.innerHTML = html;
 }
 
 function edit(id) { //caution i need to safeguard against null and empty

@@ -103,6 +103,14 @@
     "description": "I had to create some forms using Javascript!",
     "target": "_blank"
   },
+  "tda": {
+    "title": "Todo App",
+    "image": "images/sticky.webp",
+    "link": "projects/todo-app/index.html",
+    "id": 15,
+    "description": "I got to build a small todo app!",
+    "target": "_blank"
+  },
   "archived": {
     "title": "Archive",
     "image": "images/archives1.png",
