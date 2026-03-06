@@ -235,18 +235,6 @@ function TodoAppConstructor() {
 		this.update();
 	}
 
-	this.markUndone = function(id) {
-		this.todos = this.todos.map(todo => {
-			if (todo.id === id) {
-				todo.complete = false;
-			}
-			return todo;
-		});
-
-		this.storeTodos(this.todos);
-		this.update();
-	}
-
 	this.initEvents = function() {
       this.submitBtn.addEventListener('click', (event) => {
          event.preventDefault();
@@ -293,6 +281,8 @@ TodoAppConstructor.prototype.markUndone = function(id) {
 		}
 		return todo;
 	});
+
+	this.storeTodos(this.todos);
 	this.update();
 }
 
