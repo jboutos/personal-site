@@ -140,11 +140,12 @@ function TodoAppConstructor() {
 	//			complete: false, 
 	// };
 
-	this.count = Number(this.data.getItem('count') ?? 0);
+	//this.count = Number(this.data.getItem('count') ?? 0);
+	this.count = Number(this.data.getItem('count' ?? 0));
 	
-	this.updateCount = function(count) { 
-		this.data.setItem('count', count);
-	}
+	// this.updateCount = function(count) { 
+	// 	this.data.setItem('count', count);
+	// }
 
 	this.add = function(content) {
 		let formattedTodo = {
@@ -153,7 +154,8 @@ function TodoAppConstructor() {
 			complete: false,
 		};
 
-		this.updateCount(this.count);
+		//this.updateCount(this.count);
+		this.data.setItem('count', this.count);
 		this.todos = [formattedTodo, ...this.todos];
 		this.storeTodos(this.todos);
 		this.update();
