@@ -122,86 +122,268 @@
 
 // todoApp.initEvents();
 
-function TodoAppConstructor() {
-	this.form = document.querySelector('#todoForm');
-	this.field = document.querySelector('.field');
-	this.output = document.querySelector('output');
-	this.input = document.querySelector('#todo');
-	this.submitBtn = document.querySelector('#submit');
-	this.todos = [];
-	this.data = localStorage;
+// function TodoAppConstructor() {
+// 	this.form = document.querySelector('#todoForm');
+// 	this.field = document.querySelector('.field');
+// 	this.output = document.querySelector('output');
+// 	this.input = document.querySelector('#todo');
+// 	this.submitBtn = document.querySelector('#submit');
+// 	this.todos = [];
+// 	this.data = localStorage;
+// 	this.count = Number(this.data.getItem('count' ?? 0));
 
-	// this.count = Number(this.data.getItem('count') ?? 0); 
-	// this.data.setItem('count', this.count); 
-	// this.add = function(content) { 
-	// 	let formattedTodo = { 
-	//			id: ${this.count++}, 
-	//			content: content, 
-	//			complete: false, 
-	// };
+// 	// this.count = Number(this.data.getItem('count') ?? 0); 
+// 	// this.data.setItem('count', this.count); 
+// 	// this.add = function(content) { 
+// 	// 	let formattedTodo = { 
+// 	//			id: ${this.count++}, 
+// 	//			content: content, 
+// 	//			complete: false, 
+// 	// };
 
-	//this.count = Number(this.data.getItem('count') ?? 0);
-	this.count = Number(this.data.getItem('count' ?? 0));
-	
-	// this.updateCount = function(count) { 
-	// 	this.data.setItem('count', count);
-	// }
+// 	this.add = function(content) {
+// 		let formattedTodo = {
+// 			id: `${this.count++}`, // this is updating the variable in memory, it will not update the localStorage if it's set as a variable there
+// 			content: content,
+// 			complete: false,
+// 		};
 
-	this.add = function(content) {
-		let formattedTodo = {
-			id: `${this.count++}`, // this is updating the variable in memory, it will not update the localStorage if it's set as a variable there
-			content: content,
-			complete: false,
-		};
+// 		this.data.setItem('count', this.count);
+// 		this.todos = [formattedTodo, ...this.todos];
+// 		this.storeTodos(this.todos);
+// 		this.update();
+// 	}
 
-		//this.updateCount(this.count);
+// 	this.storeTodos = function(array) {
+// 		this.data.setItem('todos', JSON.stringify(array));
+// 	}
+
+// 	this.restoreTodos = function() {
+// 		const storedTodos = this.data.getItem('todos');
+
+// 		if (storedTodos) {
+// 			this.todos = JSON.parse(storedTodos);
+// 			this.update();
+// 		}
+// 	}
+
+// 	this.update = function() {
+// 		let html = '';
+
+// 		html += "<div class='container'>";
+// 		for (let i = 0; i < this.todos.length; i++) {
+// 			html += `<div class='todo-container'>
+// 			<div class='status'>
+// 	    	<input class='complete' id='complete${this.todos[i].id}' type='checkbox' name='complete' data-id='${this.todos[i].id}' ${this.todos[i].complete ? 'checked' : ''}>
+// 	    	<label for='complete${this.todos[i].id}'>Completed</label>
+// 	  		</div>
+// 			<div class='task'><p>To do: </p><span>${this.todos[i].content}</span></div>
+// 			<button class='edit' type='button' name='edit' data-id='${this.todos[i].id}'>Edit</button>
+// 			<button class='remove-btn' type='button' data-id='${this.todos[i].id}'>Remove</button>
+// 			</div>`;
+// 		}
+// 		html += "</div>";
+
+// 		this.output.innerHTML = html;
+// 	}
+
+// 	this.remove = function(id) {
+
+// 		this.todos = this.todos.filter(todo => todo.id !== id);
+// 		this.storeTodos(this.todos);
+// 		this.update();
+// 	}
+
+// 	this.edit = function(id) { 
+
+// 		let editedTodo = prompt('Edit your todo:');
+
+// 		if (editedTodo.length === 0) {
+// 			alert('Your todo cannot be empty!');
+// 			this.edit();
+// 		}
+
+// 		if (editedTodo === null) {
+// 			return;
+// 		}
+
+// 		this.todos = this.todos.map(todo => {
+// 			if (todo.id === id) {
+// 				todo.content = editedTodo;
+// 			}
+// 			return todo;
+// 		});
+
+// 		this.storeTodos(this.todos);
+// 		this.update();
+// 	}
+
+// 	this.complete = function(id) {
+// 		this.todos = this.todos.map(todo => {
+// 			if (todo.id === id) {
+// 				todo.complete = true;
+// 			}
+// 			return todo;
+// 		});
+
+// 		this.storeTodos(this.todos);
+// 		this.update();
+// 	}
+
+// 	this.initEvents = function() {
+//       this.submitBtn.addEventListener('click', (event) => {
+//          event.preventDefault();
+//          let content = this.input.value.trim();
+//          if (content.length === 0) {
+//             alert('Input cannot be empty!');
+//             return;
+//          } else {
+//          	this.add(content);
+//          	this.input.value = '';
+//          }
+//       });
+
+//       this.output.addEventListener('click', (event) => {
+//          if (event.target.classList.contains('remove-btn')) {
+// 		      const idToRemove = event.target.getAttribute('data-id'); 
+// 		      this.remove(idToRemove);
+// 		   }
+
+// 		   if (event.target.classList.contains('edit')) {
+// 		      const idToAlter = event.target.getAttribute('data-id');
+// 		      this.edit(idToAlter);
+// 		   }
+
+// 		   if (event.target.classList.contains('complete')) {
+// 		      const idState = event.target.getAttribute('data-id');
+
+// 		      if (event.target.checked) {
+// 			      this.complete(idState);
+// 			   } else {
+// 			      this.markUndone(idState);
+// 			   }
+// 		   }
+//       });
+//    }
+// }
+
+// const app = new TodoAppConstructor();
+
+// TodoAppConstructor.prototype.markUndone = function(id) {
+// 	this.todos = this.todos.map(todo => {
+// 		if (todo.id === id) {
+// 			todo.complete = false;
+// 		}
+// 		return todo;
+// 	});
+
+// 	this.storeTodos(this.todos);
+// 	this.update();
+// }
+
+// app.restoreTodos();
+// app.initEvents();
+
+class Todo {
+
+	constructor(id, content) {
+		this.id = id;
+		this.content = content;
+		this.complete = false;
+	}
+
+	toggle() {
+	   this.complete = !this.complete;
+	}
+
+	edit(newContent) { 
+		this.content = newContent; 
+	}
+}
+
+class TodoApp {
+
+	constructor() {
+		this.todos = [];
+		this.data = localStorage;
+		this.count = this.data.getItem('count') ? Number(this.data.getItem('count')) : 0;
+
+		this.form = document.querySelector('#todoForm');
+		this.field = document.querySelector('.field');
+		this.output = document.querySelector('output');
+		this.input = document.querySelector('#todo');
+		this.submitBtn = document.querySelector('#submit');
+
+		this.restoreTodos();
+		this.initEvents();
+	}
+
+	add(content) {
+
+		// let formattedTodo = {
+		// 	id: `${this.count++}`, // this is updating the variable in memory, it will not update the localStorage if it's set as a variable there
+		// 	content: content,
+		// 	complete: false,
+		// };
+
+		let todo = new Todo(`${this.count++}`, content);
+
 		this.data.setItem('count', this.count);
-		this.todos = [formattedTodo, ...this.todos];
+		this.todos = [todo, ...this.todos];
 		this.storeTodos(this.todos);
 		this.update();
 	}
 
-	this.storeTodos = function(array) {
+	storeTodos(array) {
 		this.data.setItem('todos', JSON.stringify(array));
 	}
 
-	this.restoreTodos = function() {
+	restoreTodos() {
 		const storedTodos = this.data.getItem('todos');
 
 		if (storedTodos) {
 			this.todos = JSON.parse(storedTodos);
+
+			this.todos = this.todos.map(todo => { // need to turn the todos back into todo class instances for todo class methods to work after restoring 
+				let newTodo = new Todo(todo.id, todo.content);
+				newTodo.complete = todo.complete;
+				return newTodo;
+			});
+
 			this.update();
 		}
 	}
 
-	this.update = function() {
+	update() {
+
+		const { todos, output } = this; // destructuring
 		let html = '';
 
 		html += "<div class='container'>";
-		for (let i = 0; i < this.todos.length; i++) {
+		for (let i = 0; i < todos.length; i++) {
 			html += `<div class='todo-container'>
 			<div class='status'>
-	    	<input class='complete' id='complete${this.todos[i].id}' type='checkbox' name='complete' data-id='${this.todos[i].id}' ${this.todos[i].complete ? 'checked' : ''}>
-	    	<label for='complete${this.todos[i].id}'>Completed</label>
+	    	<input class='complete' id='complete${todos[i].id}' type='checkbox' name='complete' data-id='${todos[i].id}' ${todos[i].complete ? 'checked' : ''}>
+	    	<label for='complete${todos[i].id}'>Completed</label>
 	  		</div>
-			<div class='task'><p>To do: </p><span>${this.todos[i].content}</span></div>
-			<button class='edit' type='button' name='edit' data-id='${this.todos[i].id}'>Edit</button>
-			<button class='remove-btn' type='button' data-id='${this.todos[i].id}'>Remove</button>
+			<div class='task'><p>To do: </p><span>${todos[i].content}</span></div>
+			<button class='edit' type='button' name='edit' data-id='${todos[i].id}'>Edit</button>
+			<button class='remove-btn' type='button' data-id='${todos[i].id}'>Remove</button>
 			</div>`;
 		}
 		html += "</div>";
 
-		this.output.innerHTML = html;
+		output.innerHTML = html;
 	}
 
-	this.remove = function(id) {
+	remove(id) {
 
 		this.todos = this.todos.filter(todo => todo.id !== id);
 		this.storeTodos(this.todos);
 		this.update();
 	}
 
-	this.edit = function(id) { 
+	edit(id) { 
 
 		let editedTodo = prompt('Edit your todo:');
 
@@ -216,7 +398,7 @@ function TodoAppConstructor() {
 
 		this.todos = this.todos.map(todo => {
 			if (todo.id === id) {
-				todo.content = editedTodo;
+				todo.edit(editedTodo);
 			}
 			return todo;
 		});
@@ -225,10 +407,10 @@ function TodoAppConstructor() {
 		this.update();
 	}
 
-	this.complete = function(id) {
+	complete(id) {
 		this.todos = this.todos.map(todo => {
 			if (todo.id === id) {
-				todo.complete = true;
+				todo.toggle();
 			}
 			return todo;
 		});
@@ -237,7 +419,7 @@ function TodoAppConstructor() {
 		this.update();
 	}
 
-	this.initEvents = function() {
+	initEvents() {
       this.submitBtn.addEventListener('click', (event) => {
          event.preventDefault();
          let content = this.input.value.trim();
@@ -264,29 +446,13 @@ function TodoAppConstructor() {
 		   if (event.target.classList.contains('complete')) {
 		      const idState = event.target.getAttribute('data-id');
 
-		      if (event.target.checked) {
-			      this.complete(idState);
-			   } else {
-			      this.markUndone(idState);
-			   }
+		      this.complete(idState);
 		   }
       });
    }
 }
 
-const app = new TodoAppConstructor();
+let todo = new TodoApp;
 
-TodoAppConstructor.prototype.markUndone = function(id) {
-	this.todos = this.todos.map(todo => {
-		if (todo.id === id) {
-			todo.complete = false;
-		}
-		return todo;
-	});
-
-	this.storeTodos(this.todos);
-	this.update();
-}
-
-app.restoreTodos();
-app.initEvents();
+// todo.restoreTodos(); // moved thse in the constructor
+// todo.initEvents();

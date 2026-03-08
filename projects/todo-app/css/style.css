@@ -14,10 +14,14 @@ body {
 }
 
 .field {
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 0.5em;
 }
 
 .field input {
+	max-width: 300px;
+	margin-top: 0.3em;
 	border: 2px solid black;
 }
 
