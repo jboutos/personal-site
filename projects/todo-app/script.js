@@ -299,20 +299,34 @@ class Todo {
 	edit(newContent) { 
 		this.content = newContent; 
 	}
+
+	render() {
+		const { id, complete, content } = this;
+
+		return `<div class='todo-container'>
+			<div class='status'>
+	    	<input class='complete' id='complete${id}' type='checkbox' name='complete' data-id='${id}' ${complete ? 'checked' : ''}>
+	    	<label for='complete${id}'>Completed</label>
+	  		</div>
+			<div class='task'><p>To do: </p><span>${content}</span></div>
+			<button class='edit' type='button' name='edit' data-id='${id}'>Edit</button>
+			<button class='remove-btn' type='button' data-id='${id}'>Remove</button>
+			</div>`;
+	}
 }
 
 class TodoApp {
 
-	constructor() {
+	constructor() { // runs automatically when calling the class
 		this.todos = [];
 		this.data = localStorage;
 		this.count = this.data.getItem('count') ? Number(this.data.getItem('count')) : 0;
 
 		this.form = document.querySelector('#todoForm');
 		this.field = document.querySelector('.field');
-		this.output = document.querySelector('output');
 		this.input = document.querySelector('#todo');
 		this.submitBtn = document.querySelector('#submit');
+		this.output = document.querySelector('output');
 
 		this.restoreTodos();
 		this.initEvents();
@@ -361,15 +375,7 @@ class TodoApp {
 
 		html += "<div class='container'>";
 		for (let i = 0; i < todos.length; i++) {
-			html += `<div class='todo-container'>
-			<div class='status'>
-	    	<input class='complete' id='complete${todos[i].id}' type='checkbox' name='complete' data-id='${todos[i].id}' ${todos[i].complete ? 'checked' : ''}>
-	    	<label for='complete${todos[i].id}'>Completed</label>
-	  		</div>
-			<div class='task'><p>To do: </p><span>${todos[i].content}</span></div>
-			<button class='edit' type='button' name='edit' data-id='${todos[i].id}'>Edit</button>
-			<button class='remove-btn' type='button' data-id='${todos[i].id}'>Remove</button>
-			</div>`;
+			html += todos[i].render();
 		}
 		html += "</div>";
 
@@ -454,5 +460,5 @@ class TodoApp {
 
 let todo = new TodoApp;
 
-// todo.restoreTodos(); // moved thse in the constructor
+// todo.restoreTodos(); // moved these in the constructor
 // todo.initEvents();
