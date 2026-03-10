@@ -43,11 +43,11 @@ label {
 	border: 2px solid black;
 	padding: 10px;
 	padding-top: 40px;
-	min-width: 200px;
+	min-width: 250px;
 
 	position: relative;
 
-	background-color: #ce706e;
+	/*background-color: #ce706e;*/
 }
 
 .complete {
@@ -66,7 +66,7 @@ label {
 	left: -10px;
 	transform: rotate(-9deg);
 
-	background-color: #f7e5a2;
+	/*background-color: #f7e5a2;*/
 	border: 1px solid black;
 	border-radius: 2px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
@@ -93,4 +93,13 @@ button {
 	&:hover {
 		background-color: lightgray;
 	}
+}
+
+.date {
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	padding: 0.3em;
 }

@@ -290,6 +290,9 @@ class Todo {
 		this.id = id;
 		this.content = content;
 		this.complete = false;
+		this.dateCreated = new Date();
+		this.color = this.randomizeColor();
+		this.color2 = this.randomizeColor();
 	}
 
 	toggle() {
@@ -301,17 +304,33 @@ class Todo {
 	}
 
 	render() {
-		const { id, complete, content } = this;
+		const { id, complete, content, dateCreated, color, color2 } = this;
 
-		return `<div class='todo-container'>
-			<div class='status'>
+		return `<div class='todo-container' style='background-color:${color}'>
+			<div class='status' style='background-color:${color2}'>
 	    	<input class='complete' id='complete${id}' type='checkbox' name='complete' data-id='${id}' ${complete ? 'checked' : ''}>
 	    	<label for='complete${id}'>Completed</label>
 	  		</div>
+			<div class='date'>
+			<small>${dateCreated.toLocaleDateString()}</small>
+			</div>
 			<div class='task'><p>To do: </p><span>${content}</span></div>
 			<button class='edit' type='button' name='edit' data-id='${id}'>Edit</button>
 			<button class='remove-btn' type='button' data-id='${id}'>Remove</button>
 			</div>`;
+	}
+
+   randomizeColor() {
+		const colors = [
+			'#ce706e',
+			'#f7e5a2',
+			'#a7d3a6',
+			'#a6c8e0',
+			'#e6b8d6',
+			'#f2b880'
+		];
+
+		return colors[Math.floor(Math.random() * colors.length)];
 	}
 }
 
@@ -323,9 +342,7 @@ class TodoApp {
 		this.count = this.data.getItem('count') ? Number(this.data.getItem('count')) : 0;
 
 		this.form = document.querySelector('#todoForm');
-		this.field = document.querySelector('.field');
 		this.input = document.querySelector('#todo');
-		this.submitBtn = document.querySelector('#submit');
 		this.output = document.querySelector('output');
 
 		this.restoreTodos();
@@ -426,7 +443,7 @@ class TodoApp {
 	}
 
 	initEvents() {
-      this.submitBtn.addEventListener('click', (event) => {
+      this.form.addEventListener('submit', (event) => {
          event.preventDefault();
          let content = this.input.value.trim();
          if (content.length === 0) {
