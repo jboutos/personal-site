@@ -321,14 +321,7 @@ class Todo {
 	}
 
    randomizeColor() {
-		const colors = [
-			'#ce706e',
-			'#f7e5a2',
-			'#a7d3a6',
-			'#a6c8e0',
-			'#e6b8d6',
-			'#f2b880'
-		];
+		const colors = ['#ce706e','#f7e5a2','#a7d3a6','#a6c8e0','#e6b8d6','#f2b880'];
 
 		return colors[Math.floor(Math.random() * colors.length)];
 	}
