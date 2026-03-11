@@ -1,72 +1,110 @@
-section {
-	display: grid;
-	grid-template-columns: 1fr;
+.resume {
 
-	@media (min-width: 570px) {
-		grid-template-columns: 0.25fr 1fr;
-		gap: 2em;
+	--base: hsl(48 0% 93.7%);
+
+	@media (prefers-color-scheme: dark) {
+	   --base: hsl(230 59.8% 40%);
 	}
-}
 
-h1, h3 {
-	font-family: 'Oswald', sans-serif;
-}
+	background-color: var(--base);
 
-p, li {
-	font-family: 'Quattrocento', serif;
-}
-
-picture {
-	display: block;
-}
-
-img {
-	display: block;
-	width: 100%;
-}
-
-.profile img {
-	width: 150px;
-
-	margin-top: 26px;
-}
-
-.contact img {
-	width: 20px;
-}
-
-right-panel {
-	padding: 1em;
-}
-
-left-panel {
-	display: block;
-	background-color: hsl(189 69.7% 70.1%);
-
-	padding: 1em;
-
-
-
-	@media (min-width: 570px) {
-		height: 100vh;
+	picture {
+		display: block;
 	}
-}
 
-.contact {
-	@media (min-width: 570px) {
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	resume, left-panel, right-panel, qualifications, education, personal-info, experience {
+		display: block;
+	}
+
+	resume {
+		margin-top: 8em;
+	}
+
+	h1, h2, h3, h4, p, ul, li {
+		text-align: start;
+	}
+
+	.attention-voice {
+		font-size: 2rem;
+		margin: 1em 0 0.3em 0;
+		padding: 0;
+
+		@media (min-width: 570px) {
+			margin: 0 0 0.3em 0;
+		}
+	}
+
+	.resume-heading {
+		margin:1.5em 0 0.5em 0;
+	}
+
+	li, p {
+		max-width: 50ch;
+	}
+
+	li + li {
+		margin-top: 0.5em;
+	}
+
+	div + div {
+		margin-top: 0.5em;
+	}
+
+	ul {
+	   display: block;
+	   width: 100%;
+	   list-style-position: outside;
+	   margin-left: 0;
+	   margin-right: 0;
+	   padding-left: 0.9em;
+	}
+
+	.calm-voice {
+		margin: 0;
+	}
+
+	.education + .education {
+		margin-top: 0.5em;
+	}
+
+	section {
 		display: flex;
-		align-items: center;
-		gap: 0.7em;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media (min-width: 570px) {
+			display: grid;
+			grid-template-columns: 0.25fr auto;
+			justify-content: center;
+			gap: 4em;
+		}
 	}
-}
 
-qualifications {
-	display: block;
+	.profile {
+		width: 200px;
+	}
 
-	margin-top: 2em;
-}
+	.contact img {
+		width: 20px;
+	}
 
-ul li {
-	margin-top: 0.6em;
-	max-width: 60ch;
+	left-panel {
+		display: block;
+		/*background-color: hsl(189 69.7% 70.1%);*/
+
+		@media (min-width: 570px) {
+			height: 100vh;
+		}
+	}
+
+	.contact {
+		display: flex;
+		gap: 1em;
+	}
 }

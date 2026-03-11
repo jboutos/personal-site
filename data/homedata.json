@@ -7,15 +7,15 @@
   },
   "substack": {
     "title": "My substack",
-    "image": "images/substack.png",
+    "image": "images/substack2.png",
     "link": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
     "target": "_blank"
   },
   "resume": {
     "title": "Resume",
     "image": "images/resume.png",
-    "link": "resume.php",
-    "target": "_blank"
+    "link": "?page=resume",
+    "target": "_self"
   }
 }
 

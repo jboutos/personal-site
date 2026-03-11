@@ -1,5 +1,25 @@
 <!doctype html>
 <html lang='en'>
+<?php
+	$exercise = $_GET['ex'] ?? null;
+
+	function pageSelect($exercise) {
+		$exercises = ['calculator', 'greeting', 'character-counting', 'quote-maker', 'madlib-creator', 'retirement-calculator', 'area-calculator', 'pizza-division',
+		 'paint-calculator', 'checkout-calculator', 'currency-conversion', 'simple-interest-calculator', 'compound-interest-calculator', 'tax-calculator', 'password-validator', 'driving-age-calculator','blood-alcohol-calculator', 'temperature-converter', 'bmi-calculator', '404'];
+
+		return in_array($exercise, $exercises) ? $exercise : '404';
+	}
+
+	function getTemplate($exercise) {
+
+		if (!$exercise) {
+      	return;
+    	}
+
+		$exercise = pageSelect($exercise);
+		include($exercise . '/' . $exercise . '.php');
+	}
+?>
 	<head>
 		<meta charset='utf-8'>
 		<title>Php practice</title>
@@ -20,85 +40,29 @@
 			</header>
 
 			<section>
-				<button data-target='ex1'>Calculator</button>
-				<button data-target='ex2'>Greeting</button>
-				<button data-target='ex3'>Character Counting</button>
-				<button data-target='ex4'>Quote Maker</button>
-				<button data-target='ex5'>Madlib Creator</button>
-				<button data-target='ex6'>Retirement Calculator</button>
-				<button data-target='ex7'>Area Calculator</button>
-				<button data-target='ex8'>Pizza Division</button>
-				<button data-target='ex9'>Paint Calculator</button>
-				<button data-target='ex10'>Checkout Calculator</button>
-				<button data-target='ex11'>Currency Conversion</button>
-				<button data-target='ex12'>Simple Interest Calculator</button>
-				<button data-target='ex13'>Compound Interest Calculator</button>
-				<button data-target='ex14'>Tax Calculator</button>
-				<button data-target='ex15'>Password Validator</button>
-				<button data-target='ex16'>Driving Age Calculator</button>
-				<button data-target='ex17'>Blood Alcohol Calculator</button>
-				<button data-target='ex18'>Temperature Converter</button>
-				<button data-target='ex19'>BMI Calculator</button>
+				<a href='?ex=calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'calculator' ? 'active' : ''; ?>'>Calculator</a>
+				<a href='?ex=greeting' class='index-button <?= ($_GET['ex'] ?? '') === 'greeting' ? 'active' : ''; ?>'>Greeting</a>
+				<a href='?ex=character-counting' class='index-button <?= ($_GET['ex'] ?? '') === 'character-counting' ? 'active' : ''; ?>'>Character Counting</a>
+				<a href='?ex=quote-maker' class='index-button <?= ($_GET['ex'] ?? '') === 'quote-maker' ? 'active' : ''; ?>'>Quote Maker</a>
+				<a href='?ex=madlib-creator' class='index-button <?= ($_GET['ex'] ?? '') === 'madlib-creator' ? 'active' : ''; ?>'>Madlib Creator</a>
+				<a href='?ex=retirement-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'retirement-calculator' ? 'active' : ''; ?>'>Retirement Calculator</a>
+				<a href='?ex=area-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'area-calculator' ? 'active' : ''; ?>'>Area Calculator</a>
+				<a href='?ex=pizza-division' class='index-button <?= ($_GET['ex'] ?? '') === 'pizza-division' ? 'active' : ''; ?>'>Pizza Division</a>
+				<a href='?ex=paint-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'paint-calculator' ? 'active' : ''; ?>'>Paint Calculator</a>
+				<a href='?ex=checkout-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'checkout-calculator' ? 'active' : ''; ?>'>Checkout Calculator</a>
+				<a href='?ex=simple-currency-conversion' class='index-button <?= ($_GET['ex'] ?? '') === 'currency-conversion' ? 'active' : ''; ?>'>Currency Conversion</a>
+				<a href='?ex=simple-interest-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'simple-interest-calculator' ? 'active' : ''; ?>'>Simple Interest Calculator</a>
+				<a href='?ex=compound-interest-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'compound-interest-calculator' ? 'active' : ''; ?>'>Compound Interest Calculator</a>
+				<a href='?ex=tax-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'tax-calculator' ? 'active' : ''; ?>'>Tax Calculator</a>
+				<a href='?ex=password-validator' class='index-button <?= ($_GET['ex'] ?? '') === 'password-validator' ? 'active' : ''; ?>'>Password Validator</a>
+				<a href='?ex=driving-age-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'driving-age-calculator' ? 'active' : ''; ?>'>Driving Age Calculator</a>
+				<a href='?ex=blood-alcohol-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'blood-alcohol-calculator' ? 'active' : ''; ?>'>Blood Alcohol Calculator</a>
+				<a href='?ex=temperature-converter' class='index-button <?= ($_GET['ex'] ?? '') === 'temperature-converter' ? 'active' : ''; ?>'>Temperature Converter</a>
+				<a href='?ex=bmi-calculator' class='index-button <?= ($_GET['ex'] ?? '') === 'bmi-calculator' ? 'active' : ''; ?>'>BMI Calculator</a>
 			</section>
 
 			<partials>
-				<div id='ex1' class='<?php echo ($_GET['show'] ?? '') === 'ex1' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-1/calculator.php') ?>
-				</div>
-				<div id='ex2' class='<?php echo ($_GET['show'] ?? '') === 'ex2' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-2/greeting.php') ?>
-				</div>
-				<div id='ex3' class='<?php echo ($_GET['show'] ?? '') === 'ex3' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-3/character-counting.php') ?>
-				</div>
-				<div id='ex4' class='<?php echo ($_GET['show'] ?? '') === 'ex4' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-4/quote-maker.php') ?>
-				</div>
-				<div id='ex5' class='<?php echo ($_GET['show'] ?? '') === 'ex5' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-5/madlib-creator.php') ?>
-				</div>
-				<div id='ex6' class='<?php echo ($_GET['show'] ?? '') === 'ex6' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-6/retirement-calculator.php') ?>
-				</div>
-				<div id='ex7' class='<?php echo ($_GET['show'] ?? '') === 'ex7' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-7/area-calculator.php') ?>
-				</div>
-				<div id='ex8' class='<?php echo ($_GET['show'] ?? '') === 'ex8' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-8/pizza-division.php') ?>
-				</div>
-				<div id='ex9' class='<?php echo ($_GET['show'] ?? '') === 'ex9' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-9/paint-calculator.php') ?>
-				</div>
-				<div id='ex10' class='<?php echo ($_GET['show'] ?? '') === 'ex10' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-10/checkout-calculator.php') ?>
-				</div>
-				<div id='ex11' class='<?php echo ($_GET['show'] ?? '') === 'ex11' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-11/currency-conversion.php') ?>
-				</div>
-				<div id='ex12' class='<?php echo ($_GET['show'] ?? '') === 'ex12' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-12/simple-interest-calculator.php') ?>
-				</div>
-				<div id='ex13' class='<?php echo ($_GET['show'] ?? '') === 'ex13' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-13/compound-interest-calculator.php') ?>
-				</div>
-				<div id='ex14' class='<?php echo ($_GET['show'] ?? '') === 'ex14' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-14/tax-calculator.php') ?>
-				</div>
-				<div id='ex15' class='<?php echo ($_GET['show'] ?? '') === 'ex15' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-15/password-validator.php') ?>
-				</div>
-				<div id='ex16' class='<?php echo ($_GET['show'] ?? '') === 'ex16' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-test/driving-age-calculator.php') ?>
-				</div>
-				<div id='ex17' class='<?php echo ($_GET['show'] ?? '') === 'ex17' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-17/blood-alcohol-calculator.php') ?>
-				</div>
-				<div id='ex18' class='<?php echo ($_GET['show'] ?? '') === 'ex18' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-18/temperature-converter.php') ?>
-				</div>
-				<div id='ex19' class='<?php echo ($_GET['show'] ?? '') === 'ex19' ? '' : 'hidden'; ?> form'>
-					<?php include('exercise-19/bmi-calculator.php') ?>
-				</div>
+				<?php getTemplate($exercise); ?>
 			</partials>
 
 			<footer>

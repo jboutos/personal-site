@@ -24,7 +24,7 @@
 
 	function pageSelect($page) {
 		$pages = ['home', 'projects', 'foods', 'goals', 'details', 'archive', 'contact',
-		'homepage', 'journal', 'welcome', 'error404', 'case'];
+		'homepage', 'journal', 'welcome', 'error404', 'resume', 'case'];
 
 		return in_array($page, $pages) ? $page : 'error404';
 	}

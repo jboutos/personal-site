@@ -1,23 +1,25 @@
 .projects {
 
-	--color: hsl(240 100% 40.2%);
-	--charged: hsl(0 67.9% 41.6%);
-	--base: hsl(188 45.3% 81.4%);
-	--hover: hsl(180, 92%, 40%);
-	--circle: hsla(240 100% 40.2% / 0.4);
+  --color: hsl(230 59.8% 40%);
+  --link: hsl(240 3.3% 30%);
+  --list: hsl(210 12.6% 50.2%);
+  --base: hsl(48 0% 93.7%);
+  --hover: hsl(225 46.1% 52.7%);
+  --circle: hsl(230 59.8% 40% / 0.4);
 
-	@media (prefers-color-scheme: dark) {
-		--color: hsl(188 45.3% 81.4%);
-		--charged: hsl(0 67.9% 60.6%);
-		--base: hsl(240 100% 40.2%);
-		--hover: hsl(180, 92%, 20%);
-		--circle: hsl(188 45.3% 81.4% / 0.4);
-	}
+  @media (prefers-color-scheme: dark) {
+    --color: hsl(240 61.3% 93.9%);
+    --link: hsl(240 61.3% 93.9%);
+    --list: hsl(332 82.4% 55.9%);
+    --base: hsl(230 59.8% 40%);
+    --hover: hsl(225 46.1% 32.7%);
+    --circle: hsl(240 61.3% 93.9% / 0.4);
+  }
 
 	background-color: var(--base);
 
 	h1.attention-voice {
-		color: var(--charged);
+		color: var(--color);
 	}
 
 	p, a, h2, li::marker, .circle {
@@ -49,7 +51,7 @@
 		max-width: 500px;
 	}
 
-	ul li:nth-child(9) img {
+	ul li:nth-child(6) img {
 	    object-fit: contain;
 	}
 

@@ -46,15 +46,6 @@ form {
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-button[type='submit'] {
-	margin-top: 20px;
-	border-radius: 15px;
-	border: 1px solid black;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	padding: 3px 7px;
-	cursor: pointer;
-}
-
 input {
 	border-radius: 13px;
 	border: 1px solid gray;
@@ -81,6 +72,7 @@ h3 {
 partials {
 	display: flex;
 	justify-content: center;
+	gap: 0.5em;
 
 	margin-top: 3em;
 }
@@ -112,9 +104,14 @@ span {
 }
 
 section {
-  display: flex;     
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     
   gap: 0.5em;             
-  overflow-x: auto;    
+  overflow-y: scroll;
+  overflow-x: hidden; 
+  height: 40px;   
+  width: 95vw;
   padding: 0.5em;         
   scroll-behavior: smooth;
 }
@@ -123,16 +120,50 @@ section button {
   flex: 0 0 auto;       
 }
 
-section::-webkit-scrollbar {
-  height: 5px;          
+.index-button {
+	padding: 0.5em 1em;
 }
 
-section::-webkit-scrollbar-thumb {
-  background: brown;
-  border-radius: 3px;
+section a {
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+	cursor: pointer;
+	text-decoration: none;
+	background-color: lightgray;
+	color: black;
+
+	&:hover {
+		background-color: #C8C8C8;
+	}
 }
 
-section::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 3px;
+.active:visited {
+    background-color: #BEBEBE;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+header a, footer a {
+	display: flex;
+	justify-content: center;
+}
+
+button[type='submit'] {
+	margin-top: 20px;
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 3px 7px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #F9F9F9;
+	}
 }

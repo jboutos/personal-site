@@ -1,4 +1,6 @@
 const move = document.getElementById("move");
+const form = document.querySelector('form');
+const spinner = document.querySelector('#spinner');
 
 document.body.onpointermove = event => {
     const { clientX, clientY } = event;
@@ -19,3 +21,7 @@ const rotate = document.querySelector('.hello-container');
 //rotate.addEventListener('mouseleave', () => {
 //  rotate.style.transform = "rotate(0deg) scale(1)"; 
 //});
+
+form.addEventListener('submit', function() {
+    spinner.style.display = 'block';
+});

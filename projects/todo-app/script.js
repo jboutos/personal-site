@@ -98,7 +98,7 @@
 
 //       this.output.addEventListener('click', (event) => {
 //          if (event.target.classList.contains('remove-btn')) {
-// 		      const idToRemove = event.target.getAttribute('data-id'); // event.taget.dataset.id;
+// 		      const idToRemove = event.target.getAttribute('data-id'); // event.target.dataset.id;
 // 		      this.remove(idToRemove);
 // 		   }
 

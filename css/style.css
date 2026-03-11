@@ -5,7 +5,10 @@ body {
 	padding: 0 2em;
 	overflow-x: hidden;
 
-	text-align: center;
+	@media (min-width: 570px) {
+		text-align: center;
+	}
+	
 
 	@media(max-width: 385px) {
 		padding: 0 1em;
@@ -31,31 +34,14 @@ a {
 	font-size: 20px;
 }
 
-nav a {
-	margin-right: 10px;
-
-}
-
-nav a:last-child {
-	margin-right: 0;
-}
-
-nav a:nth-of-type(3) {
-	@media(max-width: 385px) {
-		margin-right: 0;
-	}
-}
-
-li {
-	list-style: disc;
-	line-height: 1.4;
-	text-wrap: pretty;
-}
-
 .column {
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media(max-width: 450px) {
+		margin: 0;
+	}
 }
 
 .links {
@@ -91,7 +77,7 @@ li {
 
 .calm-voice {
 	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 1rem;
+	font-size: 1.125rem;
 	line-height: 1.5;
 	max-width: 60ch;
 	margin: 0 auto;
@@ -106,6 +92,7 @@ h1 {
 }
 
 li {
+	font-size: 1.125rem;
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -126,15 +113,24 @@ img {
 ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(210px, 300px));
-	justify-content: center;
 
 	row-gap: 1.5em;
 	column-gap: 3em;
 	padding: 0;
 
 	width: 80vw;
-	margin-left: auto;
-	margin-right: auto;
+
+	@media (min-width: 570px) {
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+li {
+	list-style: disc;
+	line-height: 1.4;
+	text-wrap: pretty;
 }
 
 h2 {
@@ -160,6 +156,7 @@ header a:hover {
         #ff8e8e,
         #ff006a
     ) ;
+    
     height: 30px;
     aspect-ratio: 1;
     left: 100%;

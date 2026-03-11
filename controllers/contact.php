@@ -6,6 +6,7 @@
 
 		$message = $_POST['message'] ?? '';
 		$name = $_POST['name'] ?? '';
+		$email = $_POST['email'] ?? '';
 		$reply = '';
 
 		
@@ -14,7 +15,7 @@
 			if (is_numeric($message) || strlen($message) === 0) {
 				$reply = "<p>Please enter some text</p>";
 			} else {
-				$post = ['Id' => uniqid(), 'name' => $name, 'message' => $message];
+				$post = ['Id' => uniqid(), 'name' => $name, 'message' => $message, 'email' => $email];
 
 				$messages = getJsonData($page . 'data');
 
@@ -34,11 +35,13 @@
 		   'subtitle' => 'You can contact me at jgbout@yahoo.com',
 		   'subtitle2' => 'Alternatively you can drop a message below (be kind)',
 		   'nameLabel' => 'Name',
+		   'nameLabel2' => 'Email',
 		   'label' => '(Any subject but shoelaces)',
 		   'button' => 'Send message',
 		   'links' => 'Introductory links',
 		   'reply' => $reply,
          'name' => $name,
+         'email' => $email,
          'message' => $message
 	  ]);
 	}

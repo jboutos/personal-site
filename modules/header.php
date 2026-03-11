@@ -1,9 +1,5 @@
 <style>
 	.header {
-		@media(max-width: 450px) {
-			display: flex;
-			flex-direction: column;
-		}
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -11,6 +7,13 @@
 		margin-top: 2em;
 		padding-bottom: 0.1em;
 		border-bottom: 1px solid black;
+
+		@media(max-width: 450px) {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			gap: 0.5em;
+		}
 	}
 
 	header-container a {
@@ -19,6 +22,18 @@
 
 	.subtle-voice {
 		margin: 0;
+	}
+
+	@media(max-width: 450px) {
+		.subtle-voice, a {
+			text-align: start;
+		}
+	}
+
+	nav {
+		display: flex;
+		gap: 0.7em;
+		flex-wrap: wrap;
 	}
 </style>
 

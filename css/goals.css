@@ -14,7 +14,6 @@
 		--base: hsl(248 39% 39.2%);
 		--hover: hsl(219 79.2% 66.1%);
 		--circle: hsl(25 100% 96.7% / 0.4);
-
 	}
 
 
@@ -41,8 +40,14 @@
 
    li {
 		font-size:18px;
-		line-height: 2em;
+		line-height: 1;
 		color: var(--color);
+	}
+
+	li + li {
+		@media (max-width: 570px) {
+			margin-top: 1em;
+		}
 	}
 
 	ul + h2 {
@@ -52,9 +57,14 @@
 	ul {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		margin-top: 1em;
-		padding-left: 1.2em;
-		margin-left: 0;
+
+		@media (max-width: 570px) {
+			display: block;
+		   padding-left: 0.9em;
+		}
+
 	}
 
 	h1 + h2 {
@@ -62,7 +72,11 @@
 	}
 
 	h1, h2, li {
-		text-align: start;
+		text-align: center;
+
+		@media (max-width: 570px) {
+			text-align: start;
+		}
 	}
 
 	.goalsul {
