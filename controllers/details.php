@@ -24,9 +24,11 @@
 		}
 
 		$caseStudyLink = isset($detail['caseStudyLink']) ? BASE_URL . $detail['caseStudyLink'] : '';
+		$remarks = $detail['remarksOnExercise'] ?? [];
 
 		return view($page, [
-			'detail' => $detail
+			'detail' => $detail,
+			'remarks' => $remarks
 		]);
 	}
 

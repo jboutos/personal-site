@@ -25,7 +25,7 @@
   },
   "grid": {
     "title": "Grid practice layouts",
-    "image": "images/grid2.png",
+    "image": "images/grid2.png", 
     "link": "projects/grid-practice-layouts/index.php",
     "id": 5,
     "description": "I had to once again use grid but with no cleart guidelines as to breakpoints."
@@ -69,7 +69,14 @@
     "link": "projects/figma-to-code-challenge/index.php",
     "id": 10,
     "description": "I had to copy the styles of a figma site mockup.",
-    "target": "_blank"
+    "target": "_blank",
+    "remarksOnExercise": {
+      "parOne": "At first glance this looks like a simple layout exercise with reusable components. That by itself would suffice as an exercise in working smarter, not harder but under the hood this was an exercise about how everything on the web can be described with plain words, well, json files to be exact.",
+      "parTwo": "I'll admit, while using php's or javascript's built-in methods to encode and decode json files is pretty straighforward this approach to building pages still feels quite strange to me. So the goal was to describe every minute detail of every template with json. The first key value pairs were those of the id of each page as well as its naming. Then came the description of each section, again an id, a variant used for conditionally styling closely related templates between pages as well as conditionally rendering the html template that would accept the encoded json variables, other details depending on the template like logos and headings, links to subfolders of json files for smaller components where their constituents were more or less the same across all pages and then the actions: fields in the form of arrays of json objects focused on describing links and buttons.",
+      "parThree": "While this methodology was not really suitable for building just 3 pages (I recall wondering what was going on while describing the data in json, hardcoding the pages would have been way faster) having such a system supporing an app or website with hundrends of similar components makes sense, you get to build new pages by changing a few words in a file!",
+      "pictureOne": "images/figma-1.png",
+      "pictureTwo": "images/figma-2.png"
+    }
   },
   "jsf": {
     "title": "Javascript Forms",

@@ -22,6 +22,8 @@ const rotate = document.querySelector('.hello-container');
 //  rotate.style.transform = "rotate(0deg) scale(1)"; 
 //});
 
-form.addEventListener('submit', function() {
-    spinner.style.display = 'block';
-});
+if (form) {
+    form.addEventListener('submit', function() {
+        spinner.style.display = 'block';
+    });
+}
