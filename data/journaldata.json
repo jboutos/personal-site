@@ -2,5 +2,6 @@
   { "date": "4/12/2025", "observations": "Added a message board and altered the layout of my projects page" },
   { "date": "6/12/2025", "observations": "Learning some things about size and color contrast" },
   { "date": "12/12/2025", "observations": "Redesigned the style of my personal site a bit" },
-  { "date": "27/12/2025", "observations": "Redesigned the site to follow a mini mvc design!" }
+  { "date": "27/12/2025", "observations": "Redesigned the site to follow a mini mvc design!" },
+  { "date": "12/03/2026", "observations": "More changes to the site, both stylistically and rendering-wise" }
 ]

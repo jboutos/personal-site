@@ -21,17 +21,20 @@
 
 			<div class='remarks'>
 				<?php if (!empty($remarksOnExercise)) : ?>
-	            <p class='calm-voice'><?= $remarks['parOne'] ?></p>
-	            <p class='calm-voice'><?= $remarks['parTwo'] ?></p>
-	            <div class='remarks-img'>
-		            <picture>
-		            	<img src='<?= $remarks['pictureOne'] ?>' alt=''>
-		            </picture>
-		            <picture>
-		            	<img src='<?= $remarks['pictureTwo'] ?>' alt=''>
-		            </picture>
-	          	</div>
-	            <p class='calm-voice'><?= $remarks['parThree'] ?></p>
+					<h2 class='attention-voice remarks-title'>Remarks</h2>
+					<div class='remarks-content'>
+		            <p class='calm-voice'><?= $remarks['parOne'] ?></p>
+		            <p class='calm-voice'><?= $remarks['parTwo'] ?></p>
+		            <div class='remarks-img'>
+			            <picture>
+			            	<img src='<?= $remarks['pictureOne'] ?>' alt=''>
+			            </picture>
+			            <picture>
+			            	<img src='<?= $remarks['pictureTwo'] ?>' alt=''>
+			            </picture>
+		          	</div>
+		            <p class='calm-voice'><?= $remarks['parThree'] ?></p>
+	         	</div>
 	         <?php endif; ?>
 			</div>
 		</div>
