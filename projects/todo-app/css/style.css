@@ -3,14 +3,21 @@
 
 body {
 	padding: 1em;
-
    background-color: #f9f1de;
+
+   --border-thick: 2px;
+   --border-thin: 1px;
+   --todo-red: hsl(1, 49%, 62%);
+   --todo-yellow: hsl(47, 84%, 80%);
+   --todo-green: hsl(119, 33%, 74%);
+   --todo-blue: hsl(205, 48%, 77%);
+   --todo-pink: hsl(321, 48%, 81%);
+   --todo-orange: hsl(30, 81%, 73%);
 }
 
 .loud-voice {
 	font-size: 2rem;
-
-	margin-bottom: 0.5em;
+	margin: 1em 0 0.5em 0;
 }
 
 .field {
@@ -25,6 +32,11 @@ body {
 	border: 2px solid black;
 }
 
+output {
+	display: block;
+	margin-top: 2em;
+}
+
 label {
 	margin-right: 0.1em;
 }
@@ -34,16 +46,16 @@ label {
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.2em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	column-gap: 1em;
+	row-gap: 1.5em;
 }
 
 .todo-container {
-	border: 2px solid black;
+	border: var(--border-thick) solid black;
 	padding: 10px;
 	padding-top: 40px;
-	min-width: 250px;
 
 	position: relative;
 
@@ -62,13 +74,13 @@ label {
 	padding-right: 5px;
 
 	position: absolute;
-	top: -11px;
-	left: -10px;
-	transform: rotate(-9deg);
+	top: 0;
+	left: 0;
+	transform: rotate(-9deg) translate(-10px, -11px);
 
 	/*background-color: #f7e5a2;*/
-	border: 1px solid black;
-	border-radius: 2px;
+	border: var(--border-thin) solid black;
+	border-radius: var(--border-thick);
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
 }
 

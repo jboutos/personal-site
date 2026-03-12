@@ -6,7 +6,9 @@
 
 			<div class='image-description'>
 				<picture class='details-image'>
-					<img src='<?= $image ?>' alt='<?= $title ?> image'>
+					<a href='<?= $link ?>' target='<?= $target ?>'>
+						<img src='<?= $image ?>' alt='<?= $title ?> image'>
+					</a>
 				</picture>
 
 				<div class='description'>
