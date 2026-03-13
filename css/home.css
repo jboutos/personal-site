@@ -28,9 +28,10 @@
     fill: var(--circle);
   }
 
-  a {
+  .underline { /* this is an anvhor element subcategory */
     display: inline-block;
-    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 650;
     color: var(--color);
   }
 
@@ -62,5 +63,9 @@
 	.navigation a, .logo {
 		text-decoration: none;
 	}
+
+  picture {
+    margin-top: 0.5em;
+  }
 }
 

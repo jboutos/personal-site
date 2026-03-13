@@ -28,12 +28,6 @@ main {
   min-height: 100vh;
 }
 
-a {
-	text-decoration: underline;
-	font-family: 'Mulish', sans-serif;
-	font-size: 20px;
-}
-
 .column {
 	max-width: 1600px;
 	margin-left: auto;
@@ -57,12 +51,12 @@ a {
 
 .loud-voice {
 	font-size: 6rem;
-	font-weight: 700;
+	font-weight: 650;
 }
 
 .attention-voice {
 	font-size: 3rem;
-	font-weight: 600;
+	font-weight: 550;
 }
 
 .careful-voice {
@@ -115,9 +109,42 @@ img {
 	}
 }
 
+a {
+
+}
+
+a {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+.underline {
+  padding: 0;
+  background-color: transparent;
+  color: var(--color);
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  height: 1.5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--color);
+  transition: width .2s;
+}
+
+a:hover:after {
+  width: 0;
+}
+
 ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(210px, 300px));
+	grid-template-columns: repeat(auto-fit, minmax(210px, 250px));
 
 	row-gap: 1.5em;
 	column-gap: 3em;

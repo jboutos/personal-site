@@ -4,7 +4,7 @@
   --link: hsl(240 3.3% 30%);
   --list: hsl(210 12.6% 50.2%);
   --base: hsl(48 0% 93.7%);
-  --hover: hsl(225 46.1% 52.7%);
+  --hover: hsl(225 46.1% 72%);
   --circle: hsl(230 59.8% 40% / 0.4);
 
   @media (prefers-color-scheme: dark) {
@@ -30,10 +30,6 @@
 	.circle {
 		color: var(--circle);
 		fill: var(--circle);
-	}
-
-	a:hover {
-		background-color: var(--hover);
 	}
 
 	li {

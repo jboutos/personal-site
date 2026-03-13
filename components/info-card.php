@@ -1,6 +1,6 @@
 <info-card>
-    <a href='<?= $link ?>' target='<?= $target ?>'>
-        <h1 class='careful-voice'><?= $title ?></h1>
+    <a class='underline' href='<?= $link ?>' target='<?= $target ?>'>
+        <?= $title ?>
     </a>
     <picture class='home'>
         <a href='<?= $link ?>' target='<?= $target ?>'>
