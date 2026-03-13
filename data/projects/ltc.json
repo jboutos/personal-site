@@ -1,0 +1,14 @@
+{
+  "id": "ltc",
+  "title": "Theming layout challenge",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/sheep-2.jpg",
+      "link": "projects/layout-theme-challenge/index.php",
+      "target": "_blank",
+      "body": "I had to style a premade html template.",
+      "caseStudyLink": "?page=case"
+    }
+  ]
+}

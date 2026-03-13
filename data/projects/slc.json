@@ -1,0 +1,13 @@
+{
+  "id": "slc",
+  "title": "Super layout challenge",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/car-service-express.png",
+      "link": "projects/super-layout-challenge-1/index.html",
+      "target": "_blank",
+      "body": "I had to test my knowledge of flexbox. The layout has various breakpoints!"
+    }
+  ]
+}

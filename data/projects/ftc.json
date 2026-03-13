@@ -1,0 +1,24 @@
+{
+  "id": "ftc",
+  "title": "Figma to code challenge",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/figma.png",
+      "link": "projects/figma-to-code-challenge/index.php",
+      "target": "_blank",
+      "body": "In figma to code challenge I had to copy the styles of a figma site mockup."
+    },
+    {
+      "module": "remarks-section",
+      "heading": "Remarks",
+      "paragraphs": [
+        "At first glance this looks like a simple layout exercise with reusable components. That by itself would suffice as an exercise in working smarter, not harder but under the hood this was an exercise about how everything on the web can be described with plain words, well, json files to be exact.",
+        "I'll admit, while using php's or javascript's built-in methods to encode and decode json files is pretty straightforward this approach to building pages still feels quite strange to me. So the goal was to describe every minute detail of every template with json.",
+        "While this methodology was not really suitable for building just 3 pages, having such a system supporting an app or website with hundreds of similar components makes sense — you get to build new pages by changing a few words in a file!"
+      ],
+      "imageOne": "images/figma-1.png",
+      "imageTwo": "images/figma-2.png"
+    }
+  ]
+}

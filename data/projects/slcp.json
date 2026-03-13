@@ -1,0 +1,13 @@
+{
+  "id": "slcp",
+  "title": "Super layout challenge v2",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/pink2.png",
+      "link": "projects/super-layout-challenge-pink/index.html",
+      "target": "_blank",
+      "body": "I once again tested my knowledge of flexbox, this one turned out to be a bit trickier!"
+    }
+  ]
+}

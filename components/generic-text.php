@@ -1,0 +1,1 @@
+<p class='calm-voice'><?= $body ?></p>

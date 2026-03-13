@@ -1,0 +1,13 @@
+{
+  "id": "garden",
+  "title": "Layout garden",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/garden.png",
+      "link": "projects/layout-garden/route.php",
+      "target": "_blank",
+      "body": "You will find a collection of various layouts I found on the internet and tried copying!"
+    }   
+  ]
+}

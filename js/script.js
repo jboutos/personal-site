@@ -2,17 +2,17 @@ const move = document.getElementById("move");
 const form = document.querySelector('form');
 const spinner = document.querySelector('#spinner');
 
-document.body.onpointermove = event => {
-    const { clientX, clientY } = event;
+// document.body.onpointermove = event => {
+//     const { clientX, clientY } = event;
 
-    move.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
+//     move.animate({
+//         left: `${clientX}px`,
+//         top: `${clientY}px`
     
-    }, {duration: 1000, fill: "forwards"})
+//     }, {duration: 1000, fill: "forwards"})
 
-}
-const rotate = document.querySelector('.hello-container');
+// }
+// const rotate = document.querySelector('.hello-container');
 
 //rotate.addEventListener('mouseenter', () => {
 //  rotate.style.transform = "rotate(20 deg) scale(1.2)";

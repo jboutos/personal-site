@@ -1,0 +1,12 @@
+{
+  "id": "grid",
+  "title": "Grid practice layouts",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/grid2.png",
+      "link": "projects/grid-practice-layouts/index.php",
+      "body": "I had to once again use grid but with no clear guidelines as to breakpoints."
+    }
+  ]
+}

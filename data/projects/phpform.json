@@ -1,0 +1,13 @@
+{
+  "id": "phpform",
+  "title": "Form exercises with php",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/php.png",
+      "link": "projects/php-exercises/index.php",
+      "target": "_blank",
+      "body": "I had to test for the first time how the html form works in conjunction with php!"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "shoelace",
+  "title": "Routing exercise",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/shoelace.png",
+      "link": "projects/shoelace-haven/index.php",
+      "target": "_blank",
+      "body": "Everything came together as I got to combine php routing, templating and forms to create a small sort of functional site!"
+    }
+  ]
+}

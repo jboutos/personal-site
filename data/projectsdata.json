@@ -1,105 +1,87 @@
 {
   "slc": {
     "title": "Super layout challenge",
+    "key": "slc",
     "image": "images/car-service-express.png",
-    "link": "projects/super-layout-challenge-1/index.html",
     "id": 2,
-    "description": "I had to test my knowledge of flexbox. The layout has various breakpoints!",
     "target": "_blank"
   },
   "slcp": {
     "title": "Super layout challenge v2",
+    "key": "slcp",
     "image": "images/pink2.png",
-    "link": "projects/super-layout-challenge-pink/index.html",
     "id": 3,
-    "description": "I once again tested my knowledge of flexbox, this one turned out to be a bit trickier!",
     "target": "_blank"
   },
   "garden": {
     "title": "Layout garden",
+    "key": "garden",
     "image": "images/garden.png",
-    "link": "projects/layout-garden/route.php",
     "id": 4,
-    "description": "you will find a collection of various layouts I found on the internet and tried copying!",
     "target": "_blank"
   },
   "grid": {
     "title": "Grid practice layouts",
+    "key": "grid",
     "image": "images/grid2.png", 
-    "link": "projects/grid-practice-layouts/index.php",
-    "id": 5,
-    "description": "I had to once again use grid but with no cleart guidelines as to breakpoints."
+    "id": 5
   },
   "form": {
     "title": "Form exercises with php",
+    "key": "phpform",
     "image": "images/php.png",
-    "link": "projects/php-exercises/index.php",
     "id": 6,
-    "description": "I had to test for the first time how the html form works in conjuction with php!",
     "target": "_blank"
   },
   "route": {
     "title": "Routing exercise",
+    "key": "shoelace",
     "image": "images/shoelace.png",
-    "link": "projects/shoelace-haven/index.php",
     "id": 7,
-    "description": "everything came together as I got to combine php routing, templating and forms to create a small sort of functional site!",
     "target": "_blank"
   },
   "crud": {
     "title": "Simple crud app",
+    "key": "crud",
     "image": "images/crud.png",
-    "link": "projects/crud-app/index.php",
     "id": 8,
-    "description": "I learned for the first time about the concept of databases and json files where you can add/edit and delete a list of cars!",
     "target": "_blank"
   },
   "ltc": {
     "title": "Theming layout challenge",
+    "key": "ltc",
     "image": "images/sheep-2.jpg",
-    "link": "projects/layout-theme-challenge/index.php",
     "id": 9,
-    "description": "I had to style a premade html template.",
     "target": "_blank",
     "caseStudyLink": "?page=case"
   },
   "ftc": {
     "title": "Figma to code challenge",
+    "key": "ftc",
     "image": "images/figma.png",
-    "link": "projects/figma-to-code-challenge/index.php",
     "id": 10,
-    "description": "I had to copy the styles of a figma site mockup.",
-    "target": "_blank",
-    "remarksOnExercise": {
-      "parOne": "At first glance this looks like a simple layout exercise with reusable components. That by itself would suffice as an exercise in working smarter, not harder but under the hood this was an exercise about how everything on the web can be described with plain words, well, json files to be exact.",
-      "parTwo": "I'll admit, while using php's or javascript's built-in methods to encode and decode json files is pretty straighforward this approach to building pages still feels quite strange to me. So the goal was to describe every minute detail of every template with json. The first key value pairs were those of the id of each page as well as its naming. Then came the description of each section, again an id, a variant used for conditionally styling closely related templates between pages as well as conditionally rendering the html template that would accept the encoded json variables, other details depending on the template like logos and headings, links to subfolders of json files for smaller components where their constituents were more or less the same across all pages and then the actions: fields in the form of arrays of json objects focused on describing links and buttons.",
-      "parThree": "While this methodology was not really suitable for building just 3 pages (I recall wondering what was going on while describing the data in json, hardcoding the pages would have been way faster) having such a system supporing an app or website with hundrends of similar components makes sense, you get to build new pages by changing a few words in a file!",
-      "pictureOne": "images/figma-1.png",
-      "pictureTwo": "images/figma-2.png"
-    }
+    "target": "_blank"
   },
   "jsf": {
     "title": "Javascript Forms",
+    "key": "jsf",
     "image": "images/js.png",
-    "link": "projects/form-exercises-with-js/index.php",
     "id": 11,
-    "description": "I had to create some forms using Javascript!",
     "target": "_blank"
   },
   "tda": {
     "title": "Todo App",
+    "key": "tda",
     "image": "images/post.jpg",
-    "link": "projects/todo-app/index.html",
     "id": 12,
-    "description": "I got to build a small todo app!",
     "target": "_blank"
   },
   "archived": {
+    "key": "archived",
     "title": "Archive",
     "image": "images/archives1.png",
-    "link": "?page=archive",
+    "directLink": "?page=archive",
     "id": 1,
-    "description": "you will find all the older exercises",
     "target": "_blank"
   }
 }

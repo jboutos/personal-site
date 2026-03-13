@@ -1,0 +1,13 @@
+{
+  "id": "tda",
+  "title": "Todo App",
+  "sections": [
+    {
+      "module": "project-hero",
+      "image": "images/post.jpg",
+      "link": "projects/todo-app/index.html",
+      "target": "_blank",
+      "body": "I got to build a small todo app!"
+    }
+  ]
+}
