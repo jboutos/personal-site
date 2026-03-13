@@ -3,13 +3,10 @@
 	function projectsPage() {
 
 		$page = pageNameFromFunction(__FUNCTION__);
-	   $data = getJsonData($page . 'data');
+	   $data = getJsonData($page);
 
-		return view('generic', [
-		   'title' => 'A list of completed PE projects thus far',
-		   'subtitle' => 'The list will be updated as more projects are added',
+		return view('projects', [
 		   'data' => $data,
-		   'component' => 'project-card'
 	  ]);
 	}
 

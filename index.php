@@ -30,7 +30,7 @@
 
 		<header>
 
-			<?php include('modules/header.php') ?>
+			
 
 		</header>
 

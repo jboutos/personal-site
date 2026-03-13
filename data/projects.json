@@ -1,0 +1,96 @@
+{
+  "title": "Projects",
+  "sections": [
+    {
+     "module": "header",
+     "logo": "J.BOUTOS",
+     "link1": "Home",
+     "link2": "About",
+     "link3": "Contact",
+     "link4": "Pages"
+   },
+    {
+      "module": "introductory-text",
+      "title": "A list of completed PE projects thus far",
+      "subtitle": "The list will be updated as more projects are added"
+    },
+    {
+      "module": "project-card",
+      "cards": [
+        {
+          "title": "Super layout challenge",
+          "key": "slc",
+          "image": "images/car-service-express.png",
+          "id": 2
+        },
+        {
+          "title": "Super layout challenge v2",
+          "key": "slcp",
+          "image": "images/pink2.png",
+          "id": 3
+        },
+        {
+          "title": "Layout garden",
+          "key": "garden",
+          "image": "images/garden.png",
+          "id": 4
+        },
+        {
+          "title": "Grid practice layouts",
+          "key": "grid",
+          "image": "images/grid2.png", 
+          "id": 5
+        },
+        {
+          "title": "Form exercises with php",
+          "key": "phpform",
+          "image": "images/php.png",
+          "id": 6
+        },
+        {
+          "title": "Routing exercise",
+          "key": "shoelace",
+          "image": "images/shoelace.png",
+          "id": 7
+        },
+        {
+          "title": "Simple crud app",
+          "key": "crud",
+          "image": "images/crud.png",
+          "id": 8
+        },
+        {
+          "title": "Theming layout challenge",
+          "key": "ltc",
+          "image": "images/sheep-2.jpg",
+          "id": 9
+        },
+        {
+          "title": "Figma to code challenge",
+          "key": "ftc",
+          "image": "images/figma.png",
+          "id": 10
+        },
+        {
+          "title": "Javascript Forms",
+          "key": "jsf",
+          "image": "images/js.png",
+          "id": 11
+        },
+        {
+          "title": "Todo App",
+          "key": "tda",
+          "image": "images/post.jpg",
+          "id": 12
+        },
+        {
+          "title": "Archive",
+          "key": "archived",
+          "image": "images/archives1.png",
+          "directLink": "?page=archive",
+          "id": 1
+        }
+      ]
+    }
+  ]
+}

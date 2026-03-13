@@ -7,7 +7,7 @@
       "image": "images/crud.png",
       "link": "projects/crud-app/index.php",
       "target": "_blank",
-      "body": "I learned for the first time about the concept of databases and json files where you can add, edit and delete a list of cars!"
+      "body": "In simple crud app I learned for the first time about the concept of databases and json files where you can add, edit and delete a list of cars!"
     }
   ]
 }

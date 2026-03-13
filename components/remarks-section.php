@@ -5,12 +5,11 @@
             <p class='calm-voice'><?= $paragraph ?></p>
         <?php endforeach; ?>
         <div class='remarks-img'>
-            <picture>
-                <img src='<?= $imageOne ?>' alt=''>
-            </picture>
-            <picture>
-                <img src='<?= $imageTwo ?>' alt=''>
-            </picture>
+            <?php foreach ($images as $image) : ?>
+                <picture>
+                    <img src='<?= $image ?>' alt=''>
+                </picture>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

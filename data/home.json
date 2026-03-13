@@ -1,0 +1,41 @@
+{
+  "title": "Homepage",
+  "sections": [
+    {
+     "module": "header",
+     "logo": "J.BOUTOS",
+     "link1": "Home",
+     "link2": "About",
+     "link3": "Contact",
+     "link4": "Pages"
+   },
+    {
+      "module": "introductory-text",
+      "title": "My web-dev journey"
+    },
+    {
+      "module": "card-list",
+      "cards": [
+        {
+          "title": "Goals",
+          "image": "images/goals.png",
+          "link": "?page=goals",
+          "target": "_self"
+        },
+        {
+          "title": "My substack",
+          "image": "images/substack3.png",
+          "link": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
+          "target": "_blank"
+        },
+        {
+          "title": "Resume",
+          "image": "images/resume.png",
+          "link": "?page=resume",
+          "target": "_self"
+        }
+        
+      ]
+    }
+  ]
+}

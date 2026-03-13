@@ -1,15 +1,10 @@
 <?php
+   function homePage() {
 
-	function homePage() {
+      $data = getJsonData('home');
 
-		$page = pageNameFromFunction(__FUNCTION__);
-	   $data = getJsonData($page . 'data');
-
-		return view('generic', [
-		   'title' => 'My web-dev journey',
-		   'data' => $data,
-		   'component' => 'info-card'
-	  ]);
-	}
-
+      return view('home', [
+         'data' => $data
+      ]);
+   }
 ?>

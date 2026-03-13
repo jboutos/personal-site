@@ -3,6 +3,7 @@
 	function contactPage() {
 
 		$page = pageNameFromFunction(__FUNCTION__);
+		$data = getJsonData($page);
 
 		$message = $_POST['message'] ?? '';
 		$name = $_POST['name'] ?? '';
@@ -31,18 +32,11 @@
 		}
 
 		return view($page, [
-		   'title' => 'Contact information',
-		   'subtitle' => 'You can contact me at jgbout@yahoo.com',
-		   'subtitle2' => 'Alternatively you can drop a message below (be kind)',
-		   'nameLabel' => 'Name',
-		   'nameLabel2' => 'Email',
-		   'label' => '(Any subject but shoelaces)',
-		   'button' => 'Send message',
-		   'links' => 'Introductory links',
+		   'data' => $data,
 		   'reply' => $reply,
          'name' => $name,
          'email' => $email,
-         'message' => $message
+         'message' => $message,
 	  ]);
 	}
 

@@ -1,0 +1,31 @@
+{
+  "title": "Projects",
+  "sections": [
+  	{
+	   "module": "header",
+	   "logo": "J.BOUTOS",
+	   "link1": "Home",
+	   "link2": "About",
+	   "link3": "Contact",
+	   "link4": "Pages"
+   },
+   {
+	   "module": "introductory-about",
+	   "title": "Hello people!",
+	   "description": "I'm John and I'm trying to learn more about web development! I'm sort of introverted and have a difficult time finding anything to talk about regarding myself. Hopefully, given some time I will at very least be able to present myself through my work instead of words! In the meantime you can always check out my ",
+	   "linkUrl": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
+	   "linkText": "substack",
+	   "descriptionCompl": "!"
+   },
+   {
+   	"module": "waving-hand"
+   },
+   {
+	   "module": "footer-intro",
+	   "link2": "Introductory Links",
+	   "link3": "Welcome",
+	   "link4": "Contact",
+	   "link5": "Journal"
+   }
+ ]  
+}

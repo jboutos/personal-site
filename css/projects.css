@@ -67,5 +67,9 @@
 	.navigation a:hover, .logo:hover {
 		background-color: transparent;
 	}
+
+	div.column.header {
+		padding-bottom: 0;
+	}
 }
 
