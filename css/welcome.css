@@ -28,10 +28,6 @@
 		fill: var(--circle);
 	}
 
-	a:hover {
-		background-color: var(--hover);
-	}
-
 	.substack {
 		font-size: 1rem;
 	}

@@ -25,10 +25,6 @@
 		fill: var(--circle);
 	}
 
-	a:hover {
-		background-color: var(--hover);
-	}
-
 	.careful-voice {
 		padding: 0;
 	}

@@ -56,7 +56,7 @@ main {
 
 .attention-voice {
 	font-size: 3rem;
-	font-weight: 550;
+	font-weight: 450;
 }
 
 .careful-voice {
@@ -110,10 +110,6 @@ img {
 }
 
 a {
-
-}
-
-a {
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-decoration: none;
@@ -144,7 +140,7 @@ a:hover:after {
 
 ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(210px, 250px));
+	grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
 
 	row-gap: 1.5em;
 	column-gap: 3em;
@@ -197,9 +193,9 @@ header a:hover {
     
     height: 30px;
     aspect-ratio: 1;
-    left: 100%;
-    top: 50%;
-    transform: translate(-200%, -100%);
+    left: 0;
+    top: 0;
+    transform: translate(-150%, -30%);
     position: fixed;
     border-radius: 50%;
 }

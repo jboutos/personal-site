@@ -9,8 +9,8 @@
 
 <div class='links'>
 	<nav>
-		<a href='?page=welcome'>welcome</a>
-		<a href='?page=contact'>contact</a>
-		<a href='?page=journal'>journal</a>
+		<a class='underline' href='?page=welcome'>welcome</a>
+		<a class='underline' href='?page=contact'>contact</a>
+		<a class='underline' href='?page=journal'>journal</a>
 	</nav>
 </div>
