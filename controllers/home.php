@@ -1,7 +1,7 @@
 <?php
    function homePage() {
 
-      $data = getJsonData('home');
+      $data = getJsonData('pages/home');
 
       return view('home', [
          'data' => $data

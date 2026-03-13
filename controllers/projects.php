@@ -3,7 +3,7 @@
 	function projectsPage() {
 
 		$page = pageNameFromFunction(__FUNCTION__);
-	   $data = getJsonData($page);
+	   $data = getJsonData('pages/projects');
 
 		return view('projects', [
 		   'data' => $data,

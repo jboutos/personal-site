@@ -61,15 +61,10 @@
 
 	.subtle-voice {
 		margin: 0;
-		margin-bottom: 0.1em;
 	}
 
 	.navigation a:hover, .logo:hover {
 		background-color: transparent;
-	}
-
-	div.column.header {
-		padding-bottom: 0;
 	}
 }
 

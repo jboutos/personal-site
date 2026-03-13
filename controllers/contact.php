@@ -3,7 +3,7 @@
 	function contactPage() {
 
 		$page = pageNameFromFunction(__FUNCTION__);
-		$data = getJsonData($page);
+		$data = getJsonData('pages/contact');
 
 		$message = $_POST['message'] ?? '';
 		$name = $_POST['name'] ?? '';
