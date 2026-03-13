@@ -2,14 +2,6 @@
   "title": "Projects",
   "sections": [
     {
-     "module": "header",
-     "logo": "J.BOUTOS",
-     "link1": "Home",
-     "link2": "About",
-     "link3": "Contact",
-     "link4": "Pages"
-   },
-    {
       "module": "introductory-text",
       "title": "A list of completed PE projects thus far",
       "subtitle": "The list will be updated as more projects are added"

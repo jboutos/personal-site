@@ -1,14 +1,6 @@
 {
   "title": "Journal",
   "sections": [
-  	{
-	   "module": "header",
-	   "logo": "J.BOUTOS",
-	   "link1": "Home",
-	   "link2": "About",
-	   "link3": "Contact",
-	   "link4": "Pages"
-   },
    {
 	   "module": "introductory-text",
 	   "title": "A rather short journal on my web-dev endeavours"

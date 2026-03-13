@@ -188,6 +188,11 @@ header a:hover {
 	}
 }
 
+.footer-links nav {
+	display: flex;
+	gap: 0.8em;
+}
+
 .header {
 	display: flex;
 	align-items: center;
