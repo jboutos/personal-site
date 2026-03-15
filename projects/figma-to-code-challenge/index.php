@@ -34,6 +34,24 @@
 			</nav>
 		</section>
 
+		<div class='sticky'>
+			<div class='tricks-container'>
+				<a href='#' id='tricks'>Click here for bonus tricks!</a>
+			</div>
+
+			<div class='test-container hidden'>
+				<div class='test'>
+					<p>Adjust the hue!</p>
+					<input class='color' type='range' min='0' max='1000' step='10'>
+				</div>
+
+				<div class='test'>
+					<p>Adjust the border radius!</p>
+					<input class='round' type='range' min='0' max='20'>
+				</div>
+			</div>
+		</div>
+
 		<?php
 			foreach ($pageData['sections'] as $section):
 

@@ -34,11 +34,23 @@
 @import 'template-css/footer.css';
 
 html {
-	--button-1: #1E3FAE;
-	--background: #f0f3fc;
-	--background-2: #3563E9;
-	--white: #ffffff;
-	--black: #212121;
+	--button-1: hsl(var(--hue1), 71%, 40%);
+	--background: hsl(var(--hue1), 67%, 96%);
+	--background-2: hsl(var(--hue1), 80%, 56%);
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 13%);
+	--border-thin: 1px;
+	--border-thick: 5px;
+	--border-extra-thin: 0.5px;
+	--border-super-extra-thin: 0.1px;
+	--border-circle: 50%;
+	--radius: 0px;
+	--hue1: 225;
+	--hue2: 0;
+}
+
+body {
+	position: relative;
 }
 
 inner-column {
@@ -154,6 +166,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	color: #1d3d9e;
 
 	@media(min-width: 350px) {
 		flex-direction: row;
@@ -161,3 +174,44 @@ section {
 	}
 }
 
+.test-container {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	padding: 1em 0;
+}
+
+.test {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button, input {
+	border-radius: var(--radius);
+}
+
+.hidden {
+	display: none;
+}
+
+.tricks-container {
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+#tricks {
+	font-size: 1.5rem;
+}
+
+#tricks.active {
+  color: var(--background-2);
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	z-index: 2;
+}

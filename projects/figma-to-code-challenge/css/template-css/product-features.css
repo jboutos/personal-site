@@ -8,7 +8,7 @@
   height: 2.5em;
   width: 2.5em;
   line-height: 2.5em;
-  border-radius: 50%;
+  border-radius: var(--border-circle);
   background-color: var(--background);
   color: var(--button-1);
   text-align: center;
@@ -86,14 +86,14 @@
    justify-content: center;
   height: 3em;
   width: 3em;
-  border-radius: 50%;
+  border-radius: var(--border-circle);
   background-color: var(--background);
 }
 
 .product-2 product {
   display: inline-block;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: var(--border-thin) solid lightgray;
+  border-radius: var(--border-thick);
   padding: 1em;
   text-align: start;
 }
@@ -148,7 +148,7 @@
   justify-content: center;
   height: 3em;
   width: 3em;
-  border-radius: 50%;
+  border-radius: var(--border-circle);
   background-color: var(--background);
 }
 
@@ -156,8 +156,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: var(--border-thin) solid lightgray;
+  border-radius: var(--border-thick);
   padding: 1em;
   text-align: center;
 }

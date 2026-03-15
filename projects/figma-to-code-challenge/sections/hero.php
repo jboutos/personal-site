@@ -4,6 +4,10 @@
     <h1 class='loud-voice'><?= $section['heading'] ?></h1>
     <p class='calm-voice'><?= $section['intro'] ?></p>
 
+  <?php if($section['variant'] === 'hero-1' || $section['variant'] === 'hero-2'): ?>
+    <?php include('images/background-1.php'); ?>
+  <?php endif; ?>
+
     <?php if($section['variant'] === 'hero-1'): ?>
       <div class='container-hero'>
         <?php foreach ($section['actions'] as $action): ?>

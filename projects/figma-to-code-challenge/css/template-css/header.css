@@ -53,7 +53,7 @@
 
 .header-1 .button a {
 	padding: 0.5em 1em;
-	border-radius: 5px;
+	border-radius: var(--radius);
 	background-color: var(--button-1);
 	color: var(--white);
 }
@@ -125,7 +125,7 @@
 
 .header-2 .button a {
 	padding: 0.5em 1em;
-	border-radius: 5px;
+	border-radius: var(--radius);
 	background-color: var(--white);
 	color: var(--button-1);
 }
@@ -189,18 +189,18 @@
 
 .header-3 .language {
 	padding: 0.5em 1em;
-	border-radius: 5px;
+	border-radius: var(--radius);
 	background-color: var(--white);
 	color: var(--button-1);
-	border: 1px solid var(--button-1);
+	border: var(--border-thin) solid var(--button-1);
 }
 
 .header-3 .button a {
 	padding: 0.5em 1em;
-	border-radius: 5px;
+	border-radius: var(--radius);
 	background-color: var(--button-1);
 	color: var(--white);
-	border: 1px solid var(--button-1);
+	border: var(--border-thin) solid var(--button-1);
 }
 
 .header-3 svg {
@@ -233,7 +233,7 @@ body.menu-open .menu { /* how the menu should behave _visually_ (when open) */
 	width: 200px;
  
 	/* */
-	display: flex; /* positioning its items */
+	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;

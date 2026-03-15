@@ -90,8 +90,9 @@
 		width: 200px;
 	}
 
-	.contact img {
+	.contact img, .contact picture {
 		width: 20px;
+		flex-shrink: 0;
 	}
 
 	left-panel {

@@ -25,19 +25,19 @@
   font-size: 16px;
   width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .footer-1 .subscribe-container .submit-btn {
   position: absolute;
-  top: 50%;
+  top: 0px;
   right: 0px;
-  transform: translateY(-50%);
+  height: 100%;
   border: none;
   cursor: pointer;
-  padding: 7.5px 10px;
+  padding: 0px 10px;
   background-color: var(--background-2);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .footer-1 .subscribe .calm-voice {
@@ -58,7 +58,7 @@
 }
 
 .footer-1 .upper-footer {
-	border-bottom: 0.1px solid var(--white);
+	border-bottom: var(--border-super-extra-thin) solid var(--white);
 }
 
 .footer-1 .socials {
@@ -116,6 +116,7 @@
 
 .footer-1 .container-2 a {
 	margin-top: 1em;
+	border-radius: var(--radius);
 }
 
 .footer-1 .container-2 h4 {
@@ -146,20 +147,20 @@
   padding: 10px 40px 10px 12px;
   font-size: 16px;
   width: 100%;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: var(--border-thin) solid lightgray;
+  border-radius: var(--radius);
 }
 
 .footer-2 .subscribe-container .submit-btn {
   position: absolute;
-  top: 50%;
+  top: 0px;
   right: 0px;
-  transform: translateY(-50%);
+  height: 100%;
   border: none;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 0px 10px;
   background-color: var(--background-2);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .footer-2 .submit-btn svg {
@@ -180,7 +181,7 @@
 }
 
 .footer-2 .upper-footer {
-	border-bottom: 0.1px solid lightgray;
+	border-bottom: var(--border-super-extra-thin) solid lightgray;
 }
 
 .footer-2 .socials {
