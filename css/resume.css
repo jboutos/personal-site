@@ -18,11 +18,11 @@
 		height: auto;
 	}
 
-	resume, left-panel, right-panel, qualifications, education, personal-info, experience {
+	left-panel, right-panel, qualifications, education, personal-info, experience {
 		display: block;
 	}
 
-	resume {
+	.resume-view {
 		margin-top: 8em;
 	}
 
@@ -106,6 +106,7 @@
 
 	.contact {
 		display: flex;
+		align-items: center;
 		gap: 1em;
 	}
 }
