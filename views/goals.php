@@ -1,5 +1,5 @@
 <div class ='column'>
 	<?php foreach ($data['sections'] as $section) { ?>
-        <?= component($section['module'], [...$section, 'goals' => $goals]) ?>
+        <?= component($section['module'], $section) ?>
     <?php } ?>
 </div>

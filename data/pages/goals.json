@@ -1,12 +1,32 @@
 {
   "title": "Goals",
   "sections": [
-   {
-	   "module": "introductory-text",
-	   "title": "Goals"
-	},
-   {
-   	"module": "goals"
-   }
- ]  
+    {
+      "module": "introductory-text",
+      "title": "Goals"
+    },
+    {
+      "module": "goals",
+      "goals": [
+        {
+          "title": "Short Term Goals",
+          "goals": [
+            "Get to understand basic design concepts",
+            "Be able to recreate most of the things I see online",
+            "Have a good grasp on algorithmic thinking",
+            "Build a personal website",
+            "Be in a position to create simple apps"
+          ]
+        },
+        {
+          "title": "Long Term Goals",
+          "goals": [
+            "Have a good grasp on both frontend and backend and find my niche",
+            "Better networking",
+            "Land a job"
+          ]
+        }
+      ]
+    }
+  ]
 }
