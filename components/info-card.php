@@ -4,7 +4,7 @@
     </a>
     <picture class='home'>
         <a href='<?= $link ?>' target='<?= $target ?>'>
-            <img src='<?= $image ?>'>
+            <img src='<?= "images/" . $image ?>'>
         </a>
     </picture>
 </info-card>

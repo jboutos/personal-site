@@ -12,73 +12,73 @@
         {
           "title": "Super layout challenge",
           "key": "slc",
-          "image": "images/car-service-express.png",
+          "image": "car-service-express.png",
           "id": 2
         },
         {
           "title": "Super layout challenge v2",
           "key": "slcp",
-          "image": "images/pink2.png",
+          "image": "pink2.png",
           "id": 3
         },
         {
           "title": "Layout garden",
           "key": "garden",
-          "image": "images/garden.png",
+          "image": "garden.png",
           "id": 4
         },
         {
           "title": "Grid practice layouts",
           "key": "grid",
-          "image": "images/grid2.png", 
+          "image": "grid2.png", 
           "id": 5
         },
         {
           "title": "Form exercises with php",
           "key": "phpform",
-          "image": "images/php.png",
+          "image": "php.png",
           "id": 6
         },
         {
           "title": "Routing exercise",
           "key": "shoelace",
-          "image": "images/shoelace.png",
+          "image": "shoelace.png",
           "id": 7
         },
         {
           "title": "Simple crud app",
           "key": "crud",
-          "image": "images/crud.png",
+          "image": "crud.png",
           "id": 8
         },
         {
           "title": "Theming layout challenge",
           "key": "ltc",
-          "image": "images/sheep-2.jpg",
+          "image": "sheep-2.jpg",
           "id": 9
         },
         {
           "title": "Figma to code challenge",
           "key": "ftc",
-          "image": "images/figma.png",
+          "image": "figma.png",
           "id": 10
         },
         {
           "title": "Javascript Forms",
           "key": "jsf",
-          "image": "images/js.png",
+          "image": "js.png",
           "id": 11
         },
         {
           "title": "Todo App",
           "key": "tda",
-          "image": "images/post.jpg",
+          "image": "post.jpg",
           "id": 12
         },
         {
           "title": "Archive",
           "key": "archived",
-          "image": "images/archives1.png",
+          "image": "archives1.png",
           "directLink": "?page=archive",
           "id": 1
         }

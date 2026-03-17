@@ -1,7 +1,7 @@
 <div class='image-description'>
     <picture class='details-image'>
         <a href='<?= $link ?>' target='_blank'>
-            <img src='<?= $image ?>' alt='<?= $title ?> image'>
+            <img src='<?= "images/" . $image ?>' alt='<?= $title ?> image'>
         </a>
     </picture>
     <div class='description'>

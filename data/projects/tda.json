@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/post.jpg",
+      "image": "post.jpg",
       "link": "projects/todo-app/index.html",
       "target": "_blank",
       "body": "In todo app I got to build a small todo app with javascript!"
@@ -19,9 +19,9 @@
         "Some interesting things I came across: Apparently arrow functions have a different scope than the traditionally typed ones, so if you use an arrow function inside an event listener anything referring to the this keyword inside the function won't be bound by the caller of the function, that is the event of the listener, but rather by the scope of the encapsulated app. Also apparently the constructor function part of classes serves more or less the same purpose as the whole constructor function approach methodology, so the prototype extension of each object/app is sort of more explicit in the classes approach."
       ],
       "images": [
-        "images/todoapp.png",
-        "images/todoapp2.png",
-        "images/todoapp3.png"
+        "todoapp.png",
+        "todoapp2.png",
+        "todoapp3.png"
       ]
     }
   ]

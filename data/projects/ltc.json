@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/sheep-2.jpg",
+      "image": "sheep-2.jpg",
       "link": "projects/layout-theme-challenge/index.php",
       "target": "_blank",
       "body": "In the theming challenge I had to style a premade html template.",

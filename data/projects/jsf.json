@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/js.png",
+      "image": "js.png",
       "link": "projects/form-exercises-with-js/index.php",
       "target": "_blank",
       "body": "In forms with javascript I had to create some forms using Javascript!"

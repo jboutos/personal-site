@@ -2,7 +2,7 @@
 	<left-panel>
 
 		<picture class='profile'>
-			<img src='<?= $profPic ?>'>
+			<img src='<?= "images/" . $profPic ?>'>
 		</picture>
 
 		<qualifications>

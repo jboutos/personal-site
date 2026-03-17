@@ -10,19 +10,19 @@
       "cards": [
         {
           "title": "Goals",
-          "image": "images/goals.png",
+          "image": "goals.png",
           "link": "?page=goals",
           "target": "_self"
         },
         {
           "title": "My substack",
-          "image": "images/substack3.png",
+          "image": "substack3.png",
           "link": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
           "target": "_blank"
         },
         {
           "title": "Resume",
-          "image": "images/resume.png",
+          "image": "resume.png",
           "link": "?page=resume",
           "target": "_self"
         }

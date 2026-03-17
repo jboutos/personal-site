@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/pink2.png",
+      "image": "pink2.png",
       "link": "projects/super-layout-challenge-pink/index.html",
       "target": "_blank",
       "body": "In the second iteration of the super layout challenge I once again tested my knowledge of flexbox, this one turned out to be a bit trickier!"

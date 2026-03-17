@@ -3,7 +3,7 @@
   "sections": [
     {
       "module": "resume",
-      "profPic": "images/prof-pic2.jpg",
+      "profPic": "prof-pic2.jpg",
       "name": "IOANNIS BOUTOS",
       "qualificationsTitle": "CORE QUALIFICATIONS",
       "qualifications": [
@@ -25,19 +25,19 @@
       ],
       "personalInfo": [
         {
-        	"module": "contact-info",
+         "module": "contact-info",
          "contact": "+306942930998",
-         "picture": "images/phone.png"
+         "picture": "phone.png"
         },
         {
-        	"module": "contact-info",
+         "module": "contact-info",
          "contact": "jgbout89@gmail.com",
-         "picture": "images/email.png"
+         "picture": "email.png"
         },
         {
-        	"module": "contact-info",
+         "module": "contact-info",
          "contact": "Olympou 47-49, Chalandri, Athens, Greece",
-         "picture": "images/place.png"
+         "picture": "place.png"
         }
       ],
       "experience": [
@@ -59,7 +59,7 @@
           ]
         },
         {
-        	"module": "experience",
+         "module": "experience",
          "title": "HOBBIES",
          "skills": [
 	         "Volunteering at a shelter for stray animals",

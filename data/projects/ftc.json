@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/figma.png",
+      "image": "figma.png",
       "link": "projects/figma-to-code-challenge/index.php",
       "target": "_blank",
       "body": "In the figma to code challenge I had to copy the styles of a figma site mockup."
@@ -18,8 +18,8 @@
         "While this methodology was not really suitable for building just 3 pages, having such a system support an app or website with hundreds of similar components makes sense — you get to build new pages by changing a few words in a file!"
       ],
       "images": [
-        "images/figma-1.png",
-        "images/figma-2.png"
+        "figma-1.png",
+        "figma-2.png"
       ]
     }
   ]

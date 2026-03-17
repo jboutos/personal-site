@@ -4,7 +4,7 @@
   "sections": [
     {
       "module": "project-hero",
-      "image": "images/php.png",
+      "image": "php.png",
       "link": "projects/php-exercises/index.php",
       "target": "_blank",
       "body": "In forms with php I had to test for the first time how the html form works in conjunction with php!"

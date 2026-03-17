@@ -4,7 +4,7 @@
 <project-card id='<?= $id ?>'>
    <picture class='image'>
       <a href='<?= $href ?>'>
-         <img src='<?= $image ?>' alt='<?= $title ?> image'>
+         <img src='<?= "images/" .  $image ?>' alt='<?= $title ?> image'>
       </a>
    </picture>
    <h2 class='subtle-voice'><?= $title ?></h2>

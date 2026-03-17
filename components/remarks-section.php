@@ -7,7 +7,7 @@
         <div class='remarks-img'>
             <?php foreach ($images as $image) : ?>
                 <picture>
-                    <img src='<?= $image ?>' alt=''>
+                    <img src='<?= "images/" . $image ?>' alt=''>
                 </picture>
             <?php endforeach; ?>
         </div>
