@@ -29,6 +29,7 @@ main {
 }
 
 .column {
+	position: relative;
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -146,7 +147,7 @@ ul {
 	column-gap: 3em;
 	padding: 0;
 
-	width: 80vw;
+
 
 	@media (min-width: 570px) {
 		justify-content: center;

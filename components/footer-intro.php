@@ -1,5 +1,5 @@
 <div class='footer-links'>
-	<h2 class="careful-voice"><?= $link2 ?></h2>
+	<h2 class="careful-voice footer-heading"><?= $link2 ?></h2>
 
 	<nav>
 		<a class='underline' href='?page=welcome'><?= $link3 ?></a>

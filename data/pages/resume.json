@@ -5,22 +5,32 @@
       "module": "resume",
       "profPic": "prof-pic2.jpg",
       "name": "IOANNIS BOUTOS",
-      "qualificationsTitle": "CORE QUALIFICATIONS",
       "qualifications": [
-        "Willingness to learn",
-        "Cooperative",
-        "Focused on goals and targets",
-        "Efficient communicator"
+        {
+          "module": "experience",
+          "title": "CORE QUALIFICATIONS",
+          "skills": [
+            "Willingness to learn",
+            "Cooperative",
+            "Focused on goals and targets",
+            "Efficient communicator"
+          ]
+        }
       ],
-      "educationTitle": "EDUCATION",
       "education": [
         {
-          "school": "University of Piraeus, Business Administration",
-          "years": "2007 - 2013"
-        },
-        {
-          "school": "LFHED | Lycée Franco-Hellénique Eugène Delacroix",
-          "years": "2001 - 2007"
+          "module": "education",
+          "title": "EDUCATION",
+          "education": [
+            {
+              "school": "University of Piraeus, Business Administration",
+              "years": "2007 - 2013"
+            },
+            {
+              "school": "LFHED | Lycée Franco-Hellénique Eugène Delacroix",
+              "years": "2001 - 2007"
+            }
+          ]
         }
       ],
       "personalInfo": [
@@ -42,7 +52,7 @@
       ],
       "experience": [
         {
-        	"module": "experience",
+          "module": "experience",
           "title": "WORK EXPERIENCE",
           "skills": [
             "Cultivation of olive trees in Macrychori, Larisa<br>2016 - 2024",
@@ -50,7 +60,7 @@
           ]
         },
         {
-        	"module": "experience",
+          "module": "experience",
           "title": "LANGUAGES",
           "skills": [
             "English - Excellent knowledge (Cambridge Proficiency)",
@@ -62,8 +72,8 @@
          "module": "experience",
          "title": "HOBBIES",
          "skills": [
-	         "Volunteering at a shelter for stray animals",
-	         "Surfing, snowboarding"
+           "Volunteering at a shelter for stray animals",
+           "Surfing, snowboarding"
           ]
         }
       ]

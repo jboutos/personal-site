@@ -6,27 +6,18 @@
 		</picture>
 
 		<qualifications>
-			<h3 class='subtle-voice resume-heading'><?= $qualificationsTitle ?></h3>
-
-			<ul class='resume-list'>
-
-			<?php foreach ($qualifications as $quality) { ?>
-				<li><?=$quality?></li>
-			<?php } ?>
-
-			</ul>
+			<?php foreach ($qualifications as $group) { ?>
+		      <?= component($group['module'], $group) ?>
+		   <?php } ?>
 			
 		</qualifications>
 
 		<hr>
 
 		<education>
-			<h3 class='subtle-voice resume-heading'><?= $educationTitle ?></h3>
-
-			<?php foreach ($education as $edu) { ?>
-				<p class='calm-voice education'><?=$edu['school']?>
-				<br><?=$edu['years']?></p>
-			<?php } ?>
+			<?php foreach ($education as $group) { ?>
+		      <?= component($group['module'], $group) ?>
+		   <?php } ?>
 		</education>
 
 	</left-panel>

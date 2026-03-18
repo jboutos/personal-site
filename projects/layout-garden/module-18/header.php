@@ -70,5 +70,5 @@
 				<button type="submit"><img src='images/icons8-search.png'></button>
 			</div>
 		</div>
-	<inner-column>
+	</inner-column>
 </header>

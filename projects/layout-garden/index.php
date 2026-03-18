@@ -14,6 +14,11 @@ $theme = $_GET['theme'] ?? 'default';
 		<link rel='stylesheet' href='css/style.css'>
 	</head>
 	<body class='theme-<?= $theme ?>'>
+
+		<header>
+			<?php include('header.php') ?>
+		</header>
+		
 		<partials>
 			<?php include('module-1/split-hero.php') ?>
 			<?php include('module-2/info-cards.php') ?>
@@ -34,5 +39,7 @@ $theme = $_GET['theme'] ?? 'default';
 			<?php include('module-17/article-showcase.php') ?>
 			<?php include('module-18/header.php') ?>
 		</partials>
+
+		<script src='script.js'></script>
 	</body>
 </html>
