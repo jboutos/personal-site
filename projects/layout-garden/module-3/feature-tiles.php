@@ -3,7 +3,7 @@
 		<div class='info-pic'>
 			<div class='picture'>
 				<picture>
-					<img src='images/square-affinity.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='info'>
@@ -14,7 +14,7 @@
 		<div class='info-pic'>
 			<div class='picture'>
 				<picture>
-					<img src='images/square-affinity.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='info'>
@@ -25,7 +25,7 @@
 		<div class='info-pic'>
 			<div class='picture'>
 				<picture>
-					<img src='images/square-affinity.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='info'>

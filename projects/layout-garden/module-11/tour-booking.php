@@ -21,7 +21,7 @@
 			</div>
 			<div class='container-1'>
 				<picture class='picture'>
-					<img src='images/square.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='container-2'>
@@ -60,7 +60,7 @@
 			</div>
 			<div class='container-1'>
 				<picture class='picture'>
-					<img src='images/square.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='container-2'>

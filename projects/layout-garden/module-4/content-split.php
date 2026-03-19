@@ -2,7 +2,7 @@
 	<inner-column>
 		<div>
 			<picture>
-				<img src='images/rectangle.png'>
+				<img src='//peprojects.dev/images/landscape.jpg'>
 			</picture>
 		</div>
 		<div>

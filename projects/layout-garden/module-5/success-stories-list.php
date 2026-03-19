@@ -5,7 +5,7 @@
 			<div class='stories'>
 				<div>
 					<picture>
-						<img src='images/square.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -19,7 +19,7 @@
 			<div class='stories'>
 				<div>
 					<picture>
-						<img src='images/square.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -33,7 +33,7 @@
 			<div class='stories'>
 				<div>
 					<picture>
-						<img src='images/square.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -47,7 +47,7 @@
 			<div class='stories'>
 				<div>
 					<picture>
-						<img src='images/square.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</div>
 				<div>

@@ -3,7 +3,7 @@
 		<div class='container'>
 			<div>
 				<picture>
-					<img class='logo' src='images/square.png'>
+					<img class='logo' src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<div class='search'>
 					<input class='hidden' type="search" id="site-search" name="q" placeholder='Search for items'>
@@ -14,7 +14,7 @@
 				<a href='#'>
 					<div>
 						<picture>
-							<img src='images/circle.png'>
+							<img src='//peprojects.dev/images/square.jpg'>
 						</picture>
 						<p class='hidden-2'>Lists</p>
 					</div>
@@ -22,14 +22,14 @@
 				<a href='#'>
 					<div>
 						<picture>
-							<img src='images/circle.png'>
+							<img src='//peprojects.dev/images/square.jpg'>
 						</picture>
 						<p class='hidden-2'>Log In</p>
 					</div>
 				</a>
 				<a href='#'>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</a>
 			</div>
@@ -40,7 +40,7 @@
 					<a href='#'>
 						<div class='hidden'>
 							<picture>
-								<img src='images/square.png'>
+								<img src='//peprojects.dev/images/square.jpg'>
 							</picture>
 							<p>EShop</p>
 						</div>

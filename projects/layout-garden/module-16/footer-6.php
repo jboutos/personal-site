@@ -43,22 +43,22 @@
 			<h2 class='attention-voice'>SOCIAL MEDIA</h2>
 			<div class='social'>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<hr>

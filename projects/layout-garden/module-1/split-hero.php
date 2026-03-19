@@ -3,7 +3,7 @@
 		<section>
 			<div class='half one'>
 				<picture>
-					<img src='images/rectangle.png'>
+					<img src='//peprojects.dev/images/landscape.jpg'>
 				</picture>
 
 				<div class='info'>
@@ -16,7 +16,7 @@
 
 			<div class='half two'>
 				<picture>
-					<img src='images/rectangle.png'>
+					<img src='//peprojects.dev/images/landscape.jpg'>
 				</picture>
 
 				<div class='info'>

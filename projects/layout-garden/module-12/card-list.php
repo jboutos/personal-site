@@ -8,10 +8,10 @@
 			<div class='container'>
 				<div>
 					<picture class='hidden-4'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 					<picture class='hidden-5'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -25,10 +25,10 @@
 			<div class='container'>
 				<div>
 					<picture class='hidden-4'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 					<picture class='hidden-5'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -42,10 +42,10 @@
 			<div class='container'>
 				<div>
 					<picture class='hidden-4'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 					<picture class='hidden-5'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div>
@@ -59,10 +59,10 @@
 			<div class='container'>
 				<div>
 					<picture class='hidden-4'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 					<picture class='hidden-5'>
-						<img src='images/rectangle.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div>

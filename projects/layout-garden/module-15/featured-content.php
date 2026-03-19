@@ -4,7 +4,7 @@
 			<div class='card-1'>
 				<div class='picture'>
 					<picture>
-						<img src='images/rectangle-landscape-affinity.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div class='info-1'>
@@ -17,7 +17,7 @@
 			<div class='card-2'>
 				<div class='picture'>
 					<picture>
-						<img src='images/rectangle-landscape-affinity.png'>
+						<img src='//peprojects.dev/images/landscape.jpg'>
 					</picture>
 				</div>
 				<div class='info-2'>

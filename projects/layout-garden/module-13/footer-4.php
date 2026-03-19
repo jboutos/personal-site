@@ -3,7 +3,7 @@
 		<div class='container-2'>
 			<div class='logo'>
 				<picture>
-					<a href='#'><img src='images/circle.png'></a>
+					<a href='#'><img src='//peprojects.dev/images/square.jpg'></a>
 				</picture>
 			</div>
 			<div class='links-3'>
@@ -40,36 +40,36 @@
 			<div class='container'>
 				<div class='payment'>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture>
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture >
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 					<picture >
-						<img src='images/circle.png'>
+						<img src='//peprojects.dev/images/square.jpg'>
 					</picture>
 				</div>
 				<div class='socials'>
 					<picture>
-						<a href='#'><img src='images/circle.png'></a>
+						<a href='#'><img src='//peprojects.dev/images/square.jpg'></a>
 					</picture>
 					<picture>
-						<a href='#'><img src='images/circle.png'></a>
+						<a href='#'><img src='//peprojects.dev/images/square.jpg'></a>
 					</picture>
 				</div>
 			</div>

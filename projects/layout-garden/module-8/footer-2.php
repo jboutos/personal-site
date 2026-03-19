@@ -9,7 +9,7 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur.</p>
 				<picture>
-					<img src='images/circle.png'>
+					<img src='//peprojects.dev/images/square.jpg'>
 				</picture>
 			</div>
 			<div class='container'>
