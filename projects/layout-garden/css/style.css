@@ -151,7 +151,7 @@ a {
 
 split-hero, info-cards, feature-tiles, content-split, success-stories-list, feature-overview, footer-1,
 footer-2, stat-highlight, footer-3, tour-booking, card-list, footer-4, footer-5, footer-6, featured-content, 
-article-showcase, footer-1 {
+article-showcase, footer-1, header-2 {
 	padding: var(--space-5) var(--space-1);
 }
 
@@ -300,7 +300,7 @@ info-cards {
 	}
 
 	h2 {
-		margin: var(--space-1) 0;
+		margin: var(--space-2) 0 var(--space-1) 0;
 	}
 
 	a {
@@ -423,7 +423,7 @@ content-split {
 		align-items: center;
 		min-height: 200px;
 
-		margin-top: var(--space-1);
+
 	}
 
 	.container-2 {
@@ -1141,7 +1141,7 @@ footer-2 {
 
 /*STYLE*/
 footer-2 {
-	background-color: var(--background-4);
+	background-color: var(--background-7);
 	color: var(--background-16);
 }
 
@@ -1389,6 +1389,10 @@ tour-booking {
 		align-items: center;
 	}
 
+	a {
+		display: block;
+	}
+
 	.book {
 		@media (min-width: 700px) {
 			display: flex;
@@ -1522,7 +1526,11 @@ tour-booking {
 
 	a {
 		text-align: center;
-		margin-top: var(--space-1);
+
+		@media (max-width: 700px) {
+			margin-top: var(--space-1);
+		}
+		
 		padding: var(--space-1) 0;
 
 		@media (min-width: 700px) {
@@ -1556,7 +1564,6 @@ tour-booking {
 	.calendar {
 		display: flex;
 		align-items: center;
-		margin-bottom: var(--space-1);
 	}
 
 	.container-1 {
@@ -1675,7 +1682,7 @@ card-list {
 	}
 
 	h4 {
-		padding-bottom: var(--space-0);
+		padding-bottom: var(--space-1);
 	}
 
 	.hidden {
@@ -1743,7 +1750,7 @@ card-list {
 
 /*STYLE*/
 card-list {
-	background-color: var(--background-7);
+	background-color: var(--background-4);
 
 	hr {
 	  border: none;   
@@ -1778,6 +1785,7 @@ footer-4 {
 
 	.socials {
 		display: flex;
+		gap: var(--space-1);
 	}
 
 	.links {
@@ -1960,11 +1968,6 @@ footer-4 {
 /*MODULES*/
 footer-5 {
 
-	.logo, hr, .container, .socials, .footer {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 
 	.logo {
@@ -2147,6 +2150,7 @@ footer-5 {
 
 		.socials-2 {
 			display: flex;
+			gap: var(--space-1);
 		}
 
 		.info {
@@ -2564,7 +2568,7 @@ footer-6 {
 	}
 
 	.info a {
-		padding-bottom: var(--space-0);
+		padding-bottom: var(--space-2);
 	}
 
 	hr {
@@ -2938,7 +2942,7 @@ article-showcase {
 
 
 /*MODULES*/
-header {
+header-2 {
 	
 	inner-column {
 	   gap: var(--space-0);
@@ -2979,7 +2983,7 @@ header {
 
 
 /*STRUCTURE*/
-header {
+header-2 {
 
 	.loud-voice {
 		padding: var(--space-0) 0;
@@ -3016,9 +3020,7 @@ header {
 		flex-grow: 1; 
 	}
 
-	a {
-		padding: var(--space-1) var(--space-1) 0 var(--space-1);
-	}
+
 
 	button img {
 		width: 10px;
@@ -3050,15 +3052,15 @@ header {
 }
 
 /*TYPOGRAPHY*/
-header {
+header-2 {
 	.loud-voice {
 		text-align: center;
 	}
 }
 
 /*STYLE*/
-header {
-	background-color: var(--background-7);
+header-2 {
+	background-color: var(--background-4);
 
 	.subtle-voice {
 		color: var(--background-29);
@@ -3068,10 +3070,6 @@ header {
 		border-radius: var(--radius-medium);
 		padding-left: var(--space-2);
 		border: 1px solid darkgray;
-	}
-
-	a:hover {
-		background-color: lightgray;
 	}
 
 	a {
@@ -3099,7 +3097,7 @@ header {
 
 @media (min-width: 900px) {
 	/*MODULES*/
-	header {
+	header-2 {
 		.icons div {
 			display: flex;
 			align-items: center;
@@ -3108,7 +3106,7 @@ header {
 	}
 
 	/*STRUCTURE*/
-	header {
+	header-2 {
 		.hidden-2 {
 			display: flex;
 		}
@@ -3117,7 +3115,7 @@ header {
 
 @media (min-width: 1100px) {
 	/*MODULES*/
-	header {
+	header-2 {
 		.links {
 			display: flex;
 			align-items: center;
@@ -3144,18 +3142,14 @@ header {
 	}
 
 	/*STRUCTURE*/
-	header {
+	header-2 {
 		.hidden {
 			display: flex;
+			gap: var(--space-2);
 		}
 
 		.hidden-3 {
 			display: none
-		}
-
-		.hidden {
-			display: flex;
-			gap: var(--space-1);
 		}
 
 		.container input {

@@ -1,4 +1,4 @@
-<header class='wrapper'>
+<header-2 class='wrapper'>
 	<inner-column>
 		<div class='container'>
 			<div>
@@ -71,4 +71,4 @@
 			</div>
 		</div>
 	</inner-column>
-</header>
+</header-2>
