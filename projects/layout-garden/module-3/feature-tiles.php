@@ -8,7 +8,9 @@
 			</div>
 			<div class='info'>
 				<p class='calm-voice'>The future of mowing is here</p>
-				<h3 class='clamp-voice'>Shop Robotic Lawn Mowers</h3>
+				<a href='#'>
+					<h3 class='clamp-voice'>Shop Robotic Lawn Mowers</h3>
+				</a>
 			</div>
 		</div>
 		<div class='info-pic'>
@@ -19,7 +21,9 @@
 			</div>
 			<div class='info'>
 				<p class='calm-voice'>Chainsaws for every challenge</p>
-				<h3 class='clamp-voice'>Shop Legendary Chainsaws</h3>
+				<a href='#'>
+					<h3 class='clamp-voice'>Shop Legendary Chainsaws</h3>
+				</a>
 			</div>
 		</div>
 		<div class='info-pic'>
@@ -30,7 +34,9 @@
 			</div>
 			<div class='info'>
 				<p class='calm-voice'>Designed to be easy to use</p>
-				<h3 class='clamp-voice'>Shop MAX Battery Series</h3>
+				<a href='#'>
+					<h3 class='clamp-voice'>Shop MAX Battery Series</h3>
+				</a>
 			</div>
 		</div>
 	</inner-column>

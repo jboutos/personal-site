@@ -63,7 +63,7 @@
 		</div>
 		<div class='container-2'>
 			<picture class='hidden-3'>
-				<img src='images/circle.png'>
+				<img src='//peprojects.dev/images/square.jpg'>
 			</picture>
 			<div class='search-2'>
 				<input class='hidden-3' type="search" id="site-search" name="q" placeholder='Search for items'>

@@ -5,7 +5,7 @@
 				<img src='//peprojects.dev/images/landscape.jpg'>
 			</picture>
 		</div>
-		<div>
+		<div class='container'>
 			<div>
 				<h1 class='loud-voice'>Heading level 1</h1>
 				<h2 class='attention-voice'>This is a heading level 2. Supposedly this is a longer one</h2>

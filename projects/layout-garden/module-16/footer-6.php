@@ -40,7 +40,7 @@
 				<input class='input-2' type="submit" value="SUBSCRIBE">
 			</div>
 			<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
-			<h2 class='attention-voice'>SOCIAL MEDIA</h2>
+			<h2 class='attention-voice social-heading'>SOCIAL MEDIA</h2>
 			<div class='social'>
 				<picture>
 					<img src='//peprojects.dev/images/square.jpg'>

@@ -26,11 +26,11 @@
 		<hr class='last-hr'>
 		<div class='links'>
 			<a href='#'>Malts Club T&Cs</a>
-			<p>|</p>
+			<span>|</span>
 			<a href='#'>Promotional T&Cs</a>
-			<p>|</p>
+			<span>|</span>
 			<a href='#'>Terms of Sale</a>
-			<p>|</p>
+			<span>|</span>
 			<a href='#'>Contact us</a>
 		</div>
 		<div class='container-3'>
