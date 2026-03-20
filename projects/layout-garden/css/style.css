@@ -169,6 +169,8 @@ split-hero {
 
 	section {
 		gap: var(--space-3);
+
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 	
 	.info {
@@ -325,6 +327,7 @@ info-cards {
 
 	.info {
 		border: 1px solid #d3d3d3;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	a:hover {
@@ -384,6 +387,10 @@ feature-tiles {
 
 	p {
 		color: gray;
+	}
+
+	.picture img {
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 }
 
@@ -679,6 +686,7 @@ success-stories-list {
 	img {
 		border-radius: 50%;
 		border: 1px solid lightgray;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 }
 
@@ -781,6 +789,7 @@ feature-overview {
 
 	img {
 		border: 1px solid lightgray;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 }
 
@@ -1196,6 +1205,8 @@ stat-highlight {
 	@media (min-width: 800px) {
 		container {
 			display: flex;
+
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 		}
 
 		.info {
@@ -1668,6 +1679,7 @@ tour-booking {
 
 	.card {
 		border: 1px solid lightgray;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	hr {
@@ -1813,6 +1825,7 @@ card-list {
 
 	img {
 		border: 1px solid lightgray;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 }
 
@@ -2405,20 +2418,27 @@ featured-content {
 	.card-1 {
 		background-color: var(--background-9);
 		color: white;
+
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.card-2 {
 		background-color: var(--background-10);
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.info-3 {
 		background-color: var(--background-11);
 		color: white;
+
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.info-4 {
 		background-color: var(--background-12);
 		color: white;
+
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.info-1 .button, .info-3 .button, .info-4 .button {
@@ -2768,6 +2788,7 @@ footer-6 {
 	img {
 		border-radius: 50%;
 		border: 1px solid lightgray;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 }
 
@@ -2906,6 +2927,7 @@ article-showcase {
 		background-size: cover;
 	   background-position: center;
 	   border: 1px solid lightgray;
+	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.background-2 {
@@ -2913,6 +2935,7 @@ article-showcase {
 		background-size: cover;
 	   background-position: center;
 	   border: 1px solid lightgray;
+	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.background-3 {
@@ -2920,6 +2943,7 @@ article-showcase {
 		background-size: cover;
 	   background-position: center;
 	   border: 1px solid lightgray;
+	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.background div {
