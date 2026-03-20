@@ -245,6 +245,7 @@ split-hero {
 
 	.one .info {
 		background-color: var(--background-1);
+		color: var(--background-16);
 	}
 
 	.two .info {
@@ -324,6 +325,7 @@ info-cards {
 /*STYLE*/
 info-cards {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	.info {
 		border: 1px solid #d3d3d3;
@@ -384,6 +386,7 @@ feature-tiles {
 /*STYLE*/
 feature-tiles {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	p {
 		color: gray;
@@ -569,6 +572,9 @@ content-split {
 	/*background-repeat: no-repeat;*/
 	background: var(--background-21);
 
+	.loud-voice, p, li, .subtle-voice {
+		color: var(--background-16);
+	}
 
 	.attention-voice {
 		color: var(--passionate);
@@ -674,6 +680,7 @@ success-stories-list {
 /*STYLE*/
 success-stories-list {
 	background: var(--background-4);
+	color: var(--background-16);
 	
 	a {
 		text-decoration: underline;
@@ -786,6 +793,7 @@ feature-overview {
 /*STYLE*/
 feature-overview {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	img {
 		border: 1px solid lightgray;
@@ -1642,6 +1650,7 @@ tour-booking {
 /*STYLE*/
 tour-booking {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	img {
 		border: 1px solid lightgray;
@@ -1689,7 +1698,7 @@ tour-booking {
 	}
 
 	p, h5 {
-		color: var(--background-15);
+		color: var(--background-16);
 	}
 
 	a {
@@ -1812,6 +1821,7 @@ card-list {
 /*STYLE*/
 card-list {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	hr {
 	  border: none;   
@@ -1945,6 +1955,7 @@ footer-4 {
 /*STYLE*/
 footer-4 {
 	background-color: var(--background-4);
+	color: var(--background-16);
 	
 	hr {
 		border-color: lightgray;
@@ -2147,6 +2158,7 @@ footer-5 {
 footer-5 {
 
 	background-color:  var(--background-4);
+	color: var(--background-16);
 
 	.logo a {
 		border: 1px solid black;
@@ -2445,6 +2457,14 @@ featured-content {
 		color: black;
 		background-color: white;
 		border-radius: var(--radius-pill);
+	}
+
+	.info-2 .subtle-voice, .info-2 .calm-voice {
+		color: var(--background-16);
+	}
+
+	.info-2 .button {
+		background-color: var(--background-16);
 	}
 
 }
@@ -2921,6 +2941,7 @@ article-showcase {
 article-showcase {
 
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	.background {
 		background-image: url(//peprojects.dev/images/landscape.jpg);
@@ -2928,6 +2949,7 @@ article-showcase {
 	   background-position: center;
 	   border: 1px solid lightgray;
 	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	   max-height: 250px;
 	}
 
 	.background-2 {
@@ -2936,6 +2958,7 @@ article-showcase {
 	   background-position: center;
 	   border: 1px solid lightgray;
 	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	   max-height: 250px;
 	}
 
 	.background-3 {
@@ -2944,6 +2967,7 @@ article-showcase {
 	   background-position: center;
 	   border: 1px solid lightgray;
 	   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	   max-height: 250px;
 	}
 
 	.background div {
@@ -3178,6 +3202,7 @@ header-2 {
 /*STYLE*/
 header-2 {
 	background-color: var(--background-4);
+	color: var(--background-16);
 
 	.subtle-voice {
 		color: var(--background-29);
