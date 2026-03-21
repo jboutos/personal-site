@@ -23,7 +23,9 @@
 				<hr>
 			</div>
 		</div>
-		<hr class='last-hr'>
+
+		<hr class='header-hr'>
+
 		<div class='links'>
 			<a href='#'>Malts Club T&Cs</a>
 			<span>|</span>

@@ -1,3 +1,38 @@
+<?php 
+
+	$cards = [
+		[
+			"title" => "Heading level 4",
+			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.",
+			"image" => "//peprojects.dev/images/landscape.jpg"
+		],
+		[
+			"title" => "Another Heading",
+			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.",
+			"image" => "//peprojects.dev/images/landscape.jpg"
+		],
+		[
+			"title" => "Third Card",
+			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.",
+			"image" => "//peprojects.dev/images/landscape.jpg"
+		],
+		[
+			"title" => "Fourth Card",
+			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.",
+			"image" => "//peprojects.dev/images/landscape.jpg"
+		]
+	];
+
+?>
+
 <card-list class='wrapper'>
 	<inner-column>
 		<div class='link-top'>
@@ -5,73 +40,17 @@
 			<a class='hidden-2' href='#'>View All</a>
 		</div>
 		<div class='mega-container'>
-			<div class='container'>
-				<div>
-					<picture class='hidden-4'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-					<picture class='hidden-5'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-				</div>
-				<div>
-					<h4 class='wise-voice'>Heading level 4</h4>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<hr class='hidden-3'>
-			<div class='container'>
-				<div>
-					<picture class='hidden-4'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-					<picture class='hidden-5'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-				</div>
-				<div>
-					<h4 class='wise-voice'>Heading level 4</h4>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation.</p>
-				</div>
-			</div>
-			<hr class='hidden-3'>
-			<div class='container'>
-				<div>
-					<picture class='hidden-4'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-					<picture class='hidden-5'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-				</div>
-				<div>
-					<h4 class='wise-voice'>Heading level 4</h4>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<hr class='hidden-3'>
-			<div class='container'>
-				<div>
-					<picture class='hidden-4'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-					<picture class='hidden-5'>
-						<img src='//peprojects.dev/images/landscape.jpg'>
-					</picture>
-				</div>
-				<div>
-					<h4 class='wise-voice'>Heading level 4</h4>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
+			<?php foreach ($cards as $index => $card) {
+				$image = $card['image'];
+				$title = $card['title'];
+				$text = $card['text'];
+
+				include('components/card-from-card-list.php');
+
+				if ($index < count($cards) - 1) {
+					echo "<hr class='hidden-3'>";
+				}
+			} ?>
 			<a class='hidden' href='#'>View All</a>
 		</div>
 	</inner-column>

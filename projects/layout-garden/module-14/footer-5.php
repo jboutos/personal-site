@@ -17,7 +17,7 @@
 		<div class='container'>
 			<div class='info'>
 				<div class='info-1'>
-					<h2 class='subtle-voice'>ABOUT US</h2>
+					<h2 class='extra-wise-voice'>ABOUT US</h2>
 					<a href='#'>Media Center</a>
 					<a href='#'>A Certain Company Foundation</a>
 					<a href='#'>Investors</a>
@@ -25,7 +25,7 @@
 					<a href='#'>Careers</a>
 				</div>
 				<div class='info-2'>
-					<h2 class='subtle-voice'>NEED HELP?</h2>
+					<h2 class='extra-wise-voice'>NEED HELP?</h2>
 					<a href='#'>FAQ</a>
 					<a href='#'>Contact Us</a>
 					<a href='#'>International</a>
@@ -70,7 +70,7 @@
 			</picture>
 		</div>
 		<div class='footer'>
-			<p class='calm-voice'>© 2025 Some Company. All rights reserved.</p>
+			<p class='miniscule-voice'>© 2025 Some Company. All rights reserved.</p>
 		</div>
 	</inner-column>
 </footer-5>
