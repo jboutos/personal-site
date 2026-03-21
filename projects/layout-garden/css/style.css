@@ -266,11 +266,11 @@ split-hero {
 	}
 
 	.two h2, .two p, .two a {
-		color: white;
+		color: var(--background-4);
 	}
 
 	.two a {
-		border: 1px solid white;
+		border: 1px solid var(--background-4);
 
 		&:hover {
 			color: var(--background-1);
@@ -888,8 +888,8 @@ footer-1 {
 /*STRUCTURE*/
 footer-1 {
 
-	.subtle-voice {
-		margin-bottom: var(--space-2);
+	.wise-voice {
+		margin-bottom: var(--space-4);
 	}
 
 	img {
@@ -934,7 +934,7 @@ footer-1 {
 	}
 
 	h3, p {
-		color: white;
+		color: var(--background-4);
 	}
 
 	a {
@@ -1290,7 +1290,7 @@ stat-highlight {
 	}
 
 	p, a {
-		color: white;
+		color: var(--background-4);
 	}
 }
 
@@ -1424,7 +1424,7 @@ footer-3 {
 /*STYLE*/
 footer-3 {
 	background: var(--background-6);
-	color: white;
+	color: var(--background-4);
 
 	a:hover {
 		color: var(--bright);
@@ -1432,7 +1432,7 @@ footer-3 {
 
 	select {
 		background-color: var(--background-22);
-		color: white;
+		color: var(--background-4);
 		border: 4px solid var(--soothing);
 		border-radius: var(--radius-pill);
 	}
@@ -1729,7 +1729,7 @@ tour-booking {
 	}
 
 	a {
-		color: white;
+		color: var(--background-4);
 		background-color: var(--background-24);
 
 		&:hover {
@@ -2195,12 +2195,18 @@ footer-5 {
 
 	.button picture {
 		display: inline;
-		width: 20px;
+		width: 15px;
 		border: none;
 	}
 
 	.button svg {
+		display: block;
 		fill: currentColor;
+		transition: transform 0.3s ease;
+	}
+
+	.button:hover svg {
+		transform: scale(1.3);
 	}
 
 	.socials-2 {
@@ -2281,7 +2287,7 @@ footer-5 {
 		.logo .button  a {
 			margin-bottom: 0;
 		}
-	}
+	} 
 
 }
 
@@ -2452,7 +2458,7 @@ featured-content {
 	}
 
 	.info-1 .button {
-		color: white;
+		color: var(--background-4);
 		background-color: black;
 		border-radius: var(--radius-pill);
 
@@ -2462,7 +2468,7 @@ featured-content {
 	}
 
 	.info-2 .button {
-		color: white;
+		color: var(--background-4);
 		background-color: black;
 		border-radius: var(--radius-pill);
 
@@ -2472,7 +2478,7 @@ featured-content {
 	}
 
 	.info-3 .button {
-		color: white;
+		color: var(--background-4);
 		background-color: black;
 		border-radius: var(--radius-pill);
 
@@ -2482,7 +2488,7 @@ featured-content {
 	}
 
 	.info-4 .button {
-		color: white;
+		color: var(--background-4);
 		background-color: black;
 		border-radius: var(--radius-pill);
 
@@ -2497,7 +2503,7 @@ featured-content {
 
 	.card-1 {
 		background-color: var(--background-9);
-		color: white;
+		color: var(--background-4);
 
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
@@ -2509,21 +2515,21 @@ featured-content {
 
 	.info-3 {
 		background-color: var(--background-11);
-		color: white;
+		color: var(--background-4);
 
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.info-4 {
 		background-color: var(--background-12);
-		color: white;
+		color: var(--background-4);
 
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	.info-1 .button, .info-3 .button, .info-4 .button {
 		color: black;
-		background-color: white;
+		background-color: var(--background-4);
 		border-radius: var(--radius-pill);
 	}
 
@@ -2698,6 +2704,7 @@ footer-6 {
 			display: grid;
 			grid-template-rows: 1fr 1fr;
 			grid-template-columns: 1fr 1fr;
+			gap: var(--space-3);
 			width: 90%;
 			margin-left: auto;
 			margin-right: auto;
@@ -2742,7 +2749,7 @@ footer-6 {
 	}
 
 	.subtle-voice {
-		padding-bottom: var(--space-2);
+		padding-bottom: var(--space-3);
 	}
 
 	.miniscule-voice {
@@ -3048,7 +3055,7 @@ article-showcase {
 
 	.info a {
 		background-color: var(--background-24);
-		color: white;
+		color: var(--background-4);
 
 		&:hover {
 			background-color: var(--bright);
