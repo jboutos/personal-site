@@ -2757,10 +2757,6 @@ footer-6 {
 		width: 40px;
 	}
 
-	.info {
-		margin-bottom: var(--space-4);
-	}
-
 	.info a {
 		padding-bottom: var(--space-2);
 	}
@@ -2929,10 +2925,6 @@ article-showcase {
 		margin: var(--space-2) 0 var(--space-1) 0;
 	}
 
-	.calm-voice {
-		max-width: 60ch;
-	}
-
 	.container a:nth-of-type(2) {
 		display: none;
 	}
@@ -3003,6 +2995,10 @@ article-showcase {
 
 	.calm-voice {
 		max-width: 35ch;
+	}
+
+	.info .calm-voice {
+		max-width: 50ch;
 	}
 
 	.info p, .info a, .info h1 {
