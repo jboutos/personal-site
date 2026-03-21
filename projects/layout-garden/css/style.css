@@ -1045,8 +1045,8 @@ footer-2 {
 /*STRUCTURE*/
 footer-2 {
 	
-	.subtle-voice {
-		padding-bottom: var(--space-1);
+	.wise-voice {
+		padding-bottom: var(--space-3);
 
 		@media (min-width: 600px) {
 			text-align: start;
@@ -1138,7 +1138,7 @@ footer-2 {
 	}
 
 	a {
-		padding-bottom: var(--space-1);
+		padding-bottom: var(--space-2);
 	}
 
 	a.legal {
@@ -2730,6 +2730,7 @@ footer-6 {
 
 	.social-heading {
 		margin-top: var(--space-2);
+		margin-bottom: var(--space-1);
 	}
 
 	.attention-voice {
@@ -3106,7 +3107,7 @@ article-showcase {
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 	/*STRUCTURE*/
 	article-showcase {
 		.container a:nth-of-type(3) {

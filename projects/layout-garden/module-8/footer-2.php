@@ -14,7 +14,7 @@
 			</div>
 			<div class='container'>
 				<div class='socials'>
-					<h3 class='subtle-voice'>Follow us</h3>
+					<h3 class='wise-voice'>Follow us</h3>
 					<a href='#'>TikTok</a>
 					<a href='#'>Instagram</a>
 					<a href='#'>Youtube</a>
@@ -22,7 +22,7 @@
 					<a href='#'>Linkedin</a>
 				</div>
 				<div class='contact'>
-					<h3 class='subtle-voice'>Contact</h3>
+					<h3 class='wise-voice'>Contact</h3>
 					<a href='#'>Find us</a>
 					<a href='#'>Contact us</a>
 					<a href='#'>Work for us</a>
