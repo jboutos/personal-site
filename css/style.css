@@ -92,7 +92,7 @@ picture {
 	display: block;
 	aspect-ratio: 1 / 1;
  	overflow: hidden;
- 	max-width: 500px;
+ 	max-width: 300px;
 }
 
 img {

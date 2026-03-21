@@ -1,4 +1,4 @@
-.details {
+.details { 
 	--color: hsl(240 100% 40.2%);
 	--charged: hsl(0 67.9% 41.6%);
 	--base: hsl(188 45.3% 81.4%);
@@ -152,10 +152,6 @@
 			writing-mode: vertical-rl;
 			margin: 0;
 		}
-	}
-
-	.remarks-img img {
-		object-fit: contain;
 	}
 
 }
