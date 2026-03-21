@@ -1,10 +1,12 @@
 .contact {
 
-	--color: hsl(296 70.7% 30.8%);
-	--base: hsl(7 75.8% 93.5%);
-	--hover: hsl(302 58.9% 80.7%);
-	--button: hsl(296 70.7% 30.8%);
-	--circle: hsl(296 70.7% 30.8% / 0.4);
+	/*--color: hsl(296 70.7% 30.8%);*/
+	--color: oklch(35.9% 0.144 278.697);
+	/*--base: hsl(7 75.8% 93.5%);*/
+	--base: oklch(96.7% 0.003 264.542);
+	--hover: oklch(98.5% 0.002 247.839);
+	--button: oklch(35.9% 0.144 278.697);
+	--circle: oklch(78.5% 0.115 274.713);
 
 	@media (prefers-color-scheme: dark) {
 		--color: hsl(7 75.8% 93.5%);
@@ -33,7 +35,6 @@
 
 	textarea#message {
 	    min-height: 300px;
-	    
 	}
 
 	form {
@@ -49,7 +50,7 @@
 	}
 
 	input, textarea {
-		border: 1px solid darkmagenta;
+		border: 1px solid var(--color);
 		padding: 10px;
 		font-size: 1rem;
 		font-family: 'Merriweather Sans', sans-serif;
@@ -58,6 +59,10 @@
 		@media (min-width: 470px) {
 			width: 400px;
 		}
+	}
+
+	input::placeholder, textarea::placeholder {
+		/*color: oklch(78.5% 0.115 274.713);*/
 	}
 
 	button {
