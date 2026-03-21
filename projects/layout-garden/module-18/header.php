@@ -7,7 +7,7 @@
 				</picture>
 				<div class='search'>
 					<input class='hidden' type="search" id="site-search" name="q" placeholder='Search for items'>
-					<button type="submit"><img src='images/icons8-search.png'></button>
+					<button type="submit"><?php include('images/search.svg'); ?></button>
 				</div>
 			</div>
 			<div class='icons'>
@@ -67,7 +67,7 @@
 			</picture>
 			<div class='search-2'>
 				<input class='hidden-3' type="search" id="site-search" name="q" placeholder='Search for items'>
-				<button type="submit"><img src='images/icons8-search.png'></button>
+				<button type="submit"><?php include('images/search.svg'); ?></button>
 			</div>
 		</div>
 	</inner-column>

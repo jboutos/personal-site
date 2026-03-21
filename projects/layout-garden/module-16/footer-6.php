@@ -37,7 +37,7 @@
 			<p>Short paragraph about offers, products and services</p>
 			<div class='input'>
 				<input class='input-1' type="email" id="email" name="email" placeholder="Enter your email">
-				<input class='input-2' type="submit" value="SUBSCRIBE">
+				<button type='submit' class='input-2' value="SUBSCRIBE">SUBSCRIBE</button>
 			</div>
 			<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
 			<h2 class='attention-voice social-heading'>SOCIAL MEDIA</h2>

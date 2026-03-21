@@ -7,7 +7,10 @@
 				</picture>
 			</div>
 			<div class='button'>
-				<a href='#'><picture><img src='images/map.png'></picture>United States | English</a>
+				<a href='#'>
+					<picture><?php include('images/map.svg') ?></picture>
+					<span>United States | English</span>
+				</a>
 			</div>
 		</div>
 		<hr>

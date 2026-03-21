@@ -18,7 +18,12 @@
 					</div>
 				</div>
 				<div class='button'>
-					<button class=wise-voice>International (English)</button>
+					<select class='wise-voice' placeholder='International (English)'>
+						<option value="">International (English)</option>
+						<option value="french">French</option>
+						<option value="german">German</option>
+					</select>
+					<?php include('images/chevron.svg') ?>
 				</div>
 			</div>
 			<div class='footer'>

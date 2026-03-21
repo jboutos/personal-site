@@ -16,7 +16,7 @@
 		<p class='calm-voice introductory-3'>Tours will load below. Please wait one moment for them to load, if they do not, refresh the page.</p>
 		<div class='card'>
 			<div class='background'>
-				<div class="bottom-right">FROM</div>
+				<div class="bottom-right"><span class='mini-voice'>FROM</span></div>
 				<div class="bottom-right-2">£60</div>
 			</div>
 			<div class='container-1'>
@@ -25,10 +25,10 @@
 				</picture>
 			</div>
 			<div class='container-2'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
+				<h3 class='wise-voice'>Heading level 3</h3>
 				<p>This is a short paragraph</p>
 				<hr>
-				<div class='calendar'>
+				<div class='calendar date-info'>
 					<picture>
 						<img src=images/calendar.png></img>
 					</picture>
@@ -41,7 +41,7 @@
 				cillum dolore eu fugiat nulla pariatur.</p>
 				<div class='book'>
 					<div class='book-2'>
-						<div class='calendar'>
+						<div class='calendar duration-info'>
 							<picture>
 								<img src='images/clock.png'>
 							</picture>
@@ -55,7 +55,7 @@
 		</div>
 		<div class='card'>
 			<div class='background-2'>
-				<div class="bottom-right-3">FROM</div>
+				<div class="bottom-right-3"><span class='mini-voice'>FROM</span></div>
 				<div class="bottom-right-4">£110</div>
 			</div>
 			<div class='container-1'>
@@ -64,10 +64,10 @@
 				</picture>
 			</div>
 			<div class='container-2'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
+				<h3 class='wise-voice'>Heading level 3</h3>
 				<p>This is a short paragraph</p>
 				<hr>
-				<div class='calendar'>
+				<div class='calendar date-info'>
 					<picture>
 						<img src=images/calendar.png></img>
 					</picture>
@@ -80,7 +80,7 @@
 				cillum dolore eu fugiat nulla pariatur.</p>
 				<div class='book'>
 					<div class='book-2'>
-						<div class='calendar'>
+						<div class='calendar duration-info'>
 							<picture>
 								<img src='images/clock.png'>
 							</picture>

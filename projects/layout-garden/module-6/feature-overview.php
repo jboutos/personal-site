@@ -10,7 +10,7 @@
 					</picture>
 				</div>
 				<div>
-					<h3 class='subtle-voice'>Learn</h3>
+					<h3 class='wise-voice'>Learn</h3>
 					<p class='calm-voice'>Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
 				</div>
 			</div>
@@ -21,7 +21,7 @@
 					</picture>
 				</div>
 				<div>
-					<h3 class='subtle-voice'>Build</h3>
+					<h3 class='wise-voice'>Build</h3>
 					<p class='calm-voice'>Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites.</p>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 					</picture>
 				</div>
 				<div>
-					<h3 class='subtle-voice'>Connect</h3>
+					<h3 class='wise-voice'>Connect</h3>
 					<p class='calm-voice'>You're not alone. Learn and get help from our friendly community of beginner and experienced developers.</p>
 				</div>
 			</div>
