@@ -1393,6 +1393,8 @@ footer-3 {
 	.button {
 		display: flex;
 		position: relative;
+
+		min-width: 300px;
 	}
 
 	.button select {
