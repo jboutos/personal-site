@@ -2,28 +2,32 @@
 	<inner-column>
 		<section>
 			<div class='half one'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
+				<div class="picture">
+					<picture>
+						<img src='//peprojects.dev/images/landscape.jpg'>
+					</picture>
+				</div>
 
 				<div class='info'>
-					<h2 class='attention-voice'>Heading level 2</h2>
+					<h3 class='attention-voice'>Heading level 2</h2>
 					<p class='calm-voice'>Example paragraph goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-					<a href='#'>Click here</a>
+					<a href='#' class=''>Click here</a>
 				</div>
 			</div>
 
 			<div class='half two'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
+				<div class="picture">
+					<picture>
+						<img src='//peprojects.dev/images/landscape.jpg'>
+					</picture>
+				</div>
 
 				<div class='info'>
-					<h2 class='attention-voice'>Heading level 2</h2>
+					<h3 class='attention-voice'>Heading level 2</h2>
 					<p class='calm-voice'>Example paragraph goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-					<a href='#'>Click here</a>
+					<a href='#' class=''>Click here</a>
 				</div>
 			</div>
 		</section>
