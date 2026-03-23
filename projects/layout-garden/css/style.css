@@ -366,7 +366,6 @@ feature-tiles {
 		align-items: center;
 		gap: var(--space-3);
 		height: 100px;
-		padding: var(--space-2) 0;
 	}
 }
 
