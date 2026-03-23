@@ -815,7 +815,7 @@ feature-overview {
 /*MODULES*/
 footer-1 {
 
-	@media (min-width: 1200px) {
+	@media (min-width: 800px) {
 		display: flex;
 		flex-direction: row;
 		gap: var(--space-8);
@@ -847,7 +847,7 @@ footer-1 {
 			width: 100%;
 		}
 
-		@media (min-width: 1200px) {
+		@media (min-width: 800px) {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -909,7 +909,7 @@ footer-1 {
 			max-width: 100px;
 		}
 
-		@media (min-width: 1200px) {
+		@media (min-width: 800px) {
 			max-width: 60px;
 		}
 	}
@@ -919,7 +919,7 @@ footer-1 {
 			width: 320px;
 		}
 
-		@media (min-width: 1200px) {
+		@media (min-width: 800px) {
 			width: 200px;
 		}
 	}
