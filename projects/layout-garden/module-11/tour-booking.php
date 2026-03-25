@@ -16,7 +16,7 @@
 		<p class='calm-voice introductory-3'>Tours will load below. Please wait one moment for them to load, if they do not, refresh the page.</p>
 		<div class='card'>
 			<div class='background'>
-				<div class="bottom-right"><span class='mini-voice'>FROM</span></div>
+				<div class="bottom-right"><span class='miniscule-voice'>From</span></div>
 				<div class="bottom-right-2">£60</div>
 			</div>
 			<div class='container-1'>
@@ -25,37 +25,37 @@
 				</picture>
 			</div>
 			<div class='container-2'>
-				<h3 class='wise-voice'>Heading level 3</h3>
+				<h4 class='wise-voice'>Heading level 3</h4>
 				<p>This is a short paragraph</p>
 				<hr>
 				<div class='calendar date-info'>
 					<picture>
-						<img src=images/calendar.png></img>
+						<?php include('images/calendar.svg'); ?>
 					</picture>
 					<p>This is a date</p>
 				</div>
-				<p class='calm-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class='lesser-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur.</p>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit...</p>
 				<div class='book'>
 					<div class='book-2'>
 						<div class='calendar duration-info'>
 							<picture>
-								<img src='images/clock.png'>
+								<?php include('images/clock-2.svg'); ?>
 							</picture>
 							<p class='duration'>Duration of event</p>
 							<p class='hidden'>From <span class='bold'>£60</span></p>
 						</div>
 					</div>
-					<a href='#'>BOOK NOW</a>
+					<a class='hidden-2' href='#'>BOOK NOW</a>
 				</div>
 			</div>
+			<a class ='hidden-3' href='#'>BOOK NOW</a>
 		</div>
 		<div class='card'>
 			<div class='background-2'>
-				<div class="bottom-right-3"><span class='mini-voice'>FROM</span></div>
+				<div class="bottom-right-3"><span class='miniscule-voice'>From</span></div>
 				<div class="bottom-right-4">£110</div>
 			</div>
 			<div class='container-1'>
@@ -64,33 +64,33 @@
 				</picture>
 			</div>
 			<div class='container-2'>
-				<h3 class='wise-voice'>Heading level 3</h3>
+				<h4 class='wise-voice'>Heading level 3</h4>
 				<p>This is a short paragraph</p>
 				<hr>
 				<div class='calendar date-info'>
 					<picture>
-						<img src=images/calendar.png></img>
+						<?php include('images/calendar.svg'); ?>
 					</picture>
 					<p>This is a date</p>
 				</div>
-				<p class='calm-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class='lesser-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur.</p>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit...</p>
 				<div class='book'>
 					<div class='book-2'>
 						<div class='calendar duration-info'>
 							<picture>
-								<img src='images/clock.png'>
+								<?php include('images/clock-2.svg'); ?>
 							</picture>
 							<p class='duration'>Duration of event</p>
 							<p class='hidden'>From <span class='bold'>£110</span></p>
 						</div>
 					</div>
-					<a href='#'>BOOK NOW</a>
+					<a class ='hidden-2' href='#'>BOOK NOW</a>
 				</div>
 			</div>
+			<a class ='hidden-3' href='#'>BOOK NOW</a>
 		</div>
 	</inner-column>
 </tour-booking>

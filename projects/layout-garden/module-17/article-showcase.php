@@ -18,7 +18,7 @@
 						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
-				<h3 class='subtle-voice'>Level 3</h3>
+				<h3 class='wise-voice'>Level 4</h3>
 				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
@@ -30,7 +30,7 @@
 						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
-				<h3 class='subtle-voice'>Level 3</h3>
+				<h3 class='wise-voice'>Level 4</h3>
 				<p class='calm-voice'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
@@ -42,7 +42,7 @@
 						<h4 class='miniscule-voice'>2020</h4>
 					</div>
 				</div>
-				<h3 class='subtle-voice'>Level 3</h3>
+				<h3 class='wise-voice'>Level 4</h3>
 				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</a>
