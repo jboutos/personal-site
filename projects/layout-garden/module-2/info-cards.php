@@ -1,50 +1,32 @@
+<?php 
+
+	$cards = [
+		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => 'container', "pictureContainer" => ''
+		],
+		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => 'container', "pictureContainer" => ''
+		],
+		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => 'container', "pictureContainer" => ''
+		],
+		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => 'container', "pictureContainer" => ''
+		]
+	];
+
+?>
+
 <info-cards class='wrapper'>
 	<inner-column>
-		<container>
-			<div class='info'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
-				<div class='container'>
-					<h2 class='subtle-voice'>Content</h2>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a class='miniscule-voice' href='#'>READ MORE</a>
-				</div>
-			</div>
-			<div class='info'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
-				<div class='container'>
-					<h2 class='subtle-voice'>Content</h2>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a class='miniscule-voice' href='#'>READ MORE</a>
-				</div>
-			</div>
-			<div class='info'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
-				<div class='container'>
-					<h2 class='subtle-voice'>Content</h2>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a class='miniscule-voice' href='#'>READ MORE</a>
-				</div>
-			</div>
-			<div class='info'>
-				<picture>
-					<img src='//peprojects.dev/images/landscape.jpg'>
-				</picture>
-				<div class='container'>
-					<h2 class='subtle-voice'>Content</h2>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a class='miniscule-voice' href='#'>READ MORE</a>
-				</div>
-			</div>
-		</container>
+		<div class='mega-container'>
+			<?php foreach ($cards as $card):
+				extract($card); include('components/card.php');
+			endforeach; ?>
+		</div>
 	</inner-column>
 </info-cards>

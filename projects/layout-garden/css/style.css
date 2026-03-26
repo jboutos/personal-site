@@ -282,7 +282,7 @@ split-hero {
 		background-color: var(--background-2);
 	}
 
-	.two h3, .two p, .two a {
+	.two h4, .two p, .two a {
 		color: var(--background-4);
 	}
 
@@ -305,7 +305,7 @@ split-hero {
 info-cards {
 	display: block;
 
-	container {
+	.mega-container {
 		display: grid;
 		justify-content: center;    
 		gap: var(--space-3);
@@ -335,7 +335,7 @@ info-cards {
 		padding: 0 var(--space-2);
 	}
 
-	h2 {
+	h4 {
 		margin: var(--space-2) 0 var(--space-1) 0;
 	}
 
@@ -774,7 +774,7 @@ feature-overview {
 		}
 	}
 
-	h2, h3, p {
+	h2, h4, p {
 		text-align: center;
 	}
 
@@ -782,7 +782,7 @@ feature-overview {
 		max-width: 45ch;
 	}
 
-	h3 + p {
+	h4 + p {
 		padding-top: var(--space-2);
 	}
 
@@ -1225,7 +1225,7 @@ footer-2 {
 stat-highlight {
 
 	@media (min-width: 800px) {
-		container {
+		.card {
 			display: flex;
 
 			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -1741,6 +1741,10 @@ tour-booking {
 		border: 1px solid lightgray;
 	}
 
+	.bold { 
+		color: var(--background-16);
+	}
+
 	.background {
 		background-image: url(//peprojects.dev/images/square.jpg);
 		background-size: cover; 
@@ -1866,25 +1870,13 @@ card-list {
 		}
 	}
 
-	.hidden-5 {
-		display: none;
-
-		@media (min-width: 750px) {
-			display: block;
-		}
-	}
-
 	.hidden-3 {
 		@media (min-width: 750px) {
 			display: none;
 		}
 	}
 
-	.hidden-4 {
-		@media (min-width: 750px) {
-			display: none;
-		}
-	}
+
 
 	.link-top {
 		@media (min-width: 750px) {
@@ -2472,7 +2464,7 @@ featured-content {
 		padding: var(--space-1) var(--space-2);
 	}
 
-	.info-2 .button {
+	.info-2 .button, .info-2 .button {
 		display: inline-block;
 		padding: var(--space-1) var(--space-2);
 	}

@@ -1,33 +1,21 @@
 <?php 
 
 	$cards = [
-		[
-			"title" => "Heading level 4",
-			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.",
-			"image" => "//peprojects.dev/images/landscape.jpg"
+		["headingContent" => "Heading level 4", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoLink" => '', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => '', "pictureContainer" => ''
 		],
-		[
-			"title" => "Another Heading",
-			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.",
-			"image" => "//peprojects.dev/images/landscape.jpg"
+		["headingContent" => "Another Heading", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoLink" => '', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => '', "pictureContainer" => ''
 		],
-		[
-			"title" => "Third Card",
-			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.",
-			"image" => "//peprojects.dev/images/landscape.jpg"
+		["headingContent" => "Third Card", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoLink" => '', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => '', "pictureContainer" => ''
 		],
-		[
-			"title" => "Fourth Card",
-			"text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.",
-			"image" => "//peprojects.dev/images/landscape.jpg"
+		["headingContent" => "Fourth Card", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoLink" => '', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
+		"infoContainer" => '', "pictureContainer" => ''
 		]
 	];
 
@@ -41,11 +29,19 @@
 		</div>
 		<div class='mega-container'>
 			<?php foreach ($cards as $index => $card) {
-				$image = $card['image'];
-				$title = $card['title'];
-				$text = $card['text'];
+				$imageSource = $card['imageSource'];
+				$title = $card['headingContent'];
+				$text = $card['paragraphContent'];
+				$infoLink = $card['infoLink'];
+				$headingClass = $card['headingClass'];
+				$paragraphClass = $card['paragraphClass'];
+				$container = $card['container'];
+				$infoContainer = '';
+				$pictureContainer = '';
+				$linkContent = '';
 
-				include('components/card-from-card-list.php');
+
+				include('components/card.php');
 
 				if ($index < count($cards) - 1) {
 					echo "<hr class='hidden-3'>";
