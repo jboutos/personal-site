@@ -1,21 +1,22 @@
+<?php
+$panels = [
+   ['container' => 'contact', 'headingClass' => '', 
+   'linkClass' => '', 'headingContent' => '', 'links' => ['Contact', 'Corporate responsibility', 'Informant system', 'Travel retail']
+   ],
+   ['container' => 'legal', 'headingClass' => '', 
+   'linkClass' => '', 'headingContent' => '', 'links' => ['Imprint', 'Declaration of Accessibility', 'Privacy', 'Terms of use', 'Code of conduct']
+   ]
+];
+?>
+
 <footer-3 class='wrapper'>
 	<inner-column>
 		<div class='hyper-container'>
 			<div class='mega-container'>
 				<div class='container'>
-					<div class='contact'>
-						<a href='#'>Contact</a>
-						<a href='#'>Corporate responsibility</a>
-						<a href='#'>Informant system</a>
-						<a href='#'>Travel retail</a>
-					</div>
-					<div class='legal'>
-						<a href='#'>Imprint</a>
-						<a href='#'>Declaration of Accessibility</a>
-						<a href='#'>Privacy</a>
-						<a href='#'>Terms of use</a>
-						<a href='#'>Code of conduct</a>
-					</div>
+					<?php foreach($panels as $panel):
+						extract($panel); include('components/info-links.php');
+					endforeach; ?>
 				</div>
 				<div class='button'>
 					<select class='wise-voice' placeholder='International (English)'>

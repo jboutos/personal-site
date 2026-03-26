@@ -1,35 +1,26 @@
+<?php
+$panels = [
+   ['container' => 'info left', 'headingClass' => 'subtle-voice', 
+   'linkClass' => '', 'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content']
+   ],
+   ['container' => 'info right', 'headingClass' => 'subtle-voice', 
+   'linkClass' => '', 'headingContent' => 'Heading level3', 'links' => ['Content', 'Content', 'Content']
+   ],
+   ['container' => 'info left', 'headingClass' => 'subtle-voice', 'linkClass' => '',
+   'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content']
+   ],
+   ['container' => 'info right', 'headingClass' => 'subtle-voice', 'linkClass' => '',
+   'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content']
+   ]
+];
+?>
+
 <footer-6 class='wrapper'>
 	<inner-column>
 		<div class='mega-container-1'>
-			<div class='info left'>
-				<h3  class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info right'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info left'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
-			<div class='info right'>
-				<h3 class='subtle-voice'>Heading level 3</h3>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-				<a href='#'>Content</a>
-			</div>
+			<?php foreach ($panels as $panel):
+				extract($panel); include('components/info-links.php');
+			endforeach; ?>
 		</div>
 		<hr class='hidden'>
 		<div class='mega-container-2'>

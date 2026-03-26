@@ -1,3 +1,11 @@
+<?php
+$articles = [
+	['backgroundClass' => 'background', 'month' => 'JLY', 'day' => '20', 'year' => '2020', 'heading' => 'Level 4', 'description' => 'Lorem ipsum dolor sit amet...',],
+	['backgroundClass' => 'background-2', 'month' => 'JLY', 'day' => '20', 'year' => '2020', 'heading' => 'Level 4', 'description' => 'Lorem ipsum dolor sit amet...',],
+	['backgroundClass' => 'background-3', 'month' => 'JLY', 'day' => '20', 'year' => '2020', 'heading' => 'Level 4', 'description' => 'Lorem ipsum dolor sit amet...',]
+];
+?>
+
 <article-showcase class='wrapper'>
 	<inner-column>
 		<div class='info'>
@@ -10,42 +18,9 @@
 			<a href='#'>Read More</a>
 		</div>
 		<div class='container'>
-			<a href='#'>
-				<div class='background'>
-					<div>
-						<h4 class='miniscule-voice'>JLY</h4>
-						<h4 class='miniscule-voice'>20</h4>
-						<h4 class='miniscule-voice'>2020</h4>
-					</div>
-				</div>
-				<h3 class='wise-voice'>Level 4</h3>
-				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</a>
-			<a href='#'>
-				<div class='background-2'>
-					<div>
-						<h4 class='miniscule-voice'>JLY</h4>
-						<h4 class='miniscule-voice'>20</h4>
-						<h4 class='miniscule-voice'>2020</h4>
-					</div>
-				</div>
-				<h3 class='wise-voice'>Level 4</h3>
-				<p class='calm-voice'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</a>
-			<a href='#'>
-				<div class='background-3'>
-					<div>
-						<h4 class='miniscule-voice'>JLY</h4>
-						<h4 class='miniscule-voice'>20</h4>
-						<h4 class='miniscule-voice'>2020</h4>
-					</div>
-				</div>
-				<h3 class='wise-voice'>Level 4</h3>
-				<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</a>
+			<?php foreach($articles as $article):
+				extract($article); include('components/article-card.php');
+			endforeach; ?>
 		</div>
 	</inner-column>
 </article-showcase>

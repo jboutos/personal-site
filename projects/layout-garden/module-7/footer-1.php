@@ -1,3 +1,31 @@
+<?php
+$panels = [
+   ['container' => 'choices', 'headingClass' => 'wise-voice', 
+   'linkClass' => 'info', 'headingContent' => 'Choices', 'links' => ['Company', 'Services', 'Customers', 'Contact']
+   ],
+   ['container' => 'services', 'headingClass' => 'wise-voice', 
+   'linkClass' => 'info', 'headingContent' => 'Services', 'links' => ['Something', 'Something', 'Something', 'Something']
+   ]
+];
+
+$workItems = [
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => '']
+];
+
+$socialItems = [
+	['image' => 'images/square.png', 'container' => ''],
+	['image' => 'images/square.png', 'container' => '']
+];
+?>
+
 <footer-1 class='wrapper'>
 	<inner-column>
 		<div class='container-2'>
@@ -7,98 +35,20 @@
 				<p class='calm-voice'>e-mail</p>
 				<p class='calm-voice'>phone</p>
 				<div class='socials'>
-					<a href='#'>
-						<picture>
-							<img src='images/square.png'>
-						</picture>
-					</a>
-					<a>
-						<picture>
-							<img src='images/square.png'>
-						</picture>
-					</a>
+					<?php foreach($socialItems as $socialItem):
+						extract($socialItem); include('components/square-image.php');
+					endforeach; ?>
 				</div>
 			</div>
-			<div class='choices'>
-				<h3 class='wise-voice'>Choices</h3>
-				<a href='#' class='info'>Company</a>
-				<a href='#' class='info'>Services</a>
-				<a href='#' class='info'>Customers</a>
-				<a href='#' class='info'>Contact</a>
-			</div>
-			<div class='services'>
-				<h3 class='wise-voice'>Services</h3>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-				<a href='#' class='info'>Something</a>
-			</div>
+			<?php foreach($panels as $panel):
+				extract($panel); include('components/info-links.php');
+			endforeach; ?>
 			<div class='our-work'>
 				<h3 class='wise-voice'>Our work</h3>
 				<div class='container'>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
-					<div>
-						<a href='#'>
-							<picture>
-								<img src='images/square.png'>
-							</picture>
-						</a>
-					</div>
+					<?php foreach($workItems as $workItem):
+						extract($workItem); include('components/square-image.php');
+					endforeach; ?>
 				</div>
 			</div>
 		</div>
