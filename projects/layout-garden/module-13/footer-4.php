@@ -12,7 +12,7 @@ $links2 = [
 ];
 
 $links3 = [
-   ['linkClass' => '', 'links' => ['Our Brands', 'Shop', 'Visit Distillery', 'Gifts', 'Inspiration', 'Loyalty Program', 'Support']
+   ['linkClass' => '', 'linksBrand' => ['Our Brands', 'Shop', 'Visit Distillery', 'Gifts', 'Inspiration', 'Loyalty Program', 'Support']
    ]
 ];
 
@@ -42,20 +42,9 @@ $socials = [
 				</picture>
 			</div>
 			<div class='links-3'>
-				<a href='#'>Our Brands</a>
-				<hr>
-				<a href='#'>Shop</a>
-				<hr>
-				<a href='#'>Visit Distillery</a>
-				<hr>
-				<a href='#'>Gifts</a>
-				<hr>
-				<a href='#'>Inspiration</a>
-				<hr>
-				<a href='#'>Loyalty Program</a>
-				<hr>
-				<a href='#'>Support</a>
-				<hr>
+				<?php foreach($links3 as $link):
+					extract($link); include('components/info-links-with-hr.php');
+				endforeach; ?>
 			</div>
 		</div>
 
