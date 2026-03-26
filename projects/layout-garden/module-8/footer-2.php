@@ -1,3 +1,16 @@
+<?php
+
+$links = [
+   ['container' => 'socials', 'headingClass' => 'wise-voice', 
+   'linkClass' => '', 'headingContent' => 'Follow us', 'links' => ['TikTok', 'Instagram', 'Youtube', 'Facebook', 'Linkedin']
+   ],
+   ['container' => 'contact', 'headingClass' => 'wise-voice', 
+   'linkClass' => '', 'headingContent' => 'Contact', 'links' => ['Find us', 'Contact Us', 'Work for us']
+   ]
+];
+
+?>
+
 <footer-2 class='wrapper'>
 	<inner-column>
 		<div class='hyper-container'>
@@ -13,20 +26,9 @@
 				</picture>
 			</div>
 			<div class='container'>
-				<div class='socials'>
-					<h3 class='wise-voice'>Follow us</h3>
-					<a href='#'>TikTok</a>
-					<a href='#'>Instagram</a>
-					<a href='#'>Youtube</a>
-					<a href='#'>Facebook</a>
-					<a href='#'>Linkedin</a>
-				</div>
-				<div class='contact'>
-					<h3 class='wise-voice'>Contact</h3>
-					<a href='#'>Find us</a>
-					<a href='#'>Contact us</a>
-					<a href='#'>Work for us</a>
-				</div>
+				<?php foreach($links as $link):
+					extract($link); include('components/info-links.php');
+				endforeach; ?>
 			</div>
 			<div class='policies'>
 				<a class='legal' href='#'>Data protection policy</a>

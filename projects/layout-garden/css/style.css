@@ -2161,6 +2161,7 @@ footer-5 {
 
 	.info {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		gap: var(--space-5);
 		margin-bottom: var(--space-5);
@@ -2171,7 +2172,7 @@ footer-5 {
 		align-items: center;
 		gap: var(--space-2);
 
-		@media (max-width: 1200px) {
+		@media (max-width: 1100px) {
 			margin-top: var(--space-3);
 		}
 	}
@@ -2192,7 +2193,7 @@ footer-5 {
 	.extra-wise-voice {
 		padding-bottom: var(--space-4);
 
-		@media(min-width: 1200px) {
+		@media(min-width: 1100px) {
 			padding-bottom: var(--space-5);
 		}
 	}
@@ -2217,7 +2218,7 @@ footer-5 {
 
 	a:last-child {
 
-		@media(min-width: 1200px) {
+		@media(min-width: 1100px) {
 			margin-bottom: 0;
 		}
 	}
@@ -2334,14 +2335,6 @@ footer-5 {
 	/*STRUCTURE*/
 	footer-5 {
 
-		.info-1 {
-			flex-grow: 2;
-		}
-
-		.info-2 {
-			flex-grow: 1.5;
-		} 
-
 		.logo .button  a {
 			margin-bottom: 0;
 		}
@@ -2349,7 +2342,7 @@ footer-5 {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
 
 	/*MODULES*/
 	footer-5 {

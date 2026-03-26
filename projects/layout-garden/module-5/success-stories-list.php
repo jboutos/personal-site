@@ -1,63 +1,29 @@
+<?php
+
+$cards = [
+   ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1', 
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   ],
+   ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   ],
+   ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   ],
+   ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-2',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkContent' => 'Learn More',
+   ]
+];
+
+?>
+
 <success-stories-list class='wrapper'>
 	<inner-column>
 		<h2 class='attention-voice'>Success Stories</h2>
 		<div class='container'>
-			<div class='stories'>
-				<div>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-				</div>
-				<div>
-					<a href='#'>John Doe</a>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor.</p>
-				</div>
-			</div>
-			<div class='stories'>
-				<div>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-				</div>
-				<div>
-					<a href='#'>John Doe</a>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor.</p>
-				</div>
-			</div>
-			<div class='stories'>
-				<div>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-				</div>
-				<div>
-					<a href='#'>John Doe</a>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor.</p>
-				</div>
-			</div>
-			<div class='stories'>
-				<div>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-				</div>
-				<div>
-					<a href='#'>John Doe</a>
-					<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor.</p>
-				</div>
-			</div>
+			<?php foreach($cards as $card):
+				extract($card); include('components/testimonial.php');
+			endforeach; ?>
 		</div>
 		<a href='#' class='more-stories'>Read more success stories</a>
 	</inner-column>

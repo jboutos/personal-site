@@ -13,6 +13,15 @@ $panels = [
    'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content']
    ]
 ];
+
+$socials = [
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => '']
+];
 ?>
 
 <footer-6 class='wrapper'>
@@ -33,24 +42,9 @@ $panels = [
 			<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
 			<h2 class='attention-voice social-heading'>SOCIAL MEDIA</h2>
 			<div class='social'>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
-				<picture>
-					<img src='//peprojects.dev/images/square.jpg'>
-				</picture>
+				<?php foreach($socials as $social):
+					extract($social); include('components/square-image.php');
+				endforeach; ?>
 			</div>
 			<hr>
 			<p>for phone orders</p>
