@@ -1604,6 +1604,7 @@ tour-booking {
 
 		@media (min-width: 800px) {
 			display: block;
+			margin: var(--space-1) 0;
 		}
 	}
 
@@ -1633,7 +1634,11 @@ tour-booking {
 	}
 
 	.calendar picture {
-		width: 20px;
+		width: 19px;
+	}
+
+	.calendar svg {
+		transform: translateY(1px);
 	}
 
 	.duration-info picture {
@@ -1677,6 +1682,7 @@ tour-booking {
 		width: 100%;
 		
 		@media(min-width: 800px) {
+			width: 30%;
 			min-width: 250px;
 		}
 	}
@@ -1703,6 +1709,7 @@ tour-booking {
 
 		@media (min-width: 800px) {
 			display: flex;
+			align-items: center;
 			width: 100%;
 			max-width: 750px;
 			padding: var(--space-2);
@@ -1866,7 +1873,6 @@ card-list {
 
 		@media (min-width: 750px) {
 			display: block;
-			padding-top: var(--space-0);
 		}
 	}
 
@@ -1876,12 +1882,13 @@ card-list {
 		}
 	}
 
-
-
 	.link-top {
+		margin-bottom: var(--space-4);
+
 		@media (min-width: 750px) {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 		}
 	}
 }
@@ -1894,9 +1901,6 @@ card-list {
 		padding: var(--space-0) 0;
 	}
 
-	.attention-voice {
-		padding-bottom: var(--space-2);
-	}
 
 	.subtle-voice {
 		padding: var(--space-2) 0 0 var(--space-1);
@@ -1950,8 +1954,7 @@ footer-4 {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: var(--space-1);
-		margin-top: var(--space-2);
+		margin-top: var(--space-1);
 		margin-bottom: var(--space-4);
 	}
 
@@ -1959,8 +1962,8 @@ footer-4 {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: var(--space-1);
-		margin-bottom: var(--space-4);
+		margin-bottom: var(--space-3);
+		row-gap: var(--space-1);
 	}
 }
 
@@ -1992,19 +1995,18 @@ footer-4 {
 	}
 
 	.payment img {
-		width: auto;
+		width: 20px;
 		height: 20px;
-		object-fit: contain;
+		border-radius: 50%;
 	}
 
 	.socials img {
 		height: 30px;
 	}
 
-	.links-2-a {
+	.links-2 {
 		display: flex;
-		flex-dorection: row;
-		gap: var(--space-1);
+		flex-direction: row;
 	}
 
 	.last-hr {
@@ -2022,6 +2024,15 @@ footer-4 {
 
 	.header-hr {
 		display: none;
+	}
+
+	.links-2 a::after, .links a::after {
+		content: "|";
+		margin: 0 var(--space-1) 0 var(--space-1);
+	}
+
+	.links-2 a:last-child::after, .links a:last-child::after {
+		content: "";
 	}
 }
 

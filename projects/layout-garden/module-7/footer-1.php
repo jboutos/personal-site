@@ -1,10 +1,10 @@
 <?php
 $panels = [
    ['container' => 'choices', 'headingClass' => 'wise-voice', 
-   'linkClass' => 'info', 'headingContent' => 'Choices', 'links' => ['Company', 'Services', 'Customers', 'Contact']
+   'linkClass' => 'info', 'headingContent' => 'Choices', 'links' => ['Company', 'Services', 'Customers', 'Contact'], 'sneakyElementContent' => ''
    ],
    ['container' => 'services', 'headingClass' => 'wise-voice', 
-   'linkClass' => 'info', 'headingContent' => 'Services', 'links' => ['Something', 'Something', 'Something', 'Something']
+   'linkClass' => 'info', 'headingContent' => 'Services', 'links' => ['Something', 'Something', 'Something', 'Something'], 'sneakyElementContent' => ''
    ]
 ];
 

@@ -35,6 +35,7 @@
 				$infoLink = $card['infoLink'];
 				$headingClass = $card['headingClass'];
 				$paragraphClass = $card['paragraphClass'];
+				$paragraphContent = $card['paragraphContent'];
 				$container = $card['container'];
 				$infoContainer = '';
 				$pictureContainer = '';

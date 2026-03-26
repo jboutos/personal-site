@@ -2,10 +2,10 @@
 
 $links = [
    ['container' => 'socials', 'headingClass' => 'wise-voice', 
-   'linkClass' => '', 'headingContent' => 'Follow us', 'links' => ['TikTok', 'Instagram', 'Youtube', 'Facebook', 'Linkedin']
+   'linkClass' => '', 'headingContent' => 'Follow us', 'links' => ['TikTok', 'Instagram', 'Youtube', 'Facebook', 'Linkedin'], 'sneakyElementContent' => ''
    ],
    ['container' => 'contact', 'headingClass' => 'wise-voice', 
-   'linkClass' => '', 'headingContent' => 'Contact', 'links' => ['Find us', 'Contact Us', 'Work for us']
+   'linkClass' => '', 'headingContent' => 'Contact', 'links' => ['Find us', 'Contact Us', 'Work for us'], 'sneakyElementContent' => ''
    ]
 ];
 

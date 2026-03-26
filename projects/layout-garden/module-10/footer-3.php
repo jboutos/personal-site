@@ -1,10 +1,12 @@
 <?php
 $panels = [
    ['container' => 'contact', 'headingClass' => '', 
-   'linkClass' => '', 'headingContent' => '', 'links' => ['Contact', 'Corporate responsibility', 'Informant system', 'Travel retail']
+   'linkClass' => '', 'headingContent' => '', 'links' => ['Contact', 'Corporate responsibility', 'Informant system', 'Travel retail'],
+   'sneakyElementContent' => ''
    ],
    ['container' => 'legal', 'headingClass' => '', 
-   'linkClass' => '', 'headingContent' => '', 'links' => ['Imprint', 'Declaration of Accessibility', 'Privacy', 'Terms of use', 'Code of conduct']
+   'linkClass' => '', 'headingContent' => '', 'links' => ['Imprint', 'Declaration of Accessibility', 'Privacy', 'Terms of use', 'Code of conduct'],
+   'sneakyElementContent' => ''
    ]
 ];
 ?>

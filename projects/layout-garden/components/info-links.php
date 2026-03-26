@@ -5,4 +5,7 @@
 	<?php foreach ($links as $link): ?>
 		<a href='#' class='<?= $linkClass ?>'><?= $link ?></a>
 	<?php endforeach; ?>
+	<?php if (!empty($sneakyElementContent)): ?>
+		<p><?= $sneakyElementContent ?></p>
+	<?php endif; ?>
 </div>

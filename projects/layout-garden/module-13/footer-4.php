@@ -1,3 +1,38 @@
+<?php
+
+$links = [
+   ['container' => 'links', 'headingClass' => '', 'linkClass' => '', 'headingContent' => '', 'links' => ['Malts Club T&Cs', 'Promotional T&Cs', 'Terms of Sale', 'Contact us']
+   ]
+];
+
+$links2 = [
+   ['container' => 'links-2', 'headingClass' => '', 'linkClass' => '', 'headingContent' => '', 'links' => ['Condition Of Use', 'Diageo Privacy Centre', 'UGC Policy', 'Accessibility', 'Privacy Settings', 'Privacy and Cookie Notice', 'Drinkaware', 'DrinkIQ', 'theBar.com'],
+   'sneakyElementContent' => '© Diageo 2025'
+   ]
+];
+
+$links3 = [
+   ['linkClass' => '', 'links' => ['Our Brands', 'Shop', 'Visit Distillery', 'Gifts', 'Inspiration', 'Loyalty Program', 'Support']
+   ]
+];
+
+$payments = [
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => '']
+];
+
+$socials = [
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => ''],
+	['image' => '//peprojects.dev/images/square.jpg', 'container' => '']
+];
+
+?>
 <footer-4 class='wrapper'>
 	<inner-column>
 		<div class='container-2'>
@@ -27,13 +62,9 @@
 		<hr class='header-hr'>
 
 		<div class='links'>
-			<a href='#'>Malts Club T&Cs</a>
-			<span>|</span>
-			<a href='#'>Promotional T&Cs</a>
-			<span>|</span>
-			<a href='#'>Terms of Sale</a>
-			<span>|</span>
-			<a href='#'>Contact us</a>
+			<?php foreach($links as $link):
+				extract($link); include('components/info-links.php');
+			endforeach; ?>
 		</div>
 		<div class='container-3'>
 			<div class='payment-p'>
@@ -41,61 +72,21 @@
 			</div>
 			<div class='container'>
 				<div class='payment'>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture >
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
-					<picture >
-						<img src='//peprojects.dev/images/square.jpg'>
-					</picture>
+					<?php foreach($payments as $payment):
+						extract($payment); include('components/plain-image-component.php');
+					endforeach; ?>
 				</div>
 				<div class='socials'>
-					<picture>
-						<a href='#'><img src='//peprojects.dev/images/square.jpg'></a>
-					</picture>
-					<picture>
-						<a href='#'><img src='//peprojects.dev/images/square.jpg'></a>
-					</picture>
+					<?php foreach($socials as $social):
+						extract($social); include('components/square-image.php');
+					endforeach; ?>
 				</div>
 			</div>
 		</div>
 		<div class='links-2'>
-			<a href='#'>Condition Of Use</a>
-			<p>|</p>
-			<a href='#'>Diageo Privacy Centre</a>
-			<p>|</p>
-			<a href='#'>UGC Policy</a>
-			<p>|</p>
-			<a href='#'>Accessibility</a>
-			<p>|</p>
-			<a href='#'>Privacy Settings</a>
-			<p>|</p>
-			<a href='#'>Privacy and Cookie Notice</a>
-			<p>|</p>
-			<a href='#'>Drinkaware</a>
-			<p>|</p>
-			<a href='#'>DrinkIQ</a>
-			<p>|</p>
-			<a href='#'>theBar.com</a>
-			<p>|</p>
-			<p>© Diageo 2025</p>
+			<?php foreach($links2 as $link):
+				extract($link); include('components/info-links.php');
+			endforeach; ?>
 		</div>
 		<div class='last-p'>
 			<p>Please do not share with anyone under the legal purchase age for alcohol. Drink Responsibly.</p>

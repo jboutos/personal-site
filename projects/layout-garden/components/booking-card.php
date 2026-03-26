@@ -1,39 +1,36 @@
-<div class='card'>
-	<div class='background'>
-		<div class="bottom-right"><span class='miniscule-voice'>From</span></div>
-		<div class="bottom-right-2">£60</div>
+<div class='<?= $container ?>'>
+	<div class='<?= $backgroundClass ?>'>
+		<div class="<?= $priceContainer ?>"><span class='<?= $spanClass ?>'><?= $priceContent ?></span></div>
+		<div class="<?= $priceContainer2 ?>"><?= $priceContent2 ?></div>
 	</div>
-	<div class='container-1'>
-		<picture class='picture'>
-			<img src='//peprojects.dev/images/square.jpg'>
+	<div class='<?= $pictureContainer ?>'>
+		<picture class='<?= $pictureContainerClass ?>'>
+			<img src='<?= $imageSource ?>'>
 		</picture>
 	</div>
-	<div class='container-2'>
-		<h4 class='wise-voice'>Heading level 3</h4>
-		<p>This is a short paragraph</p>
+	<div class='<?= $infoContainer ?>'>
+		<h4 class='<?= $headingContentClass ?>'><?= $headingContent ?></h4>
+		<p class='<?= $paragraphClass ?>'><?= $paragraphContent ?></p>
 		<hr>
-		<div class='calendar date-info'>
+		<div class='<?= $calendarContainer ?>'>
 			<picture>
 				<?php include('images/calendar.svg'); ?>
 			</picture>
-			<p>This is a date</p>
+			<p class='<?= $paragraphClass2 ?>'><?= $paragraphContent2 ?></p>
 		</div>
-		<p class='lesser-voice extra-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit...</p>
-		<div class='book'>
-			<div class='book-2'>
-				<div class='calendar duration-info'>
+		<p class='<?= $paragraphClass3 ?>'><?= $paragraphContent3 ?></p>
+		<div class='<?= $bookContainer ?>'>
+			<div class='<?= $bookContainer2 ?>'>
+				<div class='<?= $durationContainer ?>'>
 					<picture>
 						<?php include('images/clock-2.svg'); ?>
 					</picture>
-					<p class='duration'>Duration of event</p>
-					<p class='hidden'>From <span class='bold'>£60</span></p>
+					<p class='<?= $paragraphClass4 ?>'><?= $paragraphContent4 ?></p>
+					<p class='<?= $paragraphClass5 ?>'><?= $paragraphContent5 ?> <span class='<?= $spanClass2 ?>'><?= $spanContent2 ?></span></p>
 				</div>
 			</div>
-			<a class='hidden-2' href='#'>BOOK NOW</a>
+			<a class='<?= $linkClass ?>' href='#'><?= $linkContent ?></a>
 		</div>
 	</div>
-	<a class ='hidden-3' href='#'>BOOK NOW</a>
+	<a class ='<?= $linkClass2 ?>' href='#'><?= $linkContent2 ?></a>
 </div>

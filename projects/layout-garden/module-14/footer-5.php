@@ -1,13 +1,13 @@
 <?php
 $panels = [
    ['container' => 'info-1', 'headingClass' => 'extra-wise-voice', 
-   'linkClass' => '', 'headingContent' => 'ABOUT US', 'links' => ['Media Center', 'A Certain Company<br> Foundation', 'Investors', 'Policies and Practices', 'Careers']
+   'linkClass' => '', 'headingContent' => 'ABOUT US', 'links' => ['Media Center', 'A Certain Company<br> Foundation', 'Investors', 'Policies and Practices', 'Careers'], 'sneakyElementContent' => ''
    ],
    ['container' => 'info-2', 'headingClass' => 'extra-wise-voice', 
-   'linkClass' => '', 'headingContent' => 'NEED HELP?', 'links' => ['FAQ', 'Contact Us', 'International']
+   'linkClass' => '', 'headingContent' => 'NEED HELP?', 'links' => ['FAQ', 'Contact Us', 'International'], 'sneakyElementContent' => ''
    ],
    ['container' => 'legal', 'headingClass' => '', 'linkClass' => '',
-   'headingContent' => '', 'links' => ['Privacy Policy', 'Cookies Policy', 'Cookies Settings', 'Notice at Collection', 'Do Not Sell or Share <br>My Personal Information', 'Terms of Service']
+   'headingContent' => '', 'links' => ['Privacy Policy', 'Cookies Policy', 'Cookies Settings', 'Notice at Collection', 'Do Not Sell or Share <br>My Personal Information', 'Terms of Service'], 'sneakyElementContent' => ''
    ]
 ];
 
