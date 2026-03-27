@@ -1,15 +1,15 @@
 <?php
 $panels = [
-   ['container' => 'info left', 'headingClass' => 'subtle-voice', 
+   ['container' => 'info left', 'headingClass' => 'wise-voice', 
    'linkClass' => '', 'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
-   ['container' => 'info right', 'headingClass' => 'subtle-voice', 
+   ['container' => 'info right', 'headingClass' => 'wise-voice', 
    'linkClass' => '', 'headingContent' => 'Heading level3', 'links' => ['Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
-   ['container' => 'info left', 'headingClass' => 'subtle-voice', 'linkClass' => '',
+   ['container' => 'info left', 'headingClass' => 'wise-voice', 'linkClass' => '',
    'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
-   ['container' => 'info right', 'headingClass' => 'subtle-voice', 'linkClass' => '',
+   ['container' => 'info right', 'headingClass' => 'wise-voice', 'linkClass' => '',
    'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ]
 ];
@@ -33,14 +33,14 @@ $socials = [
 		</div>
 		<hr class='hidden'>
 		<div class='mega-container-2'>
-			<h2 class='attention-voice'>NEWSLETTER</h2>
+			<h2 class='subtle-voice'>NEWSLETTER</h2>
 			<p>Short paragraph about offers, products and services</p>
 			<div class='input'>
 				<input class='input-1' type="email" id="email" name="email" placeholder="Enter your email">
 				<button type='submit' class='input-2' value="SUBSCRIBE">SUBSCRIBE</button>
 			</div>
 			<a href='#'><h5 class='miniscule-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h5></a>
-			<h2 class='attention-voice social-heading'>SOCIAL MEDIA</h2>
+			<h2 class='subtle-voice social-heading'>SOCIAL MEDIA</h2>
 			<div class='social'>
 				<?php foreach($socials as $social):
 					extract($social); include('components/square-image.php');

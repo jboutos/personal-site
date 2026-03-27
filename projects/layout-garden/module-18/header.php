@@ -1,69 +1,83 @@
 <header-2 class='wrapper'>
 	<inner-column>
 		<div class='container'>
-			<div>
+			<div class='input-container'>
 				<picture>
 					<img class='logo' src='//peprojects.dev/images/square.jpg'>
 				</picture>
 				<div class='search'>
-					<input class='hidden' type="search" id="site-search" name="q" placeholder='Search for items'>
+					<input class='hidden-input' type="search" id="site-search" name="q" placeholder='Search for items'>
 					<button type="submit"><?php include('images/search.svg'); ?></button>
 				</div>
 			</div>
 			<div class='icons'>
-				<a href='#'>
-					<div class=''>
+				<div class=''>
+					<a href='#' class='shopping-container'>
 						<picture>
-							<img src='//peprojects.dev/images/square.jpg'>
+							<?php include('images/cart-timer.svg') ?>
 						</picture>
-						<p class='hidden-2'>Lists</p>
-					</div>
-				</a>
-				<a href='#'>
-					<div class=''>
+						<span class='hidden-2'>My Products</span>
+					</a>
+				</div>
+				<div class=''>
+					<a href='#' class='shopping-container'>
 						<picture>
-							<img src='//peprojects.dev/images/square.jpg'>
+							<?php include('images/heart.svg') ?>
 						</picture>
-						<p class='hidden-2'>Log In</p>
-					</div>
-				</a>
-				<a href='#'>
+						<span class='hidden-2'>Lists</span>
+					</a>
+				</div>
+				<a href='#' class='shopping-container'>
 					<picture>
-						<img src='//peprojects.dev/images/square.jpg'>
+						<?php include('images/user.svg') ?>
+					</picture>
+					<span class='hidden-2'>Log In</span>
+				</a>
+				<a class='cart-container' href='#'>
+					<picture>
+						<?php include('images/cart.svg') ?>
 					</picture>
 				</a>
 			</div>
 		</div>
 		<div class='container-2'>
 			<div class='links'>
-				<div class='e-shop'>
-					<a href='#'>
-						<div class='hidden'>
+				<div class='e-shop hidden'>
+					<a href='#' class='e-shop-container'>
+						<div class='e-shop-svg-container'>
 							<picture>
-								<img src='//peprojects.dev/images/square.jpg'>
+								<?php include('images/squares.svg'); ?>
 							</picture>
-							<p>EShop</p>
+							<span class='lesser-voice'>EShop</span>
+						</div>
+						<div class='chevron-container'>
+							<?php include('images/chevron.svg'); ?>
 						</div>
 					</a>
 				</div>
 				<div class='hidden'>
-					<a href='#'>Offers</a>
-					<a href='#'>Pamphlets</a>
-					<a href='#'>Healthy Corner</a>
-					<a href='#'>Exclusive</a>
-					<a href='#'>Recipes</a>
-					<a href='#'>#hashtag</a>
+					<a class='lesser-voice' href='#'>Offers</a>
+					<a class='lesser-voice' href='#'>Pamphlets</a>
+					<a class='lesser-voice' href='#'>Healthy Corner</a>
+					<a class='lesser-voice' href='#'>Exclusive</a>
+					<a class='lesser-voice' href='#'>Recipes</a>
+					<a class='lesser-voice' href='#'>#hashtag</a>
 				</div>
 			</div>
 			<div class='hidden'>
-				<a href='#'>Membership</a>
-				<a href='#'>Shops</a>
-				<a href='#'>Language</a>
+				<a class='lesser-voice' href='#'>Membership</a>
+				<a class='lesser-voice' href='#'>Shops</a>
+				<a class='language-container' href='#'>
+					<span class='lesser-voice'>Language</span>
+					<div class='chevron-container'>
+						<?php include('images/chevron.svg'); ?>
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class='container-2'>
 			<picture class='hidden-3'>
-				<img src='//peprojects.dev/images/square.jpg'>
+				<?php include('images/hamburger.svg') ?>
 			</picture>
 			<div class='search-2'>
 				<input class='hidden-3' type="search" id="site-search" name="q" placeholder='Search for items'>
