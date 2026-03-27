@@ -1,7 +1,7 @@
 <?php 
 
 	$cards = [
-		["headingContent" => "Heading level 3", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		["headingContent" => "Heading level 4", "container" => "container", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoLink" => '', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
 		"infoContainer" => '', "pictureContainer" => '', 'linkClass' => 'hover'
 		],

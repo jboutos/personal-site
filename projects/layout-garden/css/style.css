@@ -3417,7 +3417,11 @@ header-2 {
 
 	.search svg, .search-2 svg {
 		width: 30px;
-		fill: currentColor;
+		fill: var(--background-16);
+
+		&:hover {
+			fill: currentColor;
+		}
 
 		&:active {
 			transform: scale(1.2);
@@ -3449,7 +3453,13 @@ header-2 {
 	input {
 		border-radius: var(--radius-medium);
 		padding-left: var(--space-2);
-		border: 1px solid darkgray;
+		border: 1px solid var(--background-16);
+
+		&:focus {
+			outline: none;
+  			border-color: var(--bright);
+  			box-shadow: 0 0 0 1px var(--vibrant);
+		}
 	}
 
 	a {

@@ -1,16 +1,16 @@
 <?php
 $panels = [
    ['container' => 'info left', 'headingClass' => 'wise-voice', 
-   'linkClass' => '', 'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
+   'linkClass' => '', 'headingContent' => 'Heading level 4', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
    ['container' => 'info right', 'headingClass' => 'wise-voice', 
-   'linkClass' => '', 'headingContent' => 'Heading level3', 'links' => ['Content', 'Content', 'Content'], 'sneakyElementContent' => ''
+   'linkClass' => '', 'headingContent' => 'Heading level 4', 'links' => ['Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
    ['container' => 'info left', 'headingClass' => 'wise-voice', 'linkClass' => '',
-   'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
+   'headingContent' => 'Heading level 4', 'links' => ['Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ],
    ['container' => 'info right', 'headingClass' => 'wise-voice', 'linkClass' => '',
-   'headingContent' => 'Heading level 3', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
+   'headingContent' => 'Heading level 4', 'links' => ['Content', 'Content', 'Content', 'Content', 'Content'], 'sneakyElementContent' => ''
    ]
 ];
 
