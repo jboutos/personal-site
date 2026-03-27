@@ -67,11 +67,12 @@
 			<div class='hidden'>
 				<a class='lesser-voice' href='#'>Membership</a>
 				<a class='lesser-voice' href='#'>Shops</a>
-				<a class='language-container' href='#'>
-					<span class='lesser-voice'>Language</span>
+				<a rel='toggle' class='language-container' href='#'>
+					<span class='lesser-voice'>GR</span>
 					<div class='chevron-container'>
 						<?php include('images/chevron.svg'); ?>
 					</div>
+					<span class='lesser-voice menu' href='#'>EN</span>
 				</a>
 			</div>
 		</div>

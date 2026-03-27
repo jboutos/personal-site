@@ -4,19 +4,19 @@
 		["container" => "card", "backgroundClass" => "background", "priceContainer" => "bottom-right", "spanClass" => "miniscule-voice",
 		"priceContent" => "From", "priceContainer2" => "bottom-right-2", "priceContent2" => "£60", "pictureContainer" => "container-1",
 		"pictureContainerClass" => "picture", "imageSource" => "//peprojects.dev/images/square.jpg", "infoContainer" => "container-2",
-		"headingContentClass" => "wise-voice", "headingContent" => "Heading level 4", "paragraphClass" => "", "paragraphContent" => "This is a short paragraph", "calendarContainer" => "calendar date-info", "paragraphClass2" => "", "paragraphContent2" => "This is a date",
+		"headingContentClass" => "wise-voice", "headingContent" => "Heading level 3", "paragraphClass" => "calm-voice", "paragraphContent" => "This is a short paragraph", "calendarContainer" => "calendar date-info", "paragraphClass2" => "lesser-voice", "paragraphContent2" => "This is a date",
 		"paragraphClass3" => "lesser-voice extra-info", "paragraphContent3" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", "bookContainer" => "book",
-		"bookContainer2" => "book-2", "durationContainer" => "calendar duration-info", "paragraphClass4" => "duration", "paragraphContent4" =>
-		"Duration of event", "paragraphClass5" => "hidden", "paragraphContent5" => "From", "spanClass2" => "bold", "spanContent2" => "£60",
+		"bookContainer2" => "book-2", "durationContainer" => "calendar duration-info", "paragraphClass4" => "duration lesser-voice", "paragraphContent4" =>
+		"Duration of event", "paragraphClass5" => "hidden lesser-voice", "paragraphContent5" => "From", "spanClass2" => "bold", "spanContent2" => "£60",
 		"linkClass" => "hidden-2", "linkContent" => "BOOK NOW", "linkClass2" => "hidden-3", "linkContent2" => "BOOK NOW"
 		],
 		["container" => "card", "backgroundClass" => "background-2", "priceContainer" => "bottom-right", "spanClass" => "miniscule-voice",
 		"priceContent" => "From", "priceContainer2" => "bottom-right-2", "priceContent2" => "£110", "pictureContainer" => "container-1",
 		"pictureContainerClass" => "picture", "imageSource" => "//peprojects.dev/images/square.jpg", "infoContainer" => "container-2",
-		"headingContentClass" => "wise-voice", "headingContent" => "Heading level 4", "paragraphClass" => "", "paragraphContent" => "This is a short paragraph", "calendarContainer" => "calendar date-info", "paragraphClass2" => "", "paragraphContent2" => "This is a date",
+		"headingContentClass" => "wise-voice", "headingContent" => "Heading level 3", "paragraphClass" => "calm-voice", "paragraphContent" => "This is a short paragraph", "calendarContainer" => "calendar date-info", "paragraphClass2" => "lesser-voice", "paragraphContent2" => "This is a date",
 		"paragraphClass3" => "lesser-voice extra-info", "paragraphContent3" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", "bookContainer" => "book",
-		"bookContainer2" => "book-2", "durationContainer" => "calendar duration-info", "paragraphClass4" => "duration", "paragraphContent4" =>
-		"Duration of event", "paragraphClass5" => "hidden", "paragraphContent5" => "From", "spanClass2" => "bold", "spanContent2" => "£110",
+		"bookContainer2" => "book-2", "durationContainer" => "calendar duration-info", "paragraphClass4" => "duration lesser-voice", "paragraphContent4" =>
+		"Duration of event", "paragraphClass5" => "hidden lesser-voice", "paragraphContent5" => "From", "spanClass2" => "bold", "spanContent2" => "£110",
 		"linkClass" => "hidden-2", "linkContent" => "BOOK NOW", "linkClass2" => "hidden-3", "linkContent2" => "BOOK NOW"
 		]
 	];

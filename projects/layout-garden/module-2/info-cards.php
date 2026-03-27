@@ -2,19 +2,19 @@
 
 	$cards = [
 		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
 		"infoContainer" => 'container', "pictureContainer" => ''
 		],
 		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
 		"infoContainer" => 'container', "pictureContainer" => ''
 		],
 		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
 		"infoContainer" => 'container', "pictureContainer" => ''
 		],
 		["headingContent" => "Content", "container" => "info", "paragraphContent" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'subtle-voice', "paragraphClass" => 'calm-voice',
+		"imageSource" => "//peprojects.dev/images/landscape.jpg", "infoClass" => 'info', "headingClass" => 'wise-voice', "paragraphClass" => 'calm-voice',
 		"infoContainer" => 'container', "pictureContainer" => ''
 		]
 	];

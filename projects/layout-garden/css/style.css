@@ -1892,6 +1892,10 @@ card-list {
 			align-items: center;
 		}
 	}
+
+	a:hover {
+		color: var(--bright);
+	}
 }
 
 
@@ -2546,7 +2550,7 @@ featured-content {
 		border-radius: var(--radius-pill);
 
 		&:hover {
-			color: var(--vibrant);
+			background-color: var(--background-9);
 		}
 	}
 
@@ -3286,6 +3290,13 @@ header-2 {
 
 
 /*STRUCTURE*/
+
+body.menu-open .menu {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
 header-2 {
 
 	.loud-voice {
@@ -3298,6 +3309,10 @@ header-2 {
 
 	.subtle-voice {
 		padding: var(--space-1) 0;
+	}
+
+	.menu {
+		display: none;
 	}
 
 	img {
@@ -3484,6 +3499,7 @@ header-2 {
 
 		.language-container {
 			display: flex;
+			position: relative;
 		}
 
 		.links {
