@@ -1535,6 +1535,15 @@ tour-booking {
 		max-width: 80ch;
 	}
 
+	.clock-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.price {
+		margin-left: var(--space-1);
+	}
+
 	svg {
 		display: block;
 	}
@@ -1614,7 +1623,8 @@ tour-booking {
 
 		@media (min-width: 800px) {
 			display: block;
-			margin-left: var(--space-2);
+			margin-left: var(--space-4);
+			transform: translateY(-1.9px);
 		}
 	}
 
@@ -1623,6 +1633,7 @@ tour-booking {
 
 		@media (min-width: 800px) {
 			display: block;
+			transform: translateY(-1.5px);
 		}
 	}
 
@@ -1712,7 +1723,7 @@ tour-booking {
 			display: flex;
 			align-items: center;
 			width: 100%;
-			max-width: 750px;
+			max-width: 780px;
 			padding: var(--space-2);
 			gap: var(--space-3);
 		}
