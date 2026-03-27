@@ -6,6 +6,6 @@
 		<a href='#' class='<?= $linkClass ?>'><?= $link ?></a>
 	<?php endforeach; ?>
 	<?php if (!empty($sneakyElementContent)): ?>
-		<p><?= $sneakyElementContent ?></p>
+		<p class='<?= $sneakyElementClass ?>'><?= $sneakyElementContent ?></p>
 	<?php endif; ?>
 </div>

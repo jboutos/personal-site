@@ -12,7 +12,7 @@
 			</div>
 			<div class='icons'>
 				<a href='#'>
-					<div>
+					<div class=''>
 						<picture>
 							<img src='//peprojects.dev/images/square.jpg'>
 						</picture>
@@ -20,7 +20,7 @@
 					</div>
 				</a>
 				<a href='#'>
-					<div>
+					<div class=''>
 						<picture>
 							<img src='//peprojects.dev/images/square.jpg'>
 						</picture>
@@ -50,7 +50,7 @@
 					<a href='#'>Offers</a>
 					<a href='#'>Pamphlets</a>
 					<a href='#'>Healthy Corner</a>
-					<a href='#'>Only Here</a>
+					<a href='#'>Exclusive</a>
 					<a href='#'>Recipes</a>
 					<a href='#'>#hashtag</a>
 				</div>

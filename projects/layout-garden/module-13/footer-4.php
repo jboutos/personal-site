@@ -6,8 +6,8 @@ $links = [
 ];
 
 $links2 = [
-   ['container' => 'links-2', 'headingClass' => '', 'linkClass' => '', 'headingContent' => '', 'links' => ['Condition Of Use', 'Diageo Privacy Centre', 'UGC Policy', 'Accessibility', 'Privacy Settings', 'Privacy and Cookie Notice', 'Drinkaware', 'DrinkIQ', 'theBar.com'],
-   'sneakyElementContent' => '© Diageo 2025'
+   ['container' => 'links-2', 'headingClass' => '', 'linkClass' => 'miniscule-voice', 'headingContent' => '', 'links' => ['Condition Of Use', 'Diageo Privacy Centre', 'UGC Policy', 'Accessibility', 'Privacy Settings', 'Privacy and Cookie Notice', 'Drinkaware', 'DrinkIQ', 'theBar.com'],
+   'sneakyElementContent' => '© Diageo 2025', 'sneakyElementClass' => 'miniscule-voice'
    ]
 ];
 
@@ -78,7 +78,7 @@ $socials = [
 			endforeach; ?>
 		</div>
 		<div class='last-p'>
-			<p>Please do not share with anyone under the legal purchase age for alcohol. Drink Responsibly.</p>
+			<p class='miniscule-voice'>Please do not share with anyone under the legal purchase age for alcohol. Drink Responsibly.</p>
 		</div>
 	</inner-column>
 </footer-4>

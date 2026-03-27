@@ -2,16 +2,16 @@
 
 $cards = [
    ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1', 
-   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'John Doe'
    ],
    ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1',
-   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'John Doe'
    ],
    ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-1',
-   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'John Doe'
    ],
    ['container' => 'stories', 'pictureContainer' => '', 'infoContainer' => 'info-2',
-   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkContent' => 'Learn More',
+   'paragraphClass' => 'calm-voice', 'imageSource' => '//peprojects.dev/images/square.jpg', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkContent' => 'John Doe'
    ]
 ];
 
