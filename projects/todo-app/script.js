@@ -304,20 +304,22 @@ class Todo {
 	}
 
 	render() {
-		const { id, complete, content, dateCreated, color, color2 } = this;
+		const { id, complete, content, dateCreated, color, color2 } = this; // destructuring
 
-		return `<div class='todo-container' style='background-color:${color}'>
-			<div class='status' style='background-color:${color2}'>
-	    	<input class='complete' id='complete${id}' type='checkbox' name='complete' data-id='${id}' ${complete ? 'checked' : ''}>
-	    	<label for='complete${id}'>Completed</label>
-	  		</div>
-			<div class='date'>
-			<small>${dateCreated.toLocaleDateString()}</small>
-			</div>
-			<div class='task'><p>To do: </p><span>${content}</span></div>
-			<button class='edit' type='button' name='edit' data-id='${id}'>Edit</button>
-			<button class='remove-btn' type='button' data-id='${id}'>Remove</button>
-			</div>`;
+		return `	<div class='todo-container' style='background-color:${color}'>
+			     		<div class='status' style='background-color:${color2}'>
+	    					<input class='complete' id='complete${id}' type='checkbox' name='complete' data-id='${id}' ${complete ? 'checked' : ''}>
+	    					<label for='complete${id}'>Completed</label>
+	  					</div>
+						<div class='date'>
+							<small>${dateCreated.toLocaleDateString()}</small>
+						</div>
+						<div class='task'>
+							<p>To do: </p><span>${content}</span>
+						</div>
+						<button class='edit' type='button' name='edit' data-id='${id}'>Edit</button>
+						<button class='remove-btn' type='button' data-id='${id}'>Remove</button>
+					</div>`;
 	}
 
    randomizeColor() {
