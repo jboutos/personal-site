@@ -172,7 +172,7 @@ a {
 }
 
 .wrapper {
-	padding: var(--space-5) 0;
+	padding: var(--space-5) var(--space-1);
 }
 
 
@@ -3503,7 +3503,6 @@ header-2 {
 
 		.container-2 {
 			display: flex;
-			align-items: center;
 			justify-content: space-between;
 		}
 
