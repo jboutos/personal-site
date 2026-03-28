@@ -48,7 +48,7 @@
 	}
 
 	ul li:nth-child(6) img {
-	    object-fit: contain;
+	  object-fit: contain;
 	}
 
 	h2 {
@@ -65,6 +65,11 @@
 
 	.navigation a:hover, .logo:hover {
 		background-color: transparent;
+	}
+
+	.underline {
+		display: inline-block;
+	  line-height: 1.1;
 	}
 }
 

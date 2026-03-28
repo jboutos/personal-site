@@ -3580,6 +3580,10 @@ header-2 {
 		.language-container svg {
 			width: 20px;
 		}
+
+		.user-svg svg {
+			width: 26px;
+		}
 	}
 }
 

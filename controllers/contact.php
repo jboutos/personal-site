@@ -21,6 +21,7 @@
 				$messages = getJsonData($page . 'data');
 
 				$messages[] = $post;
+				// array_push($messages, $post);
 
 				$messageJson = json_encode($messages, JSON_PRETTY_PRINT);
 

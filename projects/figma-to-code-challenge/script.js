@@ -14,11 +14,6 @@ function updateEdges() {
 }
 
 body.addEventListener('click', function (event) {
-  var toggle = event.target.closest('[rel="toggle"]');
-
-  if (toggle) {
-    body.classList.toggle('menu-open');
-  }
 
   if (event.target.closest('#tricks')) {
     container.classList.toggle('hidden');

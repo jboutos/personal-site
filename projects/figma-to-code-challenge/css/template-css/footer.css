@@ -83,7 +83,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	@media(min-width: 800px) {
+	@media(min-width: 1100px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
@@ -93,7 +93,7 @@
 }
 
 .footer-1 .container-2:nth-of-type(1) {
-	@media(min-width: 800px) {
+	@media(min-width: 1100px) {
 		padding-left: 0;
 	}
 }
@@ -206,7 +206,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	@media(min-width: 800px) {
+	@media(min-width: 1100px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
@@ -216,7 +216,7 @@
 }
 
 .footer-2 .container-2:nth-of-type(1) {
-	@media(min-width: 800px) {
+	@media(min-width: 1100px) {
 		padding-left: 0;
 	}
 }

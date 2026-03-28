@@ -27,9 +27,9 @@
 						<span class='hidden-2'>Lists</span>
 					</a>
 				</div>
-				<a href='#' class='shopping-container'>
+				<a href='#' class='shopping-container user-svg'>
 					<picture>
-						<?php include('images/user.svg') ?>
+						<?php include('images/user-3.svg') ?>
 					</picture>
 					<span class='hidden-2'>Log In</span>
 				</a>

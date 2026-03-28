@@ -95,13 +95,18 @@
 		margin-bottom: 0.2em;
 	}
 
-	.contact-view .intro-heading {
+	.contact-view {
 		font-size: 1.3rem;
 		margin-bottom: 3em;
 	}
 
 	.footer-heading {
 		margin-bottom: 0;
+	}
+
+	.intro-heading {
+		font-size: 1.3rem;
+		margin: 1em 0 2em 0;
 	}
 }
 
