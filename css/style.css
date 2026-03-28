@@ -76,7 +76,11 @@ main {
 }
 
 h1.attention-voice {
-	margin: 2em 0 0.8em 0;
+	margin: 0.5em 0 0.8em 0;
+
+	@media(min-width: 570px) {
+		margin: 2em 0 0.8em 0;
+	}
 }
 
 h1 {
@@ -181,7 +185,7 @@ header a:hover {
 
 	gap: 0.5em;
 
-	@media (max-width: 470px) {
+	@media (max-width: 570px) {
 		align-items: flex-start;
 	}
 }

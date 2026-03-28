@@ -1,9 +1,9 @@
 .details { 
-	--color: hsl(240 100% 40.2%);
-	--charged: hsl(0 67.9% 41.6%);
-	--base: hsl(188 45.3% 81.4%);
+	--color: hsl(188 20% 15%);
+	--charged: hsl(10 70% 40%);
+	--base: hsl(188 15.3% 81.4%);
 	--hover: hsl(180, 92%, 40%);
-	--circle: hsl(240 100% 40.2% / 0.4);
+	--circle: hsl(188 10% 15% / 0.4);
 
 	@media (prefers-color-scheme: dark) {
 		--color: hsl(188 45.3% 81.4%);
@@ -22,7 +22,7 @@
 
 	p, a, h2, li::marker {
 		color: var(--color);
-		max-width: 50ch;
+		max-width: 45ch;
 	}
 
 	.calm-voice {
@@ -109,12 +109,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-top: 14em;
+		margin-top: 5em;
 
 		@media (min-width: 850px) {
 			flex-direction: row;
 			justify-content: center;
 			gap: 2em;
+			margin-top: 14em;
 		}
 	}
 
@@ -122,7 +123,6 @@
 	   display: flex;
 	   flex-direction: column;
 	   align-items: flex-start;
-
 	}
 
 	.remarks-img {
@@ -151,6 +151,16 @@
 		@media(min-width: 850px) {
 			writing-mode: vertical-rl;
 			margin: 0;
+		}
+	}
+
+	container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media(min-width: 850px) {
+			align-items: center;
 		}
 	}
 

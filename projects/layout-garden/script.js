@@ -7,12 +7,12 @@ function updateHue() {
   // 'this' refers to the input in this case
 }
 
-body.addEventListener('click', function(event) {
+// body.addEventListener('click', function(event) {
 
-  // if the click happens on the toggle button...
-  if ( event.target.closest('[rel="toggle"]') ) {
-    event.preventDefault();
-    body.classList.toggle('menu-open');
-  }
+//   // if the click happens on the toggle button...
+//   if ( event.target.closest('[rel="toggle"]') ) {
+//     event.preventDefault();
+//     body.classList.toggle('menu-open');
+//   }
 
-});
+// });

@@ -72,7 +72,7 @@
 					<div class='chevron-container'>
 						<?php include('images/chevron.svg'); ?>
 					</div>
-					<span class='lesser-voice menu' href='#'>EN</span>
+					<!-- <span class='lesser-voice menu' href='#'>EN</span> -->
 				</a>
 			</div>
 		</div>

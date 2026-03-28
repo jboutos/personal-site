@@ -1,9 +1,9 @@
 {
   "id": "slcp",
-  "title": "Super layout challenge v2",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Super layout challenge v2",
       "image": "pink2.png",
       "link": "projects/super-layout-challenge-pink/index.html",
       "target": "_blank",

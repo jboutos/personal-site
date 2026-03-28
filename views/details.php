@@ -2,7 +2,7 @@
     <container>
         <div class='container-details'>
             <?php foreach ($detail['sections'] as $section) { ?>
-                <?= component($section['module'], [...$section, 'title' => $detail['title']]) ?>
+                <?= component($section['module'], $section) ?>
             <?php } ?>
         </div>
     </container>

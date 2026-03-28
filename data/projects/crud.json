@@ -1,9 +1,9 @@
 {
   "id": "crud",
-  "title": "Simple crud app",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Simple crud app",
       "image": "crud.png",
       "link": "projects/crud-app/index.php",
       "target": "_blank",

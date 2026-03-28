@@ -1,9 +1,9 @@
 {
   "id": "jsf",
-  "title": "Javascript Forms",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Javascript Forms",
       "image": "js.png",
       "link": "projects/form-exercises-with-js/index.php",
       "target": "_blank",

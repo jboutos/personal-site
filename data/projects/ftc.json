@@ -1,9 +1,9 @@
 {
   "id": "ftc",
-  "title": "Figma to code challenge",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Figma to code challenge",
       "image": "figma.png",
       "link": "projects/figma-to-code-challenge/index.php",
       "target": "_blank",

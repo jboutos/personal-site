@@ -5,7 +5,7 @@ $cards = [
    'headingContent' => 'Heading level 3', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
    ],
    ['container' => 'card-2', 'pictureContainer' => 'picture', 'infoContainer' => 'info-2', 'headingClass' => 'subtle-voice', 
-   'paragraphClass' => 'calm-voice', 'linkClass' => 'button', 'imageSource' => '//peprojects.dev/images/landscape.jpg', 'headingContent' => 'Heading level3', 
+   'paragraphClass' => 'calm-voice', 'linkClass' => 'button', 'imageSource' => '//peprojects.dev/images/landscape.jpg', 'headingContent' => 'Heading level 3', 
    'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 
    'linkContent' => 'Learn More',
    ]
@@ -17,7 +17,7 @@ $cards2 = [
    'headingContent' => 'Heading level 3', 'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.', 'linkContent' => 'Learn More',
    ],
    ['container' => 'info-4', 'pictureContainer' => '', 'infoContainer' => '', 'headingClass' => 'subtle-voice', 
-   'paragraphClass' => 'calm-voice', 'linkClass' => 'button', 'imageSource' => '', 'headingContent' => 'Heading level3', 
+   'paragraphClass' => 'calm-voice', 'linkClass' => 'button', 'imageSource' => '', 'headingContent' => 'Heading level 3', 
    'paragraphContent' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 
    'linkContent' => 'Learn More',
    ]

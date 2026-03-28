@@ -171,9 +171,7 @@ a {
 	font-size: 1rem;
 }
 
-split-hero, info-cards, feature-tiles, content-split, success-stories-list, feature-overview, footer-1,
-footer-2, stat-highlight, footer-3, tour-booking, card-list, footer-4, footer-5, footer-6, featured-content, 
-article-showcase, footer-1, header-2 {
+.wrapper {
 	padding: var(--space-5) var(--space-1);
 }
 
@@ -308,9 +306,18 @@ info-cards {
 
 	.mega-container {
 		display: grid;
+		grid-template-columns: 255px;
 		justify-content: center;    
 		gap: var(--space-3);
-		grid-template-columns: repeat(auto-fit, minmax(235px, 255px));
+
+		@media(min-width: 550px) {
+			display: grid;
+			grid-template-columns: repeat(2, 255px);
+		}
+
+		@media(min-width: 1100px) {
+			grid-template-columns: repeat(auto-fit, minmax(235px, 255px));
+		}
 	}
 }
 
@@ -1535,11 +1542,6 @@ tour-booking {
 		max-width: 80ch;
 	}
 
-	.clock-container {
-		display: flex;
-		align-items: center;
-	}
-
 	.price {
 		margin-left: var(--space-1);
 	}
@@ -1637,6 +1639,14 @@ tour-booking {
 		}
 	}
 
+	.translate-paragraph {
+		transform: translateX(3px);
+	}
+
+	.date-info {
+		margin-bottom: var(--space-0);
+	}
+
 	.hidden-3 {
 		margin-top: 0;
 
@@ -1672,13 +1682,13 @@ tour-booking {
 	}
 
 	h4 + p {
-		margin-top: var(--space-1);
+		margin-top: var(--space-0);
 	}
 
 	h4 {
 
 		@media (max-width: 800px) {
-			margin-top : var(--space-0);
+			margin-top : var(--space-1);
 		}
 	}
 
@@ -1715,7 +1725,7 @@ tour-booking {
 	}
 
 	.card {
-		width: 230px;
+		width: 240px;
 		height: 100%;
 		margin-bottom: var(--space-4);
 
@@ -3302,11 +3312,11 @@ header-2 {
 
 /*STRUCTURE*/
 
-body.menu-open .menu {
+/*body.menu-open .menu {
   display: block;
   position: absolute;
-  top: 0;
-}
+  top: var(--space-2);
+}*/
 
 header-2 {
 
@@ -3322,9 +3332,12 @@ header-2 {
 		padding: var(--space-1) 0;
 	}
 
-	.menu {
+/*	.menu {
 		display: none;
-	}
+	   position: absolute;
+	   top: 100%; 
+	   left: 0;
+	}*/
 
 	img {
 		width: 30px;
@@ -3430,7 +3443,12 @@ header-2 {
 
 	.hidden-3 svg {
 		width: 30px;
-		fill: currentColor;
+		fill: var(--background-16);
+		stroke: var(--background-16);
+	}
+
+	.cart-container svg {
+		fill: var(--background-16);
 	}
 }
 

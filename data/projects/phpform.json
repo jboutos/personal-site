@@ -1,9 +1,9 @@
 {
   "id": "phpform",
-  "title": "Form exercises with php",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Form exercises with php",
       "image": "php.png",
       "link": "projects/php-exercises/index.php",
       "target": "_blank",

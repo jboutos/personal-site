@@ -1,10 +1,10 @@
 {
   "id": "garden",
-  "title": "Layout garden",
   "sections": [
     {
       "module": "project-hero",
       "image": "garden.png",
+      "title": "Layout garden",
       "link": "projects/layout-garden/index.php",
       "target": "_blank",
       "body": "In layout garden you will find a collection of various layouts I found on the internet and tried copying!"

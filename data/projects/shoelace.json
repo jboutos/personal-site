@@ -1,9 +1,9 @@
 {
   "id": "shoelace",
-  "title": "Routing exercise",
   "sections": [
     {
       "module": "project-hero",
+      "title": "Routing exercise",
       "image": "shoelace.png",
       "link": "projects/shoelace-haven/index.php",
       "target": "_blank",
