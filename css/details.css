@@ -15,12 +15,12 @@
 	
 	background-color: var(--base);
 
-	h1 {
+	h1, .remarks-title {
 		padding-top: 0;
 		color: var(--charged);
 	}
 
-	p, a, h2, li::marker {
+	p, a, li::marker {
 		color: var(--color);
 		max-width: 45ch;
 	}
@@ -130,7 +130,7 @@
 		flex-wrap: wrap;
 		gap: 3em;
 
-		margin: 1em 0;
+		margin: 2em 0;
 		max-width: 800px;
 	}
 
