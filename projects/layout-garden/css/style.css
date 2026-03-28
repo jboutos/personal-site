@@ -172,7 +172,7 @@ a {
 }
 
 .wrapper {
-	padding: var(--space-5) var(--space-1);
+	padding: var(--space-5) 0;
 }
 
 

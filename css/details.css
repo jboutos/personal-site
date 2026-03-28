@@ -30,7 +30,7 @@
 	}
 
 	.remarks .calm-voice {
-		max-width: 70ch;
+		max-width: 64ch;
 	}
 
 	p + p {
@@ -140,7 +140,7 @@
 		@media(min-width: 650px) {
 			display: flex;
 			flex-direction: row-reverse;
-			gap: 2em;
+			gap: 1em;
 		}
 	}
 
