@@ -51,7 +51,6 @@
 		line-height: 1;
 
 		@media(max-width: 650px) {
-			margin-bottom: 0.5em;
 			padding-bottom: 0;
 			text-align: start;
 		}
@@ -89,10 +88,10 @@
 	}
 
 	.description .attention-voice {
-		margin-bottom: 0.5em;
+		margin-bottom: 0.25em;
 
 		@media (max-width: 650px) {
-			margin-top: 0.5em;
+			margin-top: 0.25em;
 		}
 	}
 
@@ -146,7 +145,7 @@
 
 	.remarks-title {
 		margin: 0;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.25em;
 
 		@media(min-width: 650px) {
 			writing-mode: vertical-rl;
@@ -166,7 +165,12 @@
 
 	.underline {
 		display: inline-block;
-	  line-height: 1.1;
+		margin-top: 1em;
+		line-height: 1.1;
+	}
+
+	.underline::after {
+		background: var(--color);
 	}
 
 }

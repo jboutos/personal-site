@@ -42,7 +42,7 @@
 		margin-top: 3em;
 	}
 
-	project-card {
+	a {
 		display: block;
 		max-width: 500px;
 	}
@@ -68,8 +68,11 @@
 	}
 
 	.underline {
-		display: inline-block;
 	  line-height: 1.1;
+	}
+
+	.underline::after {
+		background: var(--color);
 	}
 }
 

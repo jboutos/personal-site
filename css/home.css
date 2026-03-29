@@ -71,5 +71,9 @@
   picture {
     margin-top: 0.5em;
   }
+
+  .underline::after {
+    background: var(--color);
+  }
 }
 

@@ -1,10 +1,10 @@
-<info-card>
-    <a class='underline' href='<?= $link ?>' target='<?= $target ?>'>
-        <?= $title ?>
-    </a>
-    <picture class='home'>
-        <a href='<?= $link ?>' target='<?= $target ?>'>
+<a class='project-card' href='<?= $link ?>' target='<?= $target ?>'>
+    <info-card>
+        <span class='underline'>
+            <?= $title ?>
+        </span>
+        <picture class='home'>
             <img src='<?= "images/" . $image ?>'>
-        </a>
-    </picture>
-</info-card>
+        </picture>
+    </info-card>
+</a>

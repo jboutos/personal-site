@@ -1,12 +1,12 @@
 <?php 
    $href = !empty($directLink) ? $directLink : "?page=details&project={$key}";
 ?>
-<project-card id='<?= $id ?>'>
-   <picture class='image'>
-      <a href='<?= $href ?>'>
+<a class='project-card' href='<?= $href ?>'>
+   <project-card id='<?= $id ?>'>
+      <picture class='image'>
          <img src='<?= "images/" . $image ?>' alt='<?= $title ?> image'>
-      </a>
-   </picture>
-   <h2 class='subtle-voice'><?= $title ?></h2>
-   <a class='underline' href='<?= $href ?>'>See more</a>
-</project-card>
+      </picture>
+      <h2 class='subtle-voice'><?= $title ?></h2>
+      <span class='underline'>See more</span>
+   </project-card>
+</a>

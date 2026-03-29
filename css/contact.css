@@ -108,5 +108,9 @@
 		font-size: 1.3rem;
 		margin: 1em 0 2em 0;
 	}
+
+	.underline::after {
+		background: var(--color);
+	}
 }
 

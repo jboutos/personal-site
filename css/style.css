@@ -119,6 +119,7 @@ a {
 }
 
 .underline {
+	display: inline-block;
   padding: 0;
   background-color: transparent;
   color: var(--color);
@@ -133,11 +134,15 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: var(--color);
+  background: darkblue
   transition: width .2s;
 }
 
-a:hover:after {
+.project-card:hover .underline::after {
+  width: 0;
+}
+
+.underline:hover::after {
   width: 0;
 }
 

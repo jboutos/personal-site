@@ -63,5 +63,9 @@
 	.navigation a:hover, .logo:hover {
 		background-color: transparent;
 	}
+
+	.underline::after {
+		background: var(--color);
+	}
 }
 
