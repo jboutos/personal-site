@@ -106,9 +106,13 @@ img {
 	width: 100%;
 	transition: transform 0.3s ease;
 
-	&:hover {
+/*	&:hover {
 		transform: scale(1.2);
-	}
+	}*/
+}
+
+.project-card:hover img {
+	transform: scale(1.2);
 }
 
 a {
