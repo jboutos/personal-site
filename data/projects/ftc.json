@@ -21,6 +21,9 @@
         "figma-1.png",
         "figma-2.png"
       ]
+    },
+    {
+      "module": "lightbox"
     }
   ]
 }

@@ -23,6 +23,9 @@
         "todoapp2.png",
         "todoapp3.png"
       ]
+    },
+    {
+      "module": "lightbox"
     }
   ]
 }

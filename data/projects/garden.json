@@ -22,6 +22,9 @@
         "garden-2.png",
         "garden-3.png"
       ]
+    },
+    {
+      "module": "lightbox"
     }   
   ]
 }
