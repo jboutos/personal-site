@@ -3447,8 +3447,8 @@ header-2 {
 		stroke: var(--background-16);
 	}
 
-	.cart-container svg {
-		fill: var(--background-16);
+	.shopping-container svg {
+		fill: currentColor;
 	}
 }
 
@@ -3581,9 +3581,9 @@ header-2 {
 			width: 20px;
 		}
 
-		.user-svg svg {
+/*		.user-svg svg {
 			width: 26px;
-		}
+		}*/
 	}
 }
 

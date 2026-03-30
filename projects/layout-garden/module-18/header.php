@@ -1,3 +1,17 @@
+<?php
+
+$links = [
+	['container' => 'hidden', 'headingContent' => '','linkClass' => 'lesser-voice', 'links' => ['Offers', 'Pamphlets', 'Healthy Corner', 'Exclusive', 'Recipes', '#hashtag']]
+];
+
+$links2 = [['container' => '', 'linkClass' => 'shopping-container', 'svgPath' => 'images/cart-timer.svg', 'spanClass' => 'hidden-2', 'spanContent' => 'My Products'],
+	['container' => '', 'linkClass' => 'shopping-container', 'svgPath' => 'images/heart.svg', 'spanClass' => 'hidden-2', 'spanContent' => 'Lists'],
+	['container' => '', 'linkClass' => 'shopping-container user-svg', 'svgPath' => 'images/user-3.svg', 'spanClass' => 'hidden-2', 'spanContent' => 'Log In'],
+	['container' => '', 'linkClass' => 'shopping-container', 'svgPath' => 'images/cart.svg', 'spanClass' => '', 'spanContent' => '']
+];
+
+?>
+
 <header-2 class='wrapper'>
 	<inner-column>
 		<div class='container'>
@@ -11,33 +25,9 @@
 				</div>
 			</div>
 			<div class='icons'>
-				<div class=''>
-					<a href='#' class='shopping-container'>
-						<picture>
-							<?php include('images/cart-timer.svg') ?>
-						</picture>
-						<span class='hidden-2'>My Products</span>
-					</a>
-				</div>
-				<div class=''>
-					<a href='#' class='shopping-container'>
-						<picture>
-							<?php include('images/heart.svg') ?>
-						</picture>
-						<span class='hidden-2'>Lists</span>
-					</a>
-				</div>
-				<a href='#' class='shopping-container user-svg'>
-					<picture>
-						<?php include('images/user-3.svg') ?>
-					</picture>
-					<span class='hidden-2'>Log In</span>
-				</a>
-				<a class='cart-container' href='#'>
-					<picture>
-						<?php include('images/cart.svg') ?>
-					</picture>
-				</a>
+				<?php foreach($links2 as $link):
+					extract($link); include('components/info-links-with-svg.php');
+				endforeach; ?>
 			</div>
 		</div>
 		<div class='container-2'>
@@ -55,14 +45,9 @@
 						</div>
 					</a>
 				</div>
-				<div class='hidden'>
-					<a class='lesser-voice' href='#'>Offers</a>
-					<a class='lesser-voice' href='#'>Pamphlets</a>
-					<a class='lesser-voice' href='#'>Healthy Corner</a>
-					<a class='lesser-voice' href='#'>Exclusive</a>
-					<a class='lesser-voice' href='#'>Recipes</a>
-					<a class='lesser-voice' href='#'>#hashtag</a>
-				</div>
+				<?php foreach($links as $link):
+					extract($link); include('components/info-links.php');
+				endforeach; ?>
 			</div>
 			<div class='hidden'>
 				<a class='lesser-voice' href='#'>Membership</a>
