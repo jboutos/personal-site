@@ -117,5 +117,9 @@ button {
 }
 
 .done {
-	
+	opacity: 0.5;
+}
+
+.done span {
+	text-decoration: line-through;
 }

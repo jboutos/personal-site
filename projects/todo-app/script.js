@@ -293,10 +293,17 @@ class Todo {
 		this.dateCreated = new Date();
 		this.color = this.randomizeColor();
 		this.color2 = this.randomizeColor();
+		this.container = document.querySelectorAll('.todo-container');
 	}
 
 	toggle() {
 	   this.complete = !this.complete;
+
+	   // if(this.complete) {
+   	// 	this.container.forEach(item => {
+		// 			item.classList.add('done');
+		// 	});
+	   // };
 	}
 
 	edit(newContent) { 
@@ -306,7 +313,8 @@ class Todo {
 	render() {
 		const { id, complete, content, dateCreated, color, color2 } = this; // destructuring
 
-		return `	<div class='todo-container' style='background-color:${color}'>
+		// ${this.complete ? "var(--complete)" : color}
+		return   `<div class='todo-container ${complete ? 'done' : ''}' style='background-color:${color}'>
 			     		<div class='status' style='background-color:${color2}'>
 	    					<input class='complete' id='complete${id}' type='checkbox' name='complete' data-id='${id}' ${complete ? 'checked' : ''}>
 	    					<label for='complete${id}'>Completed</label>
@@ -474,3 +482,17 @@ let todo = new TodoApp;
 
 // todo.restoreTodos(); // moved these in the constructor
 // todo.initEvents();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
