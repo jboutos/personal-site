@@ -1,0 +1,11 @@
+{
+  "title": "Error",
+  "sections": [
+   {
+	   "module": "error-card",
+	   "title": "Error 404",
+	   "subtitle": "Page not found!",
+	   "linkText": "Go back"
+	}
+ ]  
+}
