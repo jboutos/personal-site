@@ -2,7 +2,7 @@
 
 <div class='column header'>
 
-	<a class='subtle-voice logo' href='<?=BASE_URL?>'>J.BOUTOS</a>
+	<a class='subtle-voice logo' href='<?=BASE_URL?>' <?= empty($_GET['page']) ? 'aria-current="page"' : '' ?>>J.BOUTOS</a>
 
 	<nav class='navigation' aria-label='Main navigation'>
 		<a href='<?=BASE_URL?>' <?= empty($_GET['page']) ? 'aria-current="page"' : '' ?>>home</a>
