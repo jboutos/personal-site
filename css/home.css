@@ -54,7 +54,7 @@
     list-style-type: none;
   }
 
-  info-card {
+  .info-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

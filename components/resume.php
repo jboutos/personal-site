@@ -1,30 +1,30 @@
-<section>
-	<left-panel>
+<section class='resume-section'>
+	<aside>
 
 		<picture class='profile'>
-			<img src='<?= "images/" . $profPic ?>'>
+			<img src='<?= "images/" . $profPic ?>' alt='<?= $alt ?>'>
 		</picture>
 
-		<qualifications>
+		<section class='qualifications'>
 			<?php foreach ($qualifications as $group) { ?>
 		      <?= component($group['module'], $group) ?>
 		   <?php } ?>
 			
-		</qualifications>
+		</section>
 
 		<hr>
 
-		<education>
+		<section class='education'>
 			<?php foreach ($education as $group) { ?>
 		      <?= component($group['module'], $group) ?>
 		   <?php } ?>
-		</education>
+		</section>
 
-	</left-panel>
+	</aside>
 
-	<right-panel>
+	<div class='main-section'>
 
-		<personal-info>
+		<section class='persona-info'>
 
 			<h1 class='attention-voice'><?= $name ?></h1>
 
@@ -32,13 +32,13 @@
 		      <?= component($group['module'], $group) ?>
 		   <?php } ?>
 
-		</personal-info>
+		</section>
 
-		<experience>
+		<section class='experience'>
 		   <?php foreach ($experience as $group) { ?>
 		      <?= component($group['module'], $group) ?>
 		   <?php } ?>
-		</experience>
+		</section>
 
-	</right-panel>
+	</div>
 </section>

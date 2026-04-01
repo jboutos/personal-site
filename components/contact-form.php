@@ -7,7 +7,7 @@
 
 	<div class='field'>
 		<label for='email'><?= $nameLabel2 ?></label>
-		<input id='email' type='text' placeholder='Email' name='email' value='' required>
+		<input id='email' type='email' placeholder='Email' name='email' value='' required>
 	</div>
 
 	<div class='field'>
@@ -20,4 +20,6 @@
 
 </form>
 
-<?php echo $reply ?>
+<div role="status">
+  <?php echo $reply ?>
+</div>

@@ -286,10 +286,10 @@
 
 class Todo {
 
-	constructor(id, content) {
+	constructor(id, content, complete = false) {
 		this.id = id;
 		this.content = content;
-		this.complete = false;
+		this.complete = complete;
 		this.dateCreated = new Date();
 		this.color = this.randomizeColor();
 		this.color2 = this.randomizeColor();
@@ -379,8 +379,7 @@ class TodoApp {
 			this.todos = JSON.parse(storedTodos);
 
 			this.todos = this.todos.map(todo => { // need to turn the todos back into todo class instances for todo class methods to work after restoring 
-				let newTodo = new Todo(todo.id, todo.content);
-				newTodo.complete = todo.complete;
+				let newTodo = new Todo(todo.id, todo.content, todo.complete);
 				return newTodo;
 			});
 

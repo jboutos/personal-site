@@ -18,8 +18,14 @@
         "While this methodology was not really suitable for building just 3 pages, having such a system support an app or website with hundreds of similar components makes sense — you get to build new pages by changing a few words in a file!"
       ],
       "images": [
-        "figma-1.png",
-        "figma-2.png"
+        {
+          "src": "figma-1.png",
+          "alt": "Screenshot of how a module is conditionally rendered"
+        },
+        {
+          "src": "figma-2.png",
+          "alt": "Screenshot of a json file"
+        }
       ]
     },
     {

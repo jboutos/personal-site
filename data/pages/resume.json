@@ -4,6 +4,7 @@
     {
       "module": "resume",
       "profPic": "prof-pic2.jpg",
+      "alt": "profile picture of john",
       "name": "IOANNIS BOUTOS",
       "qualifications": [
         {

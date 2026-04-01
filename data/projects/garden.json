@@ -18,9 +18,18 @@
         "Of course the whole idea behind learning new tricks is applying them wherever you can, enter reusable components. I took the simplistic approach of using php arrays that I would later extract (yes, the php method) to hydrate some skeleton components based on the context of each module instead of using json files . A bit messier but one step less in the process of hydration. At the moment most layouts use components that are reused time and again, or at the very least -in some cases- used for specific layouts and then rendered through a loop!"
       ],
       "images": [
-        "garden-1.png",
-        "garden-2.png",
-        "garden-3.png"
+        {
+          "src": "garden-1.png",
+          "alt": "Screenshot of some of the garden's layouts"
+        },
+        {
+          "src": "garden-2.png",
+          "alt": "Screenshot of php arrays getting extracted"
+        },
+        {
+          "src": "garden-3.png",
+          "alt": "Screenshot of index.php"
+        }
       ]
     },
     {

@@ -19,9 +19,6 @@ body {
 	}
 }
 
-main {
-}
-
 .page-wrapper {
   min-height: 100vh;
 }
@@ -240,6 +237,10 @@ header a:hover {
 	display: flex;
 	gap: 0.7em;
 	flex-wrap: wrap;
+}
+
+.header a {
+	margin: 0;
 }
 
 .circle {

@@ -1,11 +1,11 @@
 <?php if (!empty($detail)) { ?>
-    <container>
+    <section class='projects-section'>
         <div class='container-details'>
             <?php foreach ($detail['sections'] as $section) { ?>
                 <?= component($section['module'], $section) ?>
             <?php } ?>
         </div>
-    </container>
+    </section>
 <?php } else { ?>
     <?= component('project-not-found') ?>
 <?php } ?>

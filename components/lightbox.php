@@ -1,3 +1,3 @@
 <div class="lightbox" id="lightbox">
-  <img class="lightbox-img" id="lightbox-img">
+  <img class="lightbox-img" id="lightbox-img" src=''>
 </div>

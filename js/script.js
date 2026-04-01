@@ -5,9 +5,9 @@ const spinner = document.querySelector('#spinner');
 // document.body.onpointermove = event => {
 //     const { clientX, clientY } = event;
 
-//     move.animate({
+//     move.animate(
 //         left: `${clientX}px`,
-//         top: `${clientY}px`
+//         top: ` ${clientY}px`
     
 //     }, {duration: 1000, fill: "forwards"})
 
