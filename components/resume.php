@@ -23,7 +23,7 @@
 
 	<div class='main-section'>
 
-		<section class='persona-info'>
+		<section class='personal-info'>
 			<h1 class='attention-voice'><?= $name ?></h1>
 			<?php foreach ($personalInfo as $group) { ?>
 		      <?= component($group['module'], $group) ?>

@@ -38,17 +38,23 @@
         {
          "module": "contact-info",
          "contact": "+306942930998",
-         "picture": "phone.png"
+         "picture": "phone.png",
+         "alt": "image of phone",
+         "aria": "Phone number: plus 30 694 293 0998"
         },
         {
          "module": "contact-info",
          "contact": "jgbout89@gmail.com",
-         "picture": "email.png"
+         "picture": "email.png",
+         "alt": "image of email",
+         "aria": "email: jgbout89@gmail.com"
         },
         {
          "module": "contact-info",
          "contact": "Olympou 47-49, Chalandri, Athens, Greece",
-         "picture": "place.png"
+         "picture": "place.png",
+         "alt": "image of location pin",
+         "aria": "Location: Olympou 47-49, Chalandri, Athens, Greece"
         }
       ],
       "experience": [

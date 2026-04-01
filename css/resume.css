@@ -10,12 +10,14 @@
 
 	picture {
 		display: block;
+		border-radius: 0;
 	}
 
 	img {
 		display: block;
 		width: 100%;
 		height: auto;
+		border-radius: 0;
 	}
 
 	.resume-view {

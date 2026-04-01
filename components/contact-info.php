@@ -1,6 +1,6 @@
-<div class='contact'>
+<div class='contact' aria-label='<?= $aria ?>'>
 	<picture>
-		<img src='<?= "images/" .  $picture ?>'>
+		<img aria-hidden="true" src='<?= "images/" .  $picture ?>' alt='<?= $alt ?>'>
 	</picture>
-	<p class='calm-voice'><?= $contact ?></p>
+	<p aria-hidden="true" class='calm-voice'><?= $contact ?></p>
 </div>
