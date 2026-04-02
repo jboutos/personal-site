@@ -1,7 +1,3 @@
-const move = document.getElementById("move");
-const form = document.querySelector('form');
-const spinner = document.querySelector('#spinner');
-
 // document.body.onpointermove = event => {
 //     const { clientX, clientY } = event;
 
@@ -22,23 +18,52 @@ const spinner = document.querySelector('#spinner');
 //  rotate.style.transform = "rotate(0deg) scale(1)"; 
 //});
 
+
+const move = document.getElementById("move");
+const form = document.querySelector('form');
+const spinner = document.querySelector('#spinner');
+const images = document.querySelectorAll('.clickable-img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+let lastFocusedElement = null;
+
 if (form) {
     form.addEventListener('submit', function() {
         spinner.style.display = 'block';
     });
 }
 
-const images = document.querySelectorAll('.clickable-img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
+function openLightbox(img) {
 
-images.forEach(img => {
-  img.addEventListener('click', () => {
+    lastFocusedElement = img;
+
     lightboxImg.src = img.src;
     lightbox.classList.add('active');
-  });
+
+    lightbox.focus();
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+
+    setTimeout(() => {
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
+    }, 10);
+}
+
+images.forEach(img => {
+    img.addEventListener('click', () => openLightbox(img));
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+    }
 });
 
 lightbox.addEventListener('click', () => {
-  lightbox.classList.remove('active');
+    closeLightbox();
 });

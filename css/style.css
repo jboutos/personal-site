@@ -278,12 +278,16 @@ header a:hover {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  outline: none; 
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .active {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .lightbox-img {
