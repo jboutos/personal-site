@@ -33,6 +33,13 @@
 		flex-direction: column;
 	}
 
+	p.calm-voice {
+		margin-bottom: 2em;
+		@media(min-width: 450px) {
+			margin: 0 auto 2em auto;
+		}
+	}
+
 	textarea#message {
 	    min-height: 300px;
 	}

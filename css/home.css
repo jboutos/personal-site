@@ -23,6 +23,10 @@
     fill: var(--color);
   }
 
+  .careful-voice {
+    margin: 1em 0;
+  }
+
   .circle {
     color: var(--circle);
     fill: var(--circle);

@@ -23,10 +23,23 @@
 	}
 
 	function pageSelect($page) {
-		$pages = ['home', 'projects', 'foods', 'goals', 'details', 'archive', 'contact',
-		'homepage', 'journal', 'welcome', 'error404', 'resume', 'case'];
+		$pages = ['home', 'projects', 'goals', 'details', 'archive', 'contact',
+		'journal', 'welcome', 'error404', 'resume', 'case'];
 
 		return in_array($page, $pages) ? $page : 'error404';
+	}
+
+	function getPageMeta($page) {
+		$page = pageSelect($page);
+		$pages = getJsonData('page-list');
+
+		$default = [
+			'title' => 'Index',
+			'description' => 'An amalgamation of everything unholy created at PE so far',
+			'image' => 'https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'
+		];
+
+		return $pages[$page] ?? $default;
 	}
 
 	function getController($page) {
@@ -47,19 +60,6 @@
 
 		$function = $page . 'Page';
 		echo $function();
-	}
-
-	function getPageMeta($page) {
-		$page = pageSelect($page);
-		$pages = getJsonData('pages');
-
-		$default = [
-			'title' => 'Index',
-			'description' => 'An amalgamation of everything unholy created at PE so far',
-			'image' => 'https://peprojects.dev/beta3/johnb/images/metadata-share-image.png'
-		];
-
-		return $pages[$page] ?? $default;
 	}
 
 	function pageNameFromFunction($function) {

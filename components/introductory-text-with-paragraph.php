@@ -1,4 +1,4 @@
 <h1 class='attention-voice' id='main-content'><?= $title ?></h1>
 <?php if (!empty($subtitle)) { ?>
-	<h2 class='<?= $headingClass ?> intro-heading'><?= $subtitle ?></h2>
+	<p class='<?= $headingClass ?>'><?= $subtitle ?></h2>
 <?php } ?>

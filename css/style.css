@@ -300,3 +300,18 @@ header a:hover {
 .clickable-img {
   cursor: zoom-in;
 }
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background: black;
+  color: white;
+  padding: 8px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

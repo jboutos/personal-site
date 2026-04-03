@@ -3,27 +3,32 @@
   "sections": [
     {
       "module": "introductory-text",
-      "title": "My web-dev journey"
+      "title": "My web-dev journey",
+      "headingClass": "careful-voice"
     },
     {
       "module": "card-list",
+      "heading": "More information about me below:",
       "cards": [
         {
           "title": "Goals",
           "image": "goals.png",
           "link": "?page=goals",
+          "aria": "Learn more about my goals",
           "target": "_self"
         },
         {
           "title": "My substack",
           "image": "substack3.png",
           "link": "https://substack.com/@mrmusicvibe?utm_source=user-menu",
+          "aria": "Blogs about my journey",
           "target": "_blank"
         },
         {
           "title": "Resume",
           "image": "resume.png",
           "link": "?page=resume",
+          "aria": "My resume page",
           "target": "_self"
         }
         

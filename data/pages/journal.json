@@ -3,7 +3,8 @@
   "sections": [
    {
 	   "module": "introductory-text",
-	   "title": "A rather short journal on my web-dev endeavours"
+	   "title": "A rather short journal on my web-dev endeavours",
+     "headingClass": "careful-voice"
 	},
    {
    	"module": "journal-entries"

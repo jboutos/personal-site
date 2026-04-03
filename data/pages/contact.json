@@ -2,9 +2,10 @@
   "title": "Contact",
   "sections": [
    {
-	   "module": "introductory-text",
+	   "module": "introductory-text-with-paragraph",
 	   "title": "Contact information",
-	   "subtitle": "You can contact me at jgbout@yahoo.com<br>Alternatively you can drop a message below (be kind)"
+	   "subtitle": "You can contact me at jgbout@yahoo.com<br>Alternatively you can drop a message below (be kind)",
+	   "headingClass": "calm-voice"
 	},
    {
    	"module": "contact-form",

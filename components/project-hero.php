@@ -1,4 +1,4 @@
-<article class='image-description' aria-labelledby='card-title-<?= $id ?>'>
+<article id='main-content' class='image-description' aria-labelledby='card-title-<?= $id ?>'>
     <picture class='details-image'>
         <a href='<?= $link ?>' target='_blank'>
             <img src='<?= "images/" . $image ?>' alt='<?= $title ?> image'>

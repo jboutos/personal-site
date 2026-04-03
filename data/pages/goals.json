@@ -3,7 +3,8 @@
   "sections": [
     {
       "module": "introductory-text",
-      "title": "Goals"
+      "title": "Goals",
+      "headingClass": "careful-voice"
     },
     {
       "module": "goals",

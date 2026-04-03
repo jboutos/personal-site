@@ -1,0 +1,57 @@
+{
+	"home": {
+	   "title": "Personal site of John Boutos",
+	   "description": "Well, this is the landing page of my personal site!",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"projects": {
+	   "title": "A list of all my projects",
+	   "description": "Learn more about my web-dev projects",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"goals": {
+	   "title": "A list of all my goals",
+	   "description": "Learn more about my goals",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"details": {
+	   "title": "A detailed view of each project",
+	   "description": "Learn more about this particular project",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"archive": {
+	   "title": "Older projects",
+	   "description": "Explore older projects",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"contact": {
+	   "title": "My contact information",
+	   "description": "Let's talk!",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"journal": {
+	   "title": "My journal",
+	   "description": "Learn more about my day to day web-dev exploits",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"welcome": {
+	   "title": "A short greeting",
+	   "description": "Learn more about me and my web-dev work",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"resume": {
+	   "title": "My resume",
+	   "description": "My resume",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"case": {
+	   "title": "Case studies",
+	   "description": "Learn more about some projects",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	},
+	"error404": {
+	   "title": "Something went wrong!",
+	   "description": "It happens!",
+	   "image": "https://peprojects.dev/beta3/johnb/images/metadata-share-image.png"
+	}
+}

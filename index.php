@@ -28,7 +28,11 @@
 
 	<body class="dark <?= pageSelect($_GET['page'] ?? 'home') ?>">
 
-		<header>
+		<a href='#main-content' class='skip-link'>
+		  Skip to main content
+		</a>
+
+		<header aria-label='Site navigation'>
 
 			<?php include('components/header.php'); ?>
 
