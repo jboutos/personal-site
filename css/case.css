@@ -1,6 +1,6 @@
 .case {
 
-	.calm-voice, .attention-voice, .subtle-voice {
+	.calm-voice, .attention-voice, h2 {
 		text-align: start;
 		margin: 0;
 		text-wrap: pretty;
@@ -34,6 +34,10 @@
 	h1, h2, p, a, li, label, li::marker {
 		color: var(--color);
 		fill: var(--color);
+	}
+	
+	.skip-link {
+		color: var(--base);
 	}
 
 	.circle {

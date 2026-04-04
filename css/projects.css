@@ -27,19 +27,23 @@
 		fill: var(--color);
 	}
 
+	.skip-link {
+		color: var(--base);
+	}
+
 	.circle {
 		color: var(--circle);
 		fill: var(--circle);
+	}
+
+	.calm-voice {
+		margin-bottom: 2em;
 	}
 
 	li {
 		display: block;
 		list-style-type: none;
 		line-height: 1;
-	}
-
-	ul {
-		margin-top: 3em;
 	}
 
 	a {

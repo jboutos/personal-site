@@ -29,6 +29,10 @@
 		fill: var(--color);
 	}
 
+	.skip-link {
+		color: var(--base);
+	}
+
 	.circle {
 		color: var(--circle);
 		fill: var(--circle);
@@ -64,11 +68,10 @@
 			display: block;
 		   padding-left: 0.9em;
 		}
-
 	}
 
 	h1 + h2 {
-		margin-top: 1em;
+		margin-top: 1.5em;
 	}
 
 	h1, h2, li {

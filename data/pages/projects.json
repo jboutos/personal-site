@@ -2,10 +2,10 @@
   "title": "Projects",
   "sections": [
     {
-      "module": "introductory-text",
+      "module": "introductory-text-with-paragraph",
       "title": "A list of completed PE projects thus far",
       "subtitle": "The list will be updated as more projects are added",
-      "headingClass": "careful-voice"
+      "headingClass": "calm-voice"
     },
     {
       "module": "project-card",
@@ -13,74 +13,98 @@
         {
           "title": "Super layout challenge",
           "key": "slc",
+          "aria": "Visit super layout challenge exercise",
           "image": "car-service-express.png",
+          "spanContent": "See more",
           "id": 2
         },
         {
           "title": "Super layout challenge v2",
           "key": "slcp",
+          "aria": "Visit super layout challenge v2 exercise",
           "image": "pink2.png",
+          "spanContent": "See more",
           "id": 3
         },
         {
           "title": "Layout garden",
           "key": "garden",
+          "aria": "Visit layout garden exercise",
           "image": "garden.png",
+          "spanContent": "See more",
           "id": 4
         },
         {
-          "title": "Grid practice layouts",
+          "title": "Grid layout practice",
           "key": "grid",
+          "aria": "Visit grid layout practice exercise",
           "image": "grid2.png", 
+          "spanContent": "See more",
           "id": 5
         },
         {
           "title": "Form exercises with php",
           "key": "phpform",
+          "aria": "Visit php form exercises",
           "image": "php.png",
+          "spanContent": "See more",
           "id": 6
         },
         {
           "title": "Routing exercise",
           "key": "shoelace",
+          "aria": "Visit the php routing exercise",
           "image": "shoelace.png",
+          "spanContent": "See more",
           "id": 7
         },
         {
           "title": "Simple crud app",
+          "aria": "Visit simple crud app exercise",
           "key": "crud",
           "image": "crud.png",
+          "spanContent": "See more",
           "id": 8
         },
         {
           "title": "Theming layout challenge",
+          "aria": "Visit theming layout challenge exercise",
           "key": "ltc",
           "image": "sheep-2.jpg",
+          "spanContent": "See more",
           "id": 9
         },
         {
           "title": "Figma to code challenge",
+          "aria": "Visit figma to code challenge exercise",
           "key": "ftc",
           "image": "figma.png",
+          "spanContent": "See more",
           "id": 10
         },
         {
           "title": "Javascript Forms",
+          "aria": "Visit javascript form exercises",
           "key": "jsf",
           "image": "js.png",
+          "spanContent": "See more",
           "id": 11
         },
         {
           "title": "Todo App",
+          "aria": "Visit todo app exercise",
           "key": "tda",
           "image": "post.jpg",
+          "spanContent": "See more",
           "id": 12
         },
         {
           "title": "Archive",
+          "aria": "Visit the archived exercises",
           "key": "archived",
           "image": "archives1.png",
           "directLink": "?page=archive",
+          "spanContent": "See more",
           "id": 1
         }
       ]

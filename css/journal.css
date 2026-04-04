@@ -21,6 +21,10 @@
 		fill: var(--color);
 	}
 
+	.skip-link {
+		color: var(--base);
+	}
+
 	.circle {
 		color: var(--circle);
 		fill: var(--circle);

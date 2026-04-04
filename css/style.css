@@ -72,11 +72,16 @@ body {
 	margin: 0 auto;
 }
 
+.mini-voice {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 0.9rem;
+}
+
 h1.attention-voice {
 	margin: 0.5em 0 0.5em 0;
 
 	@media(min-width: 570px) {
-		margin: 2em 0 0.5em 0;
+		margin: 2em 0 0.2em 0;
 	}
 }
 
@@ -301,17 +306,28 @@ header a:hover {
   cursor: zoom-in;
 }
 
-.skip-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%);
-  background: black;
-  color: white;
-  padding: 8px;
-  z-index: 1000;
+.skip-link { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	transform: translateY(-100%); 
+	background: var(--color);
+	color: var(--base);
+	padding: 8px; 
+	z-index: 1000; 
+} 
+
+.skip-link:focus { 
+	top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.skip-link:focus {
-  transform: translateY(0);
-}
+
+
+
+
+
+
+
+

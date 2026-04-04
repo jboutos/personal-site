@@ -1,11 +1,13 @@
 <section>
-   <h2 class='careful-voice'><?= $heading ?></h2>
+   <p class='calm-voice'><?= $heading ?></p>
 
-   <ul>
-      <?php foreach ($cards as $card) : ?>
-         <li>
-            <?= component('info-card', $card) ?>
-         </li>
-      <?php endforeach; ?>
-   </ul>
+   <nav aria-label='about me navigation'>
+      <ul>
+         <?php foreach ($cards as $card) : ?>
+            <li>
+               <?= component('info-card', $card) ?>
+            </li>
+         <?php endforeach; ?>
+      </ul>
+   </nav>
 </section>

@@ -1,12 +1,12 @@
 <?php 
    $href = !empty($directLink) ? $directLink : "?page=details&project={$key}";
 ?>
-<a class='project-card' aria-labelledby='card-title-<?= $id ?>' href='<?= $href ?>'>
-   <article id='<?= $id ?>'>
+<article id=''>
+   <a class='project-card' href='<?= $href ?>' aria-label='<?= $aria ?>'>
       <picture class='image'>
-         <img src='<?= "images/" . $image ?>' alt='<?= $title ?> image'>
+         <img src='<?= "images/" . $image ?>' alt=''>
       </picture>
-      <h2 id='card-title-<?= $id ?>' class='subtle-voice'><?= $title ?></h2>
-      <span class='underline'>See more</span>
-   </article>
-</a>
+      <h2 aria-hidden='true' id='card-title-<?= $id ?>' class='subtle-voice'><?= $title ?></h2>
+      <span class='underline'><?= $spanContent ?></span>
+   </a>
+</article>

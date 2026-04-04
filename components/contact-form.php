@@ -1,18 +1,18 @@
-<form method='POST'>
+<form method='POST' aria-label='Contact form for sending a message to the site owner'>
 
 	<div class='field'>
-		<label for='name'><?= $nameLabel ?></label>
-		<input id='name' type='text' placeholder='Name' name='name' value='' required>
+		<label class='calm-voice' for='name'><?= $nameLabel ?></label>
+		<input id='name' type='text' placeholder='Please enter your name' name='name' value='' required>
 	</div>
 
 	<div class='field'>
-		<label for='email'><?= $nameLabel2 ?></label>
-		<input id='email' type='email' placeholder='Email' name='email' value='' required>
+		<label class='calm-voice' for='email'><?= $nameLabel2 ?></label>
+		<input id='email' type='email' placeholder='Please enter your email' name='email' value='' required>
 	</div>
 
 	<div class='field'>
-		<label for='message'><?= $label ?></label>
-		<textarea id='message' placeholder='Your message here' name='message' required></textarea>
+		<label class='calm-voice' for='message'><?= $label ?></label>
+		<textarea id='message' placeholder='Please enter your message' name='message' required></textarea>
 	</div>
 
 	<button type='submit' name='submitted'><?= $button ?></button>

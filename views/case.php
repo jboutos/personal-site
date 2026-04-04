@@ -1,5 +1,5 @@
 <div class ='column'>
-	<article>
+	<article id='main-content'>
 		<h1 class='attention-voice'>Layout theme challenge case study</h1>
 		<h2 class='subtle-voice'>Or how to drive yourself insane while adjusting margins and font sizes</h2>
 		<p class='calm-voice'>Ok, so this module started as a layout challenge where you had to copy a webpage and its various breakpoints based off a video. At this stage of the course, this was no challenge at all, but of course that was not the point of the module, but more like a pit stop to check that everything is fine with the driver. The real challenge turned out to be having to theme said premade template so as to evoke the feeling of an industry of your choosing without touching the HTML code.</p>

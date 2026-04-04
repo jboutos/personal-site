@@ -3,5 +3,6 @@
   { "date": "6/12/2025", "observations": "Learning some things about size and color contrast" },
   { "date": "12/12/2025", "observations": "Redesigned the style of my personal site a bit" },
   { "date": "27/12/2025", "observations": "Redesigned the site to follow a mini mvc design!" },
-  { "date": "12/03/2026", "observations": "More changes to the site, both stylistically and rendering-wise" }
+  { "date": "12/03/2026", "observations": "More changes to the site, both stylistically and rendering-wise" },
+  { "date": "03/04/2026", "observations": "Exploring the screen reader, this is a whole different layer of designing" }
 ]

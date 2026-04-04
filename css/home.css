@@ -18,13 +18,17 @@
 
   background-color: var(--base);
 
-  h1, h2 {
+  h1, h2, .calm-voice {
     color: var(--color);
     fill: var(--color);
   }
 
-  .careful-voice {
-    margin: 1em 0;
+  .calm-voice {
+    margin-bottom: 2em;
+  }
+
+  .skip-link {
+    color: var(--base);
   }
 
   .circle {

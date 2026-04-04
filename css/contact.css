@@ -23,6 +23,10 @@
 		fill: var(--color);
 	}
 
+	.skip-link {
+		color: var(--base);
+	}
+
 	.circle {
 		color: var(--circle);
 		fill: var(--circle);
@@ -38,6 +42,10 @@
 		@media(min-width: 450px) {
 			margin: 0 auto 2em auto;
 		}
+	}
+
+	label.calm-voice {
+		
 	}
 
 	textarea#message {

@@ -20,6 +20,10 @@
 		color: var(--hover);
 	}
 
+	.skip-link {
+		color: var(--base);
+	}
+
 	.loud-voice {
 		padding-top: 0;
 	}
