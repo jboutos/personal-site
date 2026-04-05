@@ -47,11 +47,10 @@ function openLightbox(img) {
 function closeLightbox() {
     lightbox.classList.remove('active');
 
-    setTimeout(() => {
-        if (lastFocusedElement) {
-            lastFocusedElement.focus();
-        }
-    }, 10);
+    if (lastFocusedElement) {
+        lastFocusedElement.setAttribute('tabindex', '-1');
+        lastFocusedElement.focus();
+    }
 }
 
 images.forEach(img => {
