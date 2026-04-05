@@ -1,4 +1,4 @@
-<h3 class='subtle-voice resume-heading'><?= $title ?></h3>
+<h2 class='subtle-voice resume-heading <?= $class ?>'><?= $title ?></h2>
 
 <ul class='resume-list'>
     <?php foreach ($skills as $skill) { ?>

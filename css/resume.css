@@ -21,7 +21,11 @@
 	}
 
 	.resume-view {
-		margin-top: 8em;
+		margin-top: 3em;
+
+		@media (min-width: 850px) {
+			margin-top: 11em;
+		}
 	}
 
 	h1, h2, h3, h4, p, ul, li {
@@ -29,6 +33,7 @@
 	}
 
 	.skip-link {
+		background-color: black;
 		color: var(--base);
 	}
 
@@ -37,13 +42,25 @@
 		margin: 1em 0 0.3em 0;
 		padding: 0;
 
-		@media (min-width: 570px) {
+		@media (min-width: 850px) {
 			margin: 0 0 0.3em 0;
 		}
 	}
 
 	.resume-heading {
-		margin:1.5em 0 0.5em 0;
+		margin: 2em 0 0.5em 0;
+
+		@media(min-width: 850px) {
+			margin: 2em 0 0.5em 0;
+		}
+	}
+
+	.qualifications-heading {
+		margin: 0.75em 0 0.5em 0;
+
+		@media(min-width: 850px) {
+			margin: 1.25em 0 0.5em 0;
+		}
 	}
 
 	li, p {
@@ -80,9 +97,13 @@
 		flex-direction: column;
 		align-items: flex-start;
 
-		@media (min-width: 570px) {
-			display: grid;
+		@media (min-width: 850px) {
+/*			display: grid;
 			grid-template-columns: 0.25fr auto;
+			justify-content: center;
+			gap: 6em;*/
+			display: flex;
+			flex-direction: row-reverse;
 			justify-content: center;
 			gap: 6em;
 		}
@@ -90,6 +111,11 @@
 
 	.profile {
 		width: 200px;
+
+		@media(max-width: 850px) {
+			margin-top: 3em;
+			margin-bottom: 0;
+		}
 	}
 
 	.contact img, .contact picture {
@@ -101,8 +127,9 @@
 		display: block;
 		/*background-color: hsl(189 69.7% 70.1%);*/
 
-		@media (min-width: 570px) {
+		@media (min-width: 850px) {
 			height: 100vh;
+			width: 20%;
 		}
 	}
 

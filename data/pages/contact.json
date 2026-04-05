@@ -11,7 +11,7 @@
    	"module": "contact-form",
    	"nameLabel": "Name",
    	"nameLabel2": "Email",
-   	"label": "(Any subject but shoelaces)",
+   	"label": "Message",
    	"button": "Send message",
    	"links": ""
    },
